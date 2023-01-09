@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #F6FBFD;
+}
+
+.header-text{
+    position: absolute;
+    z-index: 1;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-size: 1.4rem;
+}
+
+.dog{
+    position: absolute;
+    bottom: 0;
+    width: 100vw !important;
+    height: 90vh;
+    object-fit: cover;
+}
