@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo-config";
+import '../i18n'
 
 function MyApp({ Component, pageProps }) {
   return (

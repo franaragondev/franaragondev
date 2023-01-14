@@ -26,3 +26,15 @@ body{
     height: 90vh;
     object-fit: cover;
 }
+
+.flag-container{
+    display: flex;
+    padding: .5rem;
+    flex-direction: row-reverse;
+}
+
+.flag{
+    width: 1.5rem;
+    margin: .5rem;
+    cursor: pointer;
+}
