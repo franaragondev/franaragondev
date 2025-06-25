@@ -1,0 +1,77 @@
+{
+  "head": {
+    "title": "Fran Aragón | Frontend Developer",
+    "description": "Fran Aragón, Frontend Developer, specialized in React, TypeScript, and web design. Passionate about creating intuitive interfaces and innovative digital solutions for agile, high-performance environments.",
+    "url": "https://www.franaragondev.com/",
+    "image": "https://www.franaragondev.com/images/logo.png",
+    "keywords": "frontend developer, web designer, react, typescript, frontend, web design, user interfaces, UX/UI, web programmer, frontend development"
+  },
+  "menu": {
+    "home": "Home",
+    "experience": "Experience",
+    "about": "About Me",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "language": {
+    "es": "Spanish",
+    "en": "English"
+  },
+  "cookies": {
+    "message": "We use analytical cookies to improve the user experience and analyze site traffic. We do not store personal data. You can accept or reject their use.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "learnMore": "Learn more",
+    "linkText": "Cookie Policy"
+  },
+  "cookiesPolicy": {
+    "title": "Cookie Policy",
+    "intro": "This website uses analytical cookies to understand how users interact with the site, using tools such as Google Analytics and Search Console.",
+    "whatAreCookiesTitle": "What are cookies?",
+    "whatAreCookies": "Cookies are small files stored on your device to improve your experience on the website.",
+    "typesTitle": "Types of cookies we use",
+    "typesList": [
+      "Analytical cookies: Allow us to collect anonymous data about site usage to improve its performance and user experience."
+    ],
+    "manageTitle": "Cookie management",
+    "manageText": "You can accept or reject analytical cookies via the banner or through your browser settings.",
+    "personalDataTitle": "Personal data",
+    "personalDataTextPart1": "We do not collect or store personal data through cookies or forms on this site.",
+    "personalDataTextPart2": "",
+    "privacyPolicyLinkText": "Privacy Policy",
+    "changesTitle": "Policy changes",
+    "changesText": "We may update this policy occasionally. Please review this page to stay informed.",
+    "lastUpdated": "Last updated: June 2025"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "This website does not store personal user data. We only use external tools like Google Analytics and Search Console to analyze metrics and improve the experience.",
+    "sections": [
+      {
+        "title": "1. Personal data",
+        "text": "We do not collect or store personal data through this website."
+      },
+      {
+        "title": "2. Analytical tools",
+        "text": "We use Google Analytics and Search Console to measure site traffic and behavior, always respecting user privacy through data anonymization."
+      },
+      {
+        "title": "3. Contact",
+        "text": "If you want to contact me, you can do so by email. We do not store your information or track you."
+      },
+      {
+        "title": "4. Rights",
+        "text": "Since we do not store personal data, requests for access, correction, or deletion do not apply."
+      },
+      {
+        "title": "5. Policy changes",
+        "text": "We may update this policy at any time. We recommend reviewing it periodically."
+      }
+    ],
+    "lastUpdated": "Last updated: June 2025",
+    "cookiesLinkText": "Cookie Policy"
+  },
+  "footer": {
+    "center": "2025 Fran Aragón. Todos los derechos reservados."
+  }
+}
