@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.franaragondev.com
+
+# Sitemaps
+Sitemap: https://www.franaragondev.com/sitemap.xml
