@@ -87,7 +87,7 @@ export default function Header() {
 
         {/* Desktop menu centered */}
         <div className="hidden md:flex justify-center">
-          <DesktopMenu />
+          <DesktopMenu isHeaderVisible={showHeader} />
         </div>
 
         {/* User dropdown */}
@@ -102,6 +102,7 @@ export default function Header() {
       <MobileMenu
         isOpen={isMenuOpen}
         onCloseAction={() => setIsMenuOpen(false)}
+        isHeaderVisible={showHeader}
       />
     </>
   );

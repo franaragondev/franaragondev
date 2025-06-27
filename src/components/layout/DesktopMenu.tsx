@@ -1,33 +1,41 @@
 "use client";
 
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
-import { usePathname } from "next/navigation";
 
-export function DesktopMenu() {
+type DesktopMenuProps = {
+  isHeaderVisible: boolean;
+};
+
+export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
   const t = useTranslations("menu");
-  const locale = useLocale();
-  const pathname = usePathname();
-
-  const basePath = `/${locale}`;
+  const HEADER_HEIGHT = 72;
+  const HEADER_HEIGHT_HIDDEN = 0;
 
   const links = [
-    { href: `${basePath}`, label: t("home") },
-    { href: `${basePath}#experience`, label: t("experience") },
-    { href: `${basePath}#about`, label: t("about") },
-    { href: `${basePath}#contact`, label: t("contact") },
+    { href: "#home", label: t("home") },
+    { href: "#about", label: t("about") },
+    { href: "#experience", label: t("experience") },
+    { href: "#contact", label: t("contact") },
   ];
 
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    href: string
+    hash: string
   ) => {
-    if (href.startsWith("#")) {
+    if (hash.startsWith("#")) {
       e.preventDefault();
-      const element = document.querySelector(href);
+      const element = document.querySelector(hash);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const elementPosition =
+          element.getBoundingClientRect().top + window.pageYOffset;
+        const offset = isHeaderVisible ? HEADER_HEIGHT : HEADER_HEIGHT_HIDDEN;
+
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
       }
     }
   };
@@ -35,23 +43,15 @@ export function DesktopMenu() {
   return (
     <nav className="flex gap-6">
       {links.map(({ href, label }) => {
-        const isActive = href === basePath ? pathname === href : false;
-
         return (
-          <Link
+          <a
             key={href}
-            href={href.startsWith("#") ? `${basePath}${href}` : href}
-            onClick={(e) => {
-              if (href.startsWith("#")) {
-                handleClick(e, href);
-              }
-            }}
-            className={`text-gray-700 hover:text-black transition ${
-              isActive ? "text-black font-semibold" : ""
-            }`}
+            href={href}
+            onClick={(e) => handleClick(e, href)}
+            className="text-gray-700 hover:text-black transition"
           >
             {label}
-          </Link>
+          </a>
         );
       })}
     </nav>

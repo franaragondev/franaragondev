@@ -9,6 +9,7 @@ import Link from "next/link";
 type MobileMenuProps = {
   isOpen: boolean;
   onCloseAction: () => void;
+  isHeaderVisible: boolean;
 };
 
 const locales = [
@@ -16,19 +17,49 @@ const locales = [
   { code: "en", key: "en" },
 ];
 
-export default function MobileMenu({ isOpen, onCloseAction }: MobileMenuProps) {
+export default function MobileMenu({
+  isOpen,
+  onCloseAction,
+  isHeaderVisible,
+}: MobileMenuProps) {
   const router = useRouter();
   const locale = useLocale();
   const pathname = usePathname();
   const t = useTranslations("menu");
   const tLang = useTranslations("language");
-  const basePath = `/${locale}`;
+  const HEADER_HEIGHT = 72;
+  const HEADER_HEIGHT_HIDDEN = 0;
 
   function changeLocale(newLocale: string) {
     const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
     router.push(newPathname);
     onCloseAction();
   }
+
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    hash: string
+  ) => {
+    if (hash.startsWith("#")) {
+      e.preventDefault();
+      const element = document.querySelector(hash);
+      if (element) {
+        const elementPosition =
+          element.getBoundingClientRect().top + window.pageYOffset;
+        const offset = isHeaderVisible ? HEADER_HEIGHT : HEADER_HEIGHT_HIDDEN;
+
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+      onCloseAction?.();
+    }
+  };
+
+  const basePath = `/${locale}`;
 
   return (
     <AnimatePresence>
@@ -49,34 +80,26 @@ export default function MobileMenu({ isOpen, onCloseAction }: MobileMenuProps) {
             transition={{ type: "tween" }}
           >
             <nav className="flex flex-col space-y-4 mb-4">
-              <Link
-                href={`${basePath}`}
-                onClick={onCloseAction}
-                className="text-gray-700 hover:text-black"
-              >
-                {t("home")}
-              </Link>
-              <Link
-                href={`${basePath}/#experience`}
-                onClick={onCloseAction}
-                className="text-gray-700 hover:text-black"
-              >
-                {t("experience")}
-              </Link>
-              <Link
-                href={`${basePath}/#about`}
-                onClick={onCloseAction}
-                className="text-gray-700 hover:text-black"
-              >
-                {t("about")}
-              </Link>
-              <Link
-                href={`${basePath}/#contact`}
-                onClick={onCloseAction}
-                className="text-gray-700 hover:text-black"
-              >
-                {t("contact")}
-              </Link>
+              {[
+                { href: `${basePath}#home`, label: t("home") },
+                { href: `${basePath}#about`, label: t("about") },
+                { href: `${basePath}#experience`, label: t("experience") },
+                { href: `${basePath}#contact`, label: t("contact") },
+              ].map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={(e) =>
+                    handleClick(
+                      e,
+                      href.split("#")[1] ? `#${href.split("#")[1]}` : ""
+                    )
+                  }
+                  className="text-gray-700 hover:text-black"
+                >
+                  {label}
+                </Link>
+              ))}
             </nav>
 
             <hr className="my-4 border-t border-gray-300 dark:border-gray-700" />

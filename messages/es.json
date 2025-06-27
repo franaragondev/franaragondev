@@ -73,5 +73,27 @@
   },
   "footer": {
     "center": "2025 Fran Aragón. Todos los derechos reservados."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "adidas": {
+      "title": "Desarrollador de Software",
+      "period": "julio 2022 - actualidad",
+      "point1": "Crear aplicaciones desde cero basadas en React, asumiendo responsabilidades y liderazgo desde el diseño hasta el desarrollo.",
+      "point2": "Desarrollo de aplicaciones web con JavaScript o TypeScript junto con ReactJS.",
+      "point3": "Colaboración con otro departamento en el proyecto COCU (Carry Over & Color Up Tool): ayudé a crear desde cero la aplicación frontend con React (framework Vite) y desarrollé la interfaz visual."
+    },
+    "cei": {
+      "title": "Profesor de Desarrollo Fullstack y Diseño Web",
+      "period": "enero 2022 - julio 2022",
+      "point1": "Profesor del curso de diseño web con HTML5, CSS3, jQuery y JavaScript.",
+      "point2": "Profesor del curso de desarrollo fullstack con JavaScript, PHP y MySQL."
+    },
+    "gransliving": {
+      "title": "Desarrollador Frontend · Diseñador Web",
+      "period": "septiembre 2021 - noviembre 2022",
+      "point1": "Convertí un sitio Wordpress en una aplicación React.js con NextJS.",
+      "point2": "Diseñé el nuevo layout en Figma y lo desarrollé."
+    }
   }
 }
