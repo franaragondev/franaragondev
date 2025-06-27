@@ -83,6 +83,7 @@ export default function MobileMenu({
               {[
                 { href: `${basePath}#home`, label: t("home") },
                 { href: `${basePath}#about`, label: t("about") },
+                { href: `${basePath}#projects`, label: t("projects") },
                 { href: `${basePath}#experience`, label: t("experience") },
                 { href: `${basePath}#contact`, label: t("contact") },
               ].map(({ href, label }) => (

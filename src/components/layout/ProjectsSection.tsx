@@ -92,10 +92,15 @@ export default function ProjectsSection() {
                 </p>
 
                 <span
-                  className="inline-block mt-4 px-5 py-2 rounded-full bg-white/20 dark:bg-gray-800/40 text-sm font-semibold text-gray-900 dark:text-white
+                  className="inline-block mt-4 px-5 py-2 rounded-full text-sm font-semibold transition-colors
+    md:bg-white/20 md:dark:bg-gray-800/40
+    md:text-gray-900 md:dark:text-white
     group-hover:bg-white
-    group-hover:text-[var(--btn-hover-color)]
-    transition-colors"
+    group-hover:text-[var(--btn-hover-color)]"
+                  style={{
+                    backgroundColor: buttonTextColor, // fondo móvil con color del botón
+                    color: "white", // texto blanco móvil
+                  }}
                 >
                   {t("viewProject")}
                 </span>

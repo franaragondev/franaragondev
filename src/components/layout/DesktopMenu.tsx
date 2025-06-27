@@ -14,6 +14,7 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
   const links = [
     { href: "#home", label: t("home") },
     { href: "#about", label: t("about") },
+    { href: "#projects", label: t("projects") },
     { href: "#experience", label: t("experience") },
     { href: "#contact", label: t("contact") },
   ];
