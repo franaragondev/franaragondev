@@ -27,7 +27,7 @@ export default function ExperienceSection() {
       company: "CEI Escuela de Diseño y Marketing",
       period: t("cei.period"),
       responsibilities: [t("cei.point1"), t("cei.point2")],
-      accentColor: "from-[#00695c] to-[#26a69a]", // verde
+      accentColor: "from-[#00695c] to-[#26a69a]",
     },
     {
       id: "gransliving",
@@ -36,7 +36,7 @@ export default function ExperienceSection() {
       company: "GransLiving",
       period: t("gransliving.period"),
       responsibilities: [t("gransliving.point1"), t("gransliving.point2")],
-      accentColor: "from-[#9e1b32] to-[#ff416c]", // rosa
+      accentColor: "from-[#9e1b32] to-[#ff416c]",
     },
   ];
 
