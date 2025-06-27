@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["homestocker.app", "www.cdesteponafans.com"],
   },
 };
 

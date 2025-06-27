@@ -43,7 +43,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="relative min-h-screen px-4 md:px-12 py-24 bg-white/30 backdrop-blur-xl scroll-mt-24"
+      className="relative min-h-screen px-4 md:px-12 py-24  backdrop-blur-xl scroll-mt-24 bg-gray-50"
     >
       <div className="text-center mb-20">
         <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white relative inline-block">

@@ -95,5 +95,19 @@
       "point1": "Convertí un sitio Wordpress en una aplicación React.js con NextJS.",
       "point2": "Diseñé el nuevo layout en Figma y lo desarrollé."
     }
+  },
+  "projects": {
+    "homestocker": {
+      "title": "HomeStocker",
+      "description": "Controla y organiza el stock de tu despensa en casa fácilmente. Ahorra dinero, reduce desperdicios y evita compras innecesarias.",
+      "url": "https://homestocker.app/"
+    },
+    "cdestepona": {
+      "title": "CD Estepona Fans",
+      "description": "Noticias, partidos en directo y contenido exclusivo para los aficionados del Club Deportivo Estepona.",
+      "url": "https://www.cdesteponafans.com/"
+    },
+    "viewProject": "Ver proyecto",
+    "title": "Proyectos"
   }
 }

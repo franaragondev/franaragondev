@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getCommonMetadata } from "@/utils/getCommonMetadata";
 import AppHero from "@/components/layout/AppHero";
+import ProjectsSection from "@/components/layout/ProjectsSection";
 import ExperienceSection from "@/components/layout/ExperienceSection";
 import AboutSection from "@/components/layout/AboutSection";
 import ContactSection from "@/components/layout/ContactSection";
@@ -18,6 +19,7 @@ export default function Home() {
     <>
       <AppHero />
       <AboutSection />
+      <ProjectsSection />
       <ExperienceSection />
       <ContactSection />
     </>
