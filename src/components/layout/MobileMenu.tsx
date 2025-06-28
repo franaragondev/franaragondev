@@ -81,7 +81,6 @@ export default function MobileMenu({
           >
             <nav className="flex flex-col space-y-4 mb-4">
               {[
-                { href: `${basePath}#home`, label: t("home") },
                 { href: `${basePath}#about`, label: t("about") },
                 { href: `${basePath}#projects`, label: t("projects") },
                 { href: `${basePath}#experience`, label: t("experience") },
