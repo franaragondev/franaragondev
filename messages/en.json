@@ -7,7 +7,6 @@
     "keywords": "frontend developer, web designer, react, typescript, frontend, web design, user interfaces, UX/UI, web programmer, frontend development"
   },
   "menu": {
-    "home": "Home",
     "projects": "Projects",
     "experience": "Experience",
     "about": "About Me",
@@ -80,21 +79,21 @@
     "adidas": {
       "title": "Software Developer",
       "period": "July 2022 - Present",
-      "point1": "Created React-based applications from scratch, leading from design to development.",
-      "point2": "Developed web applications using JavaScript or TypeScript with ReactJS.",
-      "point3": "Collaborated with another department on the COCU (Carry Over & Color Up Tool) project: helped build the frontend application from scratch with React (Vite framework) and designed the user interface."
+      "point1": "Developed applications from scratch using React, leading both design and implementation phases.",
+      "point2": "Built modern web applications with JavaScript or TypeScript using ReactJS.",
+      "point3": "Cross-department collaboration on the COCU (Carry Over & Color Up Tool) project: built the frontend with React (Vite framework) and designed the user interface."
     },
     "cei": {
       "title": "Fullstack Development & Web Design Instructor",
       "period": "January 2022 - July 2022",
-      "point1": "Instructor for the web design course using HTML5, CSS3, jQuery, and JavaScript.",
+      "point1": "Instructor for the web design course, teaching HTML5, CSS3, jQuery, and JavaScript.",
       "point2": "Instructor for the fullstack development course using JavaScript, PHP, and MySQL."
     },
     "gransliving": {
       "title": "Frontend Developer · Web Designer",
       "period": "September 2021 - November 2022",
-      "point1": "Converted a Wordpress site into a React.js application with NextJS.",
-      "point2": "Designed the new web app layout in Figma and implemented it."
+      "point1": "Migrated a WordPress website into a modern React.js web application with Next.js.",
+      "point2": "Designed and implemented the new interface using Figma."
     }
   },
   "projects": {
@@ -110,5 +109,22 @@
     },
     "viewProject": "View project",
     "title": "Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm Fran Aragón, a software developer specialized in frontend. I currently work at adidas in the innovation team, where I build digital solutions focused on performance and scalability. While my current role involves corporate technologies, I use modern tools like React, TypeScript, Next.js, and Tailwind in my personal projects. I'm passionate about designing, building, and optimizing web experiences with a strong focus on best practices, performance, and accessibility.",
+    "viewCV": "View CV"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send message",
+    "success": "Message sent successfully",
+    "error": "There was an error sending the message",
+    "phone": "Phone numbers",
+    "emailLabel": "Email",
+    "social": "Social media"
   }
 }

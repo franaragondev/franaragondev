@@ -7,7 +7,6 @@
     "keywords": "frontend developer, web designer, react, typescript, frontend, diseño web, interfaces de usuario, UX/UI, programador web, desarrollo frontend"
   },
   "menu": {
-    "home": "Inicio",
     "projects": "Proyectos",
     "experience": "Experiencia",
     "about": "Sobre Mi",
@@ -80,21 +79,21 @@
     "adidas": {
       "title": "Desarrollador de Software",
       "period": "julio 2022 - actualidad",
-      "point1": "Crear aplicaciones desde cero basadas en React, asumiendo responsabilidades y liderazgo desde el diseño hasta el desarrollo.",
-      "point2": "Desarrollo de aplicaciones web con JavaScript o TypeScript junto con ReactJS.",
-      "point3": "Colaboración con otro departamento en el proyecto COCU (Carry Over & Color Up Tool): ayudé a crear desde cero la aplicación frontend con React (framework Vite) y desarrollé la interfaz visual."
+      "point1": "Desarrollo de aplicaciones desde cero utilizando React, liderando tanto el diseño como la implementación.",
+      "point2": "Construcción de aplicaciones web modernas con JavaScript o TypeScript, empleando ReactJS.",
+      "point3": "Colaboración interdepartamental en el proyecto COCU (Carry Over & Color Up Tool): desarrollo completo de la interfaz con React (framework Vite) y diseño de la experiencia visual del usuario."
     },
     "cei": {
       "title": "Profesor de Desarrollo Fullstack y Diseño Web",
       "period": "enero 2022 - julio 2022",
-      "point1": "Profesor del curso de diseño web con HTML5, CSS3, jQuery y JavaScript.",
-      "point2": "Profesor del curso de desarrollo fullstack con JavaScript, PHP y MySQL."
+      "point1": "Docente del curso de diseño web, impartiendo HTML5, CSS3, jQuery y JavaScript.",
+      "point2": "Docente del curso de desarrollo fullstack con JavaScript, PHP y MySQL."
     },
     "gransliving": {
       "title": "Desarrollador Frontend · Diseñador Web",
       "period": "septiembre 2021 - noviembre 2022",
-      "point1": "Convertí un sitio Wordpress en una aplicación React.js con NextJS.",
-      "point2": "Diseñé el nuevo layout en Figma y lo desarrollé."
+      "point1": "Migración de un sitio WordPress a una aplicación web moderna desarrollada con React.js y Next.js.",
+      "point2": "Diseño e implementación de la nueva interfaz visual en Figma."
     }
   },
   "projects": {
@@ -110,5 +109,22 @@
     },
     "viewProject": "Ver proyecto",
     "title": "Proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy Fran Aragón, desarrollador de software especializado en frontend. Actualmente trabajo en adidas, dentro del equipo de innovación, donde desarrollo soluciones digitales centradas en el rendimiento y la escalabilidad. Aunque en mi trabajo actual utilizo tecnologías corporativas, en mis proyectos personales aplico herramientas modernas como React, TypeScript, Next.js o Tailwind. Me apasiona diseñar, crear y optimizar experiencias web con especial atención a las buenas prácticas, el rendimiento y la accesibilidad.",
+    "viewCV": "Ver CV"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar mensaje",
+    "success": "Mensaje enviado correctamente",
+    "error": "Hubo un error al enviar el mensaje",
+    "phone": "Teléfonos",
+    "emailLabel": "Email",
+    "social": "Redes"
   }
 }
