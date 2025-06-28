@@ -156,15 +156,6 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">{t("emailLabel")}</h3>
-            <p>
-              <a href="mailto:info@franaragondev.com" className="underline">
-                info@franaragondev.com
-              </a>
-            </p>
-          </div>
-
-          <div>
             <h3 className="text-lg font-semibold">{t("social")}</h3>
             <div className="flex gap-4 mt-2 text-2xl">
               <a
