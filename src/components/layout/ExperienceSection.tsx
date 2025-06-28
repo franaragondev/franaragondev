@@ -43,7 +43,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="relative min-h-screen px-4 md:px-12 py-24  backdrop-blur-xl scroll-mt-24 bg-gray-50"
+      className="relative min-h-screen px-4 md:px-12 py-24 bg-gray-50 dark:bg-gray-900/60 backdrop-blur-xl scroll-mt-24"
     >
       <div className="text-center mb-20">
         <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white relative inline-block">
@@ -67,11 +67,10 @@ export default function ExperienceSection() {
 
             return (
               <div key={id} className="relative group">
-                <span className="absolute left-[-36px] top-4 w-3 h-3 bg-white dark:bg-gray-900 border-4 border-blue-500 rounded-full z-10" />
+                <span className="absolute left-[-36px] top-4 w-3 h-3 bg-white dark:bg-gray-800 border-4 border-blue-500 rounded-full z-10" />
 
                 <article
-                  className={`relative bg-white/30 dark:bg-gray-900/40 backdrop-blur-md rounded-3xl overflow-hidden p-6 md:p-8
-                    border-white/20 dark:border-gray-700 shadow-xl transition-transform transform group-hover:-translate-y-1`}
+                  className={`relative bg-white/30 dark:bg-gray-900/40 backdrop-blur-md rounded-3xl overflow-hidden p-6 md:p-8 border-white/20 dark:border-gray-700 shadow-xl transition-transform transform group-hover:-translate-y-1`}
                 >
                   <div
                     className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-3xl bg-gradient-to-br ${accentColor}`}
@@ -118,9 +117,9 @@ export default function ExperienceSection() {
                           {role}
                         </h3>
                         <p
-                          className={`text-sm italic ${
+                          className={`text-sm italic transition-colors ${
                             isAdidas
-                              ? "text-gray-600 dark:text-gray-400 group-hover:text-white transition-colors"
+                              ? "text-gray-600 dark:text-gray-400 group-hover:text-white"
                               : "text-gray-600 dark:text-gray-400"
                           }`}
                         >
@@ -133,7 +132,7 @@ export default function ExperienceSection() {
                       className={`list-disc list-inside text-sm leading-relaxed space-y-2 ${
                         isAdidas
                           ? "group-hover:text-white"
-                          : "text-gray-800 dark:text-gray-300"
+                          : "text-gray-800 dark:text-gray-200"
                       }`}
                     >
                       {responsibilities.map((point, idx) => (

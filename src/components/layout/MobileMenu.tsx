@@ -95,7 +95,7 @@ export default function MobileMenu({
                       href.split("#")[1] ? `#${href.split("#")[1]}` : ""
                     )
                   }
-                  className="text-gray-700 hover:text-black"
+                  className="text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
                 >
                   {label}
                 </Link>
