@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Fran Aragón | Frontend Developer Portfolio
 
-## Getting Started
+Welcome to my personal portfolio website, built to showcase my work, experience, and projects as a frontend developer. You can visit the live site here: [franaragondev.com](https://www.franaragondev.com/)
 
-First, run the development server:
+## 🧑‍💻 About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I'm Fran Aragón, a frontend developer specialized in building modern and intuitive web applications. Currently, I work at **adidas** on the innovation team, where I contribute to high-performance digital products.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+My main stack includes:
+- **React.js**, **TypeScript**, **Next.js**, **TailwindCSS**
+- UX/UI design with **Figma**
+- Strong focus on performance, scalability, and accessibility
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Projects
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### [HomeStocker](https://homestocker.app/)
+Easily manage your pantry inventory. Save money, reduce waste, and avoid unnecessary purchases.
 
-## Learn More
+### [CD Estepona Fans](https://www.cdesteponafans.com/)
+News, live matches, and exclusive content for Club Deportivo Estepona fans.
 
-To learn more about Next.js, take a look at the following resources:
+## 💼 Experience
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### adidas — *Software Developer*  
+**July 2022 – Present**  
+- Developed web apps from scratch using React and TypeScript  
+- Led UI design and frontend architecture  
+- Collaborated on the **COCU (Carry Over & Color Up Tool)** using React (Vite)  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### CEI – *Web & Fullstack Instructor*  
+**Jan 2022 – Jul 2022**  
+- Taught courses on HTML5, CSS3, JavaScript, jQuery, PHP, and MySQL
 
-## Deploy on Vercel
+### GransLiving — *Frontend Developer & Web Designer*  
+**Sep 2021 – Nov 2022**  
+- Migrated a WordPress site to a React/Next.js application  
+- Designed the UI using Figma and improved overall UX and performance
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌍 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Languages & Frameworks:** JavaScript (ES6+), TypeScript, HTML5, CSS3, React.js, Next.js, Node.js, Express.js, TailwindCSS, Jest
+- **Tools:** GitHub, Figma, Vercel, Adobe Creative Suite
+
+## 📫 Contact
+
+Feel free to reach out via the website or connect with me on [LinkedIn](https://linkedin.com/in/fran-aragon-simon).
+
+---
+
+Thanks for visiting!
