@@ -1,32 +1,38 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "franaragondev",
+  "version": "2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "disable-scroll": "^0.6.0",
-    "i18next": "^22.4.9",
-    "i18next-browser-languagedetector": "^7.0.1",
-    "i18next-http-backend": "^2.1.1",
-    "next": "^12.1.6",
-    "next-seo": "^5.4.0",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-i18next": "^12.1.4",
-    "react-router-dom": "^6.3.0",
-    "tailwindcss": "^3.0.24"
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
+    "framer-motion": "^12.19.1",
+    "lucide-react": "^0.523.0",
+    "next": "15.3.4",
+    "next-intl": "^4.3.1",
+    "nodemailer": "^7.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-scroll-parallax": "^3.4.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "prettier": "^2.6.2"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.4",
+    "next-sitemap": "^4.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

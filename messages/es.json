@@ -1,0 +1,130 @@
+{
+  "head": {
+    "title": "Fran Aragón | Desarrollador Frontend",
+    "description": "Fran Aragón, Desarrollador Frontend, especializado en React, TypeScript y diseño web. Apasionado por crear interfaces intuitivas y soluciones digitales innovadoras para entornos ágiles y de alto rendimiento.",
+    "url": "https://www.franaragondev.com/",
+    "image": "https://www.franaragondev.com/images/logo.png",
+    "keywords": "frontend developer, web designer, react, typescript, frontend, diseño web, interfaces de usuario, UX/UI, programador web, desarrollo frontend"
+  },
+  "menu": {
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "about": "Sobre Mi",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "language": {
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "cookies": {
+    "message": "Usamos cookies analíticas para mejorar la experiencia del usuario y analizar el tráfico del sitio. No almacenamos datos personales. Puedes aceptar o rechazar su uso.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "learnMore": "Saber más",
+    "linkText": "Política de Cookies"
+  },
+  "cookiesPolicy": {
+    "title": "Política de Cookies",
+    "intro": "Este sitio web utiliza cookies analíticas para entender cómo interactúan los usuarios con el sitio, mediante herramientas como Google Analytics y Search Console.",
+    "whatAreCookiesTitle": "¿Qué son las cookies?",
+    "whatAreCookies": "Las cookies son pequeños archivos que se almacenan en tu dispositivo para mejorar tu experiencia en el sitio web.",
+    "typesTitle": "Tipos de cookies que usamos",
+    "typesList": [
+      "Cookies analíticas: Nos permiten recopilar datos anónimos sobre el uso del sitio para mejorar su rendimiento y experiencia."
+    ],
+    "manageTitle": "Gestión de cookies",
+    "manageText": "Puedes aceptar o rechazar las cookies analíticas mediante el banner o a través de la configuración de tu navegador.",
+    "personalDataTitle": "Datos personales",
+    "personalDataTextPart1": "No recopilamos ni almacenamos datos personales a través de cookies ni formularios en este sitio.",
+    "personalDataTextPart2": "",
+    "privacyPolicyLinkText": "Política de Privacidad",
+    "changesTitle": "Cambios en la política",
+    "changesText": "Podemos actualizar esta política ocasionalmente. Revisa esta página para estar informado.",
+    "lastUpdated": "Última actualización: junio 2025"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "intro": "En este sitio web no almacenamos datos personales de los usuarios. Solo utilizamos herramientas externas como Google Analytics y Search Console para analizar métricas y mejorar la experiencia.",
+    "sections": [
+      {
+        "title": "1. Datos personales",
+        "text": "No recopilamos ni almacenamos datos personales a través de este sitio web."
+      },
+      {
+        "title": "2. Herramientas analíticas",
+        "text": "Utilizamos Google Analytics y Search Console para medir el tráfico y comportamiento del sitio, siempre respetando la privacidad del usuario mediante el anonimato de los datos."
+      },
+      {
+        "title": "3. Contacto",
+        "text": "Si deseas contactarme, puedes hacerlo por correo electrónico. No almacenamos tu información ni hacemos seguimiento."
+      },
+      {
+        "title": "4. Derechos",
+        "text": "Dado que no almacenamos datos personales, no aplican solicitudes de acceso, rectificación o eliminación."
+      },
+      {
+        "title": "5. Cambios en la política",
+        "text": "Podemos actualizar esta política en cualquier momento. Te recomendamos revisarla periódicamente."
+      }
+    ],
+    "lastUpdated": "Última actualización: junio 2025",
+    "cookiesLinkText": "Política de Cookies"
+  },
+  "footer": {
+    "center": "2025 Fran Aragón. Todos los derechos reservados."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "adidas": {
+      "title": "Desarrollador de Software",
+      "period": "julio 2022 - actualidad",
+      "point1": "Desarrollo de aplicaciones desde cero utilizando React, liderando tanto el diseño como la implementación.",
+      "point2": "Construcción de aplicaciones web modernas con JavaScript o TypeScript, empleando ReactJS.",
+      "point3": "Colaboración interdepartamental en el proyecto COCU (Carry Over & Color Up Tool): desarrollo completo de la interfaz con React (framework Vite) y diseño de la experiencia visual del usuario."
+    },
+    "cei": {
+      "title": "Profesor de Desarrollo Fullstack y Diseño Web",
+      "period": "enero 2022 - julio 2022",
+      "point1": "Docente del curso de diseño web, impartiendo HTML5, CSS3, jQuery y JavaScript.",
+      "point2": "Docente del curso de desarrollo fullstack con JavaScript, PHP y MySQL."
+    },
+    "gransliving": {
+      "title": "Desarrollador Frontend · Diseñador Web",
+      "period": "septiembre 2021 - noviembre 2022",
+      "point1": "Migración de un sitio WordPress a una aplicación web moderna desarrollada con React.js y Next.js.",
+      "point2": "Diseño e implementación de la nueva interfaz visual en Figma."
+    }
+  },
+  "projects": {
+    "homestocker": {
+      "title": "HomeStocker",
+      "description": "Controla y organiza el stock de tu despensa en casa fácilmente. Ahorra dinero, reduce desperdicios y evita compras innecesarias.",
+      "url": "https://homestocker.app/"
+    },
+    "cdestepona": {
+      "title": "CD Estepona Fans",
+      "description": "Noticias, partidos en directo y contenido exclusivo para los aficionados del Club Deportivo Estepona.",
+      "url": "https://www.cdesteponafans.com/"
+    },
+    "viewProject": "Ver proyecto",
+    "title": "Proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy Fran Aragón, desarrollador de software especializado en frontend. Actualmente trabajo en adidas, dentro del equipo de innovación, donde desarrollo soluciones digitales centradas en el rendimiento y la escalabilidad. Aunque en mi trabajo actual utilizo tecnologías corporativas, en mis proyectos personales aplico herramientas modernas como React, TypeScript, Next.js o Tailwind. Me apasiona diseñar, crear y optimizar experiencias web con especial atención a las buenas prácticas, el rendimiento y la accesibilidad.",
+    "viewCV": "Ver CV"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar mensaje",
+    "success": "Mensaje enviado correctamente",
+    "error": "Hubo un error al enviar el mensaje",
+    "phone": "Teléfonos",
+    "emailLabel": "Email",
+    "social": "Redes"
+  }
+}
