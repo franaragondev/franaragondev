@@ -112,7 +112,7 @@
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Soy Fran Aragón, desarrollador de software especializado en frontend. Actualmente trabajo en adidas, dentro del equipo de innovación, donde desarrollo soluciones digitales centradas en el rendimiento y la escalabilidad. Aunque en mi trabajo actual utilizo tecnologías corporativas, en mis proyectos personales aplico herramientas modernas como React, TypeScript, Next.js o Tailwind. Me apasiona diseñar, crear y optimizar experiencias web con especial atención a las buenas prácticas, el rendimiento y la accesibilidad.",
+    "description": "Soy Fran Aragón, desarrollador de software especializado en frontend.<br /><br />Actualmente trabajo en adidas, dentro del equipo de innovación, donde desarrollo soluciones digitales centradas en el rendimiento y la escalabilidad.<br /><br />Aunque en mi trabajo actual utilizo tecnologías corporativas, en mis proyectos personales aplico herramientas modernas como React, TypeScript, Next.js o Tailwind.<br /><br />Me apasiona diseñar, crear y optimizar experiencias web con especial atención a las buenas prácticas, el rendimiento y la accesibilidad.",
     "viewCV": "Ver CV"
   },
   "contact": {
