@@ -28,9 +28,10 @@ export async function generateMetadata({
   params,
 }: {
   params: { locale: string };
+  searchParams?: Record<string, string | string[] | undefined>;
 }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams.locale;
+  const awaitedParams = await Promise.resolve(params);
+  const locale = awaitedParams.locale;
 
   if (!hasLocale(routing.locales, locale)) {
     return {};

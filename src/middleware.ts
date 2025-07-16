@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "./i18n/routing";
 
@@ -21,6 +21,10 @@ export async function middleware(request: NextRequest) {
     pathname.match(/\.[^\/]+$/)
   ) {
     return NextResponse.next();
+  }
+
+  if (pathname === "/") {
+    return intlMiddleware(new NextRequest(new URL("/", request.url)));
   }
 
   logDev("Path:", pathname);
