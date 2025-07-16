@@ -25,6 +25,15 @@ export default function ProjectsSection() {
       accentColor: "from-[#9d174d] to-[#ec4899]",
       buttonTextColor: "#ec4899",
     },
+    {
+      id: "sportsteam-template",
+      title: t("sportsteam-template.title"),
+      description: t("sportsteam-template.description"),
+      url: "https://www.sportsteamtemplate.com",
+      image: "https://www.sportsteamtemplate.com/logo.webp",
+      accentColor: "from-[#059669] to-[#10b981]",
+      buttonTextColor: "#10b981",
+    },
   ];
 
   return (

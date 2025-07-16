@@ -100,12 +100,17 @@
     "homestocker": {
       "title": "HomeStocker",
       "description": "Easily control and organize the stock of your pantry at home. Save money, reduce waste, and avoid unnecessary purchases.",
-      "url": "https://homestocker.app/"
+      "url": "https://homestocker.app/en"
     },
     "cdestepona": {
       "title": "CD Estepona Fans",
       "description": "News, live matches and exclusive content for fans of Club Deportivo Estepona.",
-      "url": "https://www.cdesteponafans.com/"
+      "url": "https://www.cdesteponafans.com/en"
+    },
+    "sportsteam-template": {
+      "title": "SportsTeam Template",
+      "description": "Website template for sports teams, mainly football, but adaptable to other sports.",
+      "url": "https://www.sportsteamtemplate.com/en"
     },
     "viewProject": "View project",
     "title": "Projects"

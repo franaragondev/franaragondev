@@ -6,7 +6,11 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ["homestocker.app", "www.cdesteponafans.com"],
+    domains: [
+      "homestocker.app",
+      "www.cdesteponafans.com",
+      "www.sportsteamtemplate.com",
+    ],
   },
 };
 

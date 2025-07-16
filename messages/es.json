@@ -107,6 +107,11 @@
       "description": "Noticias, partidos en directo y contenido exclusivo para los aficionados del Club Deportivo Estepona.",
       "url": "https://www.cdesteponafans.com/"
     },
+    "sportsteam-template": {
+      "title": "SportsTeam Template",
+      "description": "Plantilla web para equipos deportivos, principalmente fútbol, pero adaptable a otros deportes.",
+      "url": "https://www.sportsteamtemplate.com"
+    },
     "viewProject": "Ver proyecto",
     "title": "Proyectos"
   },
