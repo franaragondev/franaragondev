@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { Globe } from "lucide-react";
 
+const SUPPORTED_LOCALES = ["es", "en", "fr"];
 const locales = [
   { code: "es", key: "es" },
   { code: "en", key: "en" },
@@ -19,11 +20,33 @@ export default function UserDropdown() {
   const router = useRouter();
   const pathname = usePathname();
 
-  function changeLocale(newLocale: string) {
-    const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.push(newPathname);
+  const changeLocale = (newLocale: string) => {
+    const segments = pathname.split("/").filter(Boolean);
+    const currentLocale = SUPPORTED_LOCALES.includes(segments[0])
+      ? segments[0]
+      : null;
+
+    const restOfPath = currentLocale
+      ? segments.slice(1).join("/")
+      : segments.join("/");
+
+    const newPathname =
+      newLocale === "en"
+        ? restOfPath
+          ? `/${restOfPath}`
+          : "/"
+        : restOfPath
+        ? `/${newLocale}/${restOfPath}`
+        : `/${newLocale}`;
+
+    if (newPathname === pathname) {
+      router.refresh();
+    } else {
+      router.replace(newPathname);
+    }
+
     setOpen(false);
-  }
+  };
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
