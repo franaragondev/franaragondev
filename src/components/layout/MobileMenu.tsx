@@ -31,7 +31,14 @@ export default function MobileMenu({
   const HEADER_HEIGHT_HIDDEN = 0;
 
   function changeLocale(newLocale: string) {
-    const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
+    const defaultLocale = "en";
+
+    const pathWithLocale =
+      locale === defaultLocale && !pathname.startsWith(`/${locale}`)
+        ? `/${locale}${pathname}`
+        : pathname;
+
+    const newPathname = pathWithLocale.replace(`/${locale}`, `/${newLocale}`);
     router.push(newPathname);
     onCloseAction();
   }
