@@ -1,7 +1,7 @@
 {
   "head": {
     "title": "Fran Aragón | Desarrollador Frontend",
-    "description": "Fran Aragón, Desarrollador Frontend, especializado en React, TypeScript y diseño web. Apasionado por crear interfaces intuitivas y soluciones digitales innovadoras para entornos ágiles y de alto rendimiento.",
+    "description": "Fran Aragón, Desarrollador Frontend especializado en React, TypeScript y diseño web. Apasionado por crear interfaces intuitivas y soluciones digitales innovadoras para entornos ágiles y de alto rendimiento.",
     "url": "https://www.franaragondev.com/",
     "image": "https://www.franaragondev.com/logo.png",
     "keywords": "frontend developer, web designer, react, typescript, frontend, diseño web, interfaces de usuario, UX/UI, programador web, desarrollo frontend"
@@ -78,22 +78,28 @@
     "title": "Experiencia",
     "adidas": {
       "title": "Desarrollador de Software",
-      "period": "julio 2022 - actualidad",
-      "point1": "Desarrollo de aplicaciones desde cero utilizando React, liderando tanto el diseño como la implementación.",
-      "point2": "Construcción de aplicaciones web modernas con JavaScript o TypeScript, empleando ReactJS.",
-      "point3": "Colaboración interdepartamental en el proyecto COCU (Carry Over & Color Up Tool): desarrollo completo de la interfaz con React (framework Vite) y diseño de la experiencia visual del usuario."
+      "period": "julio 2022 - septiembre 2025",
+      "point1": "Trabajo en el equipo de Innovación, contribuyendo a soluciones digitales que soportan los flujos de creación de producto de adidas y aplicaciones internas para la gestión de datos de atletas.",
+      "point2": "Contribución al desarrollo del Carry Over & Color Up Tool (COCU), centrado en construir un frontend escalable y en el diseño de la interfaz en colaboración con stakeholders de negocio.",
+      "point3": "Desarrollo de aplicaciones web modernas con JavaScript, TypeScript y ReactJS, priorizando mantenibilidad y rendimiento.",
+      "point4": "Creación de aplicaciones internas desde cero con React y Vite, cubriendo diseño inicial e implementación.",
+      "point5": "Colaboración estrecha con equipos multifuncionales (diseño, backend, negocio) para asegurar el éxito y la evolución continua de las aplicaciones.",
+      "point6": "Aplicación de buenas prácticas de testing (Jest, React Testing Library), accesibilidad y diseño responsive."
     },
     "cei": {
       "title": "Profesor de Desarrollo Fullstack y Diseño Web",
       "period": "enero 2022 - julio 2022",
       "point1": "Docente del curso de diseño web, impartiendo HTML5, CSS3, jQuery y JavaScript.",
-      "point2": "Docente del curso de desarrollo fullstack con JavaScript, PHP y MySQL."
+      "point2": "Docente del curso de desarrollo fullstack con JavaScript, PHP y MySQL.",
+      "point3": "Diseño de prácticas y proyectos con enfoque real para fortalecer habilidades técnicas y de resolución de problemas.",
+      "point4": "Mentoría individual orientada a inserción laboral y crecimiento profesional."
     },
     "gransliving": {
       "title": "Desarrollador Frontend · Diseñador Web",
       "period": "septiembre 2021 - noviembre 2022",
-      "point1": "Migración de un sitio WordPress a una aplicación web moderna desarrollada con React.js y Next.js.",
-      "point2": "Diseño e implementación de la nueva interfaz visual en Figma."
+      "point1": "Migración de WordPress a una aplicación moderna con React.js y Next.js, mejorando rendimiento y escalabilidad.",
+      "point2": "Diseño e implementación de la nueva interfaz usando Figma en coordinación con el equipo.",
+      "point3": "Optimización de responsive y experiencia de usuario según estándares UI/UX actuales."
     }
   },
   "projects": {
@@ -117,7 +123,7 @@
   },
   "about": {
     "title": "Sobre mí",
-    "description": "Soy Fran Aragón, desarrollador de software especializado en frontend.<br /><br />Actualmente trabajo en adidas, dentro del equipo de innovación, donde desarrollo soluciones digitales centradas en el rendimiento y la escalabilidad.<br /><br />Aunque en mi trabajo actual utilizo tecnologías corporativas, en mis proyectos personales aplico herramientas modernas como React, TypeScript, Next.js o Tailwind.<br /><br />Me apasiona diseñar, crear y optimizar experiencias web con especial atención a las buenas prácticas, el rendimiento y la accesibilidad.",
+    "description": "Soy Fran Aragón, desarrollador de software especializado en frontend.<br /><br />Hasta septiembre de 2025 trabajé en adidas, dentro del equipo de innovación, donde desarrollé soluciones digitales centradas en rendimiento y escalabilidad, así como aplicaciones internas para la gestión de datos de atletas.<br /><br />En mis proyectos personales aplico herramientas modernas como React, TypeScript, Next.js o Tailwind.<br /><br />Me apasiona diseñar, crear y optimizar experiencias web con especial atención a las buenas prácticas, el rendimiento y la accesibilidad.",
     "viewCV": "Ver CV"
   },
   "contact": {

@@ -6,11 +6,13 @@ import Link from "next/link";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
+  const [ready, setReady] = useState(false);
   const t = useTranslations("cookies");
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
     if (!consent) setVisible(true);
+    setReady(true);
   }, []);
 
   const acceptCookies = () => {
@@ -22,9 +24,10 @@ export default function CookieBanner() {
   const rejectCookies = () => {
     localStorage.setItem("cookie-consent", "rejected");
     setVisible(false);
+    location.reload();
   };
 
-  if (!visible) return null;
+  if (!ready || !visible) return null;
 
   return (
     <div className="fixed bottom-0 w-full bg-black text-white p-4 z-50 text-sm flex flex-col sm:flex-row justify-between items-center gap-2">
