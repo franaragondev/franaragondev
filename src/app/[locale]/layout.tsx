@@ -136,20 +136,20 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${montserrat.variable}`}>
       <body>
-        <ConsentScripts
+        {/* <ConsentScripts
           analyticsId="G-MGGZV5VBEV"
           jsonLd={[
             { id: "ld-person", data: personLd },
             { id: "ld-website", data: webSiteLd },
             { id: "ld-profilepage", data: profilePageLd },
           ]}
-        />
+        /> */}
 
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <ClientParallaxProvider>
             <main>{children}</main>
-            <CookieBanner />
+            {/* <CookieBanner /> */}
           </ClientParallaxProvider>
           <Footer />
         </NextIntlClientProvider>
