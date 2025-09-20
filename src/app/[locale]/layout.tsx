@@ -128,7 +128,7 @@ export default async function LocaleLayout({
     url: head.url,
     inLanguage: locale,
     isPartOf: { "@id": `${baseUrl}/#website` },
-    about: { "@id": `${baseUrl}/#person` },
+    mainEntity: { "@id": `${baseUrl}/#person` },
     name: head.title,
     description: head.description,
   };
