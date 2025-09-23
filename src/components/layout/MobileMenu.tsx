@@ -79,14 +79,14 @@ export default function MobileMenu({
           exit={{ opacity: 0 }}
         >
           <motion.aside
-            className="fixed top-16 left-0 h-[calc(100%-4rem)] w-54 bg-white dark:bg-gray-900 shadow-lg z-50 p-4"
+            className="fixed pt-16 left-0 h-[100vh] w-54 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md dark:bg-gray-900 z-50 p-4"
             onClick={(e) => e.stopPropagation()}
             initial={{ x: -300 }}
             animate={{ x: 0 }}
             exit={{ x: -300 }}
             transition={{ type: "tween" }}
           >
-            <nav className="flex flex-col space-y-4 mb-4">
+            <nav className="flex flex-col space-y-4 pt-10">
               {[
                 { href: `${basePath}#about`, label: t("about") },
                 { href: `${basePath}#projects`, label: t("projects") },
@@ -102,7 +102,7 @@ export default function MobileMenu({
                       href.split("#")[1] ? `#${href.split("#")[1]}` : ""
                     )
                   }
-                  className="text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
+                  className="dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition"
                 >
                   {label}
                 </Link>
@@ -112,7 +112,7 @@ export default function MobileMenu({
             <hr className="my-4 border-t border-gray-300 dark:border-gray-700" />
 
             <div className="mb-4">
-              <h3 className="mb-2 font-semibold text-gray-800 dark:text-gray-100">
+              <h3 className="mb-2 font-semibold text-[#31302f] transition ">
                 {t("language")}
               </h3>
               <ul>
@@ -121,10 +121,10 @@ export default function MobileMenu({
                     <button
                       onClick={() => changeLocale(code)}
                       disabled={code === locale}
-                      className={`py-1 px-3 rounded text-gray-800 dark:text-gray-100 ${
+                      className={`py-1 px-3 rounded text-[#eac582] ${
                         code === locale
-                          ? "font-semibold"
-                          : "hover:bg-gray-200 dark:hover:bg-gray-800"
+                          ? "font-semibold text-[#bb9b63]"
+                          : "hover:text-[#bb9b63]"
                       }`}
                     >
                       {tLang(key)}

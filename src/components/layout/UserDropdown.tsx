@@ -67,7 +67,7 @@ export default function UserDropdown() {
     <div className="relative flex" ref={dropdownRef}>
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="flex items-center gap-2 rounded px-3 py-1 hover:bg-gray-100 focus:outline-none"
+        className="flex items-center gap-2 rounded focus:outline-none text-[#eac582] hover:text-[#bb9b63] transition"
         aria-haspopup="true"
         aria-expanded={open}
         aria-label="User menu"

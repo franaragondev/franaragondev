@@ -48,7 +48,7 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
             key={href}
             href={href}
             onClick={(e) => handleClick(e, href)}
-            className="text-gray-700 hover:text-black transition"
+            className="text-[#eac582] hover:text-[#bb9b63] transition"
           >
             {label}
           </a>

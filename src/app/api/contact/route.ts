@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
     }
 
     const mailOptions = {
-      from: `"CD Estepona Fans" <noreply@cdesteponafans.com>`,
+      from: `"Fran Aragon Website" <noreply@cdesteponafans.com>`,
       to: "info@franaragondev.com",
       subject: `Nuevo mensaje de ${name}`,
       replyTo: email,
