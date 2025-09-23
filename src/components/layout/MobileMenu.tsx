@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import Link from "next/link";
+import { X } from "lucide-react";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -72,20 +73,31 @@ export default function MobileMenu({
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 bg-gray-800/40 z-40"
+          className="fixed inset-0 bg-gray-800/40 z-50"
           onClick={onCloseAction}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           <motion.aside
-            className="fixed pt-16 left-0 h-[100vh] w-54 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md dark:bg-gray-900 z-50 p-4"
+            className="fixed pt-16 left-0 h-[100vh] w-54 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md dark:bg-gray-900 z-55 p-4"
             onClick={(e) => e.stopPropagation()}
             initial={{ x: -300 }}
             animate={{ x: 0 }}
             exit={{ x: -300 }}
             transition={{ type: "tween" }}
           >
+            <div className="flex items-center md:hidden justify-start text-[#eac582] hover:text-[#bb9b63] transition z-60">
+              <button
+                onClick={onCloseAction}
+                aria-label="Toggle menu"
+                className="ml-6 -mt-3.5"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Menú */}
             <nav className="flex flex-col space-y-4 pt-10">
               {[
                 { href: `${basePath}#about`, label: t("about") },
@@ -109,10 +121,10 @@ export default function MobileMenu({
               ))}
             </nav>
 
+            {/* Cambiar idioma */}
             <hr className="my-4 border-t border-gray-300 dark:border-gray-700" />
-
             <div className="mb-4">
-              <h3 className="mb-2 font-semibold text-[#31302f] transition ">
+              <h3 className="mb-2 font-semibold text-[#31302f] transition">
                 {t("language")}
               </h3>
               <ul>

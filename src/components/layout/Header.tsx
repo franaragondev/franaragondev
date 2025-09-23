@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Logo from "@/assets/Logo";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
 import UserDropdown from "./UserDropdown";
@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50
+        className={`fixed top-0 left-0 w-full z-40
     grid grid-cols-3 items-center md:px-12 md:grid-cols-[1fr_auto_1fr]
     transition-all duration-300 ${
       isAtTop
@@ -50,22 +50,18 @@ export default function Header() {
     }`}
       >
         {/* Mobile hamburger menu button */}
-        <div className="flex items-center md:hidden justify-start text-[#eac582] hover:text-[#bb9b63] transition">
+        <div className="flex items-center md:hidden justify-start text-[#eac582] hover:text-[#bb9b63] transition z-60">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
             className="ml-0 mt-1"
           >
-            {isMenuOpen ? (
-              <X className="w-6 h-6 text-[#31302f]" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            {!isMenuOpen && <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {/* Logo */}
-        <div className="flex justify-center md:justify-start items-center">
+        <div className="flex justify-center md:justify-start items-center z-50">
           <Link href={`${basePath}`}>
             <Logo className="w-10 h-10 text-[#eac582] hover:text-[#bb9b63] transition" />
           </Link>
