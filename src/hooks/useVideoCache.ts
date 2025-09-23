@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
 
-let cachedVideoUrl: string | null = null;
-
 export function useVideoCache(src: string) {
-  const [videoUrl, setVideoUrl] = useState<string | null>(cachedVideoUrl);
+  const [videoUrl, setVideoUrl] = useState<string | null>(null);
 
   useEffect(() => {
-    if (cachedVideoUrl) return;
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    if (isSafari) {
+      // Usar la URL normal en Safari
+      setVideoUrl(src);
+      return;
+    }
 
     let isMounted = true;
 
@@ -14,8 +18,8 @@ export function useVideoCache(src: string) {
       .then((res) => res.blob())
       .then((blob) => {
         if (!isMounted) return;
-        cachedVideoUrl = URL.createObjectURL(blob);
-        setVideoUrl(cachedVideoUrl);
+        const url = URL.createObjectURL(blob);
+        setVideoUrl(url);
       });
 
     return () => {
