@@ -30,6 +30,7 @@ export default function MobileMenu({
   const tLang = useTranslations("language");
   const HEADER_HEIGHT = 72;
   const HEADER_HEIGHT_HIDDEN = 0;
+  const currentPath = pathname.replace(`/${locale}`, "") || "/";
 
   function changeLocale(newLocale: string) {
     const defaultLocale = "en";
@@ -109,13 +110,19 @@ export default function MobileMenu({
                 <Link
                   key={href}
                   href={href}
-                  onClick={(e) =>
-                    handleClick(
-                      e,
-                      href.split("#")[1] ? `#${href.split("#")[1]}` : ""
-                    )
-                  }
-                  className="dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition"
+                  onClick={(e) => {
+                    const hash = href.split("#")[1]
+                      ? `#${href.split("#")[1]}`
+                      : "";
+                    handleClick(e, hash);
+
+                    onCloseAction();
+                  }}
+                  className={`dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition ${
+                    currentPath === href.replace(`/${locale}`, "")
+                      ? "font-bold"
+                      : ""
+                  }`}
                 >
                   {label}
                 </Link>
