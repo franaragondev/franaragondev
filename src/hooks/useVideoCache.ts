@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-let cachedVideoUrl: string | null = null; // memoria compartida entre páginas
+let cachedVideoUrl: string | null = null;
 
 export function useVideoCache(src: string) {
   const [videoUrl, setVideoUrl] = useState<string | null>(cachedVideoUrl);
 
   useEffect(() => {
-    if (cachedVideoUrl) return; // ya está en memoria
+    if (cachedVideoUrl) return;
 
     let isMounted = true;
 
@@ -20,7 +20,6 @@ export function useVideoCache(src: string) {
 
     return () => {
       isMounted = false;
-      // no liberamos la URL aquí para que quede en memoria entre páginas
     };
   }, [src]);
 
