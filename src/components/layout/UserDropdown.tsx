@@ -5,8 +5,8 @@ import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { Globe } from "lucide-react";
 
-const SUPPORTED_LOCALES = ["es", "en", "fr"];
-const locales = [
+const SUPPORTED_LOCALES = ["es", "en"];
+const LOCALES = [
   { code: "es", key: "es" },
   { code: "en", key: "en" },
 ];
@@ -31,7 +31,7 @@ export default function UserDropdown() {
       : segments.join("/");
 
     const newPathname =
-      newLocale === "en"
+      newLocale === "es"
         ? restOfPath
           ? `/${restOfPath}`
           : "/"
@@ -97,7 +97,7 @@ export default function UserDropdown() {
           role="menu"
         >
           <ul>
-            {locales.map(({ code, key }) => (
+            {LOCALES.map(({ code, key }) => (
               <li key={code}>
                 <button
                   className={`block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${

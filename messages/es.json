@@ -7,9 +7,10 @@
     "keywords": ""
   },
   "menu": {
-    "projects": "Proyectos",
-    "experience": "Experiencia",
-    "about": "Sobre Mi",
+    "home": "Inicio",
+    "menu": "Menú",
+    "gallery": "Galería",
+    "about": "Sobre Nosotros",
     "contact": "Contacto",
     "language": "Idioma"
   },

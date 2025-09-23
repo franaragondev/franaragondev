@@ -45,11 +45,11 @@ export async function generateMetadata({
     keywords: head.keywords,
     authors: [{ name: "Fran Aragón" }],
     alternates: {
-      canonical: head.url,
+      canonical: head.url.replace("/es", ""),
       languages: {
-        es: `${baseUrl}/es`,
+        es: `${baseUrl}`,
         en: `${baseUrl}/en`,
-        "x-default": `${baseUrl}/en`,
+        "x-default": `${baseUrl}`,
       },
     },
     openGraph: {
@@ -77,10 +77,11 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams.locale;
+  const locale = params.locale;
 
-  if (!hasLocale(routing.locales, locale)) notFound();
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
   const messages = (await import(`../../../messages/${locale}.json`)).default;
   const { head } = messages;

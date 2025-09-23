@@ -1,7 +1,7 @@
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 
-type Locale = "es" | "en" | "fr";
+type Locale = "es" | "en";
 
 const validLocales = routing.locales as unknown as Locale[];
 
@@ -31,9 +31,9 @@ export async function getCommonMetadata(
       alternates: {
         canonical: canonicalUrl,
         languages: {
-          es: `${baseUrl}/es`,
+          es: `${baseUrl}`,
           en: `${baseUrl}/en`,
-          "x-default": `${baseUrl}/en`,
+          "x-default": `${baseUrl}`,
         },
       },
       openGraph: {

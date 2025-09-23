@@ -7,9 +7,10 @@
     "keywords": ""
   },
   "menu": {
-    "projects": "Projects",
-    "experience": "Experience",
-    "about": "About Me",
+    "home": "Home",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "about": "About Us",
     "contact": "Contact",
     "language": "Language"
   },

@@ -12,10 +12,11 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
   const HEADER_HEIGHT_HIDDEN = 0;
 
   const links = [
-    { href: "#about", label: t("about") },
-    { href: "#projects", label: t("projects") },
-    { href: "#experience", label: t("experience") },
-    { href: "#contact", label: t("contact") },
+    { href: "/", label: t("home") },
+    { href: "/menu", label: t("menu") },
+    { href: "/gallery", label: t("gallery") },
+    { href: "/about", label: t("about") },
+    { href: "/contact", label: t("contact") },
   ];
 
   const handleClick = (

@@ -100,10 +100,11 @@ export default function MobileMenu({
             {/* Menú */}
             <nav className="flex flex-col space-y-4 pt-10">
               {[
-                { href: `${basePath}#about`, label: t("about") },
-                { href: `${basePath}#projects`, label: t("projects") },
-                { href: `${basePath}#experience`, label: t("experience") },
-                { href: `${basePath}#contact`, label: t("contact") },
+                { href: `${basePath}/`, label: t("home") },
+                { href: `${basePath}/menu`, label: t("menu") },
+                { href: `${basePath}/gallery`, label: t("gallery") },
+                { href: `${basePath}/about`, label: t("about") },
+                { href: `${basePath}/contact`, label: t("contact") },
               ].map(({ href, label }) => (
                 <Link
                   key={href}
