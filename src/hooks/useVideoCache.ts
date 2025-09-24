@@ -10,8 +10,7 @@ export function useVideoCache(src: string) {
   useEffect(() => {
     const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-    if (isSafari) {
-      videoCache[src] = src;
+    if (!isSafari) {
       setVideoUrl(src);
       return;
     }
