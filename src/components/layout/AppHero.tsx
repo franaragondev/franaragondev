@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { useVideoCache } from "@/hooks/useVideoCache";
 
+const VIDEO_SRC = "/hero-bg.mp4";
+
 export default function AppHero() {
-  const videoUrl = useVideoCache("/hero-bg.mp4");
-  const [isVisible, setIsVisible] = useState(false);
+  const videoUrl = useVideoCache(VIDEO_SRC);
+
+  const [isVisible, setIsVisible] = useState(!!videoUrl);
 
   if (!videoUrl) return <div className="w-full min-h-[100vh] bg-black" />;
 
@@ -21,6 +24,7 @@ export default function AppHero() {
         playsInline
         poster="/hero-bg-frame.jpg"
         onCanPlayThrough={() => setIsVisible(true)}
+        crossOrigin="anonymous"
       />
 
       {isVisible && (

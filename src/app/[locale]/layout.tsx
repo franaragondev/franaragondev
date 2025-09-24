@@ -1,4 +1,5 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import Head from "./head";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
@@ -136,6 +137,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${montserrat.variable}`}>
+      <Head />
       <body>
         {/* <ConsentScripts
           analyticsId="G-MGGZV5VBEV"
