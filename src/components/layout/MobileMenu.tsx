@@ -70,6 +70,18 @@ export default function MobileMenu({
 
   const basePath = `/${locale}`;
 
+  const menuLinks = [
+    {
+      href: `${locale === "en" ? "/menu_english.pdf" : "/menu_español.pdf"}`,
+      label: t("menu"),
+      isPdf: true,
+    },
+    { href: `${basePath}/`, label: t("home") },
+    { href: `${basePath}/gallery`, label: t("gallery") },
+    { href: `${basePath}/about`, label: t("about") },
+    { href: `${basePath}/contact`, label: t("contact") },
+  ];
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -100,33 +112,39 @@ export default function MobileMenu({
 
             {/* Menú */}
             <nav className="flex flex-col space-y-4 pt-10">
-              {[
-                { href: `${basePath}/`, label: t("home") },
-                { href: `${basePath}/menu`, label: t("menu") },
-                { href: `${basePath}/gallery`, label: t("gallery") },
-                { href: `${basePath}/about`, label: t("about") },
-                { href: `${basePath}/contact`, label: t("contact") },
-              ].map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  onClick={(e) => {
-                    const hash = href.split("#")[1]
-                      ? `#${href.split("#")[1]}`
-                      : "";
-                    handleClick(e, hash);
-
-                    onCloseAction();
-                  }}
-                  className={`dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition ${
-                    currentPath === href.replace(`/${locale}`, "")
-                      ? "font-bold"
-                      : ""
-                  }`}
-                >
-                  {label}
-                </Link>
-              ))}
+              {menuLinks.map(({ href, label, isPdf }) =>
+                isPdf ? (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition"
+                    onClick={() => onCloseAction()}
+                  >
+                    {label}
+                  </a>
+                ) : (
+                  <Link
+                    key={href}
+                    href={href}
+                    onClick={(e) => {
+                      const hash = href.split("#")[1]
+                        ? `#${href.split("#")[1]}`
+                        : "";
+                      handleClick(e, hash);
+                      onCloseAction();
+                    }}
+                    className={`dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition ${
+                      currentPath === href.replace(`/${locale}`, "")
+                        ? "font-bold"
+                        : ""
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                )
+              )}
             </nav>
 
             {/* Cambiar idioma */}
