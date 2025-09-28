@@ -33,15 +33,30 @@ export default function MobileMenu({
   const currentPath = pathname.replace(`/${locale}`, "") || "/";
 
   function changeLocale(newLocale: string) {
-    const defaultLocale = "en";
+    const segments = pathname.split("/").filter(Boolean);
+    const currentLocale = ["es", "en"].includes(segments[0])
+      ? segments[0]
+      : null;
 
-    const pathWithLocale =
-      locale === defaultLocale && !pathname.startsWith(`/${locale}`)
-        ? `/${locale}${pathname}`
-        : pathname;
+    const restOfPath = currentLocale
+      ? segments.slice(1).join("/")
+      : segments.join("/");
 
-    const newPathname = pathWithLocale.replace(`/${locale}`, `/${newLocale}`);
-    router.push(newPathname);
+    const newPathname =
+      newLocale === "es"
+        ? restOfPath
+          ? `/${restOfPath}`
+          : "/"
+        : restOfPath
+        ? `/${newLocale}/${restOfPath}`
+        : `/${newLocale}`;
+
+    if (newPathname === pathname) {
+      router.refresh();
+    } else {
+      router.replace(newPathname);
+    }
+
     onCloseAction();
   }
 
@@ -71,12 +86,12 @@ export default function MobileMenu({
   const basePath = `/${locale}`;
 
   const menuLinks = [
+    { href: `${basePath}/`, label: t("home") },
     {
       href: `${locale === "en" ? "/menu_english.pdf" : "/menu_español.pdf"}`,
       label: t("menu"),
       isPdf: true,
     },
-    { href: `${basePath}/`, label: t("home") },
     { href: `${basePath}/gallery`, label: t("gallery") },
     { href: `${basePath}/about`, label: t("about") },
     { href: `${basePath}/contact`, label: t("contact") },
