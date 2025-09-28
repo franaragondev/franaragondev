@@ -35,7 +35,7 @@ export default function AppHero() {
         onLoadedData={() => setLoaded(true)}
       >
         <source src="/hero-bg-720p.webm" type="video/webm" />
-        <source src="/hero-bg-720p.mp4" type="video/mp4" />
+        <source src="/input.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay final */}

@@ -4,7 +4,7 @@ export default function Head() {
       <link
         rel="preload"
         as="video"
-        href="/hero-bg-720p.mp4"
+        href="/input.mp4"
         type="video/mp4"
         crossOrigin="anonymous"
       />
