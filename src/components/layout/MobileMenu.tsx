@@ -93,7 +93,7 @@ export default function MobileMenu({
           exit={{ opacity: 0 }}
         >
           <motion.aside
-            className="fixed pt-16 left-0 h-[100vh] w-54 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md dark:bg-gray-900 z-55 p-4"
+            className="fixed pt-16 left-0 h-[100vh] w-54 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md z-55 p-4"
             onClick={(e) => e.stopPropagation()}
             initial={{ x: -300 }}
             animate={{ x: 0 }}
@@ -119,7 +119,7 @@ export default function MobileMenu({
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition"
+                    className=" pt-2 text-[#eac582] hover:text-[#bb9b63] transition"
                     onClick={() => onCloseAction()}
                   >
                     {label}
@@ -135,7 +135,7 @@ export default function MobileMenu({
                       handleClick(e, hash);
                       onCloseAction();
                     }}
-                    className={`dark:text-gray-200 dark:hover:text-white pt-2 text-[#eac582] hover:text-[#bb9b63] transition ${
+                    className={`text-[#eac582] hover:text-[#bb9b63] transition ${
                       currentPath === href.replace(`/${locale}`, "")
                         ? "font-bold"
                         : ""
@@ -148,7 +148,7 @@ export default function MobileMenu({
             </nav>
 
             {/* Cambiar idioma */}
-            <hr className="my-4 border-t border-gray-300 dark:border-gray-700" />
+            <hr className="my-4 border-t border-gray-300" />
             <div className="mb-4">
               <h3 className="mb-2 font-semibold text-[#31302f] transition">
                 {t("language")}
