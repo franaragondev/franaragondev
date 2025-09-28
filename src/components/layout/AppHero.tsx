@@ -34,7 +34,6 @@ export default function AppHero() {
         poster="/hero-bg-frame.jpg"
         onLoadedData={() => setLoaded(true)}
       >
-        <source src="/hero-bg-720p.webm" type="video/webm" />
         <source src="/input.mp4" type="video/mp4" />
       </video>
 
