@@ -24,13 +24,16 @@ export default function Footer() {
 
         {/* Legal navigation links */}
         <nav className="flex flex-wrap items-center justify-center sm:justify-start gap-x-5 gap-y-2">
-          <Link href={`/${locale}/privacidad`} className="hover:underline">
+          <Link href={`/${locale}/privacidad`} className="hover:text-[#bb9b63]">
             {tPrivacy("title")}
           </Link>
-          <Link href={`/${locale}/cookies`} className="hover:underline">
+          <Link href={`/${locale}/cookies`} className="hover:text-[#bb9b63]">
             {tCookies("title")}
           </Link>
-          <Link href={`/${locale}/terminos-de-uso`} className="hover:underline">
+          <Link
+            href={`/${locale}/terminos-de-uso`}
+            className="hover:text-[#bb9b63]"
+          >
             {tTerms("title")}
           </Link>
         </nav>
@@ -45,7 +48,7 @@ export default function Footer() {
                   href="https://franaragondev.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-gray-300"
+                  className="hover:text-[#bb9b63]"
                 >
                   {chunks}
                 </a>

@@ -96,8 +96,8 @@
     "lastUpdated": "Last updated: August 2025"
   },
   "footer": {
-    "left": "2025 Template Restaurant. All rights reserved.",
-    "right": "Built by <link>Fran Aragón</link>."
+    "left": "2025 Template Restaurant. All rights reserved",
+    "right": "<link>Built by Fran Aragón</link>"
   },
   "notFound": {
     "title": "Page not found",
