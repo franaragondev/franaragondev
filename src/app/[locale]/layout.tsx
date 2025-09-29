@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#FFFFFF",
+  themeColor: "#242a2e",
 };
 
 export async function generateMetadata({
@@ -148,17 +148,19 @@ export default async function LocaleLayout({
           ]}
         /> */}
         {/* Fondo parallax fijo detrás de todo */}
-        <div className="fixed inset-0 -z-10">
-          <div
-            className="w-full h-full bg-center bg-cover"
-            style={{ backgroundImage: 'url("/page_bg.webp")' }}
-          />
-        </div>
-
+        {/* <div
+          className="fixed top-0 left-0 w-full h-[100dvh] -z-10"
+          style={{
+            backgroundImage: 'url("/page_bg.webp")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <ClientParallaxProvider>
-            <main>{children}</main>
+            <main className="relative z-10 min-h-[100dvh]">{children}</main>
             {/* <CookieBanner /> */}
           </ClientParallaxProvider>
           <Footer />
