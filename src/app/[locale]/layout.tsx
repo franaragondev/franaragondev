@@ -147,6 +147,13 @@ export default async function LocaleLayout({
             { id: "ld-profilepage", data: profilePageLd },
           ]}
         /> */}
+        {/* Fondo parallax fijo detrás de todo */}
+        <div className="fixed inset-0 -z-10">
+          <div
+            className="w-full h-full bg-center bg-cover"
+            style={{ backgroundImage: 'url("/page_bg.webp")' }}
+          />
+        </div>
 
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />

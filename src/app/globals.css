@@ -20,13 +20,7 @@
 }
 
 body {
-  background-color: var(--foreground);
-  background-image: url("/page_bg.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  color: var(--background);
+  background: var(--background);
+  color: var(--foreground);
   font-family: var(--font-montserrat), sans-serif;
 }
