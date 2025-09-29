@@ -97,7 +97,7 @@
   },
   "footer": {
     "left": "2025 Template Restaurant. All rights reserved.",
-    "right": "Website provided by <link>Fran Aragón</link>."
+    "right": "Built by <link>Fran Aragón</link>."
   },
   "notFound": {
     "title": "Page not found",
@@ -163,6 +163,8 @@
     "error": "There was an error sending the message",
     "phone": "Phone numbers",
     "emailLabel": "Email",
-    "social": "Social media"
+    "social": "Social media",
+    "location": "We are in Estepona",
+    "locationTitle": "RESTAURANT TEMPLATE"
   }
 }

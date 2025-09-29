@@ -1,15 +1,11 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { Globe } from "lucide-react";
 
 const SUPPORTED_LOCALES = ["es", "en"];
-const LOCALES = [
-  { code: "es", key: "es" },
-  { code: "en", key: "en" },
-];
 
 export default function UserDropdown() {
   const [open, setOpen] = useState(false);
@@ -20,43 +16,57 @@ export default function UserDropdown() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const changeLocale = (newLocale: string) => {
-    const segments = pathname.split("/").filter(Boolean);
-    const currentLocale = SUPPORTED_LOCALES.includes(segments[0])
-      ? segments[0]
-      : null;
+  const setLocaleCookie = useCallback((locale: string) => {
+    document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`;
+  }, []);
 
-    const restOfPath = currentLocale
-      ? segments.slice(1).join("/")
-      : segments.join("/");
+  const changeLocale = useCallback(
+    (newLocale: string) => {
+      if (newLocale === locale) {
+        setOpen(false);
+        return;
+      }
 
-    const newPathname =
-      newLocale === "es"
-        ? restOfPath
-          ? `/${restOfPath}`
-          : "/"
-        : restOfPath
-        ? `/${newLocale}/${restOfPath}`
-        : `/${newLocale}`;
+      setLocaleCookie(newLocale);
 
-    if (newPathname === pathname) {
-      router.refresh();
-    } else {
-      router.replace(newPathname);
+      const segments = pathname.split("/").filter(Boolean);
+      const currentLocale = SUPPORTED_LOCALES.includes(segments[0])
+        ? segments[0]
+        : null;
+      const restOfPath = currentLocale
+        ? segments.slice(1).join("/")
+        : segments.join("/");
+
+      const newPathname =
+        newLocale === "es"
+          ? restOfPath
+            ? `/${restOfPath}`
+            : "/"
+          : restOfPath
+          ? `/${newLocale}/${restOfPath}`
+          : `/${newLocale}`;
+
+      if (newPathname === pathname) {
+        router.refresh();
+      } else {
+        router.replace(newPathname);
+      }
+
+      setOpen(false);
+    },
+    [locale, pathname, router, setLocaleCookie]
+  );
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setOpen(false);
     }
-
-    setOpen(false);
   };
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setOpen(false);
-      }
-    }
     if (open) {
       document.addEventListener("mousedown", handleClickOutside);
     }
@@ -81,7 +91,6 @@ export default function UserDropdown() {
           stroke="currentColor"
           strokeWidth={2}
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <path
             strokeLinecap="round"
@@ -93,20 +102,20 @@ export default function UserDropdown() {
 
       {open && (
         <div
-          className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg z-50"
+          className="absolute right-0 mt-8 w-48 bg-white border border-gray-800 rounded shadow-lg z-50"
           role="menu"
         >
           <ul>
-            {LOCALES.map(({ code, key }) => (
+            {SUPPORTED_LOCALES.map((code) => (
               <li key={code}>
                 <button
-                  className={`block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${
-                    code === locale ? "font-bold bg-gray-200" : ""
+                  className={`block w-full text-left px-4 py-2 text-sm text-[#eac582] hover:bg-gray-800 bg-gray-600  ${
+                    code === locale ? "font-bold bg-gray-800" : ""
                   }`}
                   onClick={() => changeLocale(code)}
                   disabled={code === locale}
                 >
-                  {tLang(key)}
+                  {tLang(code)}
                 </button>
               </li>
             ))}

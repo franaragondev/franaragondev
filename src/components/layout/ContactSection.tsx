@@ -1,8 +1,11 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("./Map"), { ssr: false });
 
 export default function ContactSection() {
   const t = useTranslations("contact");
@@ -38,159 +41,162 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="px-4 md:px-12 py-24  scroll-mt-24">
-      <div className="text-center mb-20">
-        <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          {t("title")}
-          <span className="block h-1 w-24 bg-gradient-to-r from-purple-600 to-pink-500 rounded-full mx-auto mt-4" />
-        </h2>
-      </div>
+    <>
+      <section className="px-4 md:px-12 mt-32">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-3xl tracking-tight text-[#eac582] dark:text-white uppercase">
+            {t("title")}
+          </h2>
+        </div>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-        <form onSubmit={handleSubmit} className="space-y-6 relative">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              {t("name")}
-            </label>
-            <input
-              name="name"
-              type="text"
-              required
-              className="w-full p-3 rounded-md bg-white/60 dark:bg-gray-800/40 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white"
-            />
-          </div>
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+          <form onSubmit={handleSubmit} className="space-y-6 relative">
+            <div>
+              <label className="block text-sm font-medium text-[#eac582]">
+                {t("name")}
+              </label>
+              <input
+                name="name"
+                type="text"
+                required
+                className="w-full p-3 rounded-md bg-white/60 dark:bg-gray-800/40 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white"
+              />
+            </div>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              {t("email")}
-            </label>
-            <input
-              name="email"
-              type="email"
-              required
-              className="w-full p-3 rounded-md bg-white/60 dark:bg-gray-800/40 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white"
-            />
-          </div>
+            <div>
+              <label className="block text-sm font-medium text-[#eac582]">
+                {t("email")}
+              </label>
+              <input
+                name="email"
+                type="email"
+                required
+                className="w-full p-3 rounded-md bg-white/60 dark:bg-gray-800/40 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white"
+              />
+            </div>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-              {t("message")}
-            </label>
-            <textarea
-              name="message"
-              rows={5}
-              required
-              className="w-full p-3 rounded-md bg-white/60 dark:bg-gray-800/40 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white"
-            />
-          </div>
+            <div>
+              <label className="block text-sm font-medium text-[#eac582]">
+                {t("message")}
+              </label>
+              <textarea
+                name="message"
+                rows={5}
+                required
+                className="w-full p-3 rounded-md bg-white/60 dark:bg-gray-800/40 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white"
+              />
+            </div>
 
-          {/* Honeypot hidden field */}
-          <div
-            aria-hidden="true"
-            style={{ position: "absolute", left: "-5000px" }}
-          >
-            <input
-              type="text"
-              name="honeypot"
-              tabIndex={-1}
-              autoComplete="off"
-              ref={honeypotRef}
-              defaultValue=""
-            />
-          </div>
+            {/* Honeypot */}
+            <div
+              aria-hidden="true"
+              style={{ position: "absolute", left: "-5000px" }}
+            >
+              <input
+                type="text"
+                name="honeypot"
+                tabIndex={-1}
+                autoComplete="off"
+                ref={honeypotRef}
+                defaultValue=""
+              />
+            </div>
 
-          <button
-            type="submit"
-            disabled={status === "loading"}
-            className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition flex items-center justify-center gap-2 disabled:opacity-50"
-          >
-            {status === "loading" ? (
-              <svg
-                className="animate-spin h-5 w-5 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                />
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-                />
-              </svg>
-            ) : (
-              t("submit")
+            <button
+              type="submit"
+              disabled={status === "loading"}
+              className="cursor-pointer bg-gradient-to-r from-[#eac582] to-[#bb9b63] text-gray-900 dark:text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition flex items-center justify-center gap-2 disabled:opacity-50"
+            >
+              {status === "loading" ? (
+                <svg
+                  className="animate-spin h-5 w-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                  />
+                </svg>
+              ) : (
+                t("submit")
+              )}
+            </button>
+
+            {status === "success" && (
+              <p className="text-green-500 text-sm">{t("success")}</p>
             )}
-          </button>
+            {status === "error" && (
+              <p className="text-red-500 text-sm">{t("error")}</p>
+            )}
+            {status === "bot" && (
+              <p className="text-yellow-500 text-sm">Bot detectado 🕵️‍♂️</p>
+            )}
+          </form>
 
-          {status === "success" && (
-            <p className="text-green-500 text-sm">{t("success")}</p>
-          )}
-          {status === "error" && (
-            <p className="text-red-500 text-sm">{t("error")}</p>
-          )}
-          {status === "bot" && (
-            <p className="text-yellow-500 text-sm">Bot detectado 🕵️‍♂️</p>
-          )}
-        </form>
+          <div className="space-y-6 text-gray-800 dark:text-gray-300">
+            <div>
+              <h3 className="text-lg font-semibold text-[#eac582]">
+                {t("phone")}
+              </h3>
+              <p className="text-white hover:text-[#bb9b63]">
+                🇪🇸 <a href="tel:+34622080113">+34 *** *** ***</a>
+              </p>
+              <p className="text-white hover:text-[#bb9b63]">
+                🇪🇸 <a href="tel:+34622080113">+34 *** *** ***</a>
+              </p>
+            </div>
 
-        <div className="space-y-6 text-gray-800 dark:text-gray-300">
-          <div>
-            <h3 className="text-lg font-semibold">{t("phone")}</h3>
-            <p>
-              🇨🇿 <a href="tel:+420774363226">+420 774 363 226</a>
-            </p>
-            <p>
-              🇪🇸 <a href="tel:+34622080113">+34 622 080 113</a>
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold">{t("social")}</h3>
-            <div className="flex gap-4 mt-2 text-2xl">
-              <a
-                href="https://github.com/franaragondev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500 transition"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/fran-aragon-simon/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500 transition"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://twitter.com/franaragondev"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500 transition"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://instagram.com/franaragon13"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-pink-500 transition"
-              >
-                <FaInstagram />
-              </a>
+            <div>
+              <h3 className="text-lg font-semibold text-[#eac582]">
+                {t("social")}
+              </h3>
+              <div className="flex gap-4 mt-2 text-2xl">
+                <a
+                  href="https://twitter.com/franaragondev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#bb9b63] transition"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://instagram.com/franaragon13"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#bb9b63] transition"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <div className="h-120 w-full overflow-hidden shadow-lg mt-15 mb-10">
+        <div className="text-center my-2 pl-10 pr-10">
+          <a
+            href="https://www.google.com/maps?q=Estepona"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#eac582] hover:text-[#bb9b63] font-semibold"
+          >
+            {t("locationTitle")} · C. ****** · 29680 - Estepona (Málaga)
+          </a>
+        </div>
+        <Map t={t} />
       </div>
-    </section>
+    </>
   );
 }

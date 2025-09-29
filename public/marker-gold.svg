@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="38" height="38">
+  <defs>
+
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff4cc"/>
+      <stop offset="50%" stop-color="#eac582"/>
+      <stop offset="100%" stop-color="#bb9b63"/>
+    </linearGradient>
+
+    <filter id="drop-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <path
+    d="M192 0C108.3 0 36 72.3 36 156c0 78.5 140.5 316 156 352 15.5-36 156-273.5 156-352C348 72.3 275.7 0 192 0zm0 232c-41.4 0-75-33.6-75-75s33.6-75 75-75 75 33.6 75 75-33.6 75-75 75z"
+    fill="url(#gold-gradient)"
+    stroke="#7a5d2b"
+    stroke-width="2"
+    filter="url(#drop-shadow)"
+  />
+</svg>

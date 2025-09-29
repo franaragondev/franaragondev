@@ -97,7 +97,7 @@
   },
   "footer": {
     "left": "2025 Plantilla Restaurante. Todos los derechos reservados.",
-    "right": "Página web cedida por <link>Fran Aragón</link>."
+    "right": "Desarrollado por <link>Fran Aragón</link>."
   },
   "notFound": {
     "title": "Página no encontrada",
@@ -166,6 +166,8 @@
     "error": "Hubo un error al enviar el mensaje",
     "phone": "Teléfonos",
     "emailLabel": "Email",
-    "social": "Redes"
+    "social": "Redes",
+    "location": "Estamos en Estepona",
+    "locationTitle": "PLANTILLA RESTAURANTE"
   }
 }
