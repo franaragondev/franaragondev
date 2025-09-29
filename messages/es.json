@@ -75,6 +75,11 @@
   "footer": {
     "center": "2025 Fran Aragón. Todos los derechos reservados."
   },
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "Lo sentimos, no pudimos encontrar la página que estás buscando.",
+    "goHome": "Volver al inicio"
+  },
   "experience": {
     "title": "Experiencia",
     "adidas": {

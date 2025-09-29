@@ -38,10 +38,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section
-      id="contact"
-      className="px-4 md:px-12 py-24 bg-white/20 dark:bg-gray-900/40 backdrop-blur-xl scroll-mt-24"
-    >
+    <section id="contact" className="px-4 md:px-12 py-24  scroll-mt-24">
       <div className="text-center mb-20">
         <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           {t("title")}
