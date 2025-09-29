@@ -72,8 +72,32 @@
     "lastUpdated": "Última actualización: junio 2025",
     "cookiesLinkText": "Política de Cookies"
   },
+  "termsOfUse": {
+    "title": "Términos de Uso",
+    "intro": "Al usar este sitio web o aplicación, aceptas estos Términos de Uso y nuestra ",
+    "sections": [
+      {
+        "title": "1. Aceptación de términos",
+        "text": "El acceso y uso del servicio implica la aceptación de estos Términos y de la Política de Privacidad disponible en este sitio."
+      },
+      {
+        "title": "2. Uso permitido",
+        "text": "No debes interferir con el funcionamiento del servicio ni usarlo con fines ilegales. Podemos suspender o limitar el acceso ante uso indebido."
+      },
+      {
+        "title": "3. Cambios",
+        "text": "Podemos actualizar estos Términos. El uso continuado tras los cambios implica su aceptación."
+      },
+      {
+        "title": "4. Contacto",
+        "text": "Si tienes preguntas sobre estos Términos, contáctanos en: info@email.com. Dirección postal: Avenida España, Estepona (Málaga), España."
+      }
+    ],
+    "lastUpdated": "Última actualización: agosto 2025"
+  },
   "footer": {
-    "center": "2025 Fran Aragón. Todos los derechos reservados."
+    "left": "2025 Plantilla Restaurante. Todos los derechos reservados.",
+    "right": "Página web cedida por <link>Fran Aragón</link>."
   },
   "notFound": {
     "title": "Página no encontrada",
