@@ -44,7 +44,7 @@ export default function ContactSection() {
     <>
       <section className="px-4 md:px-12 mt-32">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-3xl tracking-tight text-[#eac582] dark:text-white uppercase">
+          <h2 className="text-3xl md:text-3xl tracking-tight text-[#eac582] uppercase">
             {t("title")}
           </h2>
         </div>
