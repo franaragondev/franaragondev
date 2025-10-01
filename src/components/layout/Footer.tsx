@@ -17,22 +17,28 @@ export default function Footer() {
       <div className="container mx-auto px-4 flex flex-col gap-3">
         {/* Logo at the top, centered */}
         <div className="flex justify-center mb-4">
-          <Logo className="w-30 h-30 text-[#eac582] hover:text-[#bb9b63] transition" />
+          <Logo className="w-30 h-30 text-[var(--primary)] hover:text-[var(--secondary)] transition" />
         </div>
 
         <UsefulLinks />
 
         {/* Legal navigation links */}
         <nav className="flex flex-wrap items-center justify-center sm:justify-start gap-x-5 gap-y-2">
-          <Link href={`/${locale}/privacidad`} className="hover:text-[#bb9b63]">
+          <Link
+            href={`/${locale}/privacidad`}
+            className="hover:text-[var(--secondary)]"
+          >
             {tPrivacy("title")}
           </Link>
-          <Link href={`/${locale}/cookies`} className="hover:text-[#bb9b63]">
+          <Link
+            href={`/${locale}/cookies`}
+            className="hover:text-[var(--secondary)]"
+          >
             {tCookies("title")}
           </Link>
           <Link
             href={`/${locale}/terminos-de-uso`}
-            className="hover:text-[#bb9b63]"
+            className="hover:text-[var(--secondary)]"
           >
             {tTerms("title")}
           </Link>
@@ -48,7 +54,7 @@ export default function Footer() {
                   href="https://franaragondev.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#bb9b63]"
+                  className="hover:text-[var(--secondary)]"
                 >
                   {chunks}
                 </a>

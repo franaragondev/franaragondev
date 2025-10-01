@@ -7,7 +7,7 @@ export default function NotFound() {
   const t = useTranslations("notFound");
   return (
     <main className="flex flex-col items-center justify-center min-h-[98vh] text-center -mt-5">
-      <h1 className="text-6xl font-bold text-[#eac582] mb-4">404</h1>
+      <h1 className="text-6xl font-bold text-[var(--primary)] mb-4">404</h1>
       <h2 className="text-2xl font-semibold mb-2 text-[#bb9b63]">
         {t("title")}
       </h2>

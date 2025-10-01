@@ -50,7 +50,7 @@ export default function Header() {
     }`}
       >
         {/* Mobile hamburger menu button */}
-        <div className="flex items-center md:hidden justify-start text-[#eac582] hover:text-[#bb9b63] transition z-60">
+        <div className="flex items-center md:hidden justify-start text-[var(--primary)] hover:text-[var(--secondary)] transition z-60">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
@@ -63,7 +63,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex justify-center md:justify-start items-center z-50">
           <Link href={`${basePath}`}>
-            <Logo className="w-10 h-10 text-[#eac582] hover:text-[#bb9b63] transition" />
+            <Logo className="w-10 h-10 text-[var(--primary)] hover:text-[var(--secondary)] transition" />
           </Link>
         </div>
 

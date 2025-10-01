@@ -77,7 +77,7 @@ export default function UserDropdown() {
     <div className="relative flex" ref={dropdownRef}>
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="flex items-center gap-2 rounded focus:outline-none text-[#eac582] hover:text-[#bb9b63] transition"
+        className="flex items-center gap-2 rounded focus:outline-none text-[var(--primary)] hover:text-[var(--secondary)] transition"
         aria-haspopup="true"
         aria-expanded={open}
         aria-label="User menu"
@@ -109,7 +109,7 @@ export default function UserDropdown() {
             {SUPPORTED_LOCALES.map((code) => (
               <li key={code}>
                 <button
-                  className={`block w-full text-left px-4 py-2 text-sm text-[#eac582] hover:bg-gray-800 bg-gray-600  ${
+                  className={`block w-full text-left px-4 py-2 text-sm text-[var(--primary)] hover:bg-gray-800 bg-gray-600  ${
                     code === locale ? "font-bold bg-gray-800" : ""
                   }`}
                   onClick={() => changeLocale(code)}

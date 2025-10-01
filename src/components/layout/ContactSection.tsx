@@ -44,7 +44,7 @@ export default function ContactSection() {
     <>
       <section className="px-4 md:px-12 mt-32">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-3xl tracking-tight text-[#eac582] uppercase">
+          <h2 className="text-3xl md:text-3xl tracking-tight text-[var(--primary)] uppercase">
             {t("title")}
           </h2>
         </div>
@@ -52,7 +52,7 @@ export default function ContactSection() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
           <form onSubmit={handleSubmit} className="space-y-6 relative">
             <div>
-              <label className="block text-sm font-medium text-[#eac582]">
+              <label className="block text-sm font-medium text-[var(--primary)]">
                 {t("name")}
               </label>
               <input
@@ -64,7 +64,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-[#eac582]">
+              <label className="block text-sm font-medium text-[var(--primary)]">
                 {t("email")}
               </label>
               <input
@@ -76,7 +76,7 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-[#eac582]">
+              <label className="block text-sm font-medium text-[var(--primary)]">
                 {t("message")}
               </label>
               <textarea
@@ -105,7 +105,7 @@ export default function ContactSection() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="cursor-pointer bg-gradient-to-r from-[#eac582] to-[#bb9b63] text-gray-900 dark:text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition flex items-center justify-center gap-2 disabled:opacity-50"
+              className="cursor-pointer bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-gray-900 dark:text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition flex items-center justify-center gap-2 disabled:opacity-50"
             >
               {status === "loading" ? (
                 <svg
@@ -146,19 +146,19 @@ export default function ContactSection() {
 
           <div className="space-y-6 text-gray-800 dark:text-gray-300">
             <div>
-              <h3 className="text-lg font-semibold text-[#eac582]">
+              <h3 className="text-lg font-semibold text-[var(--primary)]">
                 {t("phone")}
               </h3>
-              <p className="text-white hover:text-[#bb9b63]">
+              <p className="text-white hover:text-[var(--secondary)]">
                 🇪🇸 <a href="tel:+34622080113">+34 *** *** ***</a>
               </p>
-              <p className="text-white hover:text-[#bb9b63]">
+              <p className="text-white hover:text-[var(--secondary)]">
                 🇪🇸 <a href="tel:+34622080113">+34 *** *** ***</a>
               </p>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-[#eac582]">
+              <h3 className="text-lg font-semibold text-[var(--primary)]">
                 {t("social")}
               </h3>
               <div className="flex gap-4 mt-2 text-2xl">
@@ -166,7 +166,7 @@ export default function ContactSection() {
                   href="https://twitter.com/franaragondev"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#bb9b63] transition"
+                  className="text-white hover:text-[var(--secondary)] transition"
                 >
                   <FaFacebook />
                 </a>
@@ -174,7 +174,7 @@ export default function ContactSection() {
                   href="https://instagram.com/franaragon13"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#bb9b63] transition"
+                  className="text-white hover:text-[var(--secondary)] transition"
                 >
                   <FaInstagram />
                 </a>
@@ -190,7 +190,7 @@ export default function ContactSection() {
             href="https://www.google.com/maps?q=Estepona"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#eac582] hover:text-[#bb9b63] font-semibold"
+            className="text-[var(--primary)] hover:text-[var(--secondary)] font-semibold"
           >
             {t("locationTitle")} · C. ****** · 29680 - Estepona (Málaga)
           </a>

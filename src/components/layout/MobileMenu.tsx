@@ -115,7 +115,7 @@ export default function MobileMenu({
             exit={{ x: -300 }}
             transition={{ type: "tween" }}
           >
-            <div className="flex items-center md:hidden justify-start text-[#eac582] hover:text-[#bb9b63] transition z-60">
+            <div className="flex items-center md:hidden justify-start text-[var(--primary)] hover:text-[var(--secondary)] transition z-60">
               <button
                 onClick={onCloseAction}
                 aria-label="Toggle menu"
@@ -134,7 +134,7 @@ export default function MobileMenu({
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" pt-2 text-[#eac582] hover:text-[#bb9b63] transition"
+                    className=" pt-2 text-[var(--primary)] hover:text-[var(--secondary)] transition"
                     onClick={() => onCloseAction()}
                   >
                     {label}
@@ -150,7 +150,7 @@ export default function MobileMenu({
                       handleClick(e, hash);
                       onCloseAction();
                     }}
-                    className={`text-[#eac582] hover:text-[#bb9b63] transition ${
+                    className={`text-[var(--primary)] hover:text-[var(--secondary)] transition ${
                       currentPath === href.replace(`/${locale}`, "")
                         ? "font-bold"
                         : ""
@@ -174,10 +174,10 @@ export default function MobileMenu({
                     <button
                       onClick={() => changeLocale(code)}
                       disabled={code === locale}
-                      className={`py-1 px-3 rounded text-[#eac582] ${
+                      className={`py-1 px-3 rounded text-[var(--primary)] ${
                         code === locale
                           ? "font-semibold text-[#bb9b63]"
-                          : "hover:text-[#bb9b63]"
+                          : "hover:text-[var(--secondary)]"
                       }`}
                     >
                       {tLang(key)}

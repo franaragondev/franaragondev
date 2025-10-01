@@ -61,7 +61,7 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#eac582] hover:text-[#bb9b63] transition"
+            className="text-[var(--primary)] hover:text-[var(--secondary)] transition"
           >
             {label}
           </a>
@@ -70,7 +70,7 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
             key={href}
             href={`/${locale}${href === "/" ? "" : href}`}
             onClick={(e) => handleClick(e, href)}
-            className={`text-[#eac582] hover:text-[#bb9b63] transition ${
+            className={`text-[var(--primary)] hover:text-[var(--secondary)] transition ${
               isActive ? "font-bold" : ""
             }`}
           >
