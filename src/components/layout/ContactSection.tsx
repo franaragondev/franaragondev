@@ -148,10 +148,10 @@ export default function ContactSection() {
           <div>
             <h3 className="text-lg font-semibold">{t("phone")}</h3>
             <p>
-              🇨🇿 <a href="tel:+420774363226">+420 774 363 226</a>
-            </p>
-            <p>
-              🇪🇸 <a href="tel:+34622080113">+34 622 080 113</a>
+              🇨🇿{" "}
+              <a href="https://wa.me/420774363226" target="_blank">
+                +420 774 363 226
+              </a>
             </p>
           </div>
 
