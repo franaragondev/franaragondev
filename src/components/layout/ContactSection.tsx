@@ -1,7 +1,13 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaGithub,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { useTranslations } from "next-intl";
 
 export default function ContactSection() {
@@ -105,7 +111,7 @@ export default function ContactSection() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition flex items-center justify-center gap-2 disabled:opacity-50"
+            className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition flex items-center justify-center gap-2 disabled:opacity-50"
           >
             {status === "loading" ? (
               <svg
@@ -149,7 +155,11 @@ export default function ContactSection() {
             <h3 className="text-lg font-semibold">{t("phone")}</h3>
             <p>
               🇨🇿{" "}
-              <a href="https://wa.me/420774363226" target="_blank">
+              <a
+                href="https://wa.me/420774363226"
+                className="hover:text-pink-500 transition"
+                target="_blank"
+              >
                 +420 774 363 226
               </a>
             </p>
@@ -165,6 +175,14 @@ export default function ContactSection() {
                 className="hover:text-pink-500 transition"
               >
                 <FaGithub />
+              </a>
+              <a
+                href="https://wa.me/420774363226"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-500 transition"
+              >
+                <FaWhatsapp />
               </a>
               <a
                 href="https://www.linkedin.com/in/fran-aragon-simon/"
