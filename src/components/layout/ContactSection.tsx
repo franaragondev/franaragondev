@@ -36,7 +36,7 @@ export default function ContactSection() {
     }
   };
 
-  const fadeInUpTitle = {
+  const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 30 },
   };
@@ -48,10 +48,9 @@ export default function ContactSection() {
         <motion.div
           className="text-center mb-20 -mt-10"
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          animate="visible"
           transition={{ duration: 0.6 }}
-          variants={fadeInUpTitle}
+          variants={fadeInUp}
         >
           <h2 className="text-3xl md:text-3xl tracking-tight text-[var(--primary)] uppercase">
             {t("title")}
@@ -65,8 +64,7 @@ export default function ContactSection() {
             onSubmit={handleSubmit}
             className="space-y-6 relative"
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
             <div>
@@ -165,8 +163,7 @@ export default function ContactSection() {
           <motion.div
             className="space-y-6 text-gray-800 dark:text-gray-300"
             initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
             <div>
@@ -212,8 +209,7 @@ export default function ContactSection() {
       <motion.div
         className="h-120 w-full overflow-hidden shadow-lg mt-15 mb-10 rounded-xl"
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         <div className="text-center my-2 pl-10 pr-10">
