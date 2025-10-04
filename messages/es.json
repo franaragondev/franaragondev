@@ -169,5 +169,28 @@
     "social": "Redes",
     "location": "Estamos en Estepona",
     "locationTitle": "PLANTILLA RESTAURANTE"
+  },
+  "about-us": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Conoce nuestra historia, valores y pasión por la gastronomía",
+    "imageAlt": "Equipo del restaurante",
+    "story": "Nuestro restaurante nace de la pasión por la cocina tradicional y el compromiso con nuestros clientes. Desde nuestros comienzos, nos propusimos ofrecer una experiencia culinaria que combinara recetas auténticas con un ambiente acogedor, donde cada visita se convierta en un momento memorable.",
+    "journey": "A lo largo de los años, hemos crecido gracias a la confianza de nuestros clientes y al trabajo constante de nuestro equipo. Cada plato cuenta una historia, utilizando ingredientes locales de la mejor calidad y técnicas que honran nuestra tradición gastronómica.",
+    "mission": "Ofrecemos platos frescos, de calidad y elaborados con amor en cada receta. Nuestra misión es que cada cliente se sienta especial y disfrute de un servicio atento y cercano.",
+    "vision": "Queremos ser un referente gastronómico en nuestra ciudad, combinando innovación y tradición, y creando un espacio donde la comida y la amistad se encuentren.",
+    "quality": "Calidad",
+    "qualityText": "Solo ingredientes seleccionados y recetas auténticas.",
+    "fresh": "Frescura",
+    "freshText": "Productos locales y de temporada para el mejor sabor.",
+    "love": "Amor",
+    "loveText": "Cocinamos con pasión para que disfrutes cada bocado.",
+    "community": "Comunidad",
+    "communityText": "Apoyamos a productores locales y participamos en iniciativas que fortalecen nuestra comunidad.",
+    "sustainability": "Sostenibilidad",
+    "sustainabilityText": "Priorizamos prácticas responsables para cuidar el medio ambiente y el futuro de la gastronomía.",
+    "innovation": "Innovación",
+    "innovationText": "Buscamos sorprender con nuevos sabores y técnicas, manteniendo siempre nuestra esencia.",
+    "philosophyTitle": "Nuestra Filosofía",
+    "philosophyText": "Creemos que comer es más que nutrirse: es una experiencia que une a las personas, celebra la tradición y despierta los sentidos. Cada plato que servimos refleja nuestra pasión, dedicación y respeto por los ingredientes."
   }
 }

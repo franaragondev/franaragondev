@@ -166,5 +166,28 @@
     "social": "Social media",
     "location": "We are in Estepona",
     "locationTitle": "RESTAURANT TEMPLATE"
+  },
+  "about-us": {
+    "title": "About Us",
+    "subtitle": "Discover our story, values, and passion for gastronomy",
+    "imageAlt": "Restaurant team",
+    "story": "Our restaurant was born from a passion for traditional cuisine and a commitment to our guests. From the very beginning, we aimed to offer a culinary experience that combines authentic recipes with a cozy atmosphere, making every visit a memorable moment.",
+    "journey": "Over the years, we have grown thanks to the trust of our customers and the constant dedication of our team. Every dish tells a story, using the finest local ingredients and techniques that honor our culinary tradition.",
+    "mission": "We offer fresh, high-quality dishes crafted with love in every recipe. Our mission is to make every guest feel special and enjoy attentive and friendly service.",
+    "vision": "We strive to be a gastronomic reference in our city, combining innovation and tradition, creating a space where food and friendship come together.",
+    "quality": "Quality",
+    "qualityText": "Only the finest ingredients and authentic recipes.",
+    "fresh": "Freshness",
+    "freshText": "Local, seasonal products for the best flavor.",
+    "love": "Love",
+    "loveText": "We cook with passion so you can enjoy every bite.",
+    "community": "Community",
+    "communityText": "We support local producers and participate in initiatives that strengthen our community.",
+    "sustainability": "Sustainability",
+    "sustainabilityText": "We prioritize responsible practices to protect the environment and the future of gastronomy.",
+    "innovation": "Innovation",
+    "innovationText": "We strive to surprise with new flavors and techniques, always maintaining our essence.",
+    "philosophyTitle": "Our Philosophy",
+    "philosophyText": "We believe that dining is more than nourishment: it’s an experience that brings people together, celebrates tradition, and awakens the senses. Every dish we serve reflects our passion, dedication, and respect for ingredients."
   }
 }
