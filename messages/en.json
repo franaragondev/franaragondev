@@ -1,9 +1,9 @@
 {
   "head": {
     "title": "Restaurant Template | Fran Aragón",
-    "description": "Fran Aragón, Frontend Developer specialized in React, TypeScript, and web design. Passionate about building intuitive interfaces and innovative digital solutions for agile, high-performance environments.",
-    "url": "https://www.franaragondev.com/",
-    "image": "https://www.franaragondev.com/logo.png",
+    "description": "Professional restaurant website template by Fran Aragón. Built with React and TypeScript, it delivers an elegant, responsive, and visually appealing experience, showcasing menus, values, gallery, and contact information in an intuitive way.",
+    "url": "https://restaurant-template.franaragondev.com/",
+    "image": "https://restaurant-template.franaragondev.com/logo.png",
     "keywords": ""
   },
   "menu": {
@@ -83,55 +83,6 @@
     "title": "Page not found",
     "subtitle": "Sorry, we couldn't find the page you're looking for.",
     "goHome": "Go back home"
-  },
-  "experience": {
-    "title": "Experience",
-    "adidas": {
-      "title": "Software Developer",
-      "period": "July 2022 - September 2025",
-      "point1": "Worked in the Innovation team, contributing to digital solutions that supported adidas’s product creation workflows and internal applications for managing athlete data.",
-      "point2": "Contributed to the Carry Over & Color Up Tool (COCU), focusing on building a scalable frontend and collaborating on the UI with business stakeholders.",
-      "point3": "Built modern web apps with JavaScript, TypeScript, and ReactJS, prioritizing maintainability and performance.",
-      "point4": "Developed internal applications from scratch with React & Vite, supporting both initial design and implementation.",
-      "point5": "Collaborated closely with cross-functional teams (design, backend, business units) to ensure product success and continuous development.",
-      "point6": "Applied best practices in testing (Jest, React Testing Library), accessibility, and responsive design."
-    },
-    "cei": {
-      "title": "Fullstack Development & Web Design Instructor",
-      "period": "January 2022 - July 2022",
-      "point1": "Taught Web Design (HTML5, CSS3, jQuery, JavaScript) and Fullstack Development (JavaScript, PHP, MySQL).",
-      "point2": "Designed practical exercises and projects focused on real-world scenarios, plus individual mentoring to support job readiness."
-    },
-    "gransliving": {
-      "title": "Frontend Developer · Web Designer",
-      "period": "September 2021 - November 2022",
-      "point1": "Migrated the company’s WordPress site to a modern React.js application with Next.js, improving performance and scalability.",
-      "point2": "Designed and implemented the new UI with Figma in collaboration with the team; optimized responsive UX to current UI/UX standards."
-    }
-  },
-  "projects": {
-    "homestocker": {
-      "title": "HomeStocker",
-      "description": "Easily control and organize your home pantry stock. Save money, reduce waste, and avoid unnecessary purchases.",
-      "url": "https://homestocker.app/en"
-    },
-    "cdestepona": {
-      "title": "CD Estepona Fans",
-      "description": "News, live matches, and exclusive content for Club Deportivo Estepona fans.",
-      "url": "https://www.cdesteponafans.com/en"
-    },
-    "sportsteam-template": {
-      "title": "SportsTeam Template",
-      "description": "Website template for sports teams, mainly football, but adaptable to other sports.",
-      "url": "https://www.sportsteamtemplate.com/en"
-    },
-    "viewProject": "View project",
-    "title": "Projects"
-  },
-  "about": {
-    "title": "About Me",
-    "description": "I'm Fran Aragón, a software developer specialized in frontend.<br /><br />Until September 2025 I worked at adidas in the Innovation team, where I built digital solutions focused on performance and scalability, as well as internal applications for athlete data management.<br /><br />In my personal projects I use modern tools like React, TypeScript, Next.js, and Tailwind.<br /><br />I'm passionate about designing, building, and optimizing web experiences with a strong focus on best practices, performance, and accessibility.",
-    "viewCV": "View CV"
   },
   "contact": {
     "title": "Contact",
