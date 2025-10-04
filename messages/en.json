@@ -72,32 +72,12 @@
     "lastUpdated": "Last updated: June 2025",
     "cookiesLinkText": "Cookie Policy"
   },
-  "termsOfUse": {
-    "title": "Terms of Use",
-    "intro": "By using this website or application, you agree to these Terms of Use and our ",
-    "sections": [
-      {
-        "title": "1. Acceptance",
-        "text": "Accessing or using the service constitutes acceptance of these Terms and the Privacy Policy available on this site."
-      },
-      {
-        "title": "2. Permitted use",
-        "text": "You must not interfere with the operation of the service or use it for unlawful purposes. We may suspend or restrict access in case of misuse."
-      },
-      {
-        "title": "3. Changes",
-        "text": "We may update these Terms. Continued use after changes means you accept the updated Terms."
-      },
-      {
-        "title": "4. Contact",
-        "text": "For questions about these Terms, contact us at: info@email.com. Postal address: Avenida España, Estepona (Málaga), Spain."
-      }
-    ],
-    "lastUpdated": "Last updated: August 2025"
-  },
   "footer": {
-    "left": "2025 Template Restaurant. All rights reserved",
-    "right": "<link>Built by Fran Aragón</link>"
+    "left": "2025 Restaurant Template. All rights reserved",
+    "right": "<link>Developed by Fran Aragón</link>",
+    "slogan": "A unique and high-quality gastronomic experience, from our kitchen to your table.",
+    "contactTitle": "Contact",
+    "legalTitle": "Legal"
   },
   "notFound": {
     "title": "Page not found",

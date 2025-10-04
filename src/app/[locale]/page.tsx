@@ -224,12 +224,13 @@ export default function HomePageExtended() {
           {menuItems.map((item, idx) => (
             <motion.div
               key={idx}
-              className="rounded-xl overflow-hidden shadow-lg group cursor-pointer transition-transform transform hover:scale-105"
+              className="relative rounded-xl shadow-lg overflow-hidden group cursor-pointer transition-transform transform hover:scale-105"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.6 }}
             >
+              {/* Imagen que ocupa todo el contenedor */}
               <div className="relative h-64 w-full">
                 <Image
                   src={item.image}
@@ -238,9 +239,22 @@ export default function HomePageExtended() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6 bg-gray-900 text-gray-200">
-                <h4 className="font-semibold text-lg">{item.name}</h4>
-                <p className="mt-2 text-sm">{item.description}</p>
+
+              {/* Overlay de gradiente */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] opacity-10 group-hover:opacity-20 transition-opacity" />
+
+              {/* Texto con fondo semi-transparente (sin afectar la opacidad del texto) */}
+              <div
+                className="relative z-10 p-6 rounded-b-xl"
+                style={{
+                  background:
+                    "linear-gradient(to top, rgba(249, 115, 22, 0.2), rgba(251, 191, 36, 0.2))",
+                }}
+              >
+                <h4 className="font-semibold text-lg text-white">
+                  {item.name}
+                </h4>
+                <p className="text-sm mt-1 text-gray-200">{item.description}</p>
               </div>
             </motion.div>
           ))}
