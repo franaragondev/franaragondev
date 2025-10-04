@@ -67,7 +67,7 @@ export default function AboutUsSection() {
           transition={{ duration: 0.8 }}
         >
           <Image
-            src="/images/restaurant-team.jpg"
+            src="/images/restaurant-team.webp"
             alt={t("imageAlt")}
             fill
             className="object-cover"

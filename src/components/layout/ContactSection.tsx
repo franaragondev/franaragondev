@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
 
 const Map = dynamic(() => import("./Map"), { ssr: false });
 
@@ -16,22 +17,17 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     if (honeypotRef.current?.value) {
       setStatus("bot");
       return;
     }
-
     const form = e.currentTarget;
     const data = new FormData(form);
-
     setStatus("loading");
-
     const response = await fetch("/api/contact", {
       method: "POST",
       body: data,
     });
-
     if (response.ok) {
       setStatus("success");
       form.reset();
@@ -40,17 +36,39 @@ export default function ContactSection() {
     }
   };
 
+  const fadeInUpTitle = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 30 },
+  };
+
   return (
     <>
       <section className="px-4 md:px-12 mt-32">
-        <div className="text-center mb-10">
+        {/* --- Título --- */}
+        <motion.div
+          className="text-center mb-20 -mt-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUpTitle}
+        >
           <h2 className="text-3xl md:text-3xl tracking-tight text-[var(--primary)] uppercase">
             {t("title")}
           </h2>
-        </div>
+        </motion.div>
 
+        {/* --- Contenido: Formulario + Contacto --- */}
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-          <form onSubmit={handleSubmit} className="space-y-6 relative">
+          {/* Formulario */}
+          <motion.form
+            onSubmit={handleSubmit}
+            className="space-y-6 relative"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <div>
               <label className="block text-sm font-medium text-[var(--primary)]">
                 {t("name")}
@@ -98,7 +116,6 @@ export default function ContactSection() {
                 tabIndex={-1}
                 autoComplete="off"
                 ref={honeypotRef}
-                defaultValue=""
               />
             </div>
 
@@ -142,17 +159,24 @@ export default function ContactSection() {
             {status === "bot" && (
               <p className="text-yellow-500 text-sm">Bot detectado 🕵️‍♂️</p>
             )}
-          </form>
+          </motion.form>
 
-          <div className="space-y-6 text-gray-800 dark:text-gray-300">
+          {/* Información de contacto */}
+          <motion.div
+            className="space-y-6 text-gray-800 dark:text-gray-300"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <div>
               <h3 className="text-lg font-semibold text-[var(--primary)]">
                 {t("phone")}
               </h3>
-              <p className="text-white hover:text-[var(--secondary)]">
+              <p className="text-white hover:text-[var(--secondary)] transition">
                 🇪🇸 <a href="tel:+34622080113">+34 *** *** ***</a>
               </p>
-              <p className="text-white hover:text-[var(--secondary)]">
+              <p className="text-white hover:text-[var(--secondary)] transition">
                 🇪🇸 <a href="tel:+34622080113">+34 *** *** ***</a>
               </p>
             </div>
@@ -163,7 +187,7 @@ export default function ContactSection() {
               </h3>
               <div className="flex gap-4 mt-2 text-2xl">
                 <a
-                  href="https://twitter.com/franaragondev"
+                  href="https://twitter.com/#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-[var(--secondary)] transition"
@@ -171,7 +195,7 @@ export default function ContactSection() {
                   <FaFacebook />
                 </a>
                 <a
-                  href="https://instagram.com/franaragon13"
+                  href="https://instagram.com/#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-[var(--secondary)] transition"
@@ -180,23 +204,30 @@ export default function ContactSection() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <div className="h-120 w-full overflow-hidden shadow-lg mt-15 mb-10">
+      {/* --- Mapa --- */}
+      <motion.div
+        className="h-120 w-full overflow-hidden shadow-lg mt-15 mb-10 rounded-xl"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="text-center my-2 pl-10 pr-10">
           <a
             href="https://www.google.com/maps?q=Estepona"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--primary)] hover:text-[var(--secondary)] font-semibold"
+            className="text-[var(--primary)] hover:text-[var(--secondary)] font-semibold transition"
           >
             {t("locationTitle")} · C. ****** · 29680 - Estepona (Málaga)
           </a>
         </div>
         <Map t={t} />
-      </div>
+      </motion.div>
     </>
   );
 }
