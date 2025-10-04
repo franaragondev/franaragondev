@@ -3,7 +3,8 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
-import { Globe } from "lucide-react";
+import { Globe, Check } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const SUPPORTED_LOCALES = ["es", "en"];
 
@@ -100,28 +101,37 @@ export default function UserDropdown() {
         </svg>
       </button>
 
-      {open && (
-        <div
-          className="absolute right-0 mt-8 w-48 bg-white border border-gray-800 rounded shadow-lg z-50"
-          role="menu"
-        >
-          <ul>
-            {SUPPORTED_LOCALES.map((code) => (
-              <li key={code}>
-                <button
-                  className={`block w-full text-left px-4 py-2 text-sm text-[var(--primary)] hover:bg-gray-800 bg-gray-600  ${
-                    code === locale ? "font-bold bg-gray-800" : ""
-                  }`}
-                  onClick={() => changeLocale(code)}
-                  disabled={code === locale}
-                >
-                  {tLang(code)}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: -10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute right-0 mt-10 w-48 bg-gray-800 border border-gray-700 rounded-xl shadow-lg z-50 overflow-hidden"
+            role="menu"
+          >
+            <ul>
+              {SUPPORTED_LOCALES.map((code) => (
+                <li key={code}>
+                  <button
+                    className={`cursor-pointer flex items-center justify-between w-full text-left px-4 py-3 text-sm text-gray-200 hover:bg-[var(--primary)] hover:text-white transition ${
+                      code === locale
+                        ? "bg-[var(--secondary)] text-gray-900 font-semibold"
+                        : ""
+                    }`}
+                    onClick={() => changeLocale(code)}
+                    disabled={code === locale}
+                  >
+                    {tLang(code)}
+                    {code === locale && <Check className="w-4 h-4" />}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

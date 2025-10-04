@@ -189,5 +189,13 @@
     "innovationText": "We strive to surprise with new flavors and techniques, always maintaining our essence.",
     "philosophyTitle": "Our Philosophy",
     "philosophyText": "We believe that dining is more than nourishment: it’s an experience that brings people together, celebrates tradition, and awakens the senses. Every dish we serve reflects our passion, dedication, and respect for ingredients."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Explore our restaurant, dishes, and special moments through our images",
+    "all": "All",
+    "platos": "Dishes",
+    "local": "Restaurant",
+    "eventos": "Events"
   }
 }

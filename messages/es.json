@@ -192,5 +192,13 @@
     "innovationText": "Buscamos sorprender con nuevos sabores y técnicas, manteniendo siempre nuestra esencia.",
     "philosophyTitle": "Nuestra Filosofía",
     "philosophyText": "Creemos que comer es más que nutrirse: es una experiencia que une a las personas, celebra la tradición y despierta los sentidos. Cada plato que servimos refleja nuestra pasión, dedicación y respeto por los ingredientes."
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Descubre nuestro restaurante, platos y momentos especiales a través de nuestras imágenes",
+    "all": "Todas",
+    "platos": "Platos",
+    "local": "Local",
+    "eventos": "Eventos"
   }
 }

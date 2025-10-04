@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
       "www.cdesteponafans.com",
       "www.sportsteamtemplate.com",
     ],
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60 * 60 * 24 * 30,
   },
   webpack(config) {
     config.module.rules.push({
