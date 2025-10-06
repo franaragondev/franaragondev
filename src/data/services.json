@@ -1,0 +1,38 @@
+[
+    {
+        "title": "service1Title",
+        "text": "service1Text",
+        "image": "/images/services/interior-design.webp",
+        "alt": "Diseño de interiores elegante y funcional"
+    },
+    {
+        "title": "service2Title",
+        "text": "service2Text",
+        "image": "/images/services/renovation.webp",
+        "alt": "Reforma integral de vivienda moderna"
+    },
+    {
+        "title": "service3Title",
+        "text": "service3Text",
+        "image": "/images/services/decor.webp",
+        "alt": "Decoración personalizada para espacios únicos"
+    },
+    {
+        "title": "service4Title",
+        "text": "service4Text",
+        "image": "/images/services/consulting.webp",
+        "alt": "Asesoramiento profesional en diseño"
+    },
+    {
+        "title": "service5Title",
+        "text": "service5Text",
+        "image": "/images/services/project-management.webp",
+        "alt": "Gestión integral de proyectos de interiorismo"
+    },
+    {
+        "title": "service6Title",
+        "text": "service6Text",
+        "image": "/images/services/3d-visualization.webp",
+        "alt": "Visualización 3D de espacios antes de la reforma"
+    }
+]

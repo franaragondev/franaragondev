@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import {
-  FaUtensils,
-  FaLeaf,
-  FaHeart,
-  FaUsers,
-  FaRecycle,
+  FaCheckCircle,
   FaLightbulb,
+  FaFire,
+  FaHandshake,
+  FaBalanceScale,
+  FaChartLine,
 } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
@@ -21,19 +21,23 @@ export default function AboutUsSection() {
   };
 
   const values = [
-    { icon: <FaUtensils />, title: t("quality"), text: t("qualityText") },
-    { icon: <FaLeaf />, title: t("fresh"), text: t("freshText") },
-    { icon: <FaHeart />, title: t("love"), text: t("loveText") },
-    { icon: <FaUsers />, title: t("community"), text: t("communityText") },
-    {
-      icon: <FaRecycle />,
-      title: t("sustainability"),
-      text: t("sustainabilityText"),
-    },
+    { icon: <FaCheckCircle />, title: t("quality"), text: t("qualityText") },
     {
       icon: <FaLightbulb />,
       title: t("innovation"),
       text: t("innovationText"),
+    },
+    { icon: <FaFire />, title: t("passion"), text: t("passionText") },
+    { icon: <FaHandshake />, title: t("community"), text: t("communityText") },
+    {
+      icon: <FaBalanceScale />,
+      title: t("responsibility"),
+      text: t("responsibilityText"),
+    },
+    {
+      icon: <FaChartLine />,
+      title: t("growth"),
+      text: t("growthText"),
     },
   ];
 
@@ -67,7 +71,7 @@ export default function AboutUsSection() {
           transition={{ duration: 0.8 }}
         >
           <Image
-            src="/images/restaurant-team.webp"
+            src="/images/business-team.webp"
             alt={t("imageAlt")}
             fill
             className="object-cover"

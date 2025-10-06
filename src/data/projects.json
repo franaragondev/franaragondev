@@ -1,0 +1,38 @@
+[
+    {
+        "title": "project1Title",
+        "text": "project1Text",
+        "image": "/images/projects/project1.webp",
+        "alt": "project1Alt"
+    },
+    {
+        "title": "project2Title",
+        "text": "project2Text",
+        "image": "/images/projects/project2.webp",
+        "alt": "project2Alt"
+    },
+    {
+        "title": "project3Title",
+        "text": "project3Text",
+        "image": "/images/projects/project3.webp",
+        "alt": "project3Alt"
+    },
+    {
+        "title": "project4Title",
+        "text": "project4Text",
+        "image": "/images/projects/project4.webp",
+        "alt": "project4Alt"
+    },
+    {
+        "title": "project5Title",
+        "text": "project5Text",
+        "image": "/images/projects/project5.webp",
+        "alt": "project5Alt"
+    },
+    {
+        "title": "project6Title",
+        "text": "project6Text",
+        "image": "/images/projects/project6.webp",
+        "alt": "project6Alt"
+    }
+]

@@ -87,12 +87,8 @@ export default function MobileMenu({
 
   const menuLinks = [
     { href: `${basePath}/`, label: t("home") },
-    {
-      href: `${locale === "en" ? "/menu_english.pdf" : "/menu_español.pdf"}`,
-      label: t("menu"),
-      isPdf: true,
-    },
-    { href: `${basePath}/gallery`, label: t("gallery") },
+    { href: `${basePath}/services`, label: t("services") },
+    { href: `${basePath}/projects`, label: t("projects") },
     { href: `${basePath}/about`, label: t("about") },
     { href: `${basePath}/contact`, label: t("contact") },
   ];
@@ -127,39 +123,26 @@ export default function MobileMenu({
 
             {/* Menú */}
             <nav className="flex flex-col space-y-4 pt-10">
-              {menuLinks.map(({ href, label, isPdf }) =>
-                isPdf ? (
-                  <a
-                    key={href}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className=" pt-2 text-[var(--primary)] hover:text-[var(--secondary)] transition"
-                    onClick={() => onCloseAction()}
-                  >
-                    {label}
-                  </a>
-                ) : (
-                  <Link
-                    key={href}
-                    href={href}
-                    onClick={(e) => {
-                      const hash = href.split("#")[1]
-                        ? `#${href.split("#")[1]}`
-                        : "";
-                      handleClick(e, hash);
-                      onCloseAction();
-                    }}
-                    className={`text-[var(--primary)] hover:text-[var(--secondary)] transition ${
-                      currentPath === href.replace(`/${locale}`, "")
-                        ? "font-bold"
-                        : ""
-                    }`}
-                  >
-                    {label}
-                  </Link>
-                )
-              )}
+              {menuLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={(e) => {
+                    const hash = href.split("#")[1]
+                      ? `#${href.split("#")[1]}`
+                      : "";
+                    handleClick(e, hash);
+                    onCloseAction();
+                  }}
+                  className={`text-[var(--primary)] hover:text-[var(--secondary)] transition ${
+                    currentPath === href.replace(`/${locale}`, "")
+                      ? "font-bold"
+                      : ""
+                  }`}
+                >
+                  {label}
+                </Link>
+              ))}
             </nav>
 
             {/* Cambiar idioma */}

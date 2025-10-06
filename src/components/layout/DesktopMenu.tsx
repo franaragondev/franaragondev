@@ -16,12 +16,8 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
 
   const links = [
     { href: "/", label: t("home") },
-    {
-      href: locale === "en" ? "/menu_english.pdf" : "/menu_español.pdf",
-      label: t("menu"),
-      isPdf: true,
-    },
-    { href: "/gallery", label: t("gallery") },
+    { href: "/services", label: t("services") },
+    { href: "/projects", label: t("projects") },
     { href: "/about", label: t("about") },
     { href: "/contact", label: t("contact") },
   ];
@@ -52,20 +48,10 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
 
   return (
     <nav className="flex gap-6">
-      {links.map(({ href, label, isPdf }) => {
+      {links.map(({ href, label }) => {
         const isActive = normalizedPath === href;
 
-        return isPdf ? (
-          <a
-            key={href}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--primary)] hover:text-[var(--secondary)] transition"
-          >
-            {label}
-          </a>
-        ) : (
+        return (
           <a
             key={href}
             href={`/${locale}${href === "/" ? "" : href}`}
