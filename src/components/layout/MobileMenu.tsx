@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import Link from "next/link";
+import { X } from "lucide-react";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -29,17 +30,33 @@ export default function MobileMenu({
   const tLang = useTranslations("language");
   const HEADER_HEIGHT = 72;
   const HEADER_HEIGHT_HIDDEN = 0;
+  const currentPath = pathname.replace(`/${locale}`, "") || "/";
 
   function changeLocale(newLocale: string) {
-    const defaultLocale = "en";
+    const segments = pathname.split("/").filter(Boolean);
+    const currentLocale = ["es", "en"].includes(segments[0])
+      ? segments[0]
+      : null;
 
-    const pathWithLocale =
-      locale === defaultLocale && !pathname.startsWith(`/${locale}`)
-        ? `/${locale}${pathname}`
-        : pathname;
+    const restOfPath = currentLocale
+      ? segments.slice(1).join("/")
+      : segments.join("/");
 
-    const newPathname = pathWithLocale.replace(`/${locale}`, `/${newLocale}`);
-    router.push(newPathname);
+    const newPathname =
+      newLocale === "es"
+        ? restOfPath
+          ? `/${restOfPath}`
+          : "/"
+        : restOfPath
+        ? `/${newLocale}/${restOfPath}`
+        : `/${newLocale}`;
+
+    if (newPathname === pathname) {
+      router.refresh();
+    } else {
+      router.replace(newPathname);
+    }
+
     onCloseAction();
   }
 
@@ -68,51 +85,87 @@ export default function MobileMenu({
 
   const basePath = `/${locale}`;
 
+  const menuLinks = [
+    { href: `${basePath}/`, label: t("home") },
+    {
+      href: `${locale === "en" ? "/menu_english.pdf" : "/menu_español.pdf"}`,
+      label: t("menu"),
+      isPdf: true,
+    },
+    { href: `${basePath}/gallery`, label: t("gallery") },
+    { href: `${basePath}/about`, label: t("about") },
+    { href: `${basePath}/contact`, label: t("contact") },
+  ];
+
   return (
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 bg-gray-800/40 z-40"
+          className="fixed inset-0 bg-gray-800/40 z-50"
           onClick={onCloseAction}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           <motion.aside
-            className="fixed top-16 left-0 h-[calc(100%-4rem)] w-54 bg-white dark:bg-gray-900 shadow-lg z-50 p-4"
+            className="fixed pt-16 left-0 h-[100vh] w-54 bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md z-55 p-4"
             onClick={(e) => e.stopPropagation()}
             initial={{ x: -300 }}
             animate={{ x: 0 }}
             exit={{ x: -300 }}
             transition={{ type: "tween" }}
           >
-            <nav className="flex flex-col space-y-4 mb-4">
-              {[
-                { href: `${basePath}#about`, label: t("about") },
-                { href: `${basePath}#projects`, label: t("projects") },
-                { href: `${basePath}#experience`, label: t("experience") },
-                { href: `${basePath}#contact`, label: t("contact") },
-              ].map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  onClick={(e) =>
-                    handleClick(
-                      e,
-                      href.split("#")[1] ? `#${href.split("#")[1]}` : ""
-                    )
-                  }
-                  className="text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
-                >
-                  {label}
-                </Link>
-              ))}
+            <div className="flex items-center md:hidden justify-start text-[var(--primary)] hover:text-[var(--secondary)] transition z-60">
+              <button
+                onClick={onCloseAction}
+                aria-label="Toggle menu"
+                className="ml-6 -mt-3.5"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Menú */}
+            <nav className="flex flex-col space-y-4 pt-10">
+              {menuLinks.map(({ href, label, isPdf }) =>
+                isPdf ? (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" pt-2 text-[var(--primary)] hover:text-[var(--secondary)] transition"
+                    onClick={() => onCloseAction()}
+                  >
+                    {label}
+                  </a>
+                ) : (
+                  <Link
+                    key={href}
+                    href={href}
+                    onClick={(e) => {
+                      const hash = href.split("#")[1]
+                        ? `#${href.split("#")[1]}`
+                        : "";
+                      handleClick(e, hash);
+                      onCloseAction();
+                    }}
+                    className={`text-[var(--primary)] hover:text-[var(--secondary)] transition ${
+                      currentPath === href.replace(`/${locale}`, "")
+                        ? "font-bold"
+                        : ""
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                )
+              )}
             </nav>
 
-            <hr className="my-4 border-t border-gray-300 dark:border-gray-700" />
-
+            {/* Cambiar idioma */}
+            <hr className="my-4 border-t border-gray-300" />
             <div className="mb-4">
-              <h3 className="mb-2 font-semibold text-gray-800 dark:text-gray-100">
+              <h3 className="mb-2 font-semibold text-[#31302f] transition">
                 {t("language")}
               </h3>
               <ul>
@@ -121,10 +174,10 @@ export default function MobileMenu({
                     <button
                       onClick={() => changeLocale(code)}
                       disabled={code === locale}
-                      className={`py-1 px-3 rounded text-gray-800 dark:text-gray-100 ${
+                      className={`py-1 px-3 rounded text-[var(--primary)] ${
                         code === locale
-                          ? "font-semibold"
-                          : "hover:bg-gray-200 dark:hover:bg-gray-800"
+                          ? "font-semibold text-[#bb9b63]"
+                          : "hover:text-[var(--secondary)]"
                       }`}
                     >
                       {tLang(key)}

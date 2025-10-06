@@ -1,6 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname } from "next/navigation";
 
 type DesktopMenuProps = {
   isHeaderVisible: boolean;
@@ -8,15 +9,24 @@ type DesktopMenuProps = {
 
 export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
   const t = useTranslations("menu");
+  const locale = useLocale();
+  const pathname = usePathname();
   const HEADER_HEIGHT = 72;
   const HEADER_HEIGHT_HIDDEN = 0;
 
   const links = [
-    { href: "#about", label: t("about") },
-    { href: "#projects", label: t("projects") },
-    { href: "#experience", label: t("experience") },
-    { href: "#contact", label: t("contact") },
+    { href: "/", label: t("home") },
+    {
+      href: locale === "en" ? "/menu_english.pdf" : "/menu_español.pdf",
+      label: t("menu"),
+      isPdf: true,
+    },
+    { href: "/gallery", label: t("gallery") },
+    { href: "/about", label: t("about") },
+    { href: "/contact", label: t("contact") },
   ];
+
+  const normalizedPath = pathname.replace(`/${locale}`, "") || "/";
 
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -42,13 +52,27 @@ export function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
 
   return (
     <nav className="flex gap-6">
-      {links.map(({ href, label }) => {
-        return (
+      {links.map(({ href, label, isPdf }) => {
+        const isActive = normalizedPath === href;
+
+        return isPdf ? (
           <a
             key={href}
             href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[var(--primary)] hover:text-[var(--secondary)] transition"
+          >
+            {label}
+          </a>
+        ) : (
+          <a
+            key={href}
+            href={`/${locale}${href === "/" ? "" : href}`}
             onClick={(e) => handleClick(e, href)}
-            className="text-gray-700 hover:text-black transition"
+            className={`text-[var(--primary)] hover:text-[var(--secondary)] transition ${
+              isActive ? "font-bold" : ""
+            }`}
           >
             {label}
           </a>

@@ -1,0 +1,102 @@
+[
+    {
+        "src": "/images/gallery/gallery1.webp",
+        "alt": "Interior del restaurante",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery2.webp",
+        "alt": "Plato principal",
+        "category": "Platos"
+    },
+    {
+        "src": "/images/gallery/gallery3.webp",
+        "alt": "Equipo del restaurante",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery4.webp",
+        "alt": "Postres",
+        "category": "Platos"
+    },
+    {
+        "src": "/images/gallery/gallery5.webp",
+        "alt": "Barra de bebidas",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery6.webp",
+        "alt": "Clientes disfrutando",
+        "category": "Eventos"
+    },
+    {
+        "src": "/images/gallery/gallery7.webp",
+        "alt": "Entrada del restaurante",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery8.webp",
+        "alt": "Cocinero preparando plato",
+        "category": "Platos"
+    },
+    {
+        "src": "/images/gallery/gallery9.webp",
+        "alt": "Evento especial",
+        "category": "Eventos"
+    },
+    {
+        "src": "/images/gallery/gallery10.webp",
+        "alt": "Mesa decorada",
+        "category": "Eventos"
+    },
+    {
+        "src": "/images/gallery/gallery11.webp",
+        "alt": "Chef y equipo",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery12.webp",
+        "alt": "Sopa del día",
+        "category": "Platos"
+    },
+    {
+        "src": "/images/gallery/gallery13.webp",
+        "alt": "Decoración interior",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery14.webp",
+        "alt": "Bebidas especiales",
+        "category": "Platos"
+    },
+    {
+        "src": "/images/gallery/gallery15.webp",
+        "alt": "Celebración en restaurante",
+        "category": "Eventos"
+    },
+    {
+        "src": "/images/gallery/gallery16.webp",
+        "alt": "Vistas desde terraza",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery17.webp",
+        "alt": "Entrante gourmet",
+        "category": "Platos"
+    },
+    {
+        "src": "/images/gallery/gallery18.webp",
+        "alt": "Show cooking",
+        "category": "Eventos"
+    },
+    {
+        "src": "/images/gallery/gallery19.webp",
+        "alt": "Equipo saludando",
+        "category": "Local"
+    },
+    {
+        "src": "/images/gallery/gallery20.webp",
+        "alt": "Postre creativo",
+        "category": "Platos"
+    }
+]

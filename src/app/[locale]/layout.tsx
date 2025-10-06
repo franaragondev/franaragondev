@@ -1,4 +1,5 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import Head from "./head";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
@@ -19,7 +20,7 @@ const montserrat = Montserrat({
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#FFFFFF",
+  themeColor: "#242a2e",
 };
 
 export async function generateMetadata({
@@ -45,11 +46,11 @@ export async function generateMetadata({
     keywords: head.keywords,
     authors: [{ name: "Fran Aragón" }],
     alternates: {
-      canonical: head.url,
+      canonical: head.url.replace("/es", ""),
       languages: {
-        es: `${baseUrl}/es`,
+        es: `${baseUrl}`,
         en: `${baseUrl}/en`,
-        "x-default": `${baseUrl}/en`,
+        "x-default": `${baseUrl}`,
       },
     },
     openGraph: {
@@ -77,10 +78,11 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams.locale;
+  const locale = params.locale;
 
-  if (!hasLocale(routing.locales, locale)) notFound();
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
   const messages = (await import(`../../../messages/${locale}.json`)).default;
   const { head } = messages;
@@ -135,6 +137,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${montserrat.variable}`}>
+      <Head />
       <body>
         {/* <ConsentScripts
           analyticsId="G-MGGZV5VBEV"
@@ -144,11 +147,20 @@ export default async function LocaleLayout({
             { id: "ld-profilepage", data: profilePageLd },
           ]}
         /> */}
-
+        {/* Fondo parallax fijo detrás de todo */}
+        {/* <div
+          className="fixed top-0 left-0 w-full h-[100dvh] -z-10"
+          style={{
+            backgroundImage: 'url("/page_bg.webp")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <ClientParallaxProvider>
-            <main>{children}</main>
+            <main className="relative z-10 min-h-[100dvh]">{children}</main>
             {/* <CookieBanner /> */}
           </ClientParallaxProvider>
           <Footer />

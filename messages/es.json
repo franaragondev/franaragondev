@@ -1,15 +1,16 @@
 {
   "head": {
     "title": "Plantilla Negocios | Fran Aragón",
-    "description": "Fran Aragón, Desarrollador Frontend especializado en React, TypeScript y diseño web. Apasionado por crear interfaces intuitivas y soluciones digitales innovadoras para entornos ágiles y de alto rendimiento.",
-    "url": "https://www.franaragondev.com/",
-    "image": "https://www.franaragondev.com/logo.png",
+    "description": "Plantilla web profesional para negocios creada por Fran Aragón. Diseñada con React y TypeScript, ofrece una experiencia visual elegante, responsive y optimizada para mostrar servicios, valores, equipo, galería y contacto de manera intuitiva y atractiva.",
+    "url": "https://businesstemplate.franaragondev.com/",
+    "image": "https://businesstemplate.franaragondev.com/logo.png",
     "keywords": ""
   },
   "menu": {
+    "home": "Inicio",
+    "services": "Servicios",
     "projects": "Proyectos",
-    "experience": "Experiencia",
-    "about": "Sobre Mi",
+    "about": "Nosotros",
     "contact": "Contacto",
     "language": "Idioma"
   },
@@ -72,59 +73,16 @@
     "cookiesLinkText": "Política de Cookies"
   },
   "footer": {
-    "center": "2025 Fran Aragón. Todos los derechos reservados."
+    "left": "2025 Plantilla de Negocios. Todos los derechos reservados",
+    "right": "<link>Desarrollado por Fran Aragón</link>",
+    "slogan": "Ofrecemos soluciones profesionales para impulsar tu negocio y alcanzar tus objetivos.",
+    "contactTitle": "Contacto",
+    "legalTitle": "Legal"
   },
-  "experience": {
-    "title": "Experiencia",
-    "adidas": {
-      "title": "Desarrollador de Software",
-      "period": "julio 2022 - septiembre 2025",
-      "point1": "Trabajo en el equipo de Innovación, contribuyendo a soluciones digitales que soportan los flujos de creación de producto de adidas y aplicaciones internas para la gestión de datos de atletas.",
-      "point2": "Contribución al desarrollo del Carry Over & Color Up Tool (COCU), centrado en construir un frontend escalable y en el diseño de la interfaz en colaboración con stakeholders de negocio.",
-      "point3": "Desarrollo de aplicaciones web modernas con JavaScript, TypeScript y ReactJS, priorizando mantenibilidad y rendimiento.",
-      "point4": "Creación de aplicaciones internas desde cero con React y Vite, cubriendo diseño inicial e implementación.",
-      "point5": "Colaboración estrecha con equipos multifuncionales (diseño, backend, negocio) para asegurar el éxito y la evolución continua de las aplicaciones.",
-      "point6": "Aplicación de buenas prácticas de testing (Jest, React Testing Library), accesibilidad y diseño responsive."
-    },
-    "cei": {
-      "title": "Profesor de Desarrollo Fullstack y Diseño Web",
-      "period": "enero 2022 - julio 2022",
-      "point1": "Docente del curso de diseño web, impartiendo HTML5, CSS3, jQuery y JavaScript.",
-      "point2": "Docente del curso de desarrollo fullstack con JavaScript, PHP y MySQL.",
-      "point3": "Diseño de prácticas y proyectos con enfoque real para fortalecer habilidades técnicas y de resolución de problemas.",
-      "point4": "Mentoría individual orientada a inserción laboral y crecimiento profesional."
-    },
-    "gransliving": {
-      "title": "Desarrollador Frontend · Diseñador Web",
-      "period": "septiembre 2021 - noviembre 2022",
-      "point1": "Migración de WordPress a una aplicación moderna con React.js y Next.js, mejorando rendimiento y escalabilidad.",
-      "point2": "Diseño e implementación de la nueva interfaz usando Figma en coordinación con el equipo.",
-      "point3": "Optimización de responsive y experiencia de usuario según estándares UI/UX actuales."
-    }
-  },
-  "projects": {
-    "homestocker": {
-      "title": "HomeStocker",
-      "description": "Controla y organiza el stock de tu despensa en casa fácilmente. Ahorra dinero, reduce desperdicios y evita compras innecesarias.",
-      "url": "https://homestocker.app/"
-    },
-    "cdestepona": {
-      "title": "CD Estepona Fans",
-      "description": "Noticias, partidos en directo y contenido exclusivo para los aficionados del Club Deportivo Estepona.",
-      "url": "https://www.cdesteponafans.com/"
-    },
-    "sportsteam-template": {
-      "title": "SportsTeam Template",
-      "description": "Plantilla web para equipos deportivos, principalmente fútbol, pero adaptable a otros deportes.",
-      "url": "https://www.sportsteamtemplate.com"
-    },
-    "viewProject": "Ver proyecto",
-    "title": "Proyectos"
-  },
-  "about": {
-    "title": "Sobre mí",
-    "description": "Soy Fran Aragón, desarrollador de software especializado en frontend.<br /><br />Hasta septiembre de 2025 trabajé en adidas, dentro del equipo de innovación, donde desarrollé soluciones digitales centradas en rendimiento y escalabilidad, así como aplicaciones internas para la gestión de datos de atletas.<br /><br />En mis proyectos personales aplico herramientas modernas como React, TypeScript, Next.js o Tailwind.<br /><br />Me apasiona diseñar, crear y optimizar experiencias web con especial atención a las buenas prácticas, el rendimiento y la accesibilidad.",
-    "viewCV": "Ver CV"
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "Lo sentimos, no pudimos encontrar la página que estás buscando.",
+    "goHome": "Volver al inicio"
   },
   "contact": {
     "title": "Contacto",
@@ -136,6 +94,94 @@
     "error": "Hubo un error al enviar el mensaje",
     "phone": "Teléfonos",
     "emailLabel": "Email",
-    "social": "Redes"
+    "social": "Redes",
+    "location": "Estamos en Estepona",
+    "locationTitle": "PLANTILLA NEGOCIO"
+  },
+  "about-us": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Conoce nuestra historia, valores y compromiso con la excelencia",
+    "imageAlt": "Equipo del negocio",
+    "story": "Nuestra empresa nace de la pasión por ofrecer soluciones profesionales y un compromiso total con nuestros clientes. Desde el inicio, buscamos brindar servicios que combinen experiencia, innovación y calidad en cada proyecto.",
+    "journey": "A lo largo de los años, hemos crecido gracias a la confianza de nuestros clientes y al esfuerzo constante de nuestro equipo. Cada proyecto refleja nuestro enfoque estratégico, atención al detalle y compromiso con la excelencia.",
+    "mission": "Ofrecemos servicios confiables y de alta calidad, diseñados para ayudar a nuestros clientes a alcanzar sus objetivos. Nuestra misión es impulsar negocios mediante soluciones eficientes y personalizadas.",
+    "vision": "Queremos ser un referente en nuestro sector, combinando innovación, profesionalismo y cercanía, y creando un impacto positivo en cada cliente y proyecto que emprendemos.",
+    "quality": "Calidad",
+    "qualityText": "Excelencia en cada servicio y producto.",
+    "innovation": "Innovación",
+    "innovationText": "Buscamos nuevas ideas y soluciones constantemente.",
+    "passion": "Pasión",
+    "passionText": "Nos dedicamos con entusiasmo a cada proyecto.",
+    "community": "Comunidad",
+    "communityText": "Apoyamos y colaboramos con clientes y socios.",
+    "responsibility": "Responsabilidad",
+    "responsibilityText": "Priorizamos prácticas responsables y éticas.",
+    "growth": "Crecimiento",
+    "growthText": "Impulsamos el progreso y la mejora continua.",
+    "philosophyTitle": "Nuestra Filosofía",
+    "philosophyText": "Creemos que cada interacción con nuestros clientes es una oportunidad de generar valor y confianza."
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Descubre nuestro restaurante, platos y momentos especiales a través de nuestras imágenes",
+    "all": "Todas",
+    "platos": "Platos",
+    "local": "Local",
+    "eventos": "Eventos"
+  },
+  "home": {
+    "aboutTitle": "Sobre Nosotros",
+    "aboutSubtitle": "Conoce nuestra empresa y cómo impulsamos el éxito empresarial",
+    "aboutText1": "Combinamos experiencia e innovación para ofrecer soluciones de alta calidad adaptadas a las necesidades de nuestros clientes.",
+    "aboutText2": "Nuestro equipo trabaja con dedicación para brindar servicios y resultados excepcionales, cuidando cada detalle.",
+    "aboutImageAlt": "Nuestro equipo trabajando",
+    "servicesTitle": "Nuestros Servicios",
+    "servicesSubtitle": "Soluciones diseñadas para ayudar a tu empresa a crecer",
+    "service1Title": "Consultoría Estratégica",
+    "service1Text": "Analizamos tu negocio y diseñamos estrategias que impulsan el crecimiento y la eficiencia.",
+    "service2Title": "Desarrollo de Equipos",
+    "service2Text": "Ayudamos a construir equipos de alto rendimiento con las habilidades y la cultura adecuadas.",
+    "service3Title": "Innovación y Tecnología",
+    "service3Text": "Implementamos tecnologías innovadoras para resolver desafíos complejos.",
+    "projectsTitle": "Proyectos Destacados",
+    "projectsSubtitle": "Algunos de nuestros proyectos y colaboraciones más impactantes",
+    "contactTitle": "Contáctanos",
+    "contactSubtitle": "Escríbenos para hablar de tu proyecto o agendar una consulta",
+    "contactButton": "Contactar"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Algunos de nuestros trabajos más destacados que reflejan compromiso, calidad y resultados.",
+    "imageAlt": "Imagen del proyecto",
+    "project1Title": "Reforma integral de oficinas",
+    "project1Text": "Diseño y ejecución de un entorno laboral moderno, funcional y sostenible.",
+    "project2Title": "Lanzamiento de marca corporativa",
+    "project2Text": "Desarrollo de una nueva identidad visual para fortalecer la presencia en el mercado.",
+    "project3Title": "Optimización de procesos internos",
+    "project3Text": "Implementación de mejoras estratégicas para aumentar la eficiencia y productividad.",
+    "project4Title": "Campaña de comunicación global",
+    "project4Text": "Planificación y ejecución de una estrategia de comunicación integral a nivel internacional.",
+    "project5Title": "Espacio comercial innovador",
+    "project5Text": "Creación de un punto de venta atractivo que mejora la experiencia del cliente.",
+    "project6Title": "Programa de sostenibilidad corporativa",
+    "project6Text": "Desarrollo de acciones responsables para reducir el impacto ambiental y fortalecer los valores empresariales.",
+    "cta": "Contáctanos para tu próximo proyecto"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Creamos espacios que inspiran y reflejan tu estilo. Desde el diseño hasta la ejecución, ofrecemos soluciones completas.",
+    "cta": "Solicita información",
+    "service1Title": "Diseño de interiores",
+    "service1Text": "Creamos espacios personalizados que combinan estética, funcionalidad y confort.",
+    "service2Title": "Reformas integrales",
+    "service2Text": "Gestionamos todo el proceso de reforma para transformar tu hogar o negocio.",
+    "service3Title": "Decoración",
+    "service3Text": "Seleccionamos materiales, colores y mobiliario para lograr ambientes únicos.",
+    "service4Title": "Asesoramiento",
+    "service4Text": "Ofrecemos consultorías de diseño para quienes buscan orientación profesional.",
+    "service5Title": "Gestión de proyectos",
+    "service5Text": "Coordinamos cada fase del proyecto, asegurando calidad y cumplimiento de plazos.",
+    "service6Title": "Visualización 3D",
+    "service6Text": "Creamos renders realistas para que visualices el resultado final antes de comenzar."
   }
 }
