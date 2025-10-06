@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import ClientParallaxProvider from "@/components/providers/ClientParallaxProvider";
 import CookieBanner from "@/components/consent/CookieBanner";
 import ConsentScripts from "@/components/consent/ConsentScripts";
 
@@ -159,10 +158,8 @@ export default async function LocaleLayout({
         /> */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
-          <ClientParallaxProvider>
-            <main className="relative z-10 min-h-[100dvh]">{children}</main>
-            {/* <CookieBanner /> */}
-          </ClientParallaxProvider>
+          <main className="relative z-10 min-h-[100dvh]">{children}</main>
+          {/* <CookieBanner /> */}
           <Footer />
         </NextIntlClientProvider>
       </body>
