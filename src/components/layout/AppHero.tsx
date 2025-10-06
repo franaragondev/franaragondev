@@ -4,29 +4,24 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function AppHero() {
-  const [loaded, setLoaded] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    const handleCanPlayThrough = () => setLoaded(true);
+    const handleCanPlay = () => setVideoLoaded(true);
 
-    video.addEventListener("canplaythrough", handleCanPlayThrough);
+    video.addEventListener("canplay", handleCanPlay);
 
-    // Fallback autoplay si está bloqueado: reproducción tras interacción
-    const tryPlay = () => {
-      video
-        .play()
-        .then(() => setLoaded(true))
-        .catch(() => {});
-    };
+    // Fallback autoplay (Safari/iOS)
+    const tryPlay = () => video.play().catch(() => {});
     document.addEventListener("click", tryPlay, { once: true });
     document.addEventListener("scroll", tryPlay, { once: true });
 
     return () => {
-      video.removeEventListener("canplaythrough", handleCanPlayThrough);
+      video.removeEventListener("canplay", handleCanPlay);
       document.removeEventListener("click", tryPlay);
       document.removeEventListener("scroll", tryPlay);
     };
@@ -34,50 +29,53 @@ export default function AppHero() {
 
   return (
     <section className="relative w-full min-h-[100vh] overflow-hidden bg-black">
-      {/* Blur oscuro placeholder */}
-      <div
-        className={`absolute inset-0 bg-cover bg-center scale-110 transition-opacity duration-700 ease-out ${
-          loaded ? "opacity-0" : "opacity-100"
-        }`}
-        style={{
-          backgroundImage: 'url("/hero-bg-frame.jpg")',
-          filter: "blur(24px)",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/70" />
+      {/* Poster fijo */}
+      <div className="absolute inset-0 w-full h-full">
+        <Image
+          src="/hero-poster.webp"
+          alt="Hero background"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div
+          className={`absolute inset-0 bg-black/20 transition-opacity duration-500 ${
+            videoLoaded ? "opacity-0" : "opacity-100"
+          }`}
+        />
       </div>
 
-      {/* Video hero */}
+      {/* Mini preview de 5 segundos */}
       <video
-        ref={videoRef}
-        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-800 ease-out ${
-          loaded ? "opacity-100" : "opacity-0"
-        }`}
         autoPlay
         loop
         muted
         playsInline
         preload="auto"
-        poster="/hero-bg-frame.jpg"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-out ${
+          videoLoaded ? "opacity-0" : "opacity-100"
+        }`}
       >
-        <source src="/hero-bg-720p.webm" type="video/webm" />
-        <source src="/hero-bg-720p.mp4" type="video/mp4" />
+        <source src="/hero-preview-5s.mp4" type="video/mp4" />
+        <source src="/hero-preview-5s.webm" type="video/webm" />
       </video>
 
-      {/* Overlay final */}
-      <div className="absolute inset-0 bg-black/20" />
-
-      {/* Fallback móvil */}
-      {!loaded && (
-        <div className="absolute inset-0 sm:hidden">
-          <Image
-            src="/hero-bg-frame.jpg"
-            alt="Hero background"
-            fill
-            className="object-cover"
-          />
-        </div>
-      )}
+      {/* Video real */}
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-out ${
+          videoLoaded ? "opacity-100" : "opacity-0"
+        }`}
+        poster="/hero-poster.webp"
+      >
+        <source src="/hero-480p.mp4" type="video/mp4" />
+        <source src="/hero-480p.webm" type="video/webm" />
+      </video>
     </section>
   );
 }
