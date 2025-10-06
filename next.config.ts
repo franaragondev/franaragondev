@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       "homestocker.app",
       "www.cdesteponafans.com",
       "www.sportsteamtemplate.com",
+      "businesstemplate.franaragondev.com",
+      "restaurant-template.franaragondev.com",
     ],
   },
 };

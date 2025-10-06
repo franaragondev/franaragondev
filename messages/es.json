@@ -118,6 +118,16 @@
       "description": "Plantilla web para equipos deportivos, principalmente fútbol, pero adaptable a otros deportes.",
       "url": "https://www.sportsteamtemplate.com"
     },
+    "business-template": {
+      "title": "Business Template",
+      "description": "Plantilla moderna y elegante para negocios, agencias o freelancers, con un vídeo hero profesional y animaciones fluidas.",
+      "url": "https://businesstemplate.franaragondev.com/"
+    },
+    "restaurant-template": {
+      "title": "Restaurant Template",
+      "description": "Plantilla web para restaurantes con un vídeo hero dinámico, secciones de menú y un diseño elegante y responsive.",
+      "url": "https://restaurant-template.franaragondev.com/"
+    },
     "viewProject": "Ver proyecto",
     "title": "Proyectos"
   },

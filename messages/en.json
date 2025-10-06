@@ -115,6 +115,16 @@
       "description": "Website template for sports teams, mainly football, but adaptable to other sports.",
       "url": "https://www.sportsteamtemplate.com/en"
     },
+    "business-template": {
+      "title": "Business Template",
+      "description": "Modern and elegant template for businesses, agencies, or freelancers, with a professional hero video and smooth animations.",
+      "url": "https://businesstemplate.franaragondev.com/"
+    },
+    "restaurant-template": {
+      "title": "Restaurant Template",
+      "description": "Stylish restaurant website template featuring a dynamic hero video, menu sections, and an elegant, responsive design.",
+      "url": "https://restaurant-template.franaragondev.com/"
+    },
     "viewProject": "View project",
     "title": "Projects"
   },
