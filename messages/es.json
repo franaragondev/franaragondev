@@ -100,6 +100,13 @@
       "point1": "Migración de WordPress a una aplicación moderna con React.js y Next.js, mejorando rendimiento y escalabilidad.",
       "point2": "Diseño e implementación de la nueva interfaz usando Figma en coordinación con el equipo.",
       "point3": "Optimización de responsive y experiencia de usuario según estándares UI/UX actuales."
+    },
+    "solutia": {
+      "title": "Desarrollador Frontend",
+      "period": "noviembre 2025 - actualidad",
+      "point1": "Me encargo del desarrollo frontend de productos web internos y para clientes, utilizando React y TypeScript, participando en decisiones de UI/UX y garantizando la coherencia entre componentes y patrones de interacción.",
+      "point2": "Responsable de la arquitectura de componentes, la alineación del diseño, la optimización del rendimiento y la integración con los servicios de backend.",
+      "point3": "Trabajo en estrecha colaboración con desarrolladores, diseñadores y stakeholders para crear interfaces escalables, mantenibles y centradas en el usuario, con especial atención al rendimiento y la accesibilidad."
     }
   },
   "projects": {

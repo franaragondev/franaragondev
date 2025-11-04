@@ -97,6 +97,13 @@
       "period": "September 2021 - November 2022",
       "point1": "Migrated the company’s WordPress site to a modern React.js application with Next.js, improving performance and scalability.",
       "point2": "Designed and implemented the new UI with Figma in collaboration with the team; optimized responsive UX to current UI/UX standards."
+    },
+    "solutia": {
+      "title": "Frontend Developer",
+      "period": "Nov 2025 - Present",
+      "point1": "Driving the frontend of internal and client-facing web products using React and TypeScript, co-owning UI/UX decisions, and ensuring consistency across components, interaction patterns, and implementation quality.",
+      "point2": "Responsible for component architecture, design alignment, performance optimisation, and seamless integration with backend services.",
+      "point3": "Collaborating closely with developers, designers, and stakeholders to deliver scalable, maintainable, and user-focused interfaces with a strong focus on performance and accessibility."
     }
   },
   "projects": {

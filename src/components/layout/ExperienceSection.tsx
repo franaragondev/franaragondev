@@ -8,6 +8,19 @@ export default function ExperienceSection() {
 
   const experiences = [
     {
+      id: "solutia",
+      logo: "/experience/solutia.jpg",
+      role: t("solutia.title"),
+      company: "Solutia s.r.o.",
+      period: t("solutia.period"),
+      responsibilities: [
+        t("solutia.point1"),
+        t("solutia.point2"),
+        t("solutia.point3"),
+      ],
+      accentColor: "from-[#92ce0d] to-[#6fa100]", // degradado verde
+    },
+    {
       id: "adidas",
       logo: "/experience/adidas.png",
       role: t("adidas.title"),
@@ -64,6 +77,7 @@ export default function ExperienceSection() {
             accentColor,
           }) => {
             const isAdidas = id === "adidas";
+            const isSolutia = id === "solutia";
 
             return (
               <div key={id} className="relative group">
@@ -93,23 +107,23 @@ export default function ExperienceSection() {
 
                   <div
                     className={`relative z-10 ${
-                      isAdidas ? "group-hover:text-white" : ""
+                      isAdidas || isSolutia ? "group-hover:text-white" : ""
                     }`}
                   >
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-hidden shadow">
+                      <div className="w-12 h-12 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-hidden shadow flex items-center justify-center">
                         <Image
                           src={logo}
                           alt={`Logo ${company}`}
                           width={48}
                           height={48}
-                          className="object-contain p-1"
+                          className="object-contain"
                         />
                       </div>
                       <div>
                         <h3
                           className={`text-xl md:text-2xl font-semibold transition-colors ${
-                            isAdidas
+                            isAdidas || isSolutia
                               ? "text-gray-900 dark:text-white group-hover:text-white"
                               : "text-gray-900 dark:text-white"
                           }`}
@@ -118,7 +132,7 @@ export default function ExperienceSection() {
                         </h3>
                         <p
                           className={`text-sm italic transition-colors ${
-                            isAdidas
+                            isAdidas || isSolutia
                               ? "text-gray-600 dark:text-gray-400 group-hover:text-white"
                               : "text-gray-600 dark:text-gray-400"
                           }`}
@@ -130,7 +144,7 @@ export default function ExperienceSection() {
 
                     <ul
                       className={`list-disc list-inside text-sm leading-relaxed space-y-2 ${
-                        isAdidas
+                        isAdidas || isSolutia
                           ? "group-hover:text-white"
                           : "text-gray-800 dark:text-gray-200"
                       }`}
