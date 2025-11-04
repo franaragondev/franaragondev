@@ -1,10 +1,10 @@
 {
   "head": {
-    "title": "Fran Aragón | Desarrollador Frontend",
-    "description": "Fran Aragón, Desarrollador Frontend especializado en React, TypeScript y diseño web. Apasionado por crear interfaces intuitivas y soluciones digitales innovadoras para entornos ágiles y de alto rendimiento.",
+    "title": "Fran Aragón | Desarrollador Frontend React, TypeScript y Next.js",
+    "description": "Fran Aragón, desarrollador frontend especializado en React, TypeScript y Next.js. Apasionado por crear interfaces web escalables, intuitivas y accesibles, aplicando buenas prácticas de UX/UI y rendimiento en aplicaciones modernas.",
     "url": "https://www.franaragondev.com/",
     "image": "https://www.franaragondev.com/logo.png",
-    "keywords": "frontend developer, web designer, react, typescript, frontend, diseño web, interfaces de usuario, UX/UI, programador web, desarrollo frontend"
+    "keywords": "desarrollador frontend, React, TypeScript, Next.js, Tailwind CSS, interfaces web, UX/UI, aplicaciones web escalables, desarrollo frontend, diseño web, accesibilidad web, programador web"
   },
   "menu": {
     "projects": "Proyectos",
