@@ -137,7 +137,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I'm Fran Aragón, a software developer specialized in frontend.<br /><br />Until September 2025 I worked at adidas in the Innovation team, where I built digital solutions focused on performance and scalability, as well as internal applications for athlete data management.<br /><br />In my personal projects I use modern tools like React, TypeScript, Next.js, and Tailwind.<br /><br />I'm passionate about designing, building, and optimizing web experiences with a strong focus on best practices, performance, and accessibility.",
+    "description": "I'm Fran Aragón, a frontend developer focused on building fast, scalable, and accessible web experiences. I currently work at Solutia, leading the development of both internal and client-facing applications, delivering efficient solutions while collaborating closely with designers and product teams.<br /><br />Previously, I was part of adidas' innovation team, where I developed internal tools for athlete data management and optimized digital processes with a strong focus on performance and reliability.<br /><br />In my personal and professional projects, I work with modern technologies such as React, TypeScript, Next.js, and Tailwind, always following best practices in development, accessibility, and user experience.",
     "viewCV": "View CV"
   },
   "contact": {
