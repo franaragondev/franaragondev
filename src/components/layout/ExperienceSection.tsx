@@ -3,9 +3,20 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+/**
+ * ExperienceSection Component
+ * * Renders a vertical chronological timeline showcasing professional trajectory.
+ * Designed with a focus on information density, readability, and visual hierarchy.
+ * Utilizes a "Bento-grid" card aesthetic paired with a semantic vertical timeline.
+ */
 export default function ExperienceSection() {
   const t = useTranslations("experience");
 
+  /**
+   * Data Normalization:
+   * Professional experiences are mapped into an array to maintain a DRY (Don't Repeat Yourself) 
+   * architecture, facilitating easy updates and consistent rendering logic.
+   */
   const experiences = [
     {
       id: "solutia",
@@ -18,7 +29,6 @@ export default function ExperienceSection() {
         t("solutia.point2"),
         t("solutia.point3"),
       ],
-      accentColor: "from-[#92ce0d] to-[#6fa100]", // degradado verde
     },
     {
       id: "adidas",
@@ -30,8 +40,8 @@ export default function ExperienceSection() {
         t("adidas.point1"),
         t("adidas.point2"),
         t("adidas.point3"),
+        t("adidas.point4"),
       ],
-      accentColor: "from-[#000000] to-[#636363]",
     },
     {
       id: "cei",
@@ -40,7 +50,6 @@ export default function ExperienceSection() {
       company: "CEI Escuela de Diseño y Marketing",
       period: t("cei.period"),
       responsibilities: [t("cei.point1"), t("cei.point2")],
-      accentColor: "from-[#00695c] to-[#26a69a]",
     },
     {
       id: "gransliving",
@@ -48,117 +57,74 @@ export default function ExperienceSection() {
       role: t("gransliving.title"),
       company: "GransLiving",
       period: t("gransliving.period"),
-      responsibilities: [t("gransliving.point1"), t("gransliving.point2")],
-      accentColor: "from-[#9e1b32] to-[#ff416c]",
+      responsibilities: [t("gransliving.point1"), t("gransliving.point2"), t("gransliving.point3")],
     },
   ];
 
   return (
     <section
       id="experience"
-      className="relative min-h-screen px-4 md:px-12 py-24 bg-gray-50 dark:bg-gray-900/60 backdrop-blur-xl scroll-mt-24"
+      className="relative px-4 md:px-12 py-32 bg-[#F5F5F7] dark:bg-[#000000] scroll-mt-24 border-b border-black/5 dark:border-white/5"
     >
-      <div className="text-center mb-20">
-        <h2 className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white relative inline-block">
+      {/* Section Title with high-impact tracking for modern aesthetic */}
+      <div className="text-center mb-24">
+        <h2 className="text-5xl md:text-6xl font-bold tracking-tighter text-[#1D1D1F] dark:text-[#F5F5F7]">
           {t("title")}
-          <span className="block h-1 w-24 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full mx-auto mt-4"></span>
         </h2>
       </div>
 
-      <div className="relative border-l-2 border-gray-300 dark:border-gray-700 pl-6 space-y-16">
-        {experiences.map(
-          ({
-            id,
-            logo,
-            role,
-            company,
-            period,
-            responsibilities,
-            accentColor,
-          }) => {
-            const isAdidas = id === "adidas";
-            const isSolutia = id === "solutia";
+      {/* Vertical Timeline Container:
+          Implements a left-border as the timeline axis.
+          Responsiveness is handled via padding and max-width constraints.
+      */}
+      <div className="max-w-4xl mx-auto relative border-l border-[#D2D2D7] dark:border-[#333336] pl-8 space-y-16">
+        {experiences.map(({ id, logo, role, company, period, responsibilities }) => (
+          <div key={id} className="relative group">
+           
+            {/* Timeline Anchor Point: 
+                Absolutely positioned relative to the parent to align perfectly with the border-l.
+                Includes a subtle scale animation on group hover for enhanced interactivity.
+            */}
+            <span className="absolute left-[-37px] top-6 w-[10px] h-[10px] bg-[#1D1D1F] dark:bg-white rounded-full ring-4 ring-[#F5F5F7] dark:ring-[#000000] transition-transform duration-300 group-hover:scale-150" />
 
-            return (
-              <div key={id} className="relative group">
-                <span className="absolute left-[-36px] top-4 w-3 h-3 bg-white dark:bg-gray-800 border-4 border-blue-500 rounded-full z-10" />
-
-                <article
-                  className={`relative bg-white/30 dark:bg-gray-900/40 backdrop-blur-md rounded-3xl overflow-hidden p-6 md:p-8 border-white/20 dark:border-gray-700 shadow-xl transition-transform transform group-hover:-translate-y-1`}
-                >
-                  <div
-                    className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-3xl bg-gradient-to-br ${accentColor}`}
+            {/* Experience Card: Implementing semantic HTML5 <article> for improved SEO and Accessibility */}
+            <article className="relative bg-white dark:bg-[#1C1C1E] rounded-[2rem] p-8 md:p-10 border border-black/5 dark:border-white/5 shadow-sm transition-shadow duration-500 hover:shadow-xl">
+              
+              {/* Header: Company Identity & Role */}
+              <div className="flex flex-col md:flex-row md:items-center gap-6 mb-8">
+                {/* Logo Container with consistent aspect-ratio handling */}
+                <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center p-3 shadow-sm">
+                  <Image
+                    src={logo}
+                    alt={`Logo for ${company}`}
+                    width={48}
+                    height={48}
+                    className="object-contain"
                   />
-
-                  <div className="absolute inset-0 opacity-10 pointer-events-none select-none rounded-3xl">
-                    <Image
-                      src={logo}
-                      alt=""
-                      fill
-                      className="object-contain p-10"
-                    />
-                  </div>
-
-                  <div
-                    className={`absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-br ${accentColor} rounded-3xl`}
-                  />
-
-                  <div className="absolute inset-0 z-0 bg-white/30 dark:bg-black/30 backdrop-blur-[2px] rounded-3xl" />
-
-                  <div
-                    className={`relative z-10 ${
-                      isAdidas || isSolutia ? "group-hover:text-white" : ""
-                    }`}
-                  >
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-hidden shadow flex items-center justify-center">
-                        <Image
-                          src={logo}
-                          alt={`Logo ${company}`}
-                          width={48}
-                          height={48}
-                          className="object-contain"
-                        />
-                      </div>
-                      <div>
-                        <h3
-                          className={`text-xl md:text-2xl font-semibold transition-colors ${
-                            isAdidas || isSolutia
-                              ? "text-gray-900 dark:text-white group-hover:text-white"
-                              : "text-gray-900 dark:text-white"
-                          }`}
-                        >
-                          {role}
-                        </h3>
-                        <p
-                          className={`text-sm italic transition-colors ${
-                            isAdidas || isSolutia
-                              ? "text-gray-600 dark:text-gray-400 group-hover:text-white"
-                              : "text-gray-600 dark:text-gray-400"
-                          }`}
-                        >
-                          {company} · {period}
-                        </p>
-                      </div>
-                    </div>
-
-                    <ul
-                      className={`list-disc list-inside text-sm leading-relaxed space-y-2 ${
-                        isAdidas || isSolutia
-                          ? "group-hover:text-white"
-                          : "text-gray-800 dark:text-gray-200"
-                      }`}
-                    >
-                      {responsibilities.map((point, idx) => (
-                        <li key={idx}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </article>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold tracking-tight text-[#1D1D1F] dark:text-white">
+                    {role}
+                  </h3>
+                  <p className="text-[#86868B] text-sm uppercase tracking-widest font-semibold mt-1">
+                    {company} <span className="mx-2 text-[#D2D2D7]">•</span> {period}
+                  </p>
+                </div>
               </div>
-            );
-          }
-        )}
+
+              {/* Responsibilities List: Focused on typography and list-style refinement */}
+              <ul className="space-y-3">
+                {responsibilities.map((point, idx) => (
+                  <li key={idx} className="flex text-[#515154] dark:text-[#A1A1A6] text-base md:text-lg leading-relaxed tracking-tight font-medium">
+                    {/* Visual indicator using an opacity-reduced arrow for direction without clutter */}
+                    <span className="text-[#1D1D1F] dark:text-white mr-3 mt-1.5 opacity-40" aria-hidden="true">→</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        ))}
       </div>
     </section>
   );

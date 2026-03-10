@@ -1,155 +1,164 @@
 {
   "head": {
-    "title": "Fran Aragón | Frontend Developer React, TypeScript & Next.js",
-    "description": "Fran Aragón, frontend developer specialized in React, TypeScript, and Next.js. Passionate about building scalable, intuitive, and accessible web interfaces, following UX/UI best practices and high-performance standards.",
+    "title": "Fran Aragón | Software Engineer building scalable digital products",
+    "description": "Software Engineer based in Prague specializing in building scalable SaaS platforms, high-performance web applications, and native iOS products.",
     "url": "https://www.franaragondev.com/",
     "image": "https://www.franaragondev.com/logo.png",
-    "keywords": "frontend developer, React, TypeScript, Next.js, Tailwind CSS, web interfaces, UX/UI, scalable web apps, web development, web designer, web accessibility, JavaScript developer"
+    "keywords": "software engineer, product engineer, SaaS development, software architecture, web platform development, React, TypeScript, Next.js, tech partner Prague"
   },
-  "menu": {
-    "projects": "Projects",
-    "experience": "Experience",
-    "about": "About Me",
-    "contact": "Contact",
-    "language": "Language"
+ "menu": {
+  "expertise": "Expertise",
+  "projects": "Engineering",
+  "experience": "Experience",
+  "about": "Profile",
+  "contact": "Contact",
+  "language": "Language"
+},
+ "hero": {
+  "title": "Software Engineer building <br></br> scalable digital products.",
+  "subtitle": "React • Next.js • TypeScript",
+  "badgePrague": "Based in Prague",
+  "badgeWorldwide": "Working with companies worldwide"
+},
+  "expertise": {
+    "label": "Expertise",
+    "saas": {
+      "title": "SaaS Platforms",
+      "description": "Architecting scalable, multi-tenant systems with a focus on long-term maintainability and global growth."
+    },
+    "performance": {
+      "title": "Web Performance",
+      "description": "Engineering high-speed interfaces optimized for Core Web Vitals, SEO, and business conversion."
+    },
+    "architecture": {
+      "title": "Technical Direction",
+      "description": "Bridging the gap between business goals and robust code through strategic product architecture."
+    }
   },
   "language": {
     "es": "Spanish",
     "en": "English"
   },
   "cookies": {
-    "message": "We use analytical cookies to improve the user experience and analyze site traffic. We do not store personal data. You can accept or reject their use.",
+    "message": "We use analytical telemetry to optimize performance. No personal data stored.",
     "accept": "Accept",
-    "reject": "Reject",
+    "reject": "Decline",
     "learnMore": "Learn more",
     "linkText": "Cookie Policy"
   },
   "cookiesPolicy": {
     "title": "Cookie Policy",
-    "intro": "This website uses analytical cookies to understand how users interact with the site, using tools such as Google Analytics and Search Console.",
+    "intro": "This platform uses analytical metrics to anonymously understand user interaction and optimize system performance.",
     "whatAreCookiesTitle": "What are cookies?",
-    "whatAreCookies": "Cookies are small files stored on your device to improve your experience on the website.",
-    "typesTitle": "Types of cookies we use",
+    "whatAreCookies": "Small local data fragments used strictly for performance telemetry and navigation analysis.",
+    "typesTitle": "Technology",
     "typesList": [
-      "Analytical cookies: Allow us to collect anonymous data about site usage to improve performance and user experience."
+      "Anonymous analytics used to evaluate performance and improve user experience."
     ],
-    "manageTitle": "Cookie management",
-    "manageText": "You can accept or reject analytical cookies via the banner or through your browser settings.",
-    "personalDataTitle": "Personal data",
-    "personalDataTextPart1": "We do not collect or store personal data through cookies or forms on this site.",
+    "manageTitle": "Cookie Management",
+    "manageText": "You can accept or reject analytical cookies through the banner or your browser settings.",
+    "personalDataTitle": "Personal Data",
+    "personalDataTextPart1": "No personal data is collected or stored through cookies on this platform.",
     "personalDataTextPart2": "",
     "privacyPolicyLinkText": "Privacy Policy",
-    "changesTitle": "Policy changes",
-    "changesText": "We may update this policy occasionally. Please review this page to stay informed.",
-    "lastUpdated": "Last updated: June 2025"
+    "changesTitle": "Policy Changes",
+    "changesText": "This policy may be updated occasionally to reflect infrastructure improvements.",
+    "lastUpdated": "Last updated: March 2026"
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
-    "intro": "This website does not store personal user data. We only use external tools like Google Analytics and Search Console to analyze metrics and improve the experience.",
+    "intro": "Privacy is a fundamental engineering principle. We only use anonymous metrics to evaluate platform performance.",
     "sections": [
-      {
-        "title": "1. Personal data",
-        "text": "We do not collect or store personal data through this website."
-      },
-      {
-        "title": "2. Analytical tools",
-        "text": "We use Google Analytics and Search Console to measure site traffic and behavior, always respecting user privacy through data anonymization."
-      },
-      {
-        "title": "3. Contact",
-        "text": "If you want to contact me, you can do so by email. We do not store your information or track you."
-      },
-      {
-        "title": "4. Rights",
-        "text": "Since we do not store personal data, requests for access, correction, or deletion do not apply."
-      },
-      {
-        "title": "5. Policy changes",
-        "text": "We may update this policy at any time. We recommend reviewing it periodically."
-      }
+      { "title": "1. Personal Data", "text": "This website does not collect or store personal data." },
+      { "title": "2. Analytical Tools", "text": "Traffic metrics are used only to measure system performance and usage patterns." },
+      { "title": "3. Contact", "text": "Email communications are handled securely and never used for tracking." },
+      { "title": "4. Rights", "text": "Since no personal data is stored, access or deletion requests do not apply." },
+      { "title": "5. Policy Changes", "text": "Updates to our privacy infrastructure will always be reflected here." }
     ],
-    "lastUpdated": "Last updated: June 2025",
+    "lastUpdated": "Last updated: March 2026",
     "cookiesLinkText": "Cookie Policy"
   },
-  "footer": {
-    "center": "2025 Fran Aragón. All rights reserved."
-  },
+"footer": {
+  "center": "Strategically engineered in Prague.",
+  "status": "Available for select partnerships worldwide"
+},
   "experience": {
     "title": "Experience",
+    "solutia": {
+      "title": "Frontend Lead & Software Engineer",
+      "period": "Nov 2025 - Present",
+      "point1": "Leading frontend architecture and technical direction for international B2B and B2C platforms.",
+      "point2": "Designing scalable component systems and ensuring seamless integration with cloud services.",
+      "point3": "Driving performance optimization, accessibility standards, and maintainable architecture."
+    },
     "adidas": {
       "title": "Software Developer",
       "period": "July 2022 - September 2025",
-      "point1": "Worked in the Innovation team, contributing to digital solutions that supported adidas’s product creation workflows and internal applications for managing athlete data.",
-      "point2": "Contributed to the Carry Over & Color Up Tool (COCU), focusing on building a scalable frontend and collaborating on the UI with business stakeholders.",
-      "point3": "Built modern web apps with JavaScript, TypeScript, and ReactJS, prioritizing maintainability and performance.",
-      "point4": "Developed internal applications from scratch with React & Vite, supporting both initial design and implementation.",
-      "point5": "Collaborated closely with cross-functional teams (design, backend, business units) to ensure product success and continuous development.",
-      "point6": "Applied best practices in testing (Jest, React Testing Library), accessibility, and responsive design."
-    },
-    "cei": {
-      "title": "Fullstack Development & Web Design Instructor",
-      "period": "January 2022 - July 2022",
-      "point1": "Taught Web Design (HTML5, CSS3, jQuery, JavaScript) and Fullstack Development (JavaScript, PHP, MySQL).",
-      "point2": "Designed practical exercises and projects focused on real-world scenarios, plus individual mentoring to support job readiness."
+      "point1": "Software engineer within adidas Innovation, contributing to digital platforms supporting global product creation.",
+      "point2": "Co-developed the COCU tool, focusing on scalable frontend architecture and business synchronization.",
+      "point3": "Built internal applications with React and TypeScript prioritizing maintainability and performance.",
+      "point4": "Collaborated with cross-functional teams to ensure product success.",
+      "point5": "Applied best practices in testing, accessibility, and performance optimization.",
+      "point6": "Ensured production-grade reliability through rigorous testing and CI/CD protocols."
     },
     "gransliving": {
-      "title": "Frontend Developer · Web Designer",
+      "title": "Software Engineer",
       "period": "September 2021 - November 2022",
-      "point1": "Migrated the company’s WordPress site to a modern React.js application with Next.js, improving performance and scalability.",
-      "point2": "Designed and implemented the new UI with Figma in collaboration with the team; optimized responsive UX to current UI/UX standards."
+      "point1": "Migrated a WordPress monolith into a modern scalable application using Next.js.",
+      "point2": "Designed and implemented UI architecture aligned with modern UX standards.",
+      "point3": "Optimized performance and responsive behavior for international audiences."
     },
-    "solutia": {
-      "title": "Frontend Developer",
-      "period": "Nov 2025 - Present",
-      "point1": "Driving the frontend of internal and client-facing web products using React and TypeScript, co-owning UI/UX decisions, and ensuring consistency across components, interaction patterns, and implementation quality.",
-      "point2": "Responsible for component architecture, design alignment, performance optimisation, and seamless integration with backend services.",
-      "point3": "Collaborating closely with developers, designers, and stakeholders to deliver scalable, maintainable, and user-focused interfaces with a strong focus on performance and accessibility."
+    "cei": {
+      "title": "Fullstack Engineering Instructor",
+      "period": "January 2022 - July 2022",
+      "point1": "Taught Web Design (HTML5, CSS3, JavaScript) and Fullstack Development (PHP, MySQL).",
+      "point2": "Mentored students through projects focused on production-level engineering practices."
     }
   },
   "projects": {
+    "title": "Production Systems",
     "homestocker": {
-      "title": "HomeStocker",
-      "description": "Easily control and organize your home pantry stock. Save money, reduce waste, and avoid unnecessary purchases.",
+      "title": "HomeStocker SaaS",
+      "description": "Founder & Engineer. Native iOS application designed to reduce food waste through smart inventory tracking and cloud infrastructure.",
       "url": "https://homestocker.app/en"
     },
     "cdestepona": {
-      "title": "CD Estepona Fans",
-      "description": "News, live matches, and exclusive content for Club Deportivo Estepona fans.",
+      "title": "CD Estepona Platform",
+      "description": "Full-stack architecture built with Next.js and Prisma. Designed for high-performance content delivery and technical SEO (Lighthouse 90+).",
       "url": "https://www.cdesteponafans.com/en"
     },
     "sportsteam-template": {
-      "title": "SportsTeam Template",
-      "description": "Website template for sports teams, mainly football, but adaptable to other sports.",
+      "title": "SportsTeam Architecture",
+      "description": "Scalable digital platform architecture for sports organizations, enabling high-concurrency data management.",
       "url": "https://www.sportsteamtemplate.com/en"
     },
     "business-template": {
-      "title": "Business Template",
-      "description": "Modern and elegant template for businesses, agencies, or freelancers, with a professional hero video and smooth animations.",
+      "title": "Business Core",
+      "description": "Modern corporate architecture focused on performance, clarity, and low-latency interaction design.",
       "url": "https://businesstemplate.franaragondev.com/"
     },
     "restaurant-template": {
-      "title": "Restaurant Template",
-      "description": "Stylish restaurant website template featuring a dynamic hero video, menu sections, and an elegant, responsive design.",
-      "url": "https://restaurant-template.franaragondev.com/"
-    },
-    "viewProject": "View project",
-    "title": "Projects"
+  "title": "Restaurant Template",
+  "description": "Stylish restaurant website template featuring a dynamic hero video, menu sections, and an elegant, responsive design.",
+  "url": "https://restaurant-template.franaragondev.com/"
+},
+    "viewProject": "View Project"
   },
   "about": {
-    "title": "About Me",
-    "description": "I'm Fran Aragón, a frontend developer focused on building fast, scalable, and accessible web experiences. I currently work at Solutia, leading the development of both internal and client-facing applications, delivering efficient solutions while collaborating closely with designers and product teams.<br /><br />Previously, I was part of adidas' innovation team, where I developed internal tools for athlete data management and optimized digital processes with a strong focus on performance and reliability.<br /><br />In my personal and professional projects, I work with modern technologies such as React, TypeScript, Next.js, and Tailwind, always following best practices in development, accessibility, and user experience.",
-    "viewCV": "View CV"
+    "title": "Engineering products that scale.",
+    "description": "I'm Fran Aragón, a Software Engineer and Frontend Lead specialized in building high-performance digital products.<br /><br />I design and build scalable SaaS platforms, web applications, and native mobile systems that solve real business problems. My work focuses on clean architecture, performance, and long-term maintainability.<br /><br />Currently, I lead frontend architecture at Solutia, delivering complex platforms for international clients. Previously, I built tools at adidas’ Innovation team used in global workflows.<br /><br />I am also the founder behind HomeStocker, a native iOS ecosystem for smart inventory management.<br /><br />Based in Prague. Working with companies worldwide.",
+    "viewCV": "View Resume"
   },
-  "contact": {
-    "title": "Contact",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "submit": "Send message",
-    "success": "Message sent successfully",
-    "error": "There was an error sending the message",
-    "phone": "Phone numbers",
-    "emailLabel": "Email",
-    "social": "Social media"
-  }
+"contact": {
+  "title": "Let’s build your product’s future.",
+  "name": "Name",
+  "email": "Email",
+  "message": "Project proposal",
+  "submit": "Get in touch",
+  "success": "Request successfully received.",
+  "error": "Server error.",
+  "phone": "Direct communication",
+  "emailLabel": "Email",
+  "social": "Social media"
+}
 }
