@@ -1,71 +1,69 @@
-# 🌐 Fran Aragón | Frontend Developer
+# Fran Aragón — Software Engineer & Frontend Lead
 
-Welcome to my personal portfolio, showcasing my work, experience, and projects as a frontend developer.  
-Check out the live site: [franaragondev.com](https://www.franaragondev.com/)
+[![Website](https://img.shields.io/badge/Website-franaragondev.com-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.franaragondev.com/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-000000?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/fran-aragon-simon)
+[![Location](https://img.shields.io/badge/Location-Prague,_CZ-000000?style=for-the-badge)](#)
 
-## 🧑‍💻 About Me
+> Strategically engineered in Prague. Available for select partnerships worldwide.
 
-I'm Fran Aragón, a frontend developer focused on building **fast, scalable, and accessible web applications**.  
-I currently work at **Solutia s.r.o.**, leading frontend development for internal and client-facing projects.  
-Previously, I was part of **adidas' Innovation team**, contributing to high-performance digital products.
-
-**Core Skills & Tools:**
-
-- **React.js, TypeScript, Next.js, TailwindCSS**
-- UI/UX design with **Figma**
-- Frontend architecture, performance optimization, accessibility
-- Agile workflows, CI/CD pipelines, Git/GitLab
-
-## 🚀 Selected Projects
-
-### [HomeStocker](https://homestocker.app/)
-Manage your pantry inventory efficiently. Save money, reduce waste, and avoid unnecessary purchases.
-
-### [CD Estepona Fans](https://www.cdesteponafans.com/)
-News, live matches, and exclusive content for Club Deportivo Estepona fans.
-
-### [SportsTeam Template](https://www.sportsteamtemplate.com/)
-Customizable website template for sports teams, adaptable for football or other sports.
-
-### [Restaurant Template](https://restaurant-template.franaragondev.com/)
-Responsive restaurant website template with menu sections, reservations, and photo gallery.
-
-### [BusinessTemplate](https://businesstemplate.franaragondev.com/)
-Professional, fast, and SEO-friendly business website template for startups, agencies, or freelancers.
-
-## 💼 Experience
-
-### Solutia s.r.o. — _Frontend Developer_  
-**Nov 2025 – Present**  
-- Leading frontend development for internal and client-facing web apps using React & TypeScript  
-- Responsible for component architecture, performance optimization, and accessibility  
-- Collaborating closely with designers, developers, and stakeholders to deliver scalable, maintainable solutions  
-
-### adidas — _Software Developer_  
-**July 2022 – September 2025**  
-- Built scalable web applications with React & TypeScript  
-- Led UI design and frontend architecture  
-- Contributed to **COCU (Carry Over & Color Up Tool)**  
-
-### CEI Escuela de Diseño y Marketing — _Web & Fullstack Instructor_  
-**Jan 2022 – Jul 2022**  
-- Taught HTML5, CSS3, JavaScript, PHP, MySQL, and jQuery  
-- Mentored students and designed practical, real-world projects  
-
-### GransLiving — _Frontend Developer & Web Designer_  
-**Sep 2021 – Nov 2022**  
-- Migrated WordPress site to React/Next.js application  
-- Designed UI in Figma, improving performance and user experience  
-
-## 🌍 Tech Stack
-
-- **Languages & Frameworks:** JavaScript (ES6+), TypeScript, HTML5, CSS3, React.js, Next.js, Node.js, Express.js, TailwindCSS, Jest  
-- **Tools & Platforms:** Git/GitHub/GitLab, Figma, Vercel, Adobe Creative Suite  
-
-## 📫 Contact
-
-Reach out via the website or connect on [LinkedIn](https://linkedin.com/in/fran-aragon-simon)
+Welcome to the source code of my personal platform. This repository serves as a technical showcase of my approach to building high-performance, scalable, and accessible digital products.
 
 ---
 
-Thanks for visiting!
+## Engineering Philosophy
+
+I bridge the gap between complex engineering and business performance. As a Software Engineer and Frontend Lead, my focus is on turning technical precision into measurable business value. 
+
+* **Product-First Architecture:** Designing scalable systems from the ground up that solve real business problems.
+* **Uncompromising Performance:** Engineering high-speed web platforms (Next.js) and 60fps native iOS experiences (Swift).
+* **Maintainability:** Writing clean, documented, and robust code designed for long-term global growth.
+
+## Tech Stack Ecosystem
+
+This platform and my recent projects are built using a modern, scalable stack:
+
+* **Core:** React, Next.js, TypeScript, Node.js, Swift
+* **Styling & UI:** TailwindCSS, Framer Motion, Glassmorphism design systems
+* **Database & ORM:** PostgreSQL, Prisma
+* **Infrastructure:** Vercel, Cloud Architecture, CI/CD pipelines
+* **UX/UI Design:** Figma, Accessibility (WCAG) standards
+
+## Selected Production Systems
+
+### [HomeStocker SaaS](https://homestocker.app/)
+**Founder & Engineer.** A native iOS application designed to reduce food waste through smart inventory tracking and cloud infrastructure.
+
+### [CD Estepona Platform](https://www.cdesteponafans.com/)
+Full-stack architecture built with Next.js and Prisma. Designed for high-performance content delivery and technical SEO (Lighthouse 90+).
+
+### Architectural Templates
+Scalable boilerplates built for performance, clarity, and low-latency interaction design:
+* [SportsTeam Architecture](https://www.sportsteamtemplate.com/)
+* [Business Core Engine](https://businesstemplate.franaragondev.com/)
+* [Restaurant System](https://restaurant-template.franaragondev.com/)
+
+## Professional Trajectory
+
+**Frontend Lead & Software Engineer @ Solutia s.r.o.** *(Nov 2025 - Present)*
+Leading frontend architecture and technical direction for international B2B and B2C platforms. Driving performance optimization, scalable component systems, and seamless cloud integration.
+
+**Software Developer @ adidas Innovation** *(Jul 2022 - Sep 2025)*
+Contributed to digital platforms supporting global product creation workflows (COCU tool). Built internal applications with React and TypeScript, prioritizing maintainability, rigorous testing, and CI/CD protocols.
+
+**Software Engineer @ GransLiving** *(Sep 2021 - Nov 2022)*
+Architected the migration from a legacy WordPress monolith into a modern, highly performant Next.js application, optimizing for international audiences.
+
+**Fullstack Engineering Instructor @ CEI** *(Jan 2022 - Jul 2022)*
+Mentored students through production-level engineering practices in Web Design and Fullstack Development.
+
+---
+
+## Let's build something that scales
+
+Whether you need a technical partner for a new product or technical direction for an existing platform, I am available for select global partnerships.
+
+**[Contact me via my website](https://www.franaragondev.com/#contact)** or reach out directly on **[LinkedIn](https://linkedin.com/in/fran-aragon-simon)**.
+
+<br>
+
+*© 2026 Fran Aragón. Engineered with precision.*
