@@ -15,10 +15,10 @@ import ContactSection from "@/components/layout/ContactSection";
 export const revalidate = 60;
 
 /**
- * Dynamic Metadata Orchestration:
- * @param params - Handled as a Promise for Next.js 15.
- * Explicitly defining title and description to ensure 100 SEO score,
- * preventing metadata merging conflicts between layout and page.
+/**
+ * Dynamic Metadata Orchestration (Vercel Production Optimized):
+ * Ensures 100/100 SEO score by explicitly providing title and description.
+ * Next.js 15 requirement: params must be handled as a Promise.
  */
 export async function generateMetadata({
   params,
@@ -26,24 +26,43 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const messages = (await import(`../../../messages/${locale}.json`)).default;
-  const common = (await getCommonMetadata(locale)) as Metadata;
 
-  return {
-    ...common,
-    title: messages.head.title,
-    description: messages.head.description,
-    openGraph: {
-      ...common.openGraph,
+  try {
+    const messages = (await import(`../../../messages/${locale}.json`)).default;
+    const common = (await getCommonMetadata(locale)) as Metadata;
+
+    return {
+      ...common,
       title: messages.head.title,
       description: messages.head.description,
-    },
-    twitter: {
-      ...common.twitter,
-      title: messages.head.title,
-      description: messages.head.description,
-    },
-  };
+      keywords: messages.head.keywords,
+      alternates: {
+        canonical: `${messages.head.url}/${locale}`,
+        languages: {
+          es: `${messages.head.url}/es`,
+          en: `${messages.head.url}/en`,
+          "x-default": `${messages.head.url}/en`,
+        },
+      },
+      openGraph: {
+        ...common?.openGraph,
+        title: messages.head.title,
+        description: messages.head.description,
+        url: `${messages.head.url}/${locale}`,
+      },
+      twitter: {
+        ...common?.twitter,
+        title: messages.head.title,
+        description: messages.head.description,
+      },
+    };
+  } catch (error) {
+    console.error("Metadata generation failed:", error);
+    return {
+      title: "Fran Aragón | Software Engineer",
+      description: "Software Engineer based in Prague",
+    };
+  }
 }
 
 /**
