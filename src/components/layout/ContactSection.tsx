@@ -71,37 +71,43 @@ export default function ContactSection() {
         {/* Contact Form: Minimalist design with Apple-standard focus rings */}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block text-sm font-semibold tracking-wide text-[#86868B] uppercase mb-2">
+            <label htmlFor="name" className="block text-sm font-semibold tracking-wide text-[#6E6E73] uppercase mb-2">
               {t("name")}
             </label>
             <input
+              id="name"
               name="name"
               type="text"
               required
+              aria-label={t("name")}
               className="w-full px-5 py-4 rounded-2xl bg-[#F5F5F7] dark:bg-[#1C1C1E] border-none text-[#1D1D1F] dark:text-white focus:ring-2 focus:ring-[#1D1D1F] dark:focus:ring-white transition-shadow text-lg"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-semibold tracking-wide text-[#86868B] uppercase mb-2">
+            <label htmlFor="email" className="block text-sm font-semibold tracking-wide text-[#6E6E73] uppercase mb-2">
               {t("email")}
             </label>
             <input
+              id="email"
               name="email"
               type="email"
               required
+              aria-label={t("email")}
               className="w-full px-5 py-4 rounded-2xl bg-[#F5F5F7] dark:bg-[#1C1C1E] border-none text-[#1D1D1F] dark:text-white focus:ring-2 focus:ring-[#1D1D1F] dark:focus:ring-white transition-shadow text-lg"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-semibold tracking-wide text-[#86868B] uppercase mb-2">
+            <label htmlFor="message" className="block text-sm font-semibold tracking-wide text-[#6E6E73] uppercase mb-2">
               {t("message")}
             </label>
             <textarea
+              id="message"
               name="message"
               rows={5}
               required
+              aria-label={t("message")}
               className="w-full px-5 py-4 rounded-2xl bg-[#F5F5F7] dark:bg-[#1C1C1E] border-none text-[#1D1D1F] dark:text-white focus:ring-2 focus:ring-[#1D1D1F] dark:focus:ring-white transition-shadow text-lg resize-none"
             />
           </div>
@@ -127,20 +133,20 @@ export default function ContactSection() {
         {/* Secondary Communication Channels */}
         <div className="space-y-10 text-[#1D1D1F] dark:text-white">
           <div>
-            <h3 className="text-sm font-semibold tracking-wide text-[#86868B] uppercase mb-3">{t("phone")}</h3>
+            <h3 className="text-sm font-semibold tracking-wide text-[#6E6E73] uppercase mb-3">{t("phone")}</h3>
             <a href="https://wa.me/420774363226" className="text-2xl md:text-3xl font-bold tracking-tighter hover:opacity-70 transition-opacity" target="_blank">
               +420 774 363 226
             </a>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold tracking-wide text-[#86868B] uppercase mb-4">{t("social")}</h3>
+            <h3 className="text-sm font-semibold tracking-wide text-[#6E6E73] uppercase mb-4">{t("social")}</h3>
             <div className="flex gap-6 text-2xl">
-              <a href="https://github.com/franaragondev" target="_blank" className="hover:scale-110 transition-transform"><FaGithub /></a>
-              <a href="https://www.linkedin.com/in/fran-aragon-simon/" target="_blank" className="hover:scale-110 transition-transform"><FaLinkedin /></a>
-              <a href="https://wa.me/420774363226" target="_blank" className="hover:scale-110 transition-transform"><FaWhatsapp /></a>
-              <a href="https://twitter.com/franaragondev" target="_blank" className="hover:scale-110 transition-transform"><FaTwitter /></a>
-              <a href="https://instagram.com/franaragon13" target="_blank" className="hover:scale-110 transition-transform"><FaInstagram /></a>
+              <a href="https://github.com/franaragondev" target="_blank" aria-label="GitHub" className="hover:scale-110 transition-transform"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/fran-aragon-simon/" target="_blank" aria-label="LinkedIn" className="hover:scale-110 transition-transform"><FaLinkedin /></a>
+              <a href="https://wa.me/420774363226" target="_blank" aria-label="WhatsApp" className="hover:scale-110 transition-transform"><FaWhatsapp /></a>
+              <a href="https://twitter.com/franaragondev" target="_blank" aria-label="Twitter" className="hover:scale-110 transition-transform"><FaTwitter /></a>
+              <a href="https://instagram.com/franaragon13" target="_blank" aria-label="Instagram" className="hover:scale-110 transition-transform"><FaInstagram /></a>
             </div>
           </div>
         </div>

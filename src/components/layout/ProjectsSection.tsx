@@ -117,7 +117,7 @@ export default function ProjectsSection() {
                   {/* Tech Stack Metadata Tags */}
                   <div className="flex gap-2 mt-2">
                     {project.tech.map((tag) => (
-                      <span key={tag} className="text-[10px] uppercase tracking-widest font-bold text-[#86868B]">
+                      <span key={tag} className="text-[10px] uppercase tracking-widest font-bold text-[#6E6E73]">
                         {tag}
                       </span>
                     ))}
@@ -141,7 +141,7 @@ export default function ProjectsSection() {
       {/* SECTION 2: ECOSYSTEM INFRASTRUCTURE (MARQUEE) */}
       <div className="marquee-container relative py-12 group cursor-default">
         <div className="text-center mb-12 px-4">
-          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#86868B]">
+          <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#6E6E73]">
             Infrastructure & UI Systems
           </p>
         </div>

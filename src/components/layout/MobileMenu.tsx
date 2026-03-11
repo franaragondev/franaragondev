@@ -111,7 +111,7 @@ export default function MobileMenu({ isOpen, onCloseAction, isHeaderVisible }: M
 
             {/* Language Selection Footer */}
             <div className="mt-auto pt-8 border-t border-black/5 dark:border-white/10">
-              <div className="flex items-center gap-2 mb-4 text-[#86868B]">
+              <div className="flex items-center gap-2 mb-4 text-[#6E6E73]">
                 <Globe className="w-5 h-5" />
                 <h3 className="text-sm font-semibold tracking-widest uppercase">
                   {t("language")}

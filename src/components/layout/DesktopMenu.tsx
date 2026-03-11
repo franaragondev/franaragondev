@@ -67,7 +67,7 @@ export default function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
           key={href}
           href={href}
           onClick={(e) => handleClick(e, href)}
-          className="text-xs font-semibold tracking-widest uppercase text-[#86868B] hover:text-[#1D1D1F] dark:hover:text-white transition-colors duration-300"
+          className="text-xs font-semibold tracking-widest uppercase text-[#6E6E73] hover:text-[#1D1D1F] dark:hover:text-white transition-colors duration-300"
         >
           {label}
         </a>

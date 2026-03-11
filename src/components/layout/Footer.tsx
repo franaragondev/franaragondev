@@ -29,7 +29,7 @@ export default function Footer() {
               a subtle scarcity signal to high-ticket clients.
           */}
           <div className="flex items-center justify-center gap-2">
-            <p className=" text-[#86868B] text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase">
+            <p className=" text-[#6E6E73] text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase">
               {t("status")}
             </p>
           </div>

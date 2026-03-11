@@ -12,7 +12,7 @@ import { useLocale } from "next-intl";
 /**
  * Header Component
  * * Acts as the primary navigational shell. Implements an "Auto-hide" scroll logic
- * inspired by mobile OS patterns, high-fidelity glassmorphism, and 
+ * inspired by mobile OS patterns, high-fidelity glassmorphism, and
  * comprehensive mobile/desktop responsive orchestration.
  */
 export default function Header() {
@@ -40,7 +40,7 @@ export default function Header() {
   /**
    * Effect: Scroll Direction Tracking
    * * Implements a "Smart Header" that hides on scroll down and reveals on scroll up.
-   * Enhances vertical screen real estate for content consumption while 
+   * Enhances vertical screen real estate for content consumption while
    * maintaining instant access to navigation.
    */
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function Header() {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       // Threshold check (80px) ensures the header doesn't hide too early at the page top
       if (currentScrollY > prevScrollY && currentScrollY > 80) {
         setShowHeader(false);
@@ -57,7 +57,7 @@ export default function Header() {
       }
       prevScrollY = currentScrollY;
     };
-    
+
     // Using { passive: true } to optimize scroll performance and prevent main thread blocking
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
@@ -80,16 +80,23 @@ export default function Header() {
             aria-label="Toggle menu"
             className="text-[#1D1D1F] dark:text-white hover:opacity-70 transition-opacity"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
         {/* Global Branding / Logo: Implements localized home-routing */}
         <div className="flex justify-center md:justify-start md:flex-1">
-          <Link href={basePath} className="transition-transform duration-300 hover:scale-105 active:scale-95">
+          <Link
+            href={basePath}
+            className="transition-transform duration-300 hover:scale-105 active:scale-95"
+          >
             <Image
               src="/logo.png"
-              alt="Fran Aragon Logo"
+              alt="Fran Aragon"
               width={36}
               height={36}
               className="drop-shadow-sm"

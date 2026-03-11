@@ -85,7 +85,7 @@ export default function UserDropdown() {
         className={`flex items-center gap-2 rounded-full px-3 py-1.5 transition-all duration-300 focus:outline-none ${
           open 
             ? "bg-black/5 dark:bg-white/10 text-[#1D1D1F] dark:text-white" 
-            : "text-[#86868B] hover:text-[#1D1D1F] dark:hover:text-white"
+            : "text-[#6E6E73] hover:text-[#1D1D1F] dark:hover:text-white"
         }`}
         aria-haspopup="true"
         aria-expanded={open}
