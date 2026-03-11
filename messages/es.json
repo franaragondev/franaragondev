@@ -1,38 +1,38 @@
 {
   "head": {
-    "title": "Fran Aragón | Software Engineer construyendo productos digitales escalables",
-    "description": "Software Engineer basado en Praga especializado en construir plataformas SaaS escalables, aplicaciones web de alto rendimiento y productos iOS nativos.",
+    "title": "Fran Aragón | Ingeniero de Software especializado en productos digitales escalables",
+    "description": "Ingeniero de Software con sede en Praga, especializado en el desarrollo de plataformas SaaS escalables, aplicaciones web de alto rendimiento y ecosistemas iOS nativos.",
     "url": "https://www.franaragondev.com/",
     "image": "https://www.franaragondev.com/logo.png",
-    "keywords": "software engineer, product engineer, desarrollo SaaS, arquitectura de software, desarrollo de plataformas web, React, TypeScript, Next.js, tech partner Praga"
+    "keywords": "ingeniero de software, ingeniero de producto, desarrollo SaaS, arquitectura de software, plataformas web, React, TypeScript, Next.js, socio tecnológico Praga"
   },
- "menu": {
-  "expertise": "Especialidades",
-  "projects": "Ingeniería",
-  "experience": "Trayectoria",
-  "about": "Perfil",
-  "contact": "Contacto",
-  "language": "Idioma"
-},
+  "menu": {
+    "expertise": "Especialización",
+    "projects": "Ingeniería",
+    "experience": "Experiencia",
+    "about": "Perfil",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
   "hero": {
-  "title": "Software Engineer construyendo <br></br> productos digitales escalables.",
-  "subtitle": "React • Next.js • TypeScript",
-  "badgePrague": "Basado en Praga",
-  "badgeWorldwide": "Trabajando con empresas de todo el mundo"
-},
+    "title": "Ingeniero de Software especializado en <br></br> productos digitales escalables.",
+    "subtitle": "React • Next.js • TypeScript",
+    "badgePrague": "Sede en Praga",
+    "badgeWorldwide": "Colaborando con empresas a nivel global"
+  },
   "expertise": {
-    "label": "Especialidades",
+    "label": "Especialización",
     "saas": {
       "title": "Plataformas SaaS",
-      "description": "Arquitecturas escalables y multi-tenant diseñadas para el crecimiento internacional y la mantenibilidad."
+      "description": "Arquitectura de sistemas multi-tenant escalables, priorizando la mantenibilidad a largo plazo y la expansión global."
     },
     "performance": {
       "title": "Rendimiento Web",
-      "description": "Interfaces de alta velocidad optimizadas para Core Web Vitals, SEO y conversión de negocio."
+      "description": "Ingeniería de interfaces de alta velocidad optimizadas para Core Web Vitals, SEO y conversión de negocio."
     },
     "architecture": {
       "title": "Dirección Técnica",
-      "description": "Cerrando la brecha entre objetivos de negocio y código robusto mediante arquitectura de producto estratégica."
+      "description": "Conectando los objetivos de negocio con código sólido a través de una arquitectura de producto estratégica."
     }
   },
   "language": {
@@ -40,7 +40,7 @@
     "en": "Inglés"
   },
   "cookies": {
-    "message": "Utilizamos telemetría para optimizar el rendimiento. No se almacenan datos personales.",
+    "message": "Utilizamos telemetría analítica para optimizar el rendimiento. No almacenamos datos personales.",
     "accept": "Aceptar",
     "reject": "Rechazar",
     "learnMore": "Saber más",
@@ -48,83 +48,98 @@
   },
   "cookiesPolicy": {
     "title": "Política de Cookies",
-    "intro": "Esta plataforma utiliza métricas analíticas para entender la interacción del usuario de forma anónima y optimizar el rendimiento del sistema.",
+    "intro": "Esta plataforma emplea métricas analíticas para comprender la interacción del usuario de forma anónima y optimizar el rendimiento del sistema.",
     "whatAreCookiesTitle": "¿Qué son las cookies?",
-    "whatAreCookies": "Pequeños fragmentos de datos locales utilizados estrictamente para telemetría de rendimiento y análisis de navegación.",
+    "whatAreCookies": "Pequeños fragmentos de datos locales utilizados exclusivamente para telemetría de rendimiento y análisis de navegación.",
     "typesTitle": "Tecnología",
     "typesList": [
-      "Analítica anónima utilizada para evaluar el rendimiento y mejorar la experiencia del usuario."
+      "Analítica anónima para evaluar el rendimiento y mejorar la experiencia del usuario."
     ],
     "manageTitle": "Gestión de Cookies",
-    "manageText": "Puedes aceptar o rechazar las cookies analíticas a través del banner o la configuración de tu navegador.",
+    "manageText": "Puedes gestionar las cookies analíticas a través del banner o la configuración de tu navegador.",
     "personalDataTitle": "Datos Personales",
-    "personalDataTextPart1": "No se recopilan ni almacenan datos personales a través de cookies en esta plataforma.",
+    "personalDataTextPart1": "No se recopila ni almacena ningún tipo de información personal a través de las cookies de esta plataforma.",
     "personalDataTextPart2": "",
     "privacyPolicyLinkText": "Política de Privacidad",
-    "changesTitle": "Cambios en la Política",
-    "changesText": "Esta política puede actualizarse ocasionalmente para reflejar mejoras en la infraestructura.",
+    "changesTitle": "Actualizaciones",
+    "changesText": "Esta política puede actualizarse para reflejar mejoras en la infraestructura del sistema.",
     "lastUpdated": "Última actualización: Marzo 2026"
   },
   "privacyPolicy": {
     "title": "Política de Privacidad",
-    "intro": "La privacidad es un principio fundamental de ingeniería. Solo utilizamos métricas anónimas para evaluar el rendimiento de la plataforma.",
+    "intro": "La privacidad es un pilar fundamental de nuestra ingeniería. Solo empleamos métricas anónimas para evaluar el rendimiento de la plataforma.",
     "sections": [
-      { "title": "1. Datos Personales", "text": "Este sitio web no recopila ni almacena datos personales." },
-      { "title": "2. Herramientas Analíticas", "text": "Las métricas de tráfico se utilizan solo para medir el rendimiento del sistema y los patrones de uso." },
-      { "title": "3. Contacto", "text": "Las comunicaciones por correo electrónico se manejan de forma segura y nunca para seguimiento." },
-      { "title": "4. Derechos", "text": "Dado que no se almacenan datos personales, no se aplican solicitudes de acceso o eliminación." },
-      { "title": "5. Cambios en la Política", "text": "Las actualizaciones de nuestra infraestructura de privacidad siempre se reflejarán aquí." }
+      {
+        "title": "1. Datos Personales",
+        "text": "Este sitio web no recopila ni almacena datos de carácter personal."
+      },
+      {
+        "title": "2. Herramientas Analíticas",
+        "text": "Las métricas de tráfico se utilizan estrictamente para medir el rendimiento del sistema y los patrones de uso."
+      },
+      {
+        "title": "3. Comunicación",
+        "text": "Las consultas vía email se gestionan de forma segura y nunca se utilizan con fines de seguimiento."
+      },
+      {
+        "title": "4. Derechos",
+        "text": "Al no almacenarse datos personales, no proceden las solicitudes de acceso, rectificación o supresión."
+      },
+      {
+        "title": "5. Cambios",
+        "text": "Cualquier actualización en nuestra infraestructura de privacidad se verá reflejada en esta sección."
+      }
     ],
     "lastUpdated": "Última actualización: Marzo 2026",
-    "cookiesLinkText": "Cookie Policy"
+    "cookiesLinkText": "Política de Cookies"
   },
- "footer": {
-  "center": "Ingeniería estratégica desde Praga.",
-  "status": "Disponible para proyectos selectos a nivel mundial"
-},
+  "footer": {
+    "center": "Ingeniería estratégica desde Praga.",
+    "status": "Disponible para colaboraciones seleccionadas a nivel global"
+  },
   "experience": {
-    "title": "Trayectoria",
+    "title": "Experiencia",
     "solutia": {
       "title": "Frontend Lead & Software Engineer",
       "period": "Nov 2025 - Actualidad",
-      "point1": "Liderando la arquitectura frontend y dirección técnica de plataformas internacionales B2B y B2C.",
+      "point1": "Liderando la arquitectura frontend y la dirección técnica de plataformas internacionales B2B y B2C.",
       "point2": "Diseño de sistemas de componentes escalables e integración fluida con servicios cloud.",
-      "point3": "Impulsando la optimización del rendimiento, accesibilidad y arquitectura mantenible."
+      "point3": "Impulsando estándares de rendimiento, accesibilidad y arquitecturas mantenibles."
     },
     "adidas": {
       "title": "Software Developer",
       "period": "Julio 2022 - Septiembre 2025",
-      "point1": "Ingeniero de software en adidas Innovation, contribuyendo a plataformas digitales globales.",
-      "point2": "Co-desarrollador de la herramienta COCU, enfocado en arquitectura escalable y sincronización con negocio.",
-      "point3": "Construcción de aplicaciones internas con React y TypeScript priorizando mantenibilidad.",
-      "point4": "Colaboración con equipos multifuncionales para asegurar el éxito del producto.",
-      "point5": "Aplicación de mejores prácticas en testing, accesibilidad y optimización.",
-      "point6": "Garantía de confiabilidad mediante protocolos rigurosos de testing y CI/CD."
+      "point1": "Ingeniero de software en adidas Innovation, desarrollando plataformas digitales para la creación de productos globales.",
+      "point2": "Co-desarrollé la herramienta COCU, enfocada en arquitectura escalable y sincronización con negocio.",
+      "point3": "Construcción de aplicaciones internas con React y TypeScript priorizando la mantenibilidad.",
+      "point4": "Colaboración con equipos multifuncionales para garantizar el éxito del producto.",
+      "point5": "Implementación de mejores prácticas en testing, accesibilidad y rendimiento.",
+      "point6": "Garantía de confiabilidad en producción mediante protocolos de testing y CI/CD."
     },
     "gransliving": {
       "title": "Software Engineer",
       "period": "Septiembre 2021 - Noviembre 2022",
-      "point1": "Migración de un monolito WordPress a una aplicación moderna y escalable usando Next.js.",
+      "point1": "Migración de un monolito WordPress hacia una aplicación moderna y escalable basada en Next.js.",
       "point2": "Diseño e implementación de arquitectura UI alineada con estándares modernos de UX.",
-      "point3": "Optimización del rendimiento y comportamiento responsive para audiencias internacionales."
+      "point3": "Optimización de rendimiento y comportamiento responsive para audiencias internacionales."
     },
     "cei": {
       "title": "Instructor de Ingeniería Fullstack",
       "period": "Enero 2022 - Julio 2022",
       "point1": "Docente de Diseño Web (HTML5, CSS3, JS) y Desarrollo Fullstack (PHP, MySQL).",
-      "point2": "Mentoría de estudiantes en proyectos enfocados en prácticas de ingeniería de producción."
+      "point2": "Mentoría de alumnos en proyectos centrados en prácticas de ingeniería de producción."
     }
   },
   "projects": {
     "title": "Sistemas en Producción",
     "homestocker": {
       "title": "HomeStocker SaaS",
-      "description": "Founder & Engineer. Aplicación nativa iOS diseñada para reducir el desperdicio de alimentos mediante inventario inteligente.",
+      "description": "Fundador e ingeniero. Aplicación nativa iOS diseñada para reducir el desperdicio de alimentos mediante inventario inteligente e infraestructura cloud.",
       "url": "https://homestocker.app/"
     },
     "cdestepona": {
       "title": "CD Estepona Platform",
-      "description": "Arquitectura full-stack construida con Next.js y Prisma. Diseñada para alto rendimiento y SEO técnico avanzado (Lighthouse 90+).",
+      "description": "Arquitectura Full-stack desarrollada con Next.js y Prisma. Optimizada para la entrega de contenido de alto rendimiento y SEO técnico (Lighthouse 90+).",
       "url": "https://www.cdesteponafans.com/"
     },
     "sportsteam-template": {
@@ -138,27 +153,27 @@
       "url": "https://businesstemplate.franaragondev.com/"
     },
     "restaurant-template": {
-  "title": "Restaurant Template",
-  "description": "Plantilla web para restaurantes con un vídeo hero dinámico, secciones de menú y un diseño elegante y responsive.",
-  "url": "https://restaurant-template.franaragondev.com/"
-},
-    "viewProject": "Ver Proyecto"
+      "title": "Restaurant Template",
+      "description": "Plantilla web premium para restauración con vídeo hero dinámico, gestión de menús y diseño elegante.",
+      "url": "https://restaurant-template.franaragondev.com/"
+    },
+    "viewProject": "Ver proyecto"
   },
   "about": {
-    "title": "Construyendo productos que escalan.",
-    "description": "Soy Fran Aragón, Software Engineer y Frontend Lead especializado en construir productos digitales de alto rendimiento.<br /><br />Diseño y construyo plataformas SaaS, aplicaciones web y sistemas móviles nativos que resuelven problemas de negocio reales. Mi trabajo se centra en arquitectura limpia, rendimiento y mantenibilidad.<br /><br />Actualmente lidero la arquitectura frontend en Solutia, entregando plataformas para clientes internacionales. Anteriormente construí herramientas globales en adidas Innovation.<br /><br />También soy el fundador de HomeStocker, un ecosistema nativo iOS para la gestión inteligente de inventarios.<br /><br />Basado en Praga. Trabajando con empresas de todo el mundo.",
-    "viewCV": "Ver CV"
+    "title": "Ingeniería de productos escalables.",
+    "description": "Soy Fran Aragón, Ingeniero de Software y Frontend Lead especializado en el desarrollo de productos digitales de alto rendimiento.<br /><br />Diseño y construyo plataformas SaaS, aplicaciones web y sistemas móviles nativos que resuelven retos de negocio reales. Mi enfoque se centra en la arquitectura limpia, el rendimiento y la mantenibilidad a largo plazo.<br /><br />Actualmente lidero la arquitectura frontend en Solutia, gestionando plataformas complejas para clientes internacionales. Anteriormente, formé parte del equipo de adidas Innovation, desarrollando herramientas clave para flujos de trabajo globales.<br /><br />Además, soy el fundador de HomeStocker, un ecosistema nativo iOS para la gestión inteligente de inventarios.<br /><br />Ubicado en Praga. Colaborando con empresas de todo el mundo.",
+    "viewCV": "Ver trayectoria"
   },
-"contact": {
-  "title": "Construyamos el futuro de tu producto.",
-  "name": "Nombre",
-  "email": "Email",
-  "message": "Propuesta de proyecto",
-  "submit": "Contactar ahora",
-  "success": "Solicitud recibida correctamente.",
-  "error": "Error del servidor.",
-  "phone": "Comunicación directa",
-  "emailLabel": "Email",
-  "social": "Redes sociales"
-}
+  "contact": {
+    "title": "Impulsemos el futuro de tu producto.",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Propuesta de proyecto",
+    "submit": "Contactar",
+    "success": "Solicitud recibida correctamente.",
+    "error": "Error del servidor.",
+    "phone": "Comunicación directa",
+    "emailLabel": "Email",
+    "social": "Redes sociales"
+  }
 }
