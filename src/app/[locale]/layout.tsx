@@ -35,10 +35,8 @@ export const viewport = {
 
 /**
  * Dynamic Metadata Generator (Technical SEO & Social Graph):
- * @param params - Next.js 15 requires params to be handled as a Promise.
- * Orchestrates localized metadata to ensure perfect search engine indexing.
- * Implements Canonical URLs and hreflang alternatives to prevent duplicate
- * content penalties across international routes.
+ * Refined to eliminate trailing slash discrepancies and ensure
+ * 100% alignment between canonical and hreflang tags.
  */
 export async function generateMetadata({
   params,
@@ -82,7 +80,7 @@ export async function generateMetadata({
 
     // International SEO mapping (Hreflang strategy)
     alternates: {
-      canonical: head.url,
+      canonical: `${baseUrl}/${locale}`,
       languages: {
         es: `${baseUrl}/es`,
         en: `${baseUrl}/en`,
@@ -94,7 +92,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale === "en" ? "en_US" : "es_ES",
-      url: head.url,
+      url: `${baseUrl}/${locale}`,
       siteName: "Fran Aragón — Software Engineer",
       title: head.title,
       description: head.description,

@@ -16,9 +16,9 @@ export const revalidate = 60;
 
 /**
  * Dynamic Metadata Orchestration:
- * @param params - Handled as a Promise to comply with Next.js 15 async API.
- * Leverages shared metadata utilities to ensure consistent SEO signals across
- * localized home routes.
+ * @param params - Handled as a Promise for Next.js 15.
+ * Explicitly defining title and description to ensure 100 SEO score,
+ * preventing metadata merging conflicts between layout and page.
  */
 export async function generateMetadata({
   params,
@@ -31,13 +31,16 @@ export async function generateMetadata({
 
   return {
     ...common,
+    title: messages.head.title,
     description: messages.head.description,
     openGraph: {
       ...common.openGraph,
+      title: messages.head.title,
       description: messages.head.description,
     },
     twitter: {
       ...common.twitter,
+      title: messages.head.title,
       description: messages.head.description,
     },
   };

@@ -2,24 +2,24 @@
   "head": {
     "title": "Fran Aragón | Software Engineer building scalable digital products",
     "description": "Software Engineer based in Prague specializing in building scalable SaaS platforms, high-performance web applications, and native iOS products.",
-    "url": "https://www.franaragondev.com/",
+    "url": "https://www.franaragondev.com",
     "image": "https://www.franaragondev.com/logo.png",
     "keywords": "software engineer, product engineer, SaaS development, software architecture, web platform development, React, TypeScript, Next.js, tech partner Prague"
   },
- "menu": {
-  "expertise": "Expertise",
-  "projects": "Engineering",
-  "experience": "Experience",
-  "about": "Profile",
-  "contact": "Contact",
-  "language": "Language"
-},
- "hero": {
-  "title": "Software Engineer building <br></br> scalable digital products.",
-  "subtitle": "React • Next.js • TypeScript",
-  "badgePrague": "Based in Prague",
-  "badgeWorldwide": "Working with companies worldwide"
-},
+  "menu": {
+    "expertise": "Expertise",
+    "projects": "Engineering",
+    "experience": "Experience",
+    "about": "Profile",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Software Engineer building <br></br> scalable digital products.",
+    "subtitle": "React • Next.js • TypeScript",
+    "badgePrague": "Based in Prague",
+    "badgeWorldwide": "Working with companies worldwide"
+  },
   "expertise": {
     "label": "Expertise",
     "saas": {
@@ -69,19 +69,34 @@
     "title": "Privacy Policy",
     "intro": "Privacy is a fundamental engineering principle. We only use anonymous metrics to evaluate platform performance.",
     "sections": [
-      { "title": "1. Personal Data", "text": "This website does not collect or store personal data." },
-      { "title": "2. Analytical Tools", "text": "Traffic metrics are used only to measure system performance and usage patterns." },
-      { "title": "3. Contact", "text": "Email communications are handled securely and never used for tracking." },
-      { "title": "4. Rights", "text": "Since no personal data is stored, access or deletion requests do not apply." },
-      { "title": "5. Policy Changes", "text": "Updates to our privacy infrastructure will always be reflected here." }
+      {
+        "title": "1. Personal Data",
+        "text": "This website does not collect or store personal data."
+      },
+      {
+        "title": "2. Analytical Tools",
+        "text": "Traffic metrics are used only to measure system performance and usage patterns."
+      },
+      {
+        "title": "3. Contact",
+        "text": "Email communications are handled securely and never used for tracking."
+      },
+      {
+        "title": "4. Rights",
+        "text": "Since no personal data is stored, access or deletion requests do not apply."
+      },
+      {
+        "title": "5. Policy Changes",
+        "text": "Updates to our privacy infrastructure will always be reflected here."
+      }
     ],
     "lastUpdated": "Last updated: March 2026",
     "cookiesLinkText": "Cookie Policy"
   },
-"footer": {
-  "center": "Strategically engineered in Prague.",
-  "status": "Available for select partnerships worldwide"
-},
+  "footer": {
+    "center": "Strategically engineered in Prague.",
+    "status": "Available for select partnerships worldwide"
+  },
   "experience": {
     "title": "Experience",
     "solutia": {
@@ -138,10 +153,10 @@
       "url": "https://businesstemplate.franaragondev.com/"
     },
     "restaurant-template": {
-  "title": "Restaurant Template",
-  "description": "Stylish restaurant website template featuring a dynamic hero video, menu sections, and an elegant, responsive design.",
-  "url": "https://restaurant-template.franaragondev.com/"
-},
+      "title": "Restaurant Template",
+      "description": "Stylish restaurant website template featuring a dynamic hero video, menu sections, and an elegant, responsive design.",
+      "url": "https://restaurant-template.franaragondev.com/"
+    },
     "viewProject": "View Project"
   },
   "about": {
@@ -149,16 +164,16 @@
     "description": "I'm Fran Aragón, a Software Engineer and Frontend Lead specialized in building high-performance digital products.<br /><br />I design and build scalable SaaS platforms, web applications, and native mobile systems that solve real business problems. My work focuses on clean architecture, performance, and long-term maintainability.<br /><br />Currently, I lead frontend architecture at Solutia, delivering complex platforms for international clients. Previously, I built tools at adidas’ Innovation team used in global workflows.<br /><br />I am also the founder behind HomeStocker, a native iOS ecosystem for smart inventory management.<br /><br />Based in Prague. Working with companies worldwide.",
     "viewCV": "View Resume"
   },
-"contact": {
-  "title": "Let’s build your product’s future.",
-  "name": "Name",
-  "email": "Email",
-  "message": "Project proposal",
-  "submit": "Get in touch",
-  "success": "Request successfully received.",
-  "error": "Server error.",
-  "phone": "Direct communication",
-  "emailLabel": "Email",
-  "social": "Social media"
-}
+  "contact": {
+    "title": "Let’s build your product’s future.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Project proposal",
+    "submit": "Get in touch",
+    "success": "Request successfully received.",
+    "error": "Server error.",
+    "phone": "Direct communication",
+    "emailLabel": "Email",
+    "social": "Social media"
+  }
 }
