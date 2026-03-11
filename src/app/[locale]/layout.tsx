@@ -13,7 +13,7 @@ import { Montserrat } from "next/font/google";
 /**
  * Typography Architecture:
  * Leverages Next.js font optimization to serve Montserrat via CSS variables.
- * This guarantees zero Cumulative Layout Shift (CLS) and sub-setting for optimal 
+ * This guarantees zero Cumulative Layout Shift (CLS) and sub-setting for optimal
  * payload size and rendering performance.
  */
 const montserrat = Montserrat({
@@ -24,30 +24,28 @@ const montserrat = Montserrat({
 
 /**
  * Viewport & Progressive Web App (PWA) Config:
- * The #000000 theme color ensures the iOS/Safari status bar blends seamlessly 
+ * The #000000 theme color ensures the iOS/Safari status bar blends seamlessly
  * with the application's dark-mode aesthetics, providing a native-app-like immersion.
  */
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#000000", 
+  themeColor: "#000000",
 };
 
 /**
  * Dynamic Metadata Generator (Technical SEO & Social Graph):
- * * Orchestrates localized metadata to ensure perfect search engine indexing.
- * * Implements Canonical URLs and hreflang alternatives to prevent duplicate 
- * content penalties across the en/es routes.
- * * Configures Open Graph and Twitter Cards for high-conversion social sharing previews.
+ * @param params - Next.js 15 requires params to be handled as a Promise.
+ * Orchestrates localized metadata to ensure perfect search engine indexing.
+ * Implements Canonical URLs and hreflang alternatives to prevent duplicate
+ * content penalties across international routes.
  */
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
-  searchParams?: Record<string, string | string[] | undefined>;
+  params: Promise<{ locale: string }>;
 }) {
-  const awaitedParams = await Promise.resolve(params);
-  const locale = awaitedParams.locale;
+  const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) return {};
 
@@ -68,7 +66,7 @@ export async function generateMetadata({
     authors: [{ name: "Fran Aragón", url: baseUrl }],
     creator: "Fran Aragón",
     publisher: "Fran Aragón",
-    
+
     // Strict crawler directives ensuring optimal indexation of high-value assets
     robots: {
       index: true,
@@ -81,8 +79,8 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
-    
-    // International SEO mapping
+
+    // International SEO mapping (Hreflang strategy)
     alternates: {
       canonical: head.url,
       languages: {
@@ -91,8 +89,8 @@ export async function generateMetadata({
         "x-default": `${baseUrl}/en`,
       },
     },
-    
-    // Open Graph config for LinkedIn/iMessage rich previews
+
+    // Open Graph config for high-fidelity social sharing previews
     openGraph: {
       type: "website",
       locale: locale === "en" ? "en_US" : "es_ES",
@@ -109,8 +107,8 @@ export async function generateMetadata({
         },
       ],
     },
-    
-    // Twitter Card optimization
+
+    // Twitter Card optimization for B2B engagement
     twitter: {
       card: "summary_large_image",
       title: head.title,
@@ -118,28 +116,28 @@ export async function generateMetadata({
       creator: "@franaragondev",
       images: [head.image],
     },
-    icons: { 
+    icons: {
       icon: "/logo.png",
-      apple: "/logo.png", 
+      apple: "/logo.png",
     },
   };
 }
 
 /**
  * Root Locale Layout:
- * * The foundational Server Component of the platform.
- * * Injects Semantic Web data (JSON-LD), handles GDPR compliance initialization, 
- * and wraps the application tree in necessary context providers.
+ * The foundational Server Component of the platform.
+ * @param params - Handled as a Promise to comply with Next.js 15 asynchronous APIs.
+ * Injects Semantic Web data (JSON-LD), handles GDPR compliance initialization,
+ * and wraps the application tree in the i18n NextIntlClientProvider.
  */
 export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams.locale;
+  const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) notFound();
 
@@ -151,16 +149,16 @@ export default async function LocaleLayout({
 
   /**
    * Structured Data (JSON-LD) - Knowledge Graph Optimization:
-   * Translates the professional trajectory into machine-readable entities.
+   * Translates professional trajectory into machine-readable entities.
    * Explicitly defining relationships with authoritative organizations (adidas, Solutia)
-   * instantly builds domain authority and trust signals for search algorithms.
+   * builds domain authority and signals trust to search algorithms.
    */
   const personLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${baseUrl}/#person`,
     name: "Fran Aragón",
-    jobTitle: "Software Engineer & Frontend Lead", 
+    jobTitle: "Software Engineer & Frontend Lead",
     worksFor: {
       "@type": "Organization",
       name: "Solutia s.r.o.",
@@ -174,7 +172,7 @@ export default async function LocaleLayout({
     sameAs: [
       "https://www.linkedin.com/in/fran-aragon-simon/",
       "https://github.com/franaragondev",
-      "https://twitter.com/franaragondev"
+      "https://twitter.com/franaragondev",
     ],
     knowsAbout: [
       "Software Architecture",
@@ -183,7 +181,7 @@ export default async function LocaleLayout({
       "Next.js",
       "TypeScript",
       "Swift",
-      "Web Performance"
+      "Web Performance",
     ],
   };
 
@@ -199,7 +197,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${montserrat.variable}`}>
       <body>
-        {/* Analytics & Legal Compliance Layer */}
+        {/* Analytics & Compliance Layer: Injects JSON-LD for Semantic SEO */}
         <ConsentScripts
           analyticsId="G-MGGZV5VBEV"
           jsonLd={[
@@ -208,7 +206,7 @@ export default async function LocaleLayout({
           ]}
         />
 
-        {/* Global Application State & UI Shell */}
+        {/* Global Application Shell */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <ClientParallaxProvider>
