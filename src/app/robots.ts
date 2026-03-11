@@ -1,16 +1,19 @@
 import { MetadataRoute } from "next";
 
 /**
- * Dynamic Robots configuration
- * * Enforces centralized crawling and points directly to the native sitemap.
+ * Dynamic Robots Configuration
+ * * Enforces centralized crawling and ensures the host matches
+ * the canonical origin to prevent "duplicate content" flags.
  */
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = "https://www.franaragondev.com";
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.franaragondev.com/sitemap.xml",
-    host: "https://www.franaragondev.com",
+    sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }
