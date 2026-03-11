@@ -2,21 +2,28 @@
 
 import { Parallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 /**
  * ParallaxBackground Component
- * * A performance-optimized background wrapper that implements a multi-layered 
- * parallax effect. Designed for high visual fidelity while maintaining 
- * smooth frame rates through GPU acceleration and efficient resize listeners.
+ * * A high-performance background primitive designed for immersive visual storytelling.
+ * * Key Engineering Features:
+ * * LCP Optimization: Utilizes Next.js <Image /> with 'priority' and 'fetchPriority'
+ * to ensure critical background assets are prioritized during the initial hydration.
+ * * Hardware Acceleration: Leverages GPU-bound transformations via react-scroll-parallax
+ * to maintain a consistent 60fps experience even during heavy scroll interactions.
+ * * Responsive Focal Points: Implements dynamic background positioning to maintain
+ * visual intent across heterogeneous viewport aspect ratios.
  */
+
 interface ParallaxBackgroundProps {
-  /** Source path for the background image */
+  /** Resource path for the background asset (optimized via Next.js Image Loader) */
   backgroundImage: string;
-  /** Velocity of the parallax effect; negative values create an 'ascending' feel */
+  /** Scroll velocity modifier; negative values simulate depth/ascent */
   speed?: number;
-  /** Minimum vertical space the section occupies */
+  /** CSS min-height constraint for the section container */
   minHeight?: string;
-  /** Semantic ID for anchor-link navigation targeting */
+  /** Semantic identifier for document-level anchor navigation */
   sectionName?: string;
 }
 
@@ -26,59 +33,64 @@ export default function ParallaxBackground({
   minHeight = "600px",
   sectionName,
 }: ParallaxBackgroundProps) {
-  /** * Responsive Background Positioning:
-   * Optimized to ensure the visual focal point remains visible across 
-   * different aspect ratios (Mobile vs. Desktop).
+  /** * Responsive Anchor Logic:
+   * Dynamically adjusts the image's focal point to prevent critical visual
+   * clipping on ultra-narrow (mobile) viewports.
    */
   const [bgPosition, setBgPosition] = useState("center 70%");
 
   useEffect(() => {
-    /** Handles viewport changes to adjust image focal alignment dynamically */
     const updatePosition = () => {
       if (window.innerWidth < 768) {
-        setBgPosition("75% 50%"); // Mobile-optimized focus
+        setBgPosition("75% 50%"); // Optimized for portrait mobile focus
       } else {
-        setBgPosition("center 70%"); // Desktop-optimized focus
+        setBgPosition("center 70%"); // Standard desktop wide-angle focus
       }
     };
 
     updatePosition();
-    
-    /** * Using passive event listeners to avoid blocking the browser's 
-     * main thread during high-frequency resize events.
+
+    /** * Performance optimization: Using passive listeners to avoid main-thread
+     * jank during high-frequency window resize events.
      */
     window.addEventListener("resize", updatePosition, { passive: true });
     return () => window.removeEventListener("resize", updatePosition);
   }, []);
 
   return (
-    <section 
-      id={sectionName} 
-      className="relative overflow-hidden bg-[#111111]" 
+    <section
+      id={sectionName}
+      className="relative overflow-hidden bg-[#111111]"
       style={{ minHeight }}
     >
-      <Parallax speed={speed}>
+      <Parallax speed={speed} className="absolute inset-0 h-full w-full">
         <div
-          className="relative w-full h-full min-h-[600px] bg-cover"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundPosition: bgPosition,
-            /** * Hardware Acceleration: 
-             * Using will-change and translate3d to promote the element 
-             * to its own GPU compositor layer, minimizing layout shifts and repaint.
-             */
-            willChange: "transform",
-            transform: "translate3d(0,0,0)",
-            /* Height offset prevents white-space gaps during intense scroll speeds */
-            minHeight: `calc(${minHeight} + 350px)`,
-          }}
-        />
-        
-        {/* Visual Scrim: 
-            A low-opacity layer that neutralizes background highlights 
-            to ensure foreground text meets accessibility contrast standards. 
-        */}
-        <div className="absolute inset-0 bg-black/30 pointer-events-none z-10" />
+          className="relative h-full w-full"
+          /* Calculating height offset to prevent whitespace gaps during intense parallax deltas */
+          style={{ minHeight: `calc(${minHeight} + 350px)` }}
+        >
+          {/* Next.js Optimized Image Component:
+              Priority is set to true as this often serves as the Largest Contentful Paint (LCP).
+              Alt is empty ("") as the image is purely decorative, satisfying WCAG 2.1 A11y standards.
+          */}
+          <Image
+            src={backgroundImage}
+            alt=""
+            fill
+            priority
+            fetchPriority="high"
+            className="object-cover"
+            style={{ objectPosition: bgPosition }}
+            sizes="100vw"
+            quality={90}
+          />
+
+          {/* Visual Scrim / Overlay: 
+              Normalizes the background luminance to ensure foreground typography 
+              consistently passes WCAG AA/AAA contrast ratios.
+          */}
+          <div className="absolute inset-0 bg-black/30 pointer-events-none z-10" />
+        </div>
       </Parallax>
     </section>
   );

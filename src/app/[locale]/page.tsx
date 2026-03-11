@@ -26,7 +26,21 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return await getCommonMetadata(locale);
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+  const common = (await getCommonMetadata(locale)) as Metadata;
+
+  return {
+    ...common,
+    description: messages.head.description,
+    openGraph: {
+      ...common.openGraph,
+      description: messages.head.description,
+    },
+    twitter: {
+      ...common.twitter,
+      description: messages.head.description,
+    },
+  };
 }
 
 /**
