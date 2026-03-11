@@ -9,16 +9,16 @@ import ContactSection from "@/components/layout/ContactSection";
 
 /**
  * Static Site Generation (SSG) Configuration:
- * Revalidates the page every 60 seconds to ensure high-performance delivery
- * while maintaining eventual consistency with any backend or translation updates.
+ * Revalidates the page cache every 60 seconds to balance high-performance
+ * delivery with dynamic content updates.
  */
 export const revalidate = 60;
 
 /**
-/**
- * Dynamic Metadata Orchestration (Vercel Production Optimized):
- * Ensures 100/100 SEO score by explicitly providing title and description.
- * Next.js 15 requirement: params must be handled as a Promise.
+ * Dynamic Metadata Orchestration:
+ * @param params - Handled as a Promise to comply with Next.js 15 async API.
+ * This function explicitly defines title and description to prevent metadata
+ * merging conflicts and ensure a 100/100 SEO score.
  */
 export async function generateMetadata({
   params,
@@ -31,24 +31,27 @@ export async function generateMetadata({
     const messages = (await import(`../../../messages/${locale}.json`)).default;
     const common = (await getCommonMetadata(locale)) as Metadata;
 
+    const baseUrl = "https://www.franaragondev.com";
+    const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/es`;
+
     return {
       ...common,
       title: messages.head.title,
       description: messages.head.description,
       keywords: messages.head.keywords,
       alternates: {
-        canonical: `${messages.head.url}/${locale}`,
+        canonical: currentCanonical,
         languages: {
-          es: `${messages.head.url}/es`,
-          en: `${messages.head.url}/en`,
-          "x-default": `${messages.head.url}/en`,
+          es: `${baseUrl}/es`,
+          en: baseUrl,
+          "x-default": baseUrl,
         },
       },
       openGraph: {
         ...common?.openGraph,
         title: messages.head.title,
         description: messages.head.description,
-        url: `${messages.head.url}/${locale}`,
+        url: currentCanonical,
       },
       twitter: {
         ...common?.twitter,
@@ -57,39 +60,40 @@ export async function generateMetadata({
       },
     };
   } catch (error) {
-    console.error("Metadata generation failed:", error);
+    console.error("Critical: Metadata generation failed in production", error);
     return {
       title: "Fran Aragón | Software Engineer",
-      description: "Software Engineer based in Prague",
+      description:
+        "Software Engineer specializing in scalable digital products.",
     };
   }
 }
 
 /**
  * Homepage (Main Landing):
- * Primary Server Component that orchestrates the core value propositions.
- * Sections are ordered following a logical marketing and conversion funnel:
- * High-impact hero -> Core services -> Professional bio -> Portfolio -> Trajectory -> Lead Gen.
+ * Primary Server Component orchestrating the core value propositions.
+ * Layout sequence follows a strategic conversion funnel designed to build
+ * authority before reaching the primary Call to Action (CTA).
  */
 export default function Home() {
   return (
     <>
-      {/* Visual hook and primary brand positioning */}
+      {/* High-fidelity hero with priority LCP optimization */}
       <AppHero />
 
-      {/* Categorization of technical service offerings */}
+      {/* Strategic service categorization */}
       <WhatIBuild />
 
-      {/* Professional narrative and biographical overview */}
+      {/* Biographical narrative and social proof */}
       <AboutSection />
 
-      {/* Showcase of production-grade systems and templates */}
+      {/* Engineering portfolio and production-grade case studies */}
       <ProjectsSection />
 
-      {/* Chronological career trajectory and milestones */}
+      {/* Professional trajectory and milestone logging */}
       <ExperienceSection />
 
-      {/* Primary lead generation and communication channel */}
+      {/* Lead generation channel and contact orchestration */}
       <ContactSection />
     </>
   );

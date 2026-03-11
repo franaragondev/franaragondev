@@ -35,8 +35,9 @@ export const viewport = {
 
 /**
  * Dynamic Metadata Generator (Technical SEO & Social Graph):
- * Refined to eliminate trailing slash discrepancies and ensure
- * 100% alignment between canonical and hreflang tags.
+ * @param params - Next.js 15 requires params to be handled as a Promise.
+ * Orchestrates localized metadata following the "English as Root" architecture.
+ * Implements strict canonical mapping to prevent duplicate content penalties.
  */
 export async function generateMetadata({
   params,
@@ -51,7 +52,14 @@ export async function generateMetadata({
   const { head } = messages;
 
   const urlObj = new URL(head.url);
-  const baseUrl = urlObj.origin;
+  const baseUrl = urlObj.origin; // e.g., https://www.franaragondev.com
+
+  /**
+   * Root Locale Routing Logic:
+   * English (en) is served at the root domain.
+   * Spanish (es) is served via the /es prefix.
+   */
+  const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/es`;
 
   return {
     metadataBase: new URL(baseUrl),
@@ -65,7 +73,6 @@ export async function generateMetadata({
     creator: "Fran Aragón",
     publisher: "Fran Aragón",
 
-    // Strict crawler directives ensuring optimal indexation of high-value assets
     robots: {
       index: true,
       follow: true,
@@ -78,21 +85,20 @@ export async function generateMetadata({
       },
     },
 
-    // International SEO mapping (Hreflang strategy)
+    // International SEO mapping (Strictly following Root-Locale strategy)
     alternates: {
-      canonical: `${baseUrl}/${locale}`,
+      canonical: currentCanonical,
       languages: {
         es: `${baseUrl}/es`,
-        en: `${baseUrl}/en`,
-        "x-default": `${baseUrl}/en`,
+        en: baseUrl, // Root for English
+        "x-default": baseUrl, // English as default fallback
       },
     },
 
-    // Open Graph config for high-fidelity social sharing previews
     openGraph: {
       type: "website",
       locale: locale === "en" ? "en_US" : "es_ES",
-      url: `${baseUrl}/${locale}`,
+      url: currentCanonical,
       siteName: "Fran Aragón — Software Engineer",
       title: head.title,
       description: head.description,
@@ -106,7 +112,6 @@ export async function generateMetadata({
       ],
     },
 
-    // Twitter Card optimization for B2B engagement
     twitter: {
       card: "summary_large_image",
       title: head.title,
@@ -124,9 +129,7 @@ export async function generateMetadata({
 /**
  * Root Locale Layout:
  * The foundational Server Component of the platform.
- * @param params - Handled as a Promise to comply with Next.js 15 asynchronous APIs.
- * Injects Semantic Web data (JSON-LD), handles GDPR compliance initialization,
- * and wraps the application tree in the i18n NextIntlClientProvider.
+ * Injects Semantic Web data (JSON-LD) and initializes global shell components.
  */
 export default async function LocaleLayout({
   children,
@@ -147,7 +150,6 @@ export default async function LocaleLayout({
 
   /**
    * Structured Data (JSON-LD) - Knowledge Graph Optimization:
-   * Translates professional trajectory into machine-readable entities.
    * Explicitly defining relationships with authoritative organizations (adidas, Solutia)
    * builds domain authority and signals trust to search algorithms.
    */
@@ -195,7 +197,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${montserrat.variable}`}>
       <body>
-        {/* Analytics & Compliance Layer: Injects JSON-LD for Semantic SEO */}
         <ConsentScripts
           analyticsId="G-MGGZV5VBEV"
           jsonLd={[
@@ -204,7 +205,6 @@ export default async function LocaleLayout({
           ]}
         />
 
-        {/* Global Application Shell */}
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <ClientParallaxProvider>
