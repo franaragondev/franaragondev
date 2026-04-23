@@ -10,7 +10,7 @@ import { Globe } from "lucide-react";
 /**
  * MobileMenu Component
  * * A slide-in navigation overlay designed for small viewports.
- * It manages focal trap-like behavior, spring-based animations, and 
+ * It manages focal trap-like behavior, spring-based animations, and
  * dynamic locale-aware route resolution.
  */
 
@@ -23,9 +23,14 @@ type MobileMenuProps = {
 const locales = [
   { code: "es", key: "es" },
   { code: "en", key: "en" },
+  { code: "fr", key: "fr" },
 ];
 
-export default function MobileMenu({ isOpen, onCloseAction, isHeaderVisible }: MobileMenuProps) {
+export default function MobileMenu({
+  isOpen,
+  onCloseAction,
+  isHeaderVisible,
+}: MobileMenuProps) {
   const router = useRouter();
   const locale = useLocale();
   const pathname = usePathname();
@@ -35,13 +40,14 @@ export default function MobileMenu({ isOpen, onCloseAction, isHeaderVisible }: M
 
   /**
    * Locale Switcher Logic:
-   * * Sophisticated path replacement to ensure the user remains on the 
-   * same relative segment while switching languages. 
+   * * Sophisticated path replacement to ensure the user remains on the
+   * same relative segment while switching languages.
    * It accounts for the default locale prefixing logic in Next.js.
    */
   function changeLocale(newLocale: string) {
     const defaultLocale = "en";
-    const pathWithLocale = locale === defaultLocale && !pathname.startsWith(`/${locale}`)
+    const pathWithLocale =
+      locale === defaultLocale && !pathname.startsWith(`/${locale}`)
         ? `/${locale}${pathname}`
         : pathname;
 
@@ -53,15 +59,21 @@ export default function MobileMenu({ isOpen, onCloseAction, isHeaderVisible }: M
   /**
    * Enhanced Anchor Navigation:
    * * Prevents default link behavior for internal hash links to execute
-   * a smooth scroll with a calculated offset, accounting for the 
+   * a smooth scroll with a calculated offset, accounting for the
    * global sticky header height.
    */
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, hash: string) => {
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    hash: string,
+  ) => {
     if (hash.startsWith("#")) {
       e.preventDefault();
       const element = document.querySelector(hash);
       if (element) {
-        const offsetPosition = element.getBoundingClientRect().top + window.pageYOffset - HEADER_HEIGHT;
+        const offsetPosition =
+          element.getBoundingClientRect().top +
+          window.pageYOffset -
+          HEADER_HEIGHT;
         window.scrollTo({ top: offsetPosition, behavior: "smooth" });
       }
       onCloseAction();
@@ -101,7 +113,12 @@ export default function MobileMenu({ isOpen, onCloseAction, isHeaderVisible }: M
                 <Link
                   key={href}
                   href={href}
-                  onClick={(e) => handleClick(e, href.split("#")[1] ? `#${href.split("#")[1]}` : "")}
+                  onClick={(e) =>
+                    handleClick(
+                      e,
+                      href.split("#")[1] ? `#${href.split("#")[1]}` : "",
+                    )
+                  }
                   className="text-3xl font-bold tracking-tighter text-[#1D1D1F] dark:text-white hover:opacity-70 transition-opacity"
                 >
                   {label}

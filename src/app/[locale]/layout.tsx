@@ -57,9 +57,13 @@ export async function generateMetadata({
   /**
    * Root Locale Routing Logic:
    * English (en) is served at the root domain.
-   * Spanish (es) is served via the /es prefix.
+   * Spanish (es) and French (fr) are served via their respective prefixes.
    */
-  const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/es`;
+  const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/${locale}`;
+
+  // Determine correct OpenGraph locale string
+  const ogLocale =
+    locale === "en" ? "en_US" : locale === "es" ? "es_ES" : "fr_FR";
 
   return {
     metadataBase: new URL(baseUrl),
@@ -89,15 +93,16 @@ export async function generateMetadata({
     alternates: {
       canonical: currentCanonical,
       languages: {
-        es: `${baseUrl}/es`,
         en: baseUrl, // Root for English
+        es: `${baseUrl}/es`,
+        fr: `${baseUrl}/fr`, // Added French route
         "x-default": baseUrl, // English as default fallback
       },
     },
 
     openGraph: {
       type: "website",
-      locale: locale === "en" ? "en_US" : "es_ES",
+      locale: ogLocale,
       url: currentCanonical,
       siteName: "Fran Aragón — Software Engineer",
       title: head.title,

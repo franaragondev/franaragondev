@@ -1,0 +1,180 @@
+{
+  "head": {
+    "title": "Fran Aragón | Ingénieur Logiciel concevant des produits numériques évolutifs",
+    "description": "Ingénieur Logiciel basé à Prague, spécialisé dans la création de plateformes SaaS évolutives, d'applications web haute performance et de produits iOS natifs.",
+    "url": "https://www.franaragondev.com",
+    "image": "https://www.franaragondev.com/logo.png",
+    "keywords": "ingénieur logiciel, ingénieur produit, développement SaaS, architecture logicielle, développement de plateformes web, React, TypeScript, Next.js, partenaire tech Prague"
+  },
+  "menu": {
+    "expertise": "Expertise",
+    "projects": "Ingénierie",
+    "experience": "Expérience",
+    "about": "Profil",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Ingénieur Logiciel concevant des <br></br> produits numériques évolutifs.",
+    "subtitle": "React • Next.js • TypeScript",
+    "badgePrague": "Basé à Prague",
+    "badgeWorldwide": "Collaborant à l'international"
+  },
+  "expertise": {
+    "label": "Expertise",
+    "saas": {
+      "title": "Plateformes SaaS",
+      "description": "Conception d'architectures multi-locataires évolutives, avec une priorité sur la maintenabilité à long terme et la croissance globale."
+    },
+    "performance": {
+      "title": "Performance Web",
+      "description": "Ingénierie d'interfaces ultra-rapides optimisées pour les Core Web Vitals, le SEO technique et la conversion commerciale."
+    },
+    "architecture": {
+      "title": "Direction Technique",
+      "description": "Faire le pont entre les objectifs commerciaux et un code robuste grâce à une architecture produit stratégique."
+    }
+  },
+  "language": {
+    "fr": "Français",
+    "es": "Español",
+    "en": "English"
+  },
+  "cookies": {
+    "message": "Nous utilisons la télémétrie analytique pour optimiser les performances. Aucune donnée personnelle n'est stockée.",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "learnMore": "En savoir plus",
+    "linkText": "Politique des Cookies"
+  },
+  "cookiesPolicy": {
+    "title": "Politique des Cookies",
+    "intro": "Cette plateforme utilise des métriques analytiques pour comprendre anonymement l'interaction des utilisateurs et optimiser les performances du système.",
+    "whatAreCookiesTitle": "Que sont les cookies ?",
+    "whatAreCookies": "De petits fragments de données locales utilisés strictement pour la télémétrie des performances et l'analyse de la navigation.",
+    "typesTitle": "Technologie",
+    "typesList": [
+      "Analyses anonymes utilisées pour évaluer les performances et améliorer l'expérience utilisateur."
+    ],
+    "manageTitle": "Gestion des Cookies",
+    "manageText": "Vous pouvez accepter ou refuser les cookies analytiques via la bannière ou les paramètres de votre navigateur.",
+    "personalDataTitle": "Données Personnelles",
+    "personalDataTextPart1": "Aucune donnée personnelle n'est collectée ou stockée via les cookies sur cette plateforme.",
+    "personalDataTextPart2": "",
+    "privacyPolicyLinkText": "Politique de Confidentialité",
+    "changesTitle": "Modifications de la Politique",
+    "changesText": "Cette politique peut être mise à jour occasionnellement pour refléter les améliorations de notre infrastructure.",
+    "lastUpdated": "Dernière mise à jour : Mars 2026"
+  },
+  "privacyPolicy": {
+    "title": "Politique de Confidentialité",
+    "intro": "La confidentialité est un principe d'ingénierie fondamental. Nous utilisons uniquement des métriques anonymes pour évaluer les performances de la plateforme.",
+    "sections": [
+      {
+        "title": "1. Données Personnelles",
+        "text": "Ce site web ne collecte ni ne stocke de données personnelles."
+      },
+      {
+        "title": "2. Outils Analytiques",
+        "text": "Les métriques de trafic sont utilisées uniquement pour mesurer les performances du système et les modèles d'utilisation."
+      },
+      {
+        "title": "3. Contact",
+        "text": "Les communications par courriel sont traitées de manière sécurisée et ne sont jamais utilisées à des fins de suivi marketing."
+      },
+      {
+        "title": "4. Droits",
+        "text": "Puisqu'aucune donnée personnelle n'est stockée, les demandes d'accès ou de suppression ne s'appliquent pas naturellement."
+      },
+      {
+        "title": "5. Modifications de la Politique",
+        "text": "Les mises à jour de notre infrastructure de confidentialité seront toujours reflétées ici."
+      }
+    ],
+    "lastUpdated": "Dernière mise à jour : Mars 2026",
+    "cookiesLinkText": "Politique des Cookies"
+  },
+  "footer": {
+    "center": "Ingénierie stratégique depuis Prague.",
+    "status": "Disponible pour des partenariats ciblés à l'international"
+  },
+  "experience": {
+    "title": "Expérience",
+    "solutia": {
+      "title": "Lead Frontend & Ingénieur Logiciel",
+      "period": "Nov 2025 - Présent",
+      "point1": "Pilotage de l'architecture frontend et direction technique pour des plateformes B2B et B2C internationales.",
+      "point2": "Conception de systèmes de composants évolutifs et garantie d'une intégration fluide avec les services cloud.",
+      "point3": "Impulsion de l'optimisation des performances, des normes d'accessibilité et d'une architecture maintenable."
+    },
+    "adidas": {
+      "title": "Développeur Logiciel",
+      "period": "Juillet 2022 - Septembre 2025",
+      "point1": "Ingénieur logiciel au sein d'adidas Innovation, contribuant aux plateformes numériques soutenant la création mondiale de produits.",
+      "point2": "Co-développement de l'outil COCU, en se concentrant sur l'architecture frontend évolutive et la synchronisation métier.",
+      "point3": "Création d'applications internes avec React et TypeScript en privilégiant la maintenabilité et les performances.",
+      "point4": "Collaboration avec des équipes interfonctionnelles pour garantir le succès des produits.",
+      "point5": "Application des meilleures pratiques en matière de tests, d'accessibilité et d'optimisation des performances.",
+      "point6": "Garantie d'une fiabilité de niveau production grâce à des tests rigoureux et des protocoles CI/CD."
+    },
+    "gransliving": {
+      "title": "Ingénieur Logiciel",
+      "period": "Septembre 2021 - Novembre 2022",
+      "point1": "Migration d'un monolithe WordPress vers une application moderne et évolutive utilisant Next.js.",
+      "point2": "Conception et implémentation d'une architecture UI alignée sur les normes UX modernes.",
+      "point3": "Optimisation des performances et du comportement responsive pour un public international."
+    },
+    "cei": {
+      "title": "Instructeur en Ingénierie Fullstack",
+      "period": "Janvier 2022 - Juillet 2022",
+      "point1": "Enseignement de la conception web (HTML5, CSS3, JavaScript) et du développement Fullstack (PHP, MySQL).",
+      "point2": "Mentorat d'étudiants à travers des projets axés sur des pratiques d'ingénierie de niveau production."
+    }
+  },
+  "projects": {
+    "title": "Systèmes en Production",
+    "homestocker": {
+      "title": "SaaS HomeStocker",
+      "description": "Fondateur & Ingénieur. Application iOS native conçue pour réduire le gaspillage alimentaire grâce au suivi intelligent des stocks et à une infrastructure cloud.",
+      "url": "https://homestocker.app/fr"
+    },
+    "cdestepona": {
+      "title": "Plateforme CD Estepona",
+      "description": "Architecture full-stack construite avec Next.js et Prisma. Conçue pour une diffusion de contenu haute performance et un SEO technique optimal (Lighthouse 90+).",
+      "url": "https://www.cdesteponafans.com/fr"
+    },
+    "sportsteam-template": {
+      "title": "Architecture SportsTeam",
+      "description": "Architecture de plateforme numérique évolutive pour les organisations sportives, permettant une gestion des données à forte concurrence.",
+      "url": "https://www.sportsteamtemplate.com/fr"
+    },
+    "business-template": {
+      "title": "Noyau d'Entreprise",
+      "description": "Architecture d'entreprise moderne axée sur les performances, la clarté et une conception d'interaction à très faible latence.",
+      "url": "https://businesstemplate.franaragondev.com/"
+    },
+    "restaurant-template": {
+      "title": "Modèle Restaurant",
+      "description": "Modèle de site web de restaurant élégant comprenant une vidéo d'en-tête dynamique, des sections de menu et un design réactif et raffiné.",
+      "url": "https://restaurant-template.franaragondev.com/"
+    },
+    "viewProject": "Voir le Projet"
+  },
+  "about": {
+    "title": "Concevoir des produits qui évoluent.",
+    "description": "Je suis Fran Aragón, Ingénieur Logiciel et Lead Frontend spécialisé dans la création de produits numériques haute performance.<br /><br />Je conçois et développe des plateformes SaaS évolutives, des applications web et des systèmes mobiles natifs qui résolvent de véritables défis commerciaux. Mon travail se concentre sur une architecture propre, les performances et la maintenabilité à long terme.<br /><br />Actuellement, je dirige l'architecture frontend chez Solutia, livrant des plateformes complexes pour des clients internationaux. Auparavant, j'ai développé au sein de l'équipe Innovation d'adidas des outils utilisés dans les flux de travail mondiaux.<br /><br />Je suis également le fondateur de HomeStocker, un écosystème iOS natif pour la gestion intelligente des stocks.<br /><br />Basé à Prague. Collaborant avec des entreprises du monde entier.",
+    "viewCV": "Voir le CV"
+  },
+  "contact": {
+    "title": "Bâtissons l'avenir de votre produit.",
+    "name": "Nom",
+    "email": "Courriel",
+    "message": "Proposition de projet",
+    "submit": "Prendre contact",
+    "success": "Requête reçue avec succès.",
+    "error": "Erreur du serveur.",
+    "phone": "Communication directe",
+    "emailLabel": "Courriel",
+    "social": "Réseaux sociaux"
+  }
+}

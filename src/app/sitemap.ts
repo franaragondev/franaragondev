@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1.0,
     },
+    {
+      url: `${baseUrl}/fr`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1.0,
+    },
 
     // Legal & Compliance Routes (Priority 0.3 - Lower to focus Crawl Budget)
     {
@@ -38,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     {
+      url: `${baseUrl}/fr/privacidad`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
       url: `${baseUrl}/en/cookies`,
       lastModified: new Date(),
       changeFrequency: "yearly",
@@ -45,6 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/es/cookies`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/fr/cookies`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.3,

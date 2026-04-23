@@ -7,7 +7,7 @@ const validLocales = routing.locales as unknown as Locale[];
 
 export async function getCommonMetadata(
   locale: string,
-  pagePath = ""
+  pagePath = "",
 ): Promise<Metadata | object> {
   if (!validLocales.includes(locale as Locale)) {
     return {};
@@ -33,6 +33,7 @@ export async function getCommonMetadata(
         languages: {
           es: `${baseUrl}/es`,
           en: `${baseUrl}/en`,
+          fr: `${baseUrl}/fr`,
           "x-default": `${baseUrl}/en`,
         },
       },

@@ -32,7 +32,12 @@ export async function generateMetadata({
     const common = (await getCommonMetadata(locale)) as Metadata;
 
     const baseUrl = "https://www.franaragondev.com";
-    const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/es`;
+
+    /**
+     * Canonical URL Logic:
+     * English remains the root domain. Any other locale (es, fr) appends its prefix.
+     */
+    const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/${locale}`;
 
     return {
       ...common,
@@ -42,8 +47,9 @@ export async function generateMetadata({
       alternates: {
         canonical: currentCanonical,
         languages: {
-          es: `${baseUrl}/es`,
           en: baseUrl,
+          es: `${baseUrl}/es`,
+          fr: `${baseUrl}/fr`, // Added French locale support
           "x-default": baseUrl,
         },
       },

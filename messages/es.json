@@ -36,8 +36,9 @@
     }
   },
   "language": {
+    "fr": "Français",
     "es": "Español",
-    "en": "Inglés"
+    "en": "English"
   },
   "cookies": {
     "message": "Utilizamos telemetría analítica para optimizar el rendimiento. No almacenamos datos personales.",

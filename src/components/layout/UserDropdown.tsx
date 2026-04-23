@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 /**
  * Supported locale identifiers for route parsing.
  */
-const SUPPORTED_LOCALES = ["es", "en"];
+const SUPPORTED_LOCALES = ["es", "en", "fr"];
 
 /**
  * Locale configuration for the UI display.
@@ -17,11 +17,12 @@ const SUPPORTED_LOCALES = ["es", "en"];
 const locales = [
   { code: "es", label: "Español" },
   { code: "en", label: "English" },
+  { code: "fr", label: "Français" },
 ];
 
 /**
  * UserDropdown Component
- * * A high-fidelity language selector that implements glassmorphism, 
+ * * A high-fidelity language selector that implements glassmorphism,
  * accessibility-compliant focus management, and localized route orchestration.
  * Designed to emulate native system-level menu behaviors (macOS/iOS style).
  */
@@ -41,13 +42,22 @@ export default function UserDropdown() {
    */
   const changeLocale = (newLocale: string) => {
     const segments = pathname.split("/").filter(Boolean);
-    const currentLocale = SUPPORTED_LOCALES.includes(segments[0]) ? segments[0] : null;
-    const restOfPath = currentLocale ? segments.slice(1).join("/") : segments.join("/");
+    const currentLocale = SUPPORTED_LOCALES.includes(segments[0])
+      ? segments[0]
+      : null;
+    const restOfPath = currentLocale
+      ? segments.slice(1).join("/")
+      : segments.join("/");
 
     // Construct the new path: en is treated as the root locale (optional prefix)
-    const newPathname = newLocale === "en"
-        ? restOfPath ? `/${restOfPath}` : "/"
-        : restOfPath ? `/${newLocale}/${restOfPath}` : `/${newLocale}`;
+    const newPathname =
+      newLocale === "en"
+        ? restOfPath
+          ? `/${restOfPath}`
+          : "/"
+        : restOfPath
+          ? `/${newLocale}/${restOfPath}`
+          : `/${newLocale}`;
 
     if (newPathname === pathname) {
       router.refresh();
@@ -60,20 +70,23 @@ export default function UserDropdown() {
 
   /**
    * Effect: Click-Outside Listener
-   * * Enhances UX by closing the dropdown automatically when the user clicks 
+   * * Enhances UX by closing the dropdown automatically when the user clicks
    * away from the component.
    */
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setOpen(false);
       }
     }
-    
+
     if (open) {
       document.addEventListener("mousedown", handleClickOutside);
     }
-    
+
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [open]);
 
@@ -83,15 +96,17 @@ export default function UserDropdown() {
       <button
         onClick={() => setOpen((prev) => !prev)}
         className={`flex items-center gap-2 rounded-full px-3 py-1.5 transition-all duration-300 focus:outline-none ${
-          open 
-            ? "bg-black/5 dark:bg-white/10 text-[#1D1D1F] dark:text-white" 
+          open
+            ? "bg-black/5 dark:bg-white/10 text-[#1D1D1F] dark:text-white"
             : "text-[#6E6E73] hover:text-[#1D1D1F] dark:hover:text-white"
         }`}
         aria-haspopup="true"
         aria-expanded={open}
       >
         <Globe className="w-[18px] h-[18px]" />
-        <span className="text-[12px] font-bold uppercase tracking-widest">{locale}</span>
+        <span className="text-[12px] font-bold uppercase tracking-widest">
+          {locale}
+        </span>
       </button>
 
       <AnimatePresence>
@@ -115,8 +130,8 @@ export default function UserDropdown() {
                     onClick={() => changeLocale(code)}
                     disabled={isActive}
                     className={`group flex items-center justify-between w-full px-4 py-2.5 rounded-xl text-[14px] font-medium transition-all duration-200 ${
-                      isActive 
-                        ? "bg-black/[0.03] dark:bg-white/[0.03] text-[#1D1D1F] dark:text-white cursor-default" 
+                      isActive
+                        ? "bg-black/[0.03] dark:bg-white/[0.03] text-[#1D1D1F] dark:text-white cursor-default"
                         : "text-[#515154] dark:text-[#A1A1A6] hover:bg-black/5 dark:hover:bg-white/10 hover:text-[#1D1D1F] dark:hover:text-white"
                     }`}
                   >
