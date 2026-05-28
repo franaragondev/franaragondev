@@ -52,27 +52,16 @@ export async function generateMetadata({
   const { head } = messages;
 
   const urlObj = new URL(head.url);
-  const baseUrl = urlObj.origin; // e.g., https://www.franaragondev.com
+  const baseUrl = urlObj.origin;
 
-  /**
-   * Root Locale Routing Logic:
-   * English (en) is served at the root domain.
-   * Spanish (es) and French (fr) are served via their respective prefixes.
-   */
-  const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/${locale}`;
-
-  // Determine correct OpenGraph locale string
   const ogLocale =
     locale === "en" ? "en_US" : locale === "es" ? "es_ES" : "fr_FR";
 
   return {
-    metadataBase: new URL(baseUrl),
     title: {
       default: head.title,
       template: "%s | Fran Aragón",
     },
-    description: head.description,
-    keywords: head.keywords,
     authors: [{ name: "Fran Aragón", url: baseUrl }],
     creator: "Fran Aragón",
     publisher: "Fran Aragón",
@@ -89,40 +78,18 @@ export async function generateMetadata({
       },
     },
 
-    // International SEO mapping (Strictly following Root-Locale strategy)
-    alternates: {
-      canonical: currentCanonical,
-      languages: {
-        en: baseUrl, // Root for English
-        es: `${baseUrl}/es`,
-        fr: `${baseUrl}/fr`, // Added French route
-        "x-default": baseUrl, // English as default fallback
-      },
-    },
-
     openGraph: {
       type: "website",
       locale: ogLocale,
-      url: currentCanonical,
       siteName: "Fran Aragón — Software Engineer",
-      title: head.title,
-      description: head.description,
       images: [
         {
           url: head.image,
           width: 1200,
           height: 630,
-          alt: "Fran Aragón - Software Engineer & Frontend Lead",
+          alt: "Fran Aragón - Software Engineer",
         },
       ],
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      title: head.title,
-      description: head.description,
-      creator: "@franaragondev",
-      images: [head.image],
     },
     icons: {
       icon: "/logo.png",

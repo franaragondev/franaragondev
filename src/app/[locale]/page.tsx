@@ -31,33 +31,14 @@ export async function generateMetadata({
     const messages = (await import(`../../../messages/${locale}.json`)).default;
     const common = (await getCommonMetadata(locale)) as Metadata;
 
-    const baseUrl = "https://www.franaragondev.com";
-
-    /**
-     * Canonical URL Logic:
-     * English remains the root domain. Any other locale (es, fr) appends its prefix.
-     */
-    const currentCanonical = locale === "en" ? baseUrl : `${baseUrl}/${locale}`;
-
     return {
       ...common,
       title: messages.head.title,
       description: messages.head.description,
-      keywords: messages.head.keywords,
-      alternates: {
-        canonical: currentCanonical,
-        languages: {
-          en: baseUrl,
-          es: `${baseUrl}/es`,
-          fr: `${baseUrl}/fr`, // Added French locale support
-          "x-default": baseUrl,
-        },
-      },
       openGraph: {
         ...common?.openGraph,
         title: messages.head.title,
         description: messages.head.description,
-        url: currentCanonical,
       },
       twitter: {
         ...common?.twitter,

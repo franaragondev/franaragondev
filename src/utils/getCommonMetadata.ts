@@ -20,21 +20,33 @@ export async function getCommonMetadata(
     const { head } = messages;
 
     const urlObj = new URL(head.url);
-    const baseUrl = urlObj.origin;
-    const path = pagePath.startsWith("/") ? pagePath : `/${pagePath}`;
-    const canonicalUrl = `${baseUrl}/${typedLocale}${path}`;
+    const baseUrl = urlObj.origin; // https://www.franaragondev.com
+
+    const normalizedPath =
+      pagePath && pagePath !== "/"
+        ? pagePath.startsWith("/")
+          ? pagePath
+          : `/${pagePath}`
+        : "";
+
+    const canonicalUrl =
+      typedLocale === "en"
+        ? `${baseUrl}${normalizedPath}`
+        : `${baseUrl}/${typedLocale}${normalizedPath}`;
 
     return {
+      metadataBase: new URL(baseUrl),
       title: head.title,
       description: head.description,
       keywords: head.keywords,
+
       alternates: {
         canonical: canonicalUrl,
         languages: {
-          es: `${baseUrl}/es`,
-          en: `${baseUrl}/en`,
-          fr: `${baseUrl}/fr`,
-          "x-default": `${baseUrl}/en`,
+          en: `${baseUrl}${normalizedPath}`,
+          es: `${baseUrl}/es${normalizedPath}`,
+          fr: `${baseUrl}/fr${normalizedPath}`,
+          "x-default": `${baseUrl}${normalizedPath}`,
         },
       },
       openGraph: {
@@ -50,7 +62,6 @@ export async function getCommonMetadata(
         description: head.description,
         images: head.image,
       },
-      metadataBase: new URL(baseUrl),
     };
   } catch (error) {
     console.error(`Error loading messages for locale: ${typedLocale}`, error);
