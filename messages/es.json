@@ -1,10 +1,10 @@
 {
   "head": {
-    "title": "Fran Aragón | Ingeniero de Software especializado en productos digitales escalables",
-    "description": "Ingeniero de Software con sede en Praga, especializado en el desarrollo de plataformas SaaS escalables, aplicaciones web de alto rendimiento y ecosistemas iOS nativos.",
+    "title": "Fran Aragón | Ingeniero de Software",
+    "description": "Ingeniero de Software independiente con sede en Praga. Especializado en arquitecturas SaaS escalables, plataformas de nivel enterprise y productos digitales de alto rendimiento.",
     "url": "https://www.franaragondev.com",
     "image": "https://www.franaragondev.com/logo.png",
-    "keywords": "ingeniero de software, ingeniero de producto, desarrollo SaaS, arquitectura de software, plataformas web, React, TypeScript, Next.js, socio tecnológico Praga"
+    "keywords": "ingeniero de software, arquitecto frontend, ingeniero de software independiente, desarrollo SaaS, plataformas enterprise, React, Next.js, TypeScript, consultor técnico, Praga, desarrollo B2B"
   },
   "menu": {
     "expertise": "Especialización",
@@ -100,12 +100,17 @@
   },
   "experience": {
     "title": "Experiencia",
+    "proxify": {
+      "title": "Software Engineer",
+      "period": "Jun 2026 - Actualidad",
+      "point1": ""
+    },
     "solutia": {
       "title": "Frontend Lead & Software Engineer",
-      "period": "Nov 2025 - Actualidad",
-      "point1": "Liderando la arquitectura frontend y la dirección técnica de plataformas internacionales B2B y B2C.",
-      "point2": "Diseño de sistemas de componentes escalables e integración fluida con servicios cloud.",
-      "point3": "Impulsando estándares de rendimiento, accesibilidad y arquitecturas mantenibles."
+      "period": "Nov 2025 - Jun 2026",
+      "point1": "Amplié el alcance del rol para estabilizar la infraestructura core, gestionando migraciones complejas en PostgreSQL y configurando pipelines CI/CD fiables.",
+      "point2": "Refactoricé y modularicé secciones críticas de un código legacy masivo (archivos monolíticos de más de 5.000 líneas) para mejorar la mantenibilidad ajustándome a los tiempos del proyecto.",
+      "point3": "Lideré la dirección técnica conectando sistemas legacy frágiles con estándares de arquitectura modernos."
     },
     "adidas": {
       "title": "Software Developer",
@@ -162,7 +167,7 @@
   },
   "about": {
     "title": "Ingeniería de productos escalables.",
-    "description": "Soy Fran Aragón, Ingeniero de Software y Frontend Lead especializado en el desarrollo de productos digitales de alto rendimiento.<br /><br />Diseño y construyo plataformas SaaS, aplicaciones web y sistemas móviles nativos que resuelven retos de negocio reales. Mi enfoque se centra en la arquitectura limpia, el rendimiento y la mantenibilidad a largo plazo.<br /><br />Actualmente lidero la arquitectura frontend en Solutia, gestionando plataformas complejas para clientes internacionales. Anteriormente, formé parte del equipo de adidas Innovation, desarrollando herramientas clave para flujos de trabajo globales.<br /><br />Además, soy el fundador de HomeStocker, un ecosistema nativo iOS para la gestión inteligente de inventarios.<br /><br />Ubicado en Praga. Colaborando con empresas de todo el mundo.",
+    "description": "Soy Fran Aragón, Ingeniero de Software especializado en el desarrollo de productos digitales de alto rendimiento.<br /><br />Diseño y construyo plataformas SaaS, aplicaciones web y sistemas móviles nativos que resuelven retos de negocio reales. Mi enfoque se centra en la arquitectura limpia, el rendimiento y la mantenibilidad a largo plazo.<br /><br />Actualmente trabajo como Ingeniero de Software diseñando arquitecturas a nivel enterprise. Anteriormente, lideré la arquitectura frontend y estabilicé la infraestructura en Solutia, y formé parte de adidas Innovation, desarrollando herramientas para flujos de trabajo globales.<br /><br />Además, soy el fundador de HomeStocker, un ecosistema nativo iOS para la gestión inteligente de inventarios.<br /><br />Ubicado en Praga. Colaborando con empresas de todo el mundo.",
     "viewCV": "Ver trayectoria"
   },
   "contact": {

@@ -1,10 +1,10 @@
 {
   "head": {
-    "title": "Fran Aragón | Software Engineer building scalable digital products",
-    "description": "Software Engineer based in Prague specializing in building scalable SaaS platforms, high-performance web applications, and native iOS products.",
+    "title": "Fran Aragón | Software Engineer",
+    "description": "Independent Software Engineer based in Prague. Specializing in scalable SaaS architectures, enterprise-grade web platforms, and high-performance digital products for global partners.",
     "url": "https://www.franaragondev.com",
     "image": "https://www.franaragondev.com/logo.png",
-    "keywords": "software engineer, product engineer, SaaS development, software architecture, web platform development, React, TypeScript, Next.js, tech partner Prague"
+    "keywords": "software engineer, independent software engineer, enterprise web architecture, SaaS development, frontend lead, React, Next.js, TypeScript, technical partner, Prague, B2B software engineering"
   },
   "menu": {
     "expertise": "Expertise",
@@ -100,12 +100,17 @@
   },
   "experience": {
     "title": "Experience",
+    "proxify": {
+      "title": "Software Engineer",
+      "period": "June 2026 - Present",
+      "point1": ""
+    },
     "solutia": {
       "title": "Frontend Lead & Software Engineer",
-      "period": "Nov 2025 - Present",
-      "point1": "Leading frontend architecture and technical direction for international B2B and B2C platforms.",
-      "point2": "Designing scalable component systems and ensuring seamless integration with cloud services.",
-      "point3": "Driving performance optimization, accessibility standards, and maintainable architecture."
+      "period": "Nov 2025 - Jun 2026",
+      "point1": "Stepped beyond frontend scope to stabilize core infrastructure, managing complex PostgreSQL database migrations and engineering reliable CI/CD pipelines.",
+      "point2": "Refactored and modularized key critical sections of a massive legacy codebase (navigating 5,000+ line monolithic files) to improve maintainability within tight project deadlines.",
+      "point3": "Led technical direction for B2B platforms, bridging the gap between fragile legacy systems and modern architectural standards."
     },
     "adidas": {
       "title": "Software Developer",
@@ -162,7 +167,7 @@
   },
   "about": {
     "title": "Engineering products that scale.",
-    "description": "I'm Fran Aragón, a Software Engineer and Frontend Lead specialized in building high-performance digital products.<br /><br />I design and build scalable SaaS platforms, web applications, and native mobile systems that solve real business problems. My work focuses on clean architecture, performance, and long-term maintainability.<br /><br />Currently, I lead frontend architecture at Solutia, delivering complex platforms for international clients. Previously, I built tools at adidas’ Innovation team used in global workflows.<br /><br />I am also the founder behind HomeStocker, a native iOS ecosystem for smart inventory management.<br /><br />Based in Prague. Working with companies worldwide.",
+    "description": "I'm Fran Aragón, a Software Engineer specialized in building high-performance digital products.<br /><br />I design and build scalable SaaS platforms, web applications, and native mobile systems that solve real business problems. My work focuses on clean architecture, performance, and long-term maintainability.<br /><br />Currently, I work as a Software Engineer designing enterprise-grade architectures and scalable systems. Previously, I stabilized core infrastructure and led frontend architecture at Solutia, and built tools at adidas’ Innovation team used in global workflows.<br /><br />I am also the founder behind HomeStocker, a native iOS ecosystem for smart inventory management.<br /><br />Based in Prague. Working with companies worldwide.",
     "viewCV": "View Resume"
   },
   "contact": {

@@ -1,10 +1,10 @@
 {
   "head": {
-    "title": "Fran Aragón | Ingénieur Logiciel concevant des produits numériques évolutifs",
-    "description": "Ingénieur Logiciel basé à Prague, spécialisé dans la création de plateformes SaaS évolutives, d'applications web haute performance et de produits iOS natifs.",
+    "title": "Fran Aragón | Ingénieur Logiciel",
+    "description": "Ingénieur Logiciel indépendant basé à Prague. Spécialisé dans les architectures SaaS évolutives, les plateformes d'entreprise et les produits numériques haute performance.",
     "url": "https://www.franaragondev.com",
     "image": "https://www.franaragondev.com/logo.png",
-    "keywords": "ingénieur logiciel, ingénieur produit, développement SaaS, architecture logicielle, développement de plateformes web, React, TypeScript, Next.js, partenaire tech Prague"
+    "keywords": "ingénieur logiciel, architecte frontend, ingénieur logiciel indépendant, développement SaaS, plateformes d'entreprise, React, Next.js, TypeScript, consultant technique, Prague, ingénierie logicielle B2B"
   },
   "menu": {
     "expertise": "Expertise",
@@ -100,12 +100,17 @@
   },
   "experience": {
     "title": "Expérience",
+    "proxify": {
+      "title": "Software Engineer",
+      "period": "Juin 2026 - Présent",
+      "point1": ""
+    },
     "solutia": {
       "title": "Lead Frontend & Ingénieur Logiciel",
-      "period": "Nov 2025 - Présent",
-      "point1": "Pilotage de l'architecture frontend et direction technique pour des plateformes B2B et B2C internationales.",
-      "point2": "Conception de systèmes de composants évolutifs et garantie d'une intégration fluide avec les services cloud.",
-      "point3": "Impulsion de l'optimisation des performances, des normes d'accessibilité et d'une architecture maintenable."
+      "period": "Nov 2025 - Juin 2026",
+      "point1": "Extension du rôle pour stabiliser l'infrastructure de base, gestion de migrations complexes sur PostgreSQL et ingénierie de pipelines CI/CD fiables.",
+      "point2": "Refonte et modularisation de sections critiques d'un code hérité massif (fichiers monolithiques de plus de 5 000 lignes) pour améliorer la maintenabilité dans des délais serrés.",
+      "point3": "Direction technique pour combler le fossé entre des systèmes hérités fragiles et des normes architecturales modernes."
     },
     "adidas": {
       "title": "Développeur Logiciel",
@@ -162,7 +167,7 @@
   },
   "about": {
     "title": "Concevoir des produits qui évoluent.",
-    "description": "Je suis Fran Aragón, Ingénieur Logiciel et Lead Frontend spécialisé dans la création de produits numériques haute performance.<br /><br />Je conçois et développe des plateformes SaaS évolutives, des applications web et des systèmes mobiles natifs qui résolvent de véritables défis commerciaux. Mon travail se concentre sur une architecture propre, les performances et la maintenabilité à long terme.<br /><br />Actuellement, je dirige l'architecture frontend chez Solutia, livrant des plateformes complexes pour des clients internationaux. Auparavant, j'ai développé au sein de l'équipe Innovation d'adidas des outils utilisés dans les flux de travail mondiaux.<br /><br />Je suis également le fondateur de HomeStocker, un écosystème iOS natif pour la gestion intelligente des stocks.<br /><br />Basé à Prague. Collaborant avec des entreprises du monde entier.",
+    "description": "Je suis Fran Aragón, Ingénieur Logiciel spécialisé dans la création de produits numériques haute performance.<br /><br />Je conçois et développe des plateformes SaaS évolutives, des applications web et des systèmes mobiles natifs qui résolvent de véritables défis commerciaux. Mon travail se concentre sur une architecture propre, les performances et la maintenabilité à long terme.<br /><br />Actuellement, je travaille en tant qu'Ingénieur Logiciel sur la conception d'architectures d'entreprise. Auparavant, j'ai stabilisé l'infrastructure et dirigé l'architecture frontend chez Solutia, et développé des outils au sein de l'équipe Innovation d'adidas.<br /><br />Je suis également le fondateur de HomeStocker, un écosystème iOS natif pour la gestion intelligente des stocks.<br /><br />Basé à Prague. Collaborant avec des entreprises du monde entier.",
     "viewCV": "Voir le CV"
   },
   "contact": {
