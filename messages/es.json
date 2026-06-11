@@ -194,46 +194,66 @@
       "title": "Baguira Suites Experiences",
       "label": "Luxury Hospitality Experience Platform",
       "subtitle": "Plataforma digital de hospitalidad de lujo diseñada para rendimiento, visibilidad y conversión.",
+
       "visitPlatform": "Visitar Plataforma",
-      "backHome": "Volver al Inicio"
+      "backHome": "Volver al Inicio",
+
+      "overview": {
+        "title": "Visión General",
+        "paragraph": "Baguira Suites Experiences es una plataforma digital para el sector hospitality diseñada para potenciar la presencia online de un hotel boutique de lujo en Calais. El proyecto combina narrativa inmersiva, SEO técnico, arquitectura multilingüe y flujos de reserva dentro de un ecosistema Next.js de alto rendimiento."
+      },
+
+      "challenge": {
+        "title": "El desafío",
+        "paragraph1": "Baguira necesitaba algo más que una página web. El objetivo era construir una experiencia digital capaz de reflejar el posicionamiento premium de la marca mientras establecía una base técnica escalable para el crecimiento futuro.",
+        "paragraph2": "La plataforma debía combinar rendimiento, optimización SEO, reservas online, sincronización multicanal con Airbnb y Booking.com, internacionalización y una experiencia visual inmersiva sin comprometer los Core Web Vitals."
+      },
+
+      "architecture": {
+        "title": "Arquitectura",
+        "paragraph": "La plataforma fue desarrollada utilizando Next.js App Router, TypeScript y una arquitectura de contenido completamente internacionalizada. Más allá de la experiencia pública, el sistema integra infraestructura hospitality externa para sincronizar reservas entre múltiples canales y proporcionar un entorno privado de operaciones, reporting y gestión diaria. Cada decisión técnica estuvo enfocada en la mantenibilidad a largo plazo, la escalabilidad y el rendimiento."
+      },
+
+      "capabilities": {
+        "title": "Capacidades de la Plataforma",
+        "items": [
+          "Reservas online",
+          "Sincronización Airbnb y Booking.com",
+          "Panel privado de administración",
+          "Gestión de depósitos de fianza",
+          "Dashboard operativo de reservas",
+          "Gestión de suites",
+          "Analítica y reporting de negocio",
+          "Arquitectura internacionalizada"
+        ]
+      },
+
+      "highlights": {
+        "title": "Aspectos técnicos destacados",
+        "items": [
+          "Next.js App Router",
+          "TypeScript",
+          "Arquitectura internacionalizada",
+          "SEO técnico avanzado",
+          "Structured Data (Schema.org)",
+          "Optimización Core Web Vitals",
+          "Stripe Payments",
+          "Consent Mode",
+          "Analytics",
+          "Image Optimization"
+        ]
+      },
+
+      "results": {
+        "title": "Resultados",
+        "paragraph": "La plataforma alcanzó puntuaciones Lighthouse de 96 en móvil y 98 en escritorio, manteniendo una experiencia visual inmersiva y una base SEO diseñada para maximizar la visibilidad internacional."
+      },
+
+      "philosophy": {
+        "title": "Filosofía de Ingeniería",
+        "quote": "Diseñar experiencias de lujo exige la misma disciplina que construir sistemas empresariales: primero la arquitectura, después la estética."
+      }
     }
-  },
-
-  "challenge": {
-    "title": "El desafío",
-    "paragraph1": "Baguira necesitaba algo más que una página web. El objetivo era construir una experiencia digital capaz de reflejar el posicionamiento premium de la marca mientras establecía una base técnica escalable para el crecimiento futuro.",
-    "paragraph2": "La plataforma debía combinar rendimiento, optimización SEO, reservas online, internacionalización y una experiencia visual inmersiva sin comprometer los Core Web Vitals."
-  },
-
-  "architecture": {
-    "title": "Arquitectura",
-    "paragraph": "La plataforma fue desarrollada utilizando Next.js App Router, TypeScript y una arquitectura de contenido completamente internacionalizada. Cada decisión técnica estuvo enfocada en la mantenibilidad a largo plazo, la escalabilidad y el rendimiento."
-  },
-
-  "highlights": {
-    "title": "Aspectos técnicos destacados",
-    "items": [
-      "Next.js App Router",
-      "TypeScript",
-      "Arquitectura internacionalizada",
-      "SEO técnico avanzado",
-      "Structured Data (Schema.org)",
-      "Optimización Core Web Vitals",
-      "Stripe Payments",
-      "Consent Mode",
-      "Analytics",
-      "Image Optimization"
-    ]
-  },
-
-  "results": {
-    "title": "Resultados",
-    "paragraph": "La plataforma alcanzó puntuaciones Lighthouse de 96 en móvil y 98 en escritorio, manteniendo una experiencia visual inmersiva y una base SEO diseñada para maximizar la visibilidad internacional."
-  },
-
-  "philosophy": {
-    "title": "Filosofía de Ingeniería",
-    "quote": "Diseñar experiencias de lujo exige la misma disciplina que construir sistemas empresariales: primero la arquitectura, después la estética."
   },
 
   "cta": {

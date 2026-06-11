@@ -50,7 +50,7 @@ export default function BaguiraHero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl bg-[#1D1D1F] text-white font-semibold hover:opacity-90 transition-opacity"
           >
-            Visit Platform
+            {t("partnerships.baguira.visitPlatform")}
             <ArrowUpRight size={18} />
           </a>
 
@@ -58,7 +58,7 @@ export default function BaguiraHero() {
             href={`/${locale}`}
             className="inline-flex items-center px-6 py-4 rounded-2xl border border-black/10 dark:border-white/10 font-semibold"
           >
-            Back Home
+            {t("partnerships.baguira.backHome")}
           </Link>
         </div>
       </div>

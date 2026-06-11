@@ -42,28 +42,18 @@ export default function UserDropdown() {
    */
   const changeLocale = (newLocale: string) => {
     const segments = pathname.split("/").filter(Boolean);
-    const currentLocale = SUPPORTED_LOCALES.includes(segments[0])
-      ? segments[0]
-      : null;
-    const restOfPath = currentLocale
+
+    const hasLocalePrefix = SUPPORTED_LOCALES.includes(segments[0]);
+
+    const restOfPath = hasLocalePrefix
       ? segments.slice(1).join("/")
       : segments.join("/");
 
-    // Construct the new path: en is treated as the root locale (optional prefix)
-    const newPathname =
-      newLocale === "en"
-        ? restOfPath
-          ? `/${restOfPath}`
-          : "/"
-        : restOfPath
-          ? `/${newLocale}/${restOfPath}`
-          : `/${newLocale}`;
+    const newPathname = restOfPath
+      ? `/${newLocale}/${restOfPath}`
+      : `/${newLocale}`;
 
-    if (newPathname === pathname) {
-      router.refresh();
-    } else {
-      router.replace(newPathname);
-    }
+    router.replace(newPathname);
 
     setOpen(false);
   };

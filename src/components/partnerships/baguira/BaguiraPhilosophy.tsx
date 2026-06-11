@@ -11,11 +11,11 @@ export default function BaguiraPhilosophy() {
     <section className="py-40 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-sm font-semibold tracking-[0.3em] uppercase text-[#6E6E73] mb-10">
-          {t("philosophy.title")}
+          {t("partnerships.baguira.philosophy.title")}
         </h2>
 
         <blockquote className="text-4xl md:text-6xl font-bold tracking-tight leading-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
-          {t("philosophy.quote")}
+          {t("partnerships.baguira.philosophy.quote")}
         </blockquote>
 
         <div className="mt-20">

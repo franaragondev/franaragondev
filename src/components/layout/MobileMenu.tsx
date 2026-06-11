@@ -37,6 +37,8 @@ export default function MobileMenu({
   const t = useTranslations("menu");
   const tLang = useTranslations("language");
   const HEADER_HEIGHT = 72;
+  const isHome =
+    pathname === `/${locale}` || pathname === "/" || pathname === "/en";
 
   /**
    * Locale Switcher Logic:
@@ -66,18 +68,29 @@ export default function MobileMenu({
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     hash: string,
   ) => {
-    if (hash.startsWith("#")) {
-      e.preventDefault();
-      const element = document.querySelector(hash);
-      if (element) {
-        const offsetPosition =
-          element.getBoundingClientRect().top +
-          window.pageYOffset -
-          HEADER_HEIGHT;
-        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-      }
+    e.preventDefault();
+
+    if (!isHome) {
+      router.push(`/${locale}${hash}`);
       onCloseAction();
+      return;
     }
+
+    const element = document.querySelector(hash);
+
+    if (element) {
+      const offsetPosition =
+        element.getBoundingClientRect().top +
+        window.pageYOffset -
+        HEADER_HEIGHT;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+
+    onCloseAction();
   };
 
   const basePath = `/${locale}`;

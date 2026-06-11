@@ -9,12 +9,12 @@ export default function BaguiraChallenge() {
     <section className="py-28 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-10">
-          {t("challenge.title")}
+          {t("partnerships.baguira.challenge.title")}
         </h2>
 
         <div className="space-y-8 text-xl leading-relaxed text-[#6E6E73]">
-          <p>{t("challenge.paragraph1")}</p>
-          <p>{t("challenge.paragraph2")}</p>
+          <p>{t("partnerships.baguira.challenge.paragraph1")}</p>
+          <p>{t("partnerships.baguira.challenge.paragraph2")}</p>
         </div>
       </div>
     </section>
