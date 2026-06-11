@@ -67,5 +67,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    {
+      url: `${baseUrl}/partnerships/baguira-suites`,
+      priority: 0.9,
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/es/partnerships/baguira-suites`,
+      priority: 0.9,
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/fr/partnerships/baguira-suites`,
+      priority: 0.9,
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+    },
   ];
 }

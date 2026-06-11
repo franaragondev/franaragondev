@@ -9,6 +9,7 @@
   "menu": {
     "expertise": "Expertise",
     "projects": "Engineering",
+    "partnerships": "Partnerships",
     "experience": "Experience",
     "about": "Profile",
     "contact": "Contact",
@@ -137,7 +138,7 @@
     }
   },
   "projects": {
-    "title": "Production Systems",
+    "title": "Engineering",
     "homestocker": {
       "title": "HomeStocker SaaS",
       "description": "Founder & Engineer. Native iOS application designed to reduce food waste through smart inventory tracking and cloud infrastructure.",
@@ -163,7 +164,7 @@
       "description": "Stylish restaurant website template featuring a dynamic hero video, menu sections, and an elegant, responsive design.",
       "url": "https://restaurant-template.franaragondev.com/"
     },
-    "viewProject": "View Project"
+    "viewProject": "View System"
   },
   "about": {
     "title": "Engineering products that scale.",
@@ -181,5 +182,63 @@
     "phone": "Direct communication",
     "emailLabel": "Email",
     "social": "Social media"
+  },
+  "overview": {
+    "title": "Overview",
+    "paragraph": "Baguira Suites Experiences is a luxury hospitality platform designed to elevate the digital presence of a boutique hotel in Calais, France. The project combines immersive storytelling, technical SEO, multilingual architecture and reservation workflows within a high-performance Next.js ecosystem."
+  },
+
+  "partnerships": {
+    "baguira": {
+      "eyebrow": "SELECTED PARTNERSHIP",
+      "title": "Baguira Suites Experiences",
+      "label": "Luxury Hospitality Experience Platform",
+      "subtitle": "Luxury hospitality experience platform engineered for performance, visibility and conversion.",
+      "visitPlatform": "Visit Platform",
+      "backHome": "Back Home"
+    }
+  },
+
+  "challenge": {
+    "title": "The Challenge",
+    "paragraph1": "Baguira required more than a website. The goal was to build a digital experience capable of reflecting the premium positioning of the brand while establishing a scalable technical foundation for future growth.",
+    "paragraph2": "The platform needed to combine performance, SEO optimization, online reservations, internationalization and immersive visual storytelling without compromising Core Web Vitals."
+  },
+
+  "architecture": {
+    "title": "Architecture",
+    "paragraph": "The platform was built using Next.js App Router, TypeScript and a fully internationalized content architecture. Every technical decision was focused on long-term maintainability, scalability and performance."
+  },
+
+  "highlights": {
+    "title": "Technical Highlights",
+    "items": [
+      "Next.js App Router",
+      "TypeScript",
+      "Internationalized Architecture",
+      "Advanced Technical SEO",
+      "Structured Data (Schema.org)",
+      "Core Web Vitals Optimization",
+      "Stripe Payments",
+      "Consent Mode",
+      "Analytics",
+      "Image Optimization"
+    ]
+  },
+
+  "results": {
+    "title": "Results",
+    "paragraph": "The platform achieved Lighthouse scores of 96 on mobile and 98 on desktop while maintaining an immersive visual experience and an SEO foundation designed to maximize international visibility."
+  },
+
+  "philosophy": {
+    "title": "Engineering Philosophy",
+    "quote": "Engineering luxury experiences requires the same discipline as engineering enterprise systems: architecture first, aesthetics second."
+  },
+
+  "cta": {
+    "title": "Building products for ambitious businesses.",
+    "paragraph": "I collaborate with a limited number of partners each year to design and engineer digital products that combine performance, scalability and business impact.",
+    "button": "Start a Conversation"
   }
 }

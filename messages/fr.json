@@ -9,6 +9,7 @@
   "menu": {
     "expertise": "Expertise",
     "projects": "Ingénierie",
+    "partnerships": "Partenariats",
     "experience": "Expérience",
     "about": "Profil",
     "contact": "Contact",
@@ -137,7 +138,7 @@
     }
   },
   "projects": {
-    "title": "Systèmes en Production",
+    "title": "Ingénierie",
     "homestocker": {
       "title": "SaaS HomeStocker",
       "description": "Fondateur & Ingénieur. Application iOS native conçue pour réduire le gaspillage alimentaire grâce au suivi intelligent des stocks et à une infrastructure cloud.",
@@ -163,7 +164,7 @@
       "description": "Modèle de site web de restaurant élégant comprenant une vidéo d'en-tête dynamique, des sections de menu et un design réactif et raffiné.",
       "url": "https://restaurant-template.franaragondev.com/"
     },
-    "viewProject": "Voir le Projet"
+    "viewProject": "Voir le Système"
   },
   "about": {
     "title": "Concevoir des produits qui évoluent.",
@@ -181,5 +182,63 @@
     "phone": "Communication directe",
     "emailLabel": "Courriel",
     "social": "Réseaux sociaux"
+  },
+  "overview": {
+    "title": "Vue d’ensemble",
+    "paragraph": "Baguira Suites Experiences est une plateforme digitale dédiée à l’hôtellerie de luxe, conçue pour renforcer la présence en ligne d’un hôtel boutique situé à Calais. Le projet combine storytelling immersif, SEO technique, architecture multilingue et parcours de réservation au sein d’un écosystème Next.js haute performance."
+  },
+
+  "partnerships": {
+    "baguira": {
+      "eyebrow": "PARTENARIAT SÉLECTIONNÉ",
+      "title": "Baguira Suites Experiences",
+      "label": "Plateforme Digitale d’Hôtellerie de Luxe",
+      "subtitle": "Plateforme d’expérience hôtelière de luxe conçue pour la performance, la visibilité et la conversion.",
+      "visitPlatform": "Visiter la Plateforme",
+      "backHome": "Retour à l’Accueil"
+    }
+  },
+
+  "challenge": {
+    "title": "Le Défi",
+    "paragraph1": "Baguira nécessitait bien plus qu’un simple site web. L’objectif était de concevoir une expérience digitale capable de refléter le positionnement premium de la marque tout en établissant une base technique évolutive pour accompagner sa croissance future.",
+    "paragraph2": "La plateforme devait combiner performance, optimisation SEO, réservations en ligne, internationalisation et storytelling immersif sans compromettre les Core Web Vitals."
+  },
+
+  "architecture": {
+    "title": "Architecture",
+    "paragraph": "La plateforme a été développée avec Next.js App Router, TypeScript et une architecture de contenu entièrement internationalisée. Chaque décision technique a été guidée par des objectifs de maintenabilité, d’évolutivité et de performance à long terme."
+  },
+
+  "highlights": {
+    "title": "Points Techniques Clés",
+    "items": [
+      "Next.js App Router",
+      "TypeScript",
+      "Architecture Internationalisée",
+      "SEO Technique Avancé",
+      "Structured Data (Schema.org)",
+      "Optimisation Core Web Vitals",
+      "Stripe Payments",
+      "Consent Mode",
+      "Analytics",
+      "Image Optimization"
+    ]
+  },
+
+  "results": {
+    "title": "Résultats",
+    "paragraph": "La plateforme a obtenu des scores Lighthouse de 96 sur mobile et 98 sur desktop tout en conservant une expérience visuelle immersive et une base SEO conçue pour maximiser la visibilité internationale."
+  },
+
+  "philosophy": {
+    "title": "Philosophie d’Ingénierie",
+    "quote": "Concevoir des expériences de luxe exige la même rigueur que la conception de systèmes d’entreprise : l’architecture d’abord, l’esthétique ensuite."
+  },
+
+  "cta": {
+    "title": "Construire des produits pour des entreprises ambitieuses.",
+    "paragraph": "Je collabore chaque année avec un nombre limité de partenaires afin de concevoir et développer des produits numériques alliant performance, évolutivité et impact business.",
+    "button": "Démarrer une Conversation"
   }
 }

@@ -107,6 +107,7 @@ export default function MobileMenu({
                 { href: `${basePath}#expertise`, label: t("expertise") },
                 { href: `${basePath}#about`, label: t("about") },
                 { href: `${basePath}#projects`, label: t("projects") },
+                { href: `${basePath}#partnerships`, label: t("partnerships") },
                 { href: `${basePath}#experience`, label: t("experience") },
                 { href: `${basePath}#contact`, label: t("contact") },
               ].map(({ href, label }) => (

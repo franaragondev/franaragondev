@@ -1,12 +1,13 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
 
 /**
  * DesktopMenu Component
  * * Handles the primary horizontal navigation for desktop viewports.
- * It implements a custom smooth-scroll logic to handle anchor links, 
- * specifically calculating offsets to prevent the sticky header from 
+ * It implements a custom smooth-scroll logic to handle anchor links,
+ * specifically calculating offsets to prevent the sticky header from
  * overlapping section titles.
  */
 
@@ -17,18 +18,24 @@ type DesktopMenuProps = {
 
 export default function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
   const t = useTranslations("menu");
-  
+  const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const isHome =
+    pathname === `/${locale}` || pathname === "/" || pathname === "/en";
+
   // Constants for layout calculations
   const HEADER_HEIGHT = 72;
   const HEADER_HEIGHT_HIDDEN = 0;
 
-  /** * Navigation links data structure 
-   * Mapping href anchors to localized labels 
+  /** * Navigation links data structure
+   * Mapping href anchors to localized labels
    */
   const links = [
     { href: "#expertise", label: t("expertise") },
     { href: "#about", label: t("about") },
     { href: "#projects", label: t("projects") },
+    { href: "#partnerships", label: t("partnerships") },
     { href: "#experience", label: t("experience") },
     { href: "#contact", label: t("contact") },
   ];
@@ -40,23 +47,29 @@ export default function DesktopMenu({ isHeaderVisible }: DesktopMenuProps) {
    * * Logic: Calculates the absolute position of the target element in the DOM
    * and subtracts the dynamic header offset to ensure perfect visual alignment.
    */
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, hash: string) => {
-    if (hash.startsWith("#")) {
-      e.preventDefault();
-      
-      const element = document.querySelector(hash);
-      if (element) {
-        // Calculate the element's top position relative to the document
-        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        
-        // Dynamic offset calculation based on the current state of the sticky header
-        const offset = isHeaderVisible ? HEADER_HEIGHT : HEADER_HEIGHT_HIDDEN;
-        
-        window.scrollTo({
-          top: elementPosition - offset,
-          behavior: "smooth",
-        });
-      }
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    hash: string,
+  ) => {
+    e.preventDefault();
+
+    if (!isHome) {
+      router.push(`/${locale}${hash}`);
+      return;
+    }
+
+    const element = document.querySelector(hash);
+
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+
+      const offset = isHeaderVisible ? HEADER_HEIGHT : HEADER_HEIGHT_HIDDEN;
+
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
     }
   };
 

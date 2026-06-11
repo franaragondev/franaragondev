@@ -6,6 +6,7 @@ import ProjectsSection from "@/components/layout/ProjectsSection";
 import ExperienceSection from "@/components/layout/ExperienceSection";
 import AboutSection from "@/components/layout/AboutSection";
 import ContactSection from "@/components/layout/ContactSection";
+import PartnershipsSection from "@/components/layout/PartnershipsSection";
 
 /**
  * Static Site Generation (SSG) Configuration:
@@ -76,6 +77,8 @@ export default function Home() {
 
       {/* Engineering portfolio and production-grade case studies */}
       <ProjectsSection />
+
+      <PartnershipsSection />
 
       {/* Professional trajectory and milestone logging */}
       <ExperienceSection />
