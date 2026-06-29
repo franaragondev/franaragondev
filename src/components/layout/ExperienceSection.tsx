@@ -17,6 +17,7 @@ export default function ExperienceSection() {
    * Professional experiences are mapped into an array to maintain a DRY architecture.
    */
   const experiences = [
+    /**
     {
       id: "proxify",
       logo: "/experience/proxify.png",
@@ -25,6 +26,7 @@ export default function ExperienceSection() {
       period: t("proxify.period"),
       responsibilities: [t("proxify.point1")],
     },
+    */
     {
       id: "solutia",
       logo: "/experience/solutia.jpg",
