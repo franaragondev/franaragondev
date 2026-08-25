@@ -139,18 +139,18 @@ export default function ProjectsSection() {
       </div>
 
       {/* SECTION 2: ECOSYSTEM INFRASTRUCTURE (MARQUEE) */}
-      <div className="marquee-container relative py-12 group cursor-default">
+      {/* <div className="marquee-container relative py-12 group cursor-default">
         <div className="text-center mb-12 px-4">
           <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#6E6E73]">
             Infrastructure & UI Systems
           </p>
-        </div>
+        </div> */}
 
         {/* Edge Fading Gradients:
             Absolutely positioned overlays that create a visual 'fade-in/out' effect
             at the edges of the viewport, enhancing the infinite motion feel.
         */}
-        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white dark:from-[#111111] to-transparent z-10 pointer-events-none" />
+        {/* <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white dark:from-[#111111] to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white dark:from-[#111111] to-transparent z-10 pointer-events-none" />
 
         <div className="animate-marquee gap-8 px-4">
@@ -171,7 +171,7 @@ export default function ProjectsSection() {
             </a>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
