@@ -101,11 +101,16 @@
   },
   "experience": {
     "title": "Experience",
+    "duration": {
+      "years": "{count, plural, one {# year} other {# years}}",
+      "months": "{count, plural, one {# month} other {# months}}"
+    },
     "proxify": {
       "title": "Software Engineer",
       "period": "June 2026 - Present",
       "engagements": {
         "investmentPlatform": {
+          "period": "June 2026 - Present",
           "client": "Confidential UK Venture Capital Client",
           "title": "Investment Management Platform",
           "description": "Engineering an internal investment management platform for a UK-based venture capital business, translating complex investment workflows into secure, scalable digital products.",

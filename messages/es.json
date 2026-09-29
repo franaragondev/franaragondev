@@ -101,11 +101,16 @@
   },
   "experience": {
     "title": "Experiencia",
+    "duration": {
+      "years": "{count, plural, one {# año} other {# años}}",
+      "months": "{count, plural, one {# mes} other {# meses}}"
+    },
     "proxify": {
       "title": "Software Engineer",
       "period": "Jun 2026 - Actualidad",
       "engagements": {
         "investmentPlatform": {
+          "period": "Jun 2026 - Actualidad",
           "client": "Cliente confidencial de capital riesgo en Reino Unido",
           "title": "Plataforma de gestión de inversiones",
           "description": "Desarrollo de una plataforma interna de gestión de inversiones para una firma de capital riesgo del Reino Unido, transformando flujos de inversión complejos en productos digitales seguros y escalables.",
