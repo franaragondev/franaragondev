@@ -118,6 +118,20 @@
             "Diseño e implementación de servicios backend, modelos de base de datos y flujos transaccionales con PostgreSQL, Drizzle y Supabase.",
             "Mantenimiento de la calidad de ingeniería mediante testing automatizado, pruebas de regresión de seguridad, validación de base de datos y release engineering."
           ]
+        },
+        "saasPlatform": {
+          "period": "Jun 2026 - Actualidad",
+          "client": "Cliente confidencial de plataforma SaaS",
+          "title": "Plataforma SaaS y operaciones de negocio",
+          "description": "Desarrollo y evolución de una plataforma SaaS multisistema que da soporte a operaciones de agencias, referidos, conversiones, comisiones y flujos de pago, con foco en una lógica de negocio fiable, una arquitectura escalable y la entrega de extremo a extremo.",
+          "responsibilities": [
+            "Desarrollo de flujos full-stack que abarcan gestión de agencias, referidos, conversiones, comisiones y pagos.",
+            "Traducción de reglas de negocio complejas en sistemas transaccionales fiables, lógica de dominio y arquitectura de producto escalable.",
+            "Diseño e implementación de permisos basados en roles, flujos de aprobación y operaciones financieras auditables.",
+            "Trabajo transversal en backend, frontend, integraciones y componentes de UI compartidos dentro de un ecosistema consolidado de Laravel y Livewire.",
+            "Creación y mantenimiento de testing automatizado unitario, de integración y de extremo a extremo, incluyendo cobertura de regresión para flujos de negocio críticos.",
+            "Investigación y mejora de CI/CD, pipelines de despliegue y procesos de entrega de ingeniería, incluyendo análisis de causa raíz de incidencias de infraestructura."
+          ]
         }
       }
     },

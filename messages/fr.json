@@ -118,6 +118,20 @@
             "Conception et implémentation de services backend, de modèles de base de données et de workflows transactionnels avec PostgreSQL, Drizzle et Supabase.",
             "Maintien de la qualité d'ingénierie grâce aux tests automatisés, aux tests de régression de sécurité, à la validation de la base de données et au release engineering."
           ]
+        },
+        "saasPlatform": {
+          "period": "Juin 2026 - Présent",
+          "client": "Client confidentiel de plateforme SaaS",
+          "title": "Plateforme SaaS et opérations métier",
+          "description": "Développement et évolution d'une plateforme SaaS multi-systèmes prenant en charge les opérations des agences, les parrainages, les conversions, les commissions et les flux de paiement, avec un accent sur une logique métier fiable, une architecture évolutive et une livraison de bout en bout.",
+          "responsibilities": [
+            "Développement de parcours full-stack couvrant la gestion des agences, les parrainages, les conversions, les commissions et les paiements.",
+            "Traduction de règles métier complexes en systèmes transactionnels fiables, en logique de domaine et en architecture produit évolutive.",
+            "Conception et implémentation de permissions basées sur les rôles, de workflows d'approbation et d'opérations financières auditables.",
+            "Travail transverse sur le backend, le frontend, les intégrations et les composants d'interface partagés au sein d'un écosystème Laravel et Livewire existant.",
+            "Mise en place et maintien de tests automatisés unitaires, d'intégration et de bout en bout, incluant une couverture de régression des workflows métier critiques.",
+            "Investigation et amélioration de la CI/CD, des pipelines de déploiement et des processus de livraison, incluant l'analyse des causes racines des problèmes d'infrastructure."
+          ]
         }
       }
     },

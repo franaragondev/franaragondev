@@ -61,6 +61,23 @@ const PROXIFY_ENGAGEMENTS: EngagementSource[] = [
       "Microsoft Graph",
     ],
   },
+  {
+    id: "saasPlatform",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "Livewire",
+      "Blade",
+      "Alpine.js",
+      "MySQL",
+      "Tailwind CSS",
+      "PHPUnit",
+      "Playwright",
+      "GitHub Actions",
+      "Docker",
+      "PHPStan",
+    ],
+  },
 ];
 
 /**

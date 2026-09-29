@@ -118,6 +118,20 @@
             "Designing and implementing backend services, database models and transactional workflows using PostgreSQL, Drizzle and Supabase.",
             "Maintaining engineering quality through automated testing, security regression testing, database validation and release engineering."
           ]
+        },
+        "saasPlatform": {
+          "period": "June 2026 - Present",
+          "client": "Confidential SaaS Platform Client",
+          "title": "SaaS Platform & Business Operations",
+          "description": "Engineering and evolving a multi-system SaaS platform supporting agency operations, referrals, conversions, commissions and payout workflows, with a focus on reliable business logic, scalable architecture and end-to-end delivery.",
+          "responsibilities": [
+            "Engineering full-stack workflows across agency management, referrals, conversions, commissions and payouts.",
+            "Translating complex business rules into reliable transactional systems, domain logic and scalable product architecture.",
+            "Designing and implementing role-based permissions, approval workflows and auditable financial operations.",
+            "Working across backend, frontend, integrations and shared UI components within an established Laravel and Livewire ecosystem.",
+            "Building and maintaining automated unit, integration and end-to-end testing, including regression coverage for critical business workflows.",
+            "Investigating and improving CI/CD, deployment pipelines and engineering delivery processes, including root-cause analysis of infrastructure issues."
+          ]
         }
       }
     },
