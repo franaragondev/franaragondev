@@ -104,7 +104,21 @@
     "proxify": {
       "title": "Software Engineer",
       "period": "June 2026 - Present",
-      "point1": ""
+      "engagements": {
+        "investmentPlatform": {
+          "client": "Confidential UK Venture Capital Client",
+          "title": "Investment Management Platform",
+          "description": "Engineering an internal investment management platform for a UK-based venture capital business, translating complex investment workflows into secure, scalable digital products.",
+          "responsibilities": [
+            "Architecting and developing full-stack workflows covering investments, portfolios, capital calls, fees, payments and investor management.",
+            "Translating complex financial and operational processes into scalable domain models and product architecture.",
+            "Designing secure investor authorization and data-isolation models for external-facing experiences.",
+            "Engineering automated investor communications through Microsoft Graph and Microsoft Entra, including durable email delivery workflows.",
+            "Designing and implementing backend services, database models and transactional workflows using PostgreSQL, Drizzle and Supabase.",
+            "Maintaining engineering quality through automated testing, security regression testing, database validation and release engineering."
+          ]
+        }
+      }
     },
     "solutia": {
       "title": "Frontend Lead & Software Engineer",

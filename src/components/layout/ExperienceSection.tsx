@@ -4,6 +4,85 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 /**
+ * Engagement:
+ * A single client project delivered within a wider professional experience.
+ * Allows one employment entry (e.g. Proxify) to host multiple client projects
+ * over time without duplicating the employment relationship itself.
+ */
+type Engagement = {
+  id: string;
+  client: string;
+  title: string;
+  description: string;
+  responsibilities: string[];
+  technologies: string[];
+};
+
+type Experience = {
+  id: string;
+  logo: string;
+  role: string;
+  company: string;
+  period: string;
+  responsibilities?: string[];
+  engagements?: Engagement[];
+};
+
+/**
+ * Proxify Engagement Registry:
+ * Holds only the locale-invariant data of each engagement. All copy lives in
+ * `messages/{locale}.json` under `experience.proxify.engagements.<id>`.
+ * Adding a future client means appending one entry here plus its translations.
+ */
+const PROXIFY_ENGAGEMENTS = [
+  {
+    id: "investmentPlatform",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Drizzle",
+      "Supabase",
+      "Vercel",
+      "Microsoft Entra",
+      "Microsoft Graph",
+    ],
+  },
+] as const;
+
+/**
+ * ResponsibilityList Component
+ * Shared bullet rendering for both experience-level and engagement-level points.
+ * Empty entries are filtered out to avoid orphan bullets.
+ */
+function ResponsibilityList({ points }: { points: string[] }) {
+  const visible = points.filter((point) => point && point.trim() !== "");
+
+  if (visible.length === 0) return null;
+
+  return (
+    <ul className="space-y-3">
+      {visible.map((point, idx) => (
+        <li
+          key={idx}
+          className="flex text-[#515154] dark:text-[#A1A1A6] text-base md:text-lg leading-relaxed tracking-tight font-medium"
+        >
+          <span
+            className="text-[#1D1D1F] dark:text-white mr-3 mt-1.5 opacity-40"
+            aria-hidden="true"
+          >
+            →
+          </span>
+          <span>{point}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/**
  * ExperienceSection Component
  * Renders a vertical chronological timeline showcasing professional trajectory.
  * Designed with a focus on information density, readability, and visual hierarchy.
@@ -16,14 +95,23 @@ export default function ExperienceSection() {
    * Data Normalization:
    * Professional experiences are mapped into an array to maintain a DRY architecture.
    */
-  const experiences = [
+  const experiences: Experience[] = [
     {
       id: "proxify",
       logo: "/experience/proxify.png",
       role: t("proxify.title"),
       company: "Proxify",
       period: t("proxify.period"),
-      responsibilities: [t("proxify.point1")],
+      engagements: PROXIFY_ENGAGEMENTS.map(({ id, technologies }) => ({
+        id,
+        client: t(`proxify.engagements.${id}.client`),
+        title: t(`proxify.engagements.${id}.title`),
+        description: t(`proxify.engagements.${id}.description`),
+        responsibilities: t.raw(
+          `proxify.engagements.${id}.responsibilities`,
+        ) as string[],
+        technologies: [...technologies],
+      })),
     },
     {
       id: "solutia",
@@ -87,7 +175,7 @@ export default function ExperienceSection() {
       {/* Vertical Timeline Container */}
       <div className="max-w-4xl mx-auto relative border-l border-[#D2D2D7] dark:border-[#333336] pl-8 space-y-16">
         {experiences.map(
-          ({ id, logo, role, company, period, responsibilities }) => (
+          ({ id, logo, role, company, period, responsibilities, engagements }) => (
             <div key={id} className="relative group">
               {/* Timeline Anchor Point */}
               <span className="absolute left-[-37px] top-6 w-[10px] h-[10px] bg-[#1D1D1F] dark:bg-white rounded-full ring-4 ring-[#F5F5F7] dark:ring-[#000000] transition-transform duration-300 group-hover:scale-150" />
@@ -118,27 +206,50 @@ export default function ExperienceSection() {
                 </div>
 
                 {/* Responsibilities List: Conditionally rendered to avoid empty bullets */}
-                {responsibilities.filter(
-                  (point) => point && point.trim() !== "",
-                ).length > 0 && (
-                  <ul className="space-y-3">
-                    {responsibilities
-                      .filter((point) => point && point.trim() !== "")
-                      .map((point, idx) => (
-                        <li
-                          key={idx}
-                          className="flex text-[#515154] dark:text-[#A1A1A6] text-base md:text-lg leading-relaxed tracking-tight font-medium"
-                        >
-                          <span
-                            className="text-[#1D1D1F] dark:text-white mr-3 mt-1.5 opacity-40"
-                            aria-hidden="true"
-                          >
-                            →
-                          </span>
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                  </ul>
+                {responsibilities && (
+                  <ResponsibilityList points={responsibilities} />
+                )}
+
+                {/* Client Engagements: Projects delivered within this experience */}
+                {engagements && engagements.length > 0 && (
+                  <div className="space-y-6">
+                    {engagements.map((engagement) => (
+                      <div
+                        key={engagement.id}
+                        className="rounded-[1.5rem] bg-[#F5F5F7] dark:bg-[#111111] border border-black/5 dark:border-white/5 p-6 md:p-8"
+                      >
+                        {/* Engagement Identity */}
+                        <p className="text-[#6E6E73] text-xs uppercase tracking-widest font-semibold">
+                          {engagement.client}
+                        </p>
+                        <h4 className="text-xl md:text-2xl font-bold tracking-tight text-[#1D1D1F] dark:text-white mt-2">
+                          {engagement.title}
+                        </h4>
+
+                        <p className="text-[#515154] dark:text-[#A1A1A6] text-base md:text-lg leading-relaxed tracking-tight font-medium mt-4">
+                          {engagement.description}
+                        </p>
+
+                        <div className="mt-6">
+                          <ResponsibilityList
+                            points={engagement.responsibilities}
+                          />
+                        </div>
+
+                        {/* Tech Stack Metadata Tags */}
+                        <div className="flex flex-wrap gap-2 mt-8">
+                          {engagement.technologies.map((tech) => (
+                            <span
+                              key={tech}
+                              className="px-3 py-1 rounded-full bg-black/5 dark:bg-white/10 text-[10px] uppercase tracking-widest font-bold text-[#6E6E73] dark:text-[#A1A1A6]"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 )}
               </article>
             </div>

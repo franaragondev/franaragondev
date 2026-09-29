@@ -104,7 +104,21 @@
     "proxify": {
       "title": "Software Engineer",
       "period": "Jun 2026 - Actualidad",
-      "point1": ""
+      "engagements": {
+        "investmentPlatform": {
+          "client": "Cliente confidencial de capital riesgo en Reino Unido",
+          "title": "Plataforma de gestión de inversiones",
+          "description": "Desarrollo de una plataforma interna de gestión de inversiones para una firma de capital riesgo del Reino Unido, transformando flujos de inversión complejos en productos digitales seguros y escalables.",
+          "responsibilities": [
+            "Arquitectura y desarrollo de flujos full-stack que abarcan inversiones, carteras, llamadas de capital, comisiones, pagos y gestión de inversores.",
+            "Traducción de procesos financieros y operativos complejos en modelos de dominio y arquitectura de producto escalables.",
+            "Diseño de modelos seguros de autorización de inversores y aislamiento de datos para experiencias de cara al exterior.",
+            "Desarrollo de comunicaciones automatizadas a inversores mediante Microsoft Graph y Microsoft Entra, incluyendo flujos de envío de correo con entrega garantizada.",
+            "Diseño e implementación de servicios backend, modelos de base de datos y flujos transaccionales con PostgreSQL, Drizzle y Supabase.",
+            "Mantenimiento de la calidad de ingeniería mediante testing automatizado, pruebas de regresión de seguridad, validación de base de datos y release engineering."
+          ]
+        }
+      }
     },
     "solutia": {
       "title": "Frontend Lead & Software Engineer",

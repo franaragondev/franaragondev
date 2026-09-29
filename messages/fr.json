@@ -104,7 +104,21 @@
     "proxify": {
       "title": "Software Engineer",
       "period": "Juin 2026 - Présent",
-      "point1": ""
+      "engagements": {
+        "investmentPlatform": {
+          "client": "Client confidentiel de capital-risque au Royaume-Uni",
+          "title": "Plateforme de gestion d'investissements",
+          "description": "Développement d'une plateforme interne de gestion d'investissements pour une société de capital-risque britannique, en traduisant des processus d'investissement complexes en produits numériques sécurisés et évolutifs.",
+          "responsibilities": [
+            "Architecture et développement de parcours full-stack couvrant les investissements, les portefeuilles, les appels de capitaux, les frais, les paiements et la gestion des investisseurs.",
+            "Traduction de processus financiers et opérationnels complexes en modèles de domaine et en architecture produit évolutifs.",
+            "Conception de modèles sécurisés d'autorisation des investisseurs et d'isolation des données pour les expériences externes.",
+            "Développement de communications automatisées aux investisseurs via Microsoft Graph et Microsoft Entra, incluant des workflows d'envoi d'e-mails fiables.",
+            "Conception et implémentation de services backend, de modèles de base de données et de workflows transactionnels avec PostgreSQL, Drizzle et Supabase.",
+            "Maintien de la qualité d'ingénierie grâce aux tests automatisés, aux tests de régression de sécurité, à la validation de la base de données et au release engineering."
+          ]
+        }
+      }
     },
     "solutia": {
       "title": "Lead Frontend & Ingénieur Logiciel",
