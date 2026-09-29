@@ -15,21 +15,17 @@ type Engagement = {
   title: string;
   description: string;
   period: string;
-  duration: string;
   responsibilities: string[];
   technologies: string[];
 };
 
 /**
  * EngagementSource:
- * The locale-invariant definition of an engagement. Dates are stored as
- * `YYYY-MM` so the elapsed duration can be derived instead of hardcoded.
- * Omitting `endDate` marks the engagement as ongoing.
+ * The locale-invariant definition of an engagement. Everything translatable,
+ * including its period label, is resolved from the message files.
  */
 type EngagementSource = {
   id: string;
-  startDate: string;
-  endDate?: string;
   technologies: string[];
 };
 
@@ -52,7 +48,6 @@ type Experience = {
 const PROXIFY_ENGAGEMENTS: EngagementSource[] = [
   {
     id: "investmentPlatform",
-    startDate: "2026-06",
     technologies: [
       "React",
       "TypeScript",
@@ -67,22 +62,6 @@ const PROXIFY_ENGAGEMENTS: EngagementSource[] = [
     ],
   },
 ];
-
-/**
- * monthsElapsed:
- * Inclusive month span of an engagement (Jun -> Sep reads as 4 months),
- * matching the convention used by professional networks. Ongoing engagements
- * are measured against the current month.
- */
-function monthsElapsed(startDate: string, endDate?: string): number {
-  const now = new Date();
-  const [startYear, startMonth] = startDate.split("-").map(Number);
-  const [endYear, endMonth] = endDate
-    ? endDate.split("-").map(Number)
-    : [now.getFullYear(), now.getMonth() + 1];
-
-  return Math.max(1, (endYear - startYear) * 12 + (endMonth - startMonth) + 1);
-}
 
 /**
  * ResponsibilityList Component
@@ -134,33 +113,17 @@ export default function ExperienceSection() {
       role: t("proxify.title"),
       company: "Proxify",
       period: t("proxify.period"),
-      engagements: PROXIFY_ENGAGEMENTS.map(
-        ({ id, startDate, endDate, technologies }) => {
-          const months = monthsElapsed(startDate, endDate);
-          const years = Math.floor(months / 12);
-          const trailingMonths = months % 12;
-
-          return {
-            id,
-            client: t(`proxify.engagements.${id}.client`),
-            title: t(`proxify.engagements.${id}.title`),
-            description: t(`proxify.engagements.${id}.description`),
-            period: t(`proxify.engagements.${id}.period`),
-            duration: [
-              years > 0 ? t("duration.years", { count: years }) : null,
-              trailingMonths > 0 || years === 0
-                ? t("duration.months", { count: trailingMonths })
-                : null,
-            ]
-              .filter(Boolean)
-              .join(" "),
-            responsibilities: t.raw(
-              `proxify.engagements.${id}.responsibilities`,
-            ) as string[],
-            technologies,
-          };
-        },
-      ),
+      engagements: PROXIFY_ENGAGEMENTS.map(({ id, technologies }) => ({
+        id,
+        client: t(`proxify.engagements.${id}.client`),
+        title: t(`proxify.engagements.${id}.title`),
+        description: t(`proxify.engagements.${id}.description`),
+        period: t(`proxify.engagements.${id}.period`),
+        responsibilities: t.raw(
+          `proxify.engagements.${id}.responsibilities`,
+        ) as string[],
+        technologies,
+      })),
     },
     {
       id: "solutia",
@@ -285,13 +248,6 @@ export default function ExperienceSection() {
                             •
                           </span>
                           {engagement.period}
-                          <span
-                            className="mx-1.5 text-[#D2D2D7]"
-                            aria-hidden="true"
-                          >
-                            ·
-                          </span>
-                          {engagement.duration}
                         </p>
                         <h4 className="text-xl md:text-2xl font-bold tracking-tight text-[#1D1D1F] dark:text-white mt-2">
                           {engagement.title}

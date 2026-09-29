@@ -101,10 +101,6 @@
   },
   "experience": {
     "title": "Expérience",
-    "duration": {
-      "years": "{count, plural, one {# an} other {# ans}}",
-      "months": "{count, plural, one {# mois} other {# mois}}"
-    },
     "proxify": {
       "title": "Software Engineer",
       "period": "Juin 2026 - Présent",
