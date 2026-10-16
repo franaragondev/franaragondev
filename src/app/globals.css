@@ -24,3 +24,43 @@ body {
   color: var(--foreground);
   font-family: var(--font-montserrat), sans-serif;
 }
+
+/**
+ * Hero Parallax (scroll-driven):
+ * Mirrors react-scroll-parallax's `speed` mapping — translateY from
+ * --parallax-from to --parallax-to across the section's full "cover" range —
+ * but is resolved by the browser per frame instead of a JS scroll handler,
+ * so it stays in sync with iOS Safari's asynchronous momentum scrolling.
+ */
+@keyframes parallax-shift {
+  from {
+    transform: translateY(var(--parallax-from));
+  }
+  to {
+    transform: translateY(var(--parallax-to));
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .parallax-scope {
+      view-timeline: --parallax-bg block;
+    }
+
+    /* overflow: hidden would make ancestors scroll containers and detach the
+       view timeline from the page scroller; clip has identical visuals. */
+    .parallax-scope,
+    .parallax-clip {
+      overflow: clip;
+    }
+
+    .parallax-layer {
+      animation-name: parallax-shift;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --parallax-bg;
+      animation-range: cover 0% cover 100%;
+      will-change: transform;
+    }
+  }
+}

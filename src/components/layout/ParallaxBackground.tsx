@@ -1,7 +1,7 @@
 "use client";
 
 import { Parallax } from "react-scroll-parallax";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import Image from "next/image";
 
 /**
@@ -33,37 +33,47 @@ export default function ParallaxBackground({
   minHeight = "600px",
   sectionName,
 }: ParallaxBackgroundProps) {
-  /** * Responsive Anchor Logic:
-   * Dynamically adjusts the image's focal point to prevent critical visual
-   * clipping on ultra-narrow (mobile) viewports.
+  /** * Scroll-Linked Engine Selection:
+   * When the browser supports CSS scroll-driven animations, the `.parallax-layer`
+   * rules in globals.css run the effect in the rendering pipeline (off the main
+   * thread where supported), which keeps it in sync with iOS momentum scrolling.
+   * The JS controller is then disabled so it stops writing transforms on scroll.
+   * Unsupported browsers keep the react-scroll-parallax path unchanged.
+   * Reduced-motion users get a static image on both paths.
    */
-  const [bgPosition, setBgPosition] = useState("center 70%");
+  const [jsParallaxDisabled, setJsParallaxDisabled] = useState(false);
 
   useEffect(() => {
-    const updatePosition = () => {
-      if (window.innerWidth < 768) {
-        setBgPosition("75% 50%"); // Optimized for portrait mobile focus
-      } else {
-        setBgPosition("center 70%"); // Standard desktop wide-angle focus
-      }
-    };
+    const supportsScrollTimeline =
+      typeof CSS !== "undefined" && CSS.supports("animation-timeline: view()");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-    updatePosition();
+    const update = () =>
+      setJsParallaxDisabled(supportsScrollTimeline || reducedMotion.matches);
 
-    /** * Performance optimization: Using passive listeners to avoid main-thread
-     * jank during high-frequency window resize events.
-     */
-    window.addEventListener("resize", updatePosition, { passive: true });
-    return () => window.removeEventListener("resize", updatePosition);
+    update();
+    reducedMotion.addEventListener("change", update);
+    return () => reducedMotion.removeEventListener("change", update);
   }, []);
+
+  /** Same translateY range react-scroll-parallax derives from `speed`. */
+  const parallaxRange = {
+    "--parallax-from": `${speed * 10}px`,
+    "--parallax-to": `${speed * -10}px`,
+  } as CSSProperties;
 
   return (
     <section
       id={sectionName}
-      className="relative overflow-hidden bg-[#111111]"
+      className="parallax-scope relative overflow-hidden bg-[#111111]"
       style={{ minHeight }}
     >
-      <Parallax speed={speed} className="absolute inset-0 h-full w-full">
+      <Parallax
+        speed={speed}
+        disabled={jsParallaxDisabled}
+        className="parallax-layer absolute inset-0 h-full w-full"
+        style={parallaxRange}
+      >
         <div
           className="relative h-full w-full"
           /* Calculating height offset to prevent whitespace gaps during intense parallax deltas */
@@ -79,8 +89,8 @@ export default function ParallaxBackground({
             fill
             priority
             fetchPriority="high"
-            className="object-cover"
-            style={{ objectPosition: bgPosition }}
+            /* Responsive focal point: portrait mobile focus below md, wide-angle above */
+            className="object-cover object-[75%_50%] md:object-[center_70%]"
             sizes="100vw"
             quality={90}
           />

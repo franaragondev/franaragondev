@@ -13,7 +13,7 @@ export default function AppHero() {
   const t = useTranslations("hero");
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="parallax-clip relative overflow-hidden">
       {/* Custom Parallax Background: 
         Negative speed value creates a subtle "rising" effect against scroll. 
       */}
