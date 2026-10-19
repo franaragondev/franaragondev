@@ -192,11 +192,6 @@
       "description": "Fundador e ingeniero. Aplicación nativa iOS diseñada para reducir el desperdicio de alimentos mediante inventario inteligente e infraestructura cloud.",
       "url": "https://homestocker.app/"
     },
-    "cdestepona": {
-      "title": "CD Estepona Platform",
-      "description": "Arquitectura Full-stack desarrollada con Next.js y Prisma. Optimizada para la entrega de contenido de alto rendimiento y SEO técnico (Lighthouse 90+).",
-      "url": "https://www.cdesteponafans.com/"
-    },
     "sportsteam-template": {
       "title": "SportsTeam Architecture",
       "description": "Arquitectura de plataforma digital escalable para organizaciones deportivas, facilitando la gestión de datos de alta concurrencia.",
@@ -300,6 +295,155 @@
       "philosophy": {
         "title": "Filosofía de Ingeniería",
         "quote": "Diseñar experiencias de lujo exige la misma disciplina que construir sistemas empresariales: primero la arquitectura, después la estética."
+      }
+    },
+    "sectionEyebrow": "PARTNERSHIPS SELECCIONADAS",
+    "cdestepona": {
+      "eyebrow": "PARTNERSHIP SELECCIONADA",
+      "title": "CD Estepona Fans",
+      "label": "Plataforma independiente para aficionados",
+      "subtitle": "Un producto multiplataforma para la comunidad de aficionados del CD Estepona: una web pública, una app nativa para iOS y un sistema interno de partido que lleva los eventos en directo a la afición en el momento en que ocurren.",
+      "visitPlatform": "Visitar Plataforma",
+      "appStore": "Ver en el App Store",
+      "backHome": "Volver al Inicio",
+      "independence": "Proyecto independiente de aficionados. Sin vinculación con el CD Estepona y no es un servicio oficial del club.",
+      "meta": {
+        "title": "CD Estepona Fans | Caso de estudio de producto deportivo multiplataforma",
+        "description": "Caso de estudio de una plataforma independiente para aficionados al fútbol: web trilingüe, app nativa para iOS, Matchday Control Center en directo, notificaciones push y Live Activities."
+      },
+      "overview": {
+        "title": "Visión General",
+        "paragraph": "CD Estepona Fans es un producto independiente para los aficionados del CD Estepona, club de fútbol que compite en Segunda RFEF. Lo que empezó en 2025 como una web de noticias se ha convertido en un ecosistema digital: una plataforma web trilingüe, una app nativa para iOS publicada en el App Store, una app nativa para Android en pruebas cerradas y un Matchday Control Center interno donde los operadores registran cada evento del partido en directo.",
+        "roleTitle": "Mi Rol",
+        "role": "Soy responsable del producto de principio a fin: dirección de producto, UX, arquitectura, backend, desarrollo web, iOS y Android, publicaciones y operación diaria. Es una iniciativa independiente de aficionados y no un encargo del club, lo que la convierte en un ejercicio real de ownership de producto: cada decisión, del modelo de datos a la publicación en el App Store, ha sido mía, igual que su mantenimiento."
+      },
+      "challenge": {
+        "title": "El desafío",
+        "paragraph1": "Los aficionados de clubes de categorías inferiores rara vez disfrutan de la experiencia digital que los seguidores de los grandes equipos dan por hecha. El objetivo era ofrecerles un único lugar para noticias, calendario, clasificación, plantilla y, sobre todo, el seguimiento de los partidos en directo, con un coste operativo proporcionado a un proyecto independiente.",
+        "paragraph2": "Eso implicaba resolver problemas reales de producto: datos de partido que deben ser correctos a la primera porque disparan notificaciones push, correcciones que nunca deben avisar dos veces a la afición, una experiencia en directo sobre infraestructura serverless y varias plataformas que tienen que contar exactamente la misma historia en tres idiomas."
+      },
+      "ecosystem": {
+        "title": "El Ecosistema",
+        "paragraph": "Cada superficie tiene una función clara, y todas comparten un único backend y un contrato de API versionado.",
+        "items": [
+          {
+            "name": "Web",
+            "status": "En producción",
+            "description": "Plataforma Next.js trilingüe con noticias, calendario, clasificación, plantillas, galerías y juegos para la afición."
+          },
+          {
+            "name": "App iOS",
+            "status": "Disponible en el App Store",
+            "description": "App nativa en SwiftUI con Match Centre en directo, avisos push por temas, widgets de pantalla de inicio y Live Activities."
+          },
+          {
+            "name": "App Android",
+            "status": "En pruebas cerradas",
+            "description": "App nativa en Kotlin y Jetpack Compose con paridad funcional respecto a iOS. Aún no está disponible públicamente."
+          },
+          {
+            "name": "Matchday Control Center",
+            "status": "Interno",
+            "description": "Consola de operador donde un operador asignado a cada partido registra goles, tarjetas, cambios y alineaciones durante el encuentro."
+          },
+          {
+            "name": "Panel de Contenidos",
+            "status": "Interno",
+            "description": "CMS editorial para noticias, galerías, plantillas y partidos, con traducción automática de artículos."
+          }
+        ]
+      },
+      "architecture": {
+        "title": "Arquitectura",
+        "paragraph": "Un único backend en Next.js y TypeScript da servicio a la web, al panel de contenidos, al Matchday Control Center y a una API móvil versionada que consumen las dos apps nativas. PostgreSQL con Prisma alberga el modelo de dominio, las notificaciones push se entregan mediante APNs y Firebase Cloud Messaging, y las Live Activities de iOS se actualizan de forma remota desde el servidor. La arquitectura prioriza a propósito pocas piezas, bien conocidas, que un solo ingeniero puede operar con fiabilidad."
+      },
+      "highlights": {
+        "title": "Aspectos técnicos destacados",
+        "items": [
+          "Next.js App Router",
+          "TypeScript",
+          "PostgreSQL y Prisma",
+          "API Móvil Versionada",
+          "SwiftUI",
+          "Kotlin y Jetpack Compose",
+          "APNs y Firebase Cloud Messaging",
+          "Live Activities y WidgetKit",
+          "Datos Estructurados (Schema.org)",
+          "Trilingüe: ES · EN · FR"
+        ]
+      },
+      "capabilities": {
+        "title": "Capacidades de la Plataforma",
+        "items": [
+          "Match Centre en Directo",
+          "Consola de Operador de Partido",
+          "Notificaciones Push por Temas",
+          "Live Activities y Widgets",
+          "Noticias y CMS Editorial",
+          "Calendario, Clasificación y Plantillas",
+          "Suscripción al Calendario",
+          "Quiniela y Votación MVP"
+        ]
+      },
+      "engineering": {
+        "title": "Decisiones de ingeniería clave",
+        "items": [
+          {
+            "title": "Datos en directo desde un Matchday Control Center",
+            "text": "Los datos en directo no proceden de un proveedor externo. Un operador asignado a cada partido registra cada gol, tarjeta, cambio y alineación en una consola interna. Los minutos se calculan a partir de un reloj de partido en el servidor en lugar de teclearse, cada operador solo puede actuar sobre los partidos que tiene asignados y cada acción queda registrada en un log de auditoría."
+          },
+          {
+            "title": "Un único pipeline para todas las fuentes",
+            "text": "Las acciones del operador se reproducen a través del mismo pipeline de ingesta creado para proveedores de datos externos. Registrar, corregir o anular un evento se convierte en una inserción, una actualización o una retractación sobre una única cronología canónica, y el marcador se recalcula siempre a partir de ella en lugar de editarse a mano."
+          },
+          {
+            "title": "Notificaciones que se envían exactamente una vez",
+            "text": "Los avisos se encolan con una clave de deduplicación única y se envían cuando la petición del operador ya ha terminado, de modo que un servicio push lento nunca bloquea la consola. Las correcciones históricas se aplican de forma idempotente y silenciosa, sin volver a avisar a la afición."
+          },
+          {
+            "title": "Tiempo real sin infraestructura de tiempo real",
+            "text": "En lugar de mantener servidores de sockets, las apps consultan un endpoint en directo cuya frecuencia fija el servidor según el estado del partido: cada 10 segundos durante el juego y mucho menos el resto del tiempo. Cada petición es condicional mediante ETag, así que los datos sin cambios cuestan un intercambio de cabeceras y no una respuesta completa."
+          },
+          {
+            "title": "Presente en la pantalla de bloqueo",
+            "text": "En iOS, las Live Activities y los widgets de la pantalla de inicio mantienen el marcador visible sin abrir la app, y la Live Activity se actualiza de forma remota desde el servidor a medida que se registran los eventos."
+          },
+          {
+            "title": "Nativo en ambas plataformas, un solo contrato",
+            "text": "SwiftUI en iOS y Kotlin con Jetpack Compose en Android, desarrolladas sobre la misma API versionada, los mismos temas de notificación y el mismo catálogo de traducciones, con suites de tests automatizados en la plataforma web y en ambas apps."
+          }
+        ]
+      },
+      "experience": {
+        "title": "La Experiencia",
+        "paragraph": "La web y la app presentan los mismos partidos, noticias y plantilla en la forma que necesita cada contexto: navegación completa y visibilidad en buscadores en la web, avisos inmediatos y marcadores de un vistazo en el móvil.",
+        "captions": {
+          "website": "Web · Inicio",
+          "iosHome": "iOS · Inicio",
+          "iosMatchCentre": "iOS · Match Centre",
+          "iosWidgets": "iOS · Widgets de inicio",
+          "iosLiveActivity": "iOS · Live Activity"
+        },
+        "note": "Las imágenes de iOS son las capturas publicadas de la app en el App Store (ficha en español). La imagen de la web se capturó en producción en octubre de 2026."
+      },
+      "results": {
+        "title": "Resultados",
+        "paragraph": "La web está en producción en tres idiomas y la app de iOS se publicó en el App Store en octubre de 2026. La app de Android está en pruebas cerradas en Google Play y se añadirá aquí cuando esté disponible públicamente.",
+        "metrics": {
+          "mobile": "Rendimiento Móvil",
+          "desktop": "Rendimiento Escritorio",
+          "accessibility": "Accesibilidad",
+          "seo": "SEO"
+        },
+        "note": "Puntuaciones de laboratorio de Lighthouse 12.8 para la página de inicio en producción: mediana de tres ejecuciones por perfil de dispositivo, medidas el 19 de octubre de 2026. La accesibilidad corresponde al perfil móvil."
+      },
+      "evolution": {
+        "title": "Próximos Pasos",
+        "paragraph": "El producto sigue evolucionando. Los próximos hitos son la publicación de la app de Android y una conexión más estrecha entre la web y las apps, para que un partido o un artículo se abra directamente en la app cuando esté instalada."
+      },
+      "philosophy": {
+        "title": "Filosofía de Producto",
+        "quote": "Un producto deportivo se gana la confianza en el día de partido: el marcador tiene que ser correcto, el aviso tiene que llegar una sola vez y la experiencia tiene que funcionar en cada plataforma que usa la afición."
       }
     }
   },

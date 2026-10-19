@@ -13,6 +13,7 @@ export type Locale = (typeof LOCALES)[number];
 export const ROUTES = {
   home: "Home",
   baguira: "Baguira case study",
+  cdestepona: "CD Estepona Fans case study",
   privacy: "Privacy policy",
   cookies: "Cookie policy",
   other: "Other page",
@@ -92,6 +93,15 @@ export function trailLabel(key: TrailKey): string {
   return isRouteKey(key) ? ROUTES[key] : SECTIONS[key];
 }
 
+/** Locale-independent paths of the known routes. */
+const ROUTE_PATHS: Record<string, RouteKey> = {
+  "": "home",
+  "partnerships/baguira-suites": "baguira",
+  "partnerships/cd-estepona-fans": "cdestepona",
+  privacidad: "privacy",
+  cookies: "cookies",
+};
+
 /**
  * Maps a pathname to its route and locale, following the "as-needed" prefix
  * policy (English has no prefix).
@@ -106,16 +116,7 @@ export function resolveRoute(pathname: string): { route: RouteKey; locale: Local
   }
 
   const path = segments.join("/");
-  const route: RouteKey =
-    path === ""
-      ? "home"
-      : path === "partnerships/baguira-suites"
-        ? "baguira"
-        : path === "privacidad"
-          ? "privacy"
-          : path === "cookies"
-            ? "cookies"
-            : "other";
+  const route = has(ROUTE_PATHS, path) ? ROUTE_PATHS[path] : "other";
 
   return { route, locale };
 }

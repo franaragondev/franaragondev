@@ -25,14 +25,6 @@ export default function ProjectsSection() {
       image: "https://homestocker.app/logo-simple.webp",
       tech: ["Swift", "Native iOS", "Cloud Architecture"],
     },
-    {
-      id: "cdestepona",
-      title: t("cdestepona.title"),
-      description: t("cdestepona.description"),
-      url: "https://www.cdesteponafans.com/",
-      image: "https://www.cdesteponafans.com/logo.png",
-      tech: ["Next.js", "Prisma", "PostgreSQL"],
-    },
   ];
 
   /** * Architectural Templates:
@@ -96,7 +88,12 @@ export default function ProjectsSection() {
           </h2>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+        {/* A single featured project is centred instead of filling half the grid. */}
+        <div
+          className={`mx-auto grid grid-cols-1 gap-12 mb-32 ${
+            featuredProjects.length > 1 ? "max-w-6xl md:grid-cols-2" : "max-w-3xl"
+          }`}
+        >
           {featuredProjects.map((project) => (
             <a
               key={project.id}

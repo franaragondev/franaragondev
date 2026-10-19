@@ -85,5 +85,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       lastModified: new Date(),
     },
+    {
+      url: `${baseUrl}/partnerships/cd-estepona-fans`,
+      priority: 0.9,
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/es/partnerships/cd-estepona-fans`,
+      priority: 0.9,
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/fr/partnerships/cd-estepona-fans`,
+      priority: 0.9,
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+    },
   ];
 }

@@ -40,6 +40,9 @@ describe("catalog helpers", () => {
     expect(resolveRoute("/")).toEqual({ route: "home", locale: "en" });
     expect(resolveRoute("/en")).toEqual({ route: "home", locale: "en" });
     expect(resolveRoute("/fr/partnerships/baguira-suites")).toEqual({ route: "baguira", locale: "fr" });
+    expect(resolveRoute("/partnerships/cd-estepona-fans")).toEqual({ route: "cdestepona", locale: "en" });
+    expect(resolveRoute("/es/partnerships/cd-estepona-fans")).toEqual({ route: "cdestepona", locale: "es" });
+    expect(resolveRoute("/constructor")).toEqual({ route: "other", locale: "en" });
     expect(resolveRoute("/es/privacidad")).toEqual({ route: "privacy", locale: "es" });
     expect(resolveRoute("/wp-admin")).toEqual({ route: "other", locale: "en" });
   });
