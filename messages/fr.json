@@ -428,7 +428,21 @@
       },
       "results": {
         "title": "Résultats",
-        "paragraph": "Le site est en ligne en trois langues et l’application iOS a été publiée sur l’App Store en octobre 2026. L’application Android est en test fermé sur Google Play et sera ajoutée ici dès qu’elle sera disponible publiquement.",
+        "paragraph": "Le site est en ligne en trois langues, avec une archive éditoriale de 366 articles publiés, et l’application iOS a été publiée sur l’App Store en octobre 2026. Sur le dernier instantané de 30 jours, la plateforme a enregistré plus de 3 000 visites provenant de plus de 1 300 utilisateurs et a affiché une visibilité organique dans la recherche Google. L’application Android est en test fermé sur Google Play et sera ajoutée ici dès qu’elle sera disponible publiquement.",
+        "reach": {
+          "title": "Audience de la plateforme · 30 derniers jours",
+          "visits": "Visites",
+          "activeUsers": "Utilisateurs Actifs",
+          "pageViews": "Pages Vues"
+        },
+        "search": {
+          "title": "Recherche Google · 10 principales requêtes",
+          "clicks": "Clics Organiques",
+          "impressions": "Impressions",
+          "position": "Position Moyenne"
+        },
+        "sourceNote": "Instantané du tableau de bord d’administration de la plateforme, couvrant environ la période du 20 septembre au 19 octobre 2026. Les données d’usage sont les sessions, utilisateurs actifs et pages vues de Google Analytics 4, limitées aux visiteurs ayant accepté les cookies d’analyse. Les données de recherche proviennent de Google Search Console et portent sur les dix requêtes affichées par le tableau de bord ; les totaux du site peuvent donc être supérieurs, et la position est la moyenne simple de ces requêtes.",
+        "performanceTitle": "Performance web",
         "metrics": {
           "mobile": "Performance Mobile",
           "desktop": "Performance Desktop",

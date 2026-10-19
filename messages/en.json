@@ -428,7 +428,21 @@
       },
       "results": {
         "title": "Results",
-        "paragraph": "The website is live in three languages and the iOS app was published on the App Store in October 2026. The Android app is in closed testing on Google Play and will be added here once it is publicly available.",
+        "paragraph": "The website is live in three languages, with an editorial archive of 366 published articles, and the iOS app was published on the App Store in October 2026. In the latest 30-day snapshot, the platform recorded more than 3,000 visits from over 1,300 users and showed organic visibility in Google Search. The Android app is in closed testing on Google Play and will be added here once it is publicly available.",
+        "reach": {
+          "title": "Platform Reach · Last 30 Days",
+          "visits": "Visits",
+          "activeUsers": "Active Users",
+          "pageViews": "Page Views"
+        },
+        "search": {
+          "title": "Google Search · Top 10 Queries",
+          "clicks": "Organic Clicks",
+          "impressions": "Impressions",
+          "position": "Average Position"
+        },
+        "sourceNote": "Snapshot from the platform's admin dashboard, covering approximately 20 September–19 October 2026. Usage figures are Google Analytics 4 sessions, active users and page views, counting only visitors who accepted analytics cookies. Search figures come from Google Search Console and cover the ten queries the dashboard reports, so site-wide totals may be higher; the position is the simple average of those queries.",
+        "performanceTitle": "Web Performance",
         "metrics": {
           "mobile": "Mobile Performance",
           "desktop": "Desktop Performance",

@@ -428,7 +428,21 @@
       },
       "results": {
         "title": "Resultados",
-        "paragraph": "La web está en producción en tres idiomas y la app de iOS se publicó en el App Store en octubre de 2026. La app de Android está en pruebas cerradas en Google Play y se añadirá aquí cuando esté disponible públicamente.",
+        "paragraph": "La web está en producción en tres idiomas, con un archivo editorial de 366 noticias publicadas, y la app de iOS se publicó en el App Store en octubre de 2026. En la última instantánea de 30 días, la plataforma registró más de 3000 visitas de más de 1300 usuarios y mostró visibilidad orgánica en la Búsqueda de Google. La app de Android está en pruebas cerradas en Google Play y se añadirá aquí cuando esté disponible públicamente.",
+        "reach": {
+          "title": "Alcance de la plataforma · Últimos 30 días",
+          "visits": "Visitas",
+          "activeUsers": "Usuarios Activos",
+          "pageViews": "Páginas Vistas"
+        },
+        "search": {
+          "title": "Búsqueda de Google · 10 consultas principales",
+          "clicks": "Clics Orgánicos",
+          "impressions": "Impresiones",
+          "position": "Posición Media"
+        },
+        "sourceNote": "Instantánea del panel de administración de la plataforma, correspondiente aproximadamente al periodo del 20 de septiembre al 19 de octubre de 2026. Los datos de uso son sesiones, usuarios activos y páginas vistas de Google Analytics 4, y solo cuentan a quienes aceptaron las cookies de analítica. Los datos de búsqueda proceden de Google Search Console y abarcan las diez consultas que muestra el panel, por lo que los totales del sitio pueden ser mayores; la posición es la media simple de esas consultas.",
+        "performanceTitle": "Rendimiento web",
         "metrics": {
           "mobile": "Rendimiento Móvil",
           "desktop": "Rendimiento Escritorio",
