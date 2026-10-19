@@ -42,7 +42,7 @@
     "en": "English"
   },
   "cookies": {
-    "message": "Avec votre consentement, nous utilisons des outils d'analyse pour comprendre l'utilisation de ce site. Rien n'est collecté si vous refusez.",
+    "message": "Avec votre consentement, nous utilisons des outils d'analyse pour comprendre l'utilisation de ce site. Si vous refusez, aucun outil d'analyse optionnel n'est utilisé.",
     "accept": "Accepter",
     "reject": "Refuser",
     "learnMore": "En savoir plus",
@@ -84,7 +84,7 @@
       },
       {
         "title": "3. Analyse (Uniquement avec Consentement)",
-        "text": "Si vous acceptez l'analyse, le site utilise Google Analytics 4, Vercel Web Analytics et Speed Insights, ainsi que ses propres statistiques de visite. Celles-ci enregistrent les pages et sections consultées, le temps actif, des actions comme l'envoi du formulaire, l'ouverture du CV ou le suivi d'un lien externe, le domaine du site d'origine (jamais l'adresse complète), les balises de campagne du lien, le type d'appareil, le navigateur et le système d'exploitation, ainsi qu'une localisation approximative (pays et région) déduite de votre adresse IP par l'hébergeur. Votre adresse IP n'est pas stockée : elle n'est utilisée que brièvement, sous forme hachée, pour prévenir les abus. Aucune empreinte numérique (fingerprinting) ni aucun identifiant persistant entre les visites n'est utilisé."
+        "text": "Si vous acceptez l'analyse, le site utilise Google Analytics 4, Vercel Web Analytics et Speed Insights, ainsi que ses propres statistiques de visite. Celles-ci enregistrent les pages et sections consultées, le temps actif, des actions comme l'envoi du formulaire, l'ouverture du CV ou le suivi d'un lien externe, le domaine du site d'origine (jamais l'adresse complète), les balises de campagne du lien, le type d'appareil, le navigateur et le système d'exploitation, ainsi qu'une localisation approximative (pays et région) déduite de votre adresse IP par l'hébergeur. L'application d'analyse propre au site ne conserve pas votre adresse IP brute : elle n'est utilisée que brièvement, sous forme hachée, pour prévenir les abus. Les fournisseurs d'hébergement et d'infrastructure, comme Vercel, peuvent traiter ou journaliser des adresses IP dans le cadre du fonctionnement du service. Les statistiques de visite propres au site n'utilisent ni empreinte numérique (fingerprinting) ni identifiant persistant entre les visites. Google Analytics peut utiliser des cookies ou d'autres identifiants pour reconnaître un navigateur d'une visite à l'autre, comme décrit dans la documentation de Google et dans la Politique des Cookies."
       },
       {
         "title": "4. Finalité et Base Légale",
@@ -92,7 +92,7 @@
       },
       {
         "title": "5. Conservation",
-        "text": "Les détails d'une visite sont conservés au maximum 6 heures ; ensuite, seuls des décomptes hebdomadaires agrégés subsistent, pendant 120 jours au plus. De courts résumés de visite (localisation approximative, appareil, pages consultées, source du trafic) sont envoyés dans le chat Telegram privé du propriétaire du site et y restent jusqu'à leur suppression. Les données Google Analytics sont conservées selon le paramètre de conservation de la propriété."
+        "text": "Les détails d'une visite sont conservés jusqu'à 6 heures après sa dernière activité ; ensuite, seuls des décomptes hebdomadaires agrégés subsistent, pendant 120 jours au plus. De courts résumés de visite (localisation approximative, appareil, pages consultées, source du trafic) sont envoyés dans le chat Telegram privé du propriétaire du site et y restent jusqu'à leur suppression. Les données Google Analytics sont conservées selon le paramètre de conservation de la propriété."
       },
       {
         "title": "6. Prestataires",

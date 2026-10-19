@@ -42,7 +42,7 @@
     "en": "English"
   },
   "cookies": {
-    "message": "With your consent, we use analytics to understand how this site is used. Nothing is collected if you decline.",
+    "message": "With your consent, we use analytics to understand how this site is used. If you decline, no optional analytics are used.",
     "accept": "Accept",
     "reject": "Decline",
     "learnMore": "Learn more",
@@ -84,7 +84,7 @@
       },
       {
         "title": "3. Analytics (Only With Consent)",
-        "text": "If you accept analytics, the site uses Google Analytics 4, Vercel Web Analytics and Speed Insights, and its own visit statistics. The visit statistics record the pages and sections you view, active time on the page, actions such as sending the contact form, opening the CV or following an external link, the referring website's domain (never the full address), campaign tags in the link, your device type, browser and operating system, and an approximate location (country and region) derived by the hosting provider from your IP address. Your IP address is not stored: it is only used briefly, in hashed form, to prevent abuse. No fingerprinting and no identifiers that persist between visits are used."
+        "text": "If you accept analytics, the site uses Google Analytics 4, Vercel Web Analytics and Speed Insights, and its own visit statistics. The visit statistics record the pages and sections you view, active time on the page, actions such as sending the contact form, opening the CV or following an external link, the referring website's domain (never the full address), campaign tags in the link, your device type, browser and operating system, and an approximate location (country and region) derived by the hosting provider from your IP address. The site's own analytics application does not store your raw IP address: it is only used briefly, in hashed form, to prevent abuse. Hosting and infrastructure providers such as Vercel may process or log IP addresses as part of operating the service. The site's own visit statistics use no fingerprinting and no identifiers that persist between visits. Google Analytics may use cookies or other identifiers to recognise a browser across visits, as described in Google's documentation and in the Cookie Policy."
       },
       {
         "title": "4. Purpose and Legal Basis",
@@ -92,7 +92,7 @@
       },
       {
         "title": "5. Retention",
-        "text": "Details of a single visit are kept for at most 6 hours, then only aggregated weekly counts remain, for up to 120 days. Short visit summaries (approximate location, device, pages viewed, traffic source) are sent to the site owner's private Telegram chat and kept there until deleted. Google Analytics data is kept according to the retention setting of the Google Analytics property."
+        "text": "Details of a single visit are kept for up to 6 hours after the visit's last activity; after that, only aggregated weekly counts remain, for up to 120 days. Short visit summaries (approximate location, device, pages viewed, traffic source) are sent to the site owner's private Telegram chat and kept there until deleted. Google Analytics data is kept according to the retention setting of the Google Analytics property."
       },
       {
         "title": "6. Service Providers",

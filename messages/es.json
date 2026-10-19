@@ -42,7 +42,7 @@
     "en": "English"
   },
   "cookies": {
-    "message": "Con tu consentimiento, usamos analítica para entender cómo se utiliza este sitio. Si la rechazas, no se recopila nada.",
+    "message": "Con tu consentimiento, usamos analítica para entender cómo se utiliza este sitio. Si la rechazas, no se utiliza ninguna analítica opcional.",
     "accept": "Aceptar",
     "reject": "Rechazar",
     "learnMore": "Saber más",
@@ -84,7 +84,7 @@
       },
       {
         "title": "3. Analítica (Solo con Consentimiento)",
-        "text": "Si aceptas la analítica, el sitio utiliza Google Analytics 4, Vercel Web Analytics y Speed Insights, y sus propias estadísticas de visitas. Estas registran las páginas y secciones que ves, el tiempo activo, acciones como enviar el formulario, abrir el CV o seguir un enlace externo, el dominio del sitio de procedencia (nunca la dirección completa), las etiquetas de campaña del enlace, el tipo de dispositivo, navegador y sistema operativo, y una ubicación aproximada (país y región) que el proveedor de hosting deduce de tu dirección IP. Tu dirección IP no se almacena: solo se usa brevemente, cifrada mediante hash, para prevenir abusos. No se utiliza fingerprinting ni identificadores que persistan entre visitas."
+        "text": "Si aceptas la analítica, el sitio utiliza Google Analytics 4, Vercel Web Analytics y Speed Insights, y sus propias estadísticas de visitas. Estas registran las páginas y secciones que ves, el tiempo activo, acciones como enviar el formulario, abrir el CV o seguir un enlace externo, el dominio del sitio de procedencia (nunca la dirección completa), las etiquetas de campaña del enlace, el tipo de dispositivo, navegador y sistema operativo, y una ubicación aproximada (país y región) que el proveedor de hosting deduce de tu dirección IP. La aplicación de analítica propia del sitio no almacena tu dirección IP sin procesar: solo se usa brevemente, en forma de hash, para prevenir abusos. Los proveedores de hosting e infraestructura, como Vercel, pueden tratar o registrar direcciones IP como parte del funcionamiento del servicio. Las estadísticas de visitas propias no utilizan fingerprinting ni identificadores que persistan entre visitas. Google Analytics puede utilizar cookies u otros identificadores para reconocer un navegador entre visitas, según se describe en la documentación de Google y en la Política de Cookies."
       },
       {
         "title": "4. Finalidad y Base Jurídica",
@@ -92,7 +92,7 @@
       },
       {
         "title": "5. Conservación",
-        "text": "Los detalles de una visita se conservan como máximo 6 horas; después solo quedan recuentos semanales agregados, durante un máximo de 120 días. Breves resúmenes de visitas (ubicación aproximada, dispositivo, páginas vistas, origen del tráfico) se envían al chat privado de Telegram del titular del sitio y se conservan allí hasta que se borren. Los datos de Google Analytics se conservan según la configuración de retención de la propiedad."
+        "text": "Los detalles de una visita se conservan hasta 6 horas después de su última actividad; a partir de entonces solo quedan recuentos semanales agregados, durante un máximo de 120 días. Breves resúmenes de visitas (ubicación aproximada, dispositivo, páginas vistas, origen del tráfico) se envían al chat privado de Telegram del titular del sitio y se conservan allí hasta que se borren. Los datos de Google Analytics se conservan según la configuración de retención de la propiedad."
       },
       {
         "title": "6. Proveedores",
