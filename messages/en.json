@@ -42,7 +42,7 @@
     "en": "English"
   },
   "cookies": {
-    "message": "We use analytical telemetry to optimize performance. No personal data stored.",
+    "message": "With your consent, we use analytics to understand how this site is used. Nothing is collected if you decline.",
     "accept": "Accept",
     "reject": "Decline",
     "learnMore": "Learn more",
@@ -50,49 +50,68 @@
   },
   "cookiesPolicy": {
     "title": "Cookie Policy",
-    "intro": "This platform uses analytical metrics to anonymously understand user interaction and optimize system performance.",
+    "intro": "With your consent, this website uses analytics to understand which content interests visitors and where traffic comes from.",
     "whatAreCookiesTitle": "What are cookies?",
-    "whatAreCookies": "Small local data fragments used strictly for performance telemetry and navigation analysis.",
+    "whatAreCookies": "Small pieces of data a website stores in your browser. Besides cookies, this site uses your browser's local and session storage.",
     "typesTitle": "Technology",
     "typesList": [
-      "Anonymous analytics used to evaluate performance and improve user experience."
+      "Google Analytics 4 (cookies _ga and _ga_*): aggregated usage statistics. Only after consent.",
+      "Vercel Web Analytics and Speed Insights: cookieless traffic and performance metrics. Only after consent.",
+      "First-party visit statistics: a random session identifier in session storage, deleted when you close the tab. Only after consent.",
+      "Your consent choice, stored in local storage (cookie-consent) so the banner is not shown again."
     ],
     "manageTitle": "Cookie Management",
-    "manageText": "You can accept or reject analytical cookies through the banner or your browser settings.",
+    "manageText": "You can accept or decline analytics in the banner. To change your choice later, clear this site's data in your browser settings and the banner will appear again.",
     "personalDataTitle": "Personal Data",
-    "personalDataTextPart1": "No personal data is collected or stored through cookies on this platform.",
-    "personalDataTextPart2": "",
+    "personalDataTextPart1": "What is collected, why, and for how long is explained in our ",
+    "personalDataTextPart2": ".",
     "privacyPolicyLinkText": "Privacy Policy",
     "changesTitle": "Policy Changes",
     "changesText": "This policy may be updated occasionally to reflect infrastructure improvements.",
-    "lastUpdated": "Last updated: March 2026"
+    "lastUpdated": "Last updated: October 2026"
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
-    "intro": "Privacy is a fundamental engineering principle. We only use anonymous metrics to evaluate platform performance.",
+    "intro": "This policy explains what data this website processes, why, and for how long.",
     "sections": [
       {
-        "title": "1. Personal Data",
-        "text": "This website does not collect or store personal data."
+        "title": "1. Controller",
+        "text": "This website is operated by Fran Aragón, Prague, Czech Republic. Contact: info@franaragondev.com."
       },
       {
-        "title": "2. Analytical Tools",
-        "text": "Traffic metrics are used only to measure system performance and usage patterns."
+        "title": "2. Contact Form",
+        "text": "If you use the contact form, your name, email address and message are sent by email (via the Brevo email service) so that I can reply. They are not stored on this website."
       },
       {
-        "title": "3. Contact",
-        "text": "Email communications are handled securely and never used for tracking."
+        "title": "3. Analytics (Only With Consent)",
+        "text": "If you accept analytics, the site uses Google Analytics 4, Vercel Web Analytics and Speed Insights, and its own visit statistics. The visit statistics record the pages and sections you view, active time on the page, actions such as sending the contact form, opening the CV or following an external link, the referring website's domain (never the full address), campaign tags in the link, your device type, browser and operating system, and an approximate location (country and region) derived by the hosting provider from your IP address. Your IP address is not stored: it is only used briefly, in hashed form, to prevent abuse. No fingerprinting and no identifiers that persist between visits are used."
       },
       {
-        "title": "4. Rights",
-        "text": "Since no personal data is stored, access or deletion requests do not apply."
+        "title": "4. Purpose and Legal Basis",
+        "text": "Analytics are used to understand which content interests visitors and where traffic comes from. The legal basis is your consent (Art. 6(1)(a) GDPR), which you can withdraw at any time as described in the Cookie Policy. The contact form is processed to answer your request (Art. 6(1)(b) and (f) GDPR)."
       },
       {
-        "title": "5. Policy Changes",
-        "text": "Updates to our privacy infrastructure will always be reflected here."
+        "title": "5. Retention",
+        "text": "Details of a single visit are kept for at most 6 hours, then only aggregated weekly counts remain, for up to 120 days. Short visit summaries (approximate location, device, pages viewed, traffic source) are sent to the site owner's private Telegram chat and kept there until deleted. Google Analytics data is kept according to the retention setting of the Google Analytics property."
+      },
+      {
+        "title": "6. Service Providers",
+        "text": "Vercel (hosting and approximate geolocation), Upstash (analytics database), Telegram (delivery of visit summaries to the site owner), Google (Google Analytics) and Brevo (email delivery). Some of them may process data outside the European Economic Area under appropriate safeguards."
+      },
+      {
+        "title": "7. Your Rights",
+        "text": "You have the right to access, rectify, erase or restrict processing of your data, to object, and to withdraw consent, as well as to lodge a complaint with a supervisory authority (in the Czech Republic, the ÚOOÚ). Because the visit statistics are not linked to your identity, it may not be possible to identify the records that relate to you."
+      },
+      {
+        "title": "8. Cookies",
+        "text": "The storage technologies used by this site are described in the "
+      },
+      {
+        "title": "9. Policy Changes",
+        "text": "This policy will be updated whenever the data processing described here changes."
       }
     ],
-    "lastUpdated": "Last updated: March 2026",
+    "lastUpdated": "Last updated: October 2026",
     "cookiesLinkText": "Cookie Policy"
   },
   "footer": {

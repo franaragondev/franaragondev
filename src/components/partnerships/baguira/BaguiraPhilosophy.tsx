@@ -8,7 +8,7 @@ export default function BaguiraPhilosophy() {
   const locale = useLocale();
 
   return (
-    <section className="py-40 px-6 md:px-12">
+    <section data-analytics-section="baguira-philosophy" className="py-40 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-sm font-semibold tracking-[0.3em] uppercase text-[#6E6E73] mb-10">
           {t("partnerships.baguira.philosophy.title")}

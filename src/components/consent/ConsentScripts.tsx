@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import AnalyticsTracker from "@/components/analytics/AnalyticsTracker";
 
 type JsonLdItem = { id: string; data: unknown };
 
@@ -53,6 +54,7 @@ export default function ConsentScripts({
         <>
           <SpeedInsights />
           <Analytics />
+          <AnalyticsTracker />
 
           {analyticsId && (
             <>

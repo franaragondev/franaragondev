@@ -25,7 +25,7 @@ export default function BaguiraResults() {
   ];
 
   return (
-    <section className="py-28 px-6 md:px-12">
+    <section data-analytics-section="baguira-results" className="py-28 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-10">
           {t("partnerships.baguira.results.title")}

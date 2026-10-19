@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { useTranslations } from "next-intl";
+import { trackEvent } from "@/lib/analytics/client/track";
 
 /**
  * ContactSection Component
@@ -49,6 +50,7 @@ export default function ContactSection() {
 
       if (response.ok) { 
         setStatus("success"); 
+        trackEvent("contact_submit");
         e.currentTarget.reset(); 
       } else { 
         setStatus("error"); 

@@ -42,7 +42,7 @@
     "en": "English"
   },
   "cookies": {
-    "message": "Utilizamos telemetría analítica para optimizar el rendimiento. No almacenamos datos personales.",
+    "message": "Con tu consentimiento, usamos analítica para entender cómo se utiliza este sitio. Si la rechazas, no se recopila nada.",
     "accept": "Aceptar",
     "reject": "Rechazar",
     "learnMore": "Saber más",
@@ -50,49 +50,68 @@
   },
   "cookiesPolicy": {
     "title": "Política de Cookies",
-    "intro": "Esta plataforma emplea métricas analíticas para comprender la interacción del usuario de forma anónima y optimizar el rendimiento del sistema.",
+    "intro": "Con tu consentimiento, este sitio web utiliza analítica para entender qué contenidos interesan a los visitantes y de dónde procede el tráfico.",
     "whatAreCookiesTitle": "¿Qué son las cookies?",
-    "whatAreCookies": "Pequeños fragmentos de datos locales utilizados exclusivamente para telemetría de rendimiento y análisis de navegación.",
+    "whatAreCookies": "Pequeños datos que un sitio web guarda en tu navegador. Además de cookies, este sitio usa el almacenamiento local y de sesión del navegador.",
     "typesTitle": "Tecnología",
     "typesList": [
-      "Analítica anónima para evaluar el rendimiento y mejorar la experiencia del usuario."
+      "Google Analytics 4 (cookies _ga y _ga_*): estadísticas de uso agregadas. Solo tras tu consentimiento.",
+      "Vercel Web Analytics y Speed Insights: métricas de tráfico y rendimiento sin cookies. Solo tras tu consentimiento.",
+      "Estadísticas de visitas propias: un identificador de sesión aleatorio en el almacenamiento de sesión, que se borra al cerrar la pestaña. Solo tras tu consentimiento.",
+      "Tu elección de consentimiento, guardada en el almacenamiento local (cookie-consent) para no volver a mostrar el aviso."
     ],
     "manageTitle": "Gestión de Cookies",
-    "manageText": "Puedes gestionar las cookies analíticas a través del banner o la configuración de tu navegador.",
+    "manageText": "Puedes aceptar o rechazar la analítica en el aviso. Para cambiar tu elección más adelante, borra los datos de este sitio en la configuración de tu navegador y el aviso volverá a aparecer.",
     "personalDataTitle": "Datos Personales",
-    "personalDataTextPart1": "No se recopila ni almacena ningún tipo de información personal a través de las cookies de esta plataforma.",
-    "personalDataTextPart2": "",
+    "personalDataTextPart1": "Qué se recopila, para qué y durante cuánto tiempo se explica en nuestra ",
+    "personalDataTextPart2": ".",
     "privacyPolicyLinkText": "Política de Privacidad",
     "changesTitle": "Actualizaciones",
     "changesText": "Esta política puede actualizarse para reflejar mejoras en la infraestructura del sistema.",
-    "lastUpdated": "Última actualización: Marzo 2026"
+    "lastUpdated": "Última actualización: Octubre 2026"
   },
   "privacyPolicy": {
     "title": "Política de Privacidad",
-    "intro": "La privacidad es un pilar fundamental de nuestra ingeniería. Solo empleamos métricas anónimas para evaluar el rendimiento de la plataforma.",
+    "intro": "Esta política explica qué datos trata este sitio web, con qué finalidad y durante cuánto tiempo.",
     "sections": [
       {
-        "title": "1. Datos Personales",
-        "text": "Este sitio web no recopila ni almacena datos de carácter personal."
+        "title": "1. Responsable",
+        "text": "Este sitio web está gestionado por Fran Aragón, Praga, República Checa. Contacto: info@franaragondev.com."
       },
       {
-        "title": "2. Herramientas Analíticas",
-        "text": "Las métricas de tráfico se utilizan estrictamente para medir el rendimiento del sistema y los patrones de uso."
+        "title": "2. Formulario de Contacto",
+        "text": "Si utilizas el formulario de contacto, tu nombre, correo electrónico y mensaje se envían por email (a través del servicio Brevo) para poder responderte. No se almacenan en este sitio web."
       },
       {
-        "title": "3. Comunicación",
-        "text": "Las consultas vía email se gestionan de forma segura y nunca se utilizan con fines de seguimiento."
+        "title": "3. Analítica (Solo con Consentimiento)",
+        "text": "Si aceptas la analítica, el sitio utiliza Google Analytics 4, Vercel Web Analytics y Speed Insights, y sus propias estadísticas de visitas. Estas registran las páginas y secciones que ves, el tiempo activo, acciones como enviar el formulario, abrir el CV o seguir un enlace externo, el dominio del sitio de procedencia (nunca la dirección completa), las etiquetas de campaña del enlace, el tipo de dispositivo, navegador y sistema operativo, y una ubicación aproximada (país y región) que el proveedor de hosting deduce de tu dirección IP. Tu dirección IP no se almacena: solo se usa brevemente, cifrada mediante hash, para prevenir abusos. No se utiliza fingerprinting ni identificadores que persistan entre visitas."
       },
       {
-        "title": "4. Derechos",
-        "text": "Al no almacenarse datos personales, no proceden las solicitudes de acceso, rectificación o supresión."
+        "title": "4. Finalidad y Base Jurídica",
+        "text": "La analítica sirve para entender qué contenidos interesan a los visitantes y de dónde procede el tráfico. La base jurídica es tu consentimiento (art. 6.1.a RGPD), que puedes retirar en cualquier momento como se describe en la Política de Cookies. El formulario de contacto se trata para atender tu solicitud (art. 6.1.b y 6.1.f RGPD)."
       },
       {
-        "title": "5. Cambios",
-        "text": "Cualquier actualización en nuestra infraestructura de privacidad se verá reflejada en esta sección."
+        "title": "5. Conservación",
+        "text": "Los detalles de una visita se conservan como máximo 6 horas; después solo quedan recuentos semanales agregados, durante un máximo de 120 días. Breves resúmenes de visitas (ubicación aproximada, dispositivo, páginas vistas, origen del tráfico) se envían al chat privado de Telegram del titular del sitio y se conservan allí hasta que se borren. Los datos de Google Analytics se conservan según la configuración de retención de la propiedad."
+      },
+      {
+        "title": "6. Proveedores",
+        "text": "Vercel (hosting y geolocalización aproximada), Upstash (base de datos de analítica), Telegram (envío de resúmenes de visitas al titular), Google (Google Analytics) y Brevo (envío de emails). Algunos pueden tratar datos fuera del Espacio Económico Europeo con las garantías adecuadas."
+      },
+      {
+        "title": "7. Tus Derechos",
+        "text": "Tienes derecho a acceder, rectificar, suprimir o limitar el tratamiento de tus datos, a oponerte y a retirar tu consentimiento, así como a presentar una reclamación ante una autoridad de control (en la República Checa, la ÚOOÚ). Como las estadísticas de visitas no están vinculadas a tu identidad, puede que no sea posible identificar los registros que te corresponden."
+      },
+      {
+        "title": "8. Cookies",
+        "text": "Las tecnologías de almacenamiento que usa este sitio se describen en nuestra Política de Cookies"
+      },
+      {
+        "title": "9. Cambios",
+        "text": "Esta política se actualizará siempre que cambie el tratamiento de datos aquí descrito."
       }
     ],
-    "lastUpdated": "Última actualización: Marzo 2026",
+    "lastUpdated": "Última actualización: Octubre 2026",
     "cookiesLinkText": "Política de Cookies"
   },
   "footer": {
