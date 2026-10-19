@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import { trackEvent } from "@/lib/analytics/client/track";
+import { submitContactForm } from "@/lib/contact/submitContactForm";
 
 /**
  * ContactSection Component
@@ -19,7 +20,8 @@ export default function ContactSection() {
    * This hidden field traps automated scripts without impacting UX for human users.
    */
   const honeypotRef = useRef<HTMLInputElement>(null);
-  
+  const submittingRef = useRef(false);
+
   /**
    * State machine to manage the submission lifecycle:
    * 'idle'    - Ready for input.
@@ -36,27 +38,24 @@ export default function ContactSection() {
    */
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
+    // Guards against double submits before the disabled button re-renders.
+    if (submittingRef.current) return;
+
     // Bot mitigation: If the hidden honeypot field is filled, abort the request silently.
     if (honeypotRef.current?.value) return setStatus("bot");
-    
+
+    // Captured synchronously: React nulls e.currentTarget after the first await.
+    const form = e.currentTarget;
+    submittingRef.current = true;
     setStatus("loading");
 
     try {
-      const response = await fetch("/api/contact", { 
-        method: "POST", 
-        body: new FormData(e.currentTarget) 
-      });
-
-      if (response.ok) { 
-        setStatus("success"); 
-        trackEvent("contact_submit");
-        e.currentTarget.reset(); 
-      } else { 
-        setStatus("error"); 
-      }
-    } catch (err) {
-      setStatus("error");
+      const result = await submitContactForm(form, new FormData(form));
+      setStatus(result);
+      if (result === "success") trackEvent("contact_submit");
+    } finally {
+      submittingRef.current = false;
     }
   };
 
