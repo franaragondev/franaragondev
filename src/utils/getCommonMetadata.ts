@@ -5,6 +5,19 @@ type Locale = "es" | "en" | "fr";
 
 const validLocales = routing.locales as unknown as Locale[];
 
+/**
+ * Shared social preview image (public/og-image.png, 1200x630).
+ * Used for both Open Graph and Twitter cards across every locale.
+ */
+export function getOgImage(baseUrl: string) {
+  return {
+    url: `${baseUrl}/og-image.png`,
+    width: 1200,
+    height: 630,
+    alt: "Fran Aragón - Software Engineer",
+  };
+}
+
 export async function getCommonMetadata(
   locale: string,
   pagePath = "",
@@ -54,13 +67,13 @@ export async function getCommonMetadata(
         title: head.title,
         description: head.description,
         url: canonicalUrl,
-        images: head.image,
+        images: [getOgImage(baseUrl)],
       },
       twitter: {
         card: "summary_large_image",
         title: head.title,
         description: head.description,
-        images: head.image,
+        images: [getOgImage(baseUrl)],
       },
     };
   } catch (error) {

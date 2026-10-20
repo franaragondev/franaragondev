@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import ClientParallaxProvider from "@/components/providers/ClientParallaxProvider";
 import CookieBanner from "@/components/consent/CookieBanner";
 import ConsentScripts from "@/components/consent/ConsentScripts";
+import { getOgImage } from "@/utils/getCommonMetadata";
 
 import "@/app/globals.css";
 import { Montserrat } from "next/font/google";
@@ -82,18 +83,7 @@ export async function generateMetadata({
       type: "website",
       locale: ogLocale,
       siteName: "Fran Aragón — Software Engineer",
-      images: [
-        {
-          url: head.image,
-          width: 1200,
-          height: 630,
-          alt: "Fran Aragón - Software Engineer",
-        },
-      ],
-    },
-    icons: {
-      icon: "/logo.png",
-      apple: "/logo.png",
+      images: [getOgImage(baseUrl)],
     },
   };
 }
