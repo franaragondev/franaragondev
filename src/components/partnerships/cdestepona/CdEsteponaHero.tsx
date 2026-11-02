@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { CDESTEPONA_APP_STORE_URL, cdesteponaWebsiteUrl } from "./links";
+import {
+  CDESTEPONA_APP_STORE_URL,
+  CDESTEPONA_GOOGLE_PLAY_URL,
+  cdesteponaWebsiteUrl,
+} from "./links";
 
 export default function CdEsteponaHero() {
   const t = useTranslations();
@@ -62,6 +66,16 @@ export default function CdEsteponaHero() {
             className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl border border-black/10 dark:border-white/10 font-semibold"
           >
             {t("partnerships.cdestepona.appStore")}
+            <ArrowUpRight size={18} />
+          </a>
+
+          <a
+            href={CDESTEPONA_GOOGLE_PLAY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl border border-black/10 dark:border-white/10 font-semibold"
+          >
+            {t("partnerships.cdestepona.googlePlay")}
             <ArrowUpRight size={18} />
           </a>
 

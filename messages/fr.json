@@ -302,20 +302,21 @@
       "eyebrow": "PARTENARIAT SÉLECTIONNÉ",
       "title": "CD Estepona Fans",
       "label": "Plateforme indépendante pour supporters",
-      "subtitle": "Un produit multiplateforme pour la communauté des supporters du CD Estepona : un site public, une application iOS native et un système interne de match qui transmet les événements en direct aux supporters au moment où ils se produisent.",
+      "subtitle": "Un produit multiplateforme pour la communauté des supporters du CD Estepona : un site public, des applications iOS et Android natives et un système interne de match qui transmet les événements en direct aux supporters au moment où ils se produisent.",
       "visitPlatform": "Visiter la Plateforme",
       "appStore": "Voir sur l’App Store",
+      "googlePlay": "Disponible sur Google Play",
       "backHome": "Retour à l’Accueil",
       "independence": "Projet indépendant de supporters. Sans lien avec le CD Estepona et non un service officiel du club.",
       "meta": {
         "title": "CD Estepona Fans | Étude de cas d’un produit sportif multiplateforme",
-        "description": "Étude de cas d’une plateforme indépendante pour supporters de football : site trilingue, application iOS native, Matchday Control Center en direct, notifications push et Live Activities."
+        "description": "Étude de cas d’une plateforme indépendante pour supporters de football : site trilingue, applications iOS et Android natives, Matchday Control Center en direct, notifications push et Live Activities."
       },
       "overview": {
         "title": "Vue d’ensemble",
-        "paragraph": "CD Estepona Fans est un produit indépendant destiné aux supporters du CD Estepona, club de football espagnol évoluant en Segunda RFEF. Né en 2025 comme site d’actualités, il est devenu un écosystème numérique : une plateforme web trilingue, une application iOS native publiée sur l’App Store, une application Android native en test fermé et un Matchday Control Center interne où des opérateurs enregistrent chaque événement du match en direct.",
+        "paragraph": "CD Estepona Fans est un produit indépendant destiné aux supporters du CD Estepona, club de football espagnol évoluant en Segunda RFEF. Né en 2025 comme site d’actualités, il est devenu un écosystème numérique : une plateforme web trilingue, des applications iOS et Android natives publiées sur l’App Store et Google Play et un Matchday Control Center interne où des opérateurs enregistrent chaque événement du match en direct.",
         "roleTitle": "Mon Rôle",
-        "role": "Je porte le produit de bout en bout : vision produit, UX, architecture, backend, développement web, iOS et Android, publications et exploitation au quotidien. Il s’agit d’une initiative indépendante de supporters et non d’une commande du club, ce qui en fait un véritable exercice d’ownership produit : chaque décision, du modèle de données à la publication sur l’App Store, m’appartenait, tout comme sa maintenance."
+        "role": "Je porte le produit de bout en bout : vision produit, UX, architecture, backend, développement web, iOS et Android, publications et exploitation au quotidien. Il s’agit d’une initiative indépendante de supporters et non d’une commande du club, ce qui en fait un véritable exercice d’ownership produit : chaque décision, du modèle de données aux publications sur l’App Store et Google Play, m’appartenait, tout comme sa maintenance."
       },
       "challenge": {
         "title": "Le Défi",
@@ -338,8 +339,8 @@
           },
           {
             "name": "Application Android",
-            "status": "En test fermé",
-            "description": "Application native en Kotlin et Jetpack Compose, à parité fonctionnelle avec iOS. Pas encore disponible publiquement."
+            "status": "Disponible sur Google Play",
+            "description": "Application native en Kotlin et Jetpack Compose, à parité fonctionnelle avec iOS, publiée sur Google Play en octobre 2026."
           },
           {
             "name": "Matchday Control Center",
@@ -428,7 +429,7 @@
       },
       "results": {
         "title": "Résultats",
-        "paragraph": "Le site est en ligne en trois langues, avec une archive éditoriale de 366 articles publiés, et l’application iOS a été publiée sur l’App Store en octobre 2026. Sur le dernier instantané de 30 jours, la plateforme a enregistré plus de 3 000 visites provenant de plus de 1 300 utilisateurs et a affiché une visibilité organique dans la recherche Google. L’application Android est en test fermé sur Google Play et sera ajoutée ici dès qu’elle sera disponible publiquement.",
+        "paragraph": "Le site est en ligne en trois langues, avec une archive éditoriale de 389 articles publiés. Les deux applications natives sont désormais publiques : l’application iOS sur l’App Store et l’application Android sur Google Play, publiée le 24 octobre 2026 et proche des 100 téléchargements dès ses premiers jours. Sur le dernier instantané de 30 jours, la plateforme a enregistré plus de 3 400 visites provenant de plus de 1 400 utilisateurs et a affiché une visibilité organique dans la recherche Google.",
         "reach": {
           "title": "Audience de la plateforme · 30 derniers jours",
           "visits": "Visites",
@@ -441,7 +442,7 @@
           "impressions": "Impressions",
           "position": "Position Moyenne"
         },
-        "sourceNote": "Instantané du tableau de bord d’administration de la plateforme, couvrant environ la période du 20 septembre au 19 octobre 2026. Les données d’usage sont les sessions, utilisateurs actifs et pages vues de Google Analytics 4, limitées aux visiteurs ayant accepté les cookies d’analyse. Les données de recherche proviennent de Google Search Console et portent sur les dix requêtes affichées par le tableau de bord ; les totaux du site peuvent donc être supérieurs, et la position est la moyenne simple de ces requêtes.",
+        "sourceNote": "Instantané du tableau de bord d’administration de la plateforme, couvrant environ la période du 3 octobre au 2 novembre 2026. Les données d’usage sont les sessions, utilisateurs actifs et pages vues de Google Analytics 4, limitées aux visiteurs ayant accepté les cookies d’analyse. Les données de recherche proviennent de Google Search Console et portent sur les dix requêtes affichées par le tableau de bord ; les totaux du site peuvent donc être supérieurs, et la position est la moyenne simple de ces requêtes.",
         "performanceTitle": "Performance web",
         "metrics": {
           "mobile": "Performance Mobile",
@@ -453,7 +454,7 @@
       },
       "evolution": {
         "title": "Prochaines Étapes",
-        "paragraph": "Le produit continue d’évoluer. Les prochaines étapes sont la publication de l’application Android et un lien plus étroit entre le site et les applications, afin qu’un match ou un article s’ouvre directement dans l’application lorsqu’elle est installée."
+        "paragraph": "Le produit continue d’évoluer. Les deux applications étant désormais publiques, la prochaine étape est un lien plus étroit entre le site et les applications, afin qu’un match ou un article s’ouvre directement dans l’application lorsqu’elle est installée."
       },
       "philosophy": {
         "title": "Philosophie Produit",

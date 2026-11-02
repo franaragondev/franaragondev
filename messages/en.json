@@ -302,20 +302,21 @@
       "eyebrow": "SELECTED PARTNERSHIP",
       "title": "CD Estepona Fans",
       "label": "Independent Football Supporters' Platform",
-      "subtitle": "A multi-platform product for the CD Estepona supporters' community: a public website, a native iOS app and an internal matchday system that brings live match events to fans as they happen.",
+      "subtitle": "A multi-platform product for the CD Estepona supporters' community: a public website, native iOS and Android apps and an internal matchday system that brings live match events to fans as they happen.",
       "visitPlatform": "Visit Platform",
       "appStore": "View on the App Store",
+      "googlePlay": "Get it on Google Play",
       "backHome": "Back Home",
       "independence": "Independent supporters' project. Not affiliated with CD Estepona and not an official club service.",
       "meta": {
         "title": "CD Estepona Fans | Multi-Platform Sports Product Case Study",
-        "description": "Case study of an independent football supporters' platform: trilingual web platform, native iOS app, live Matchday Control Center, push notifications and Live Activities."
+        "description": "Case study of an independent football supporters' platform: trilingual web platform, native iOS and Android apps, live Matchday Control Center, push notifications and Live Activities."
       },
       "overview": {
         "title": "Overview",
-        "paragraph": "CD Estepona Fans is an independent product for supporters of CD Estepona, a Spanish football club competing in Segunda RFEF. What began in 2025 as a news website has grown into a digital ecosystem: a trilingual web platform, a native iOS app published on the App Store, a native Android app in closed testing, and an internal Matchday Control Center where operators record every match event live.",
+        "paragraph": "CD Estepona Fans is an independent product for supporters of CD Estepona, a Spanish football club competing in Segunda RFEF. What began in 2025 as a news website has grown into a digital ecosystem: a trilingual web platform, native iOS and Android apps published on the App Store and Google Play, and an internal Matchday Control Center where operators record every match event live.",
         "roleTitle": "My Role",
-        "role": "I own the product end to end: product direction, UX, architecture, backend, web, iOS and Android development, releases and day-to-day operation. It is an independent supporters' initiative rather than a commission from the club, which made it a genuine exercise in product ownership: every decision, from the data model to the App Store release, was mine to make and to maintain."
+        "role": "I own the product end to end: product direction, UX, architecture, backend, web, iOS and Android development, releases and day-to-day operation. It is an independent supporters' initiative rather than a commission from the club, which made it a genuine exercise in product ownership: every decision, from the data model to the App Store and Google Play releases, was mine to make and to maintain."
       },
       "challenge": {
         "title": "The Challenge",
@@ -338,8 +339,8 @@
           },
           {
             "name": "Android App",
-            "status": "In closed testing",
-            "description": "Native Kotlin and Jetpack Compose app built to feature parity with iOS. Not yet publicly available."
+            "status": "Live on Google Play",
+            "description": "Native Kotlin and Jetpack Compose app built to feature parity with iOS, published on Google Play in October 2026."
           },
           {
             "name": "Matchday Control Center",
@@ -428,7 +429,7 @@
       },
       "results": {
         "title": "Results",
-        "paragraph": "The website is live in three languages, with an editorial archive of 366 published articles, and the iOS app was published on the App Store in October 2026. In the latest 30-day snapshot, the platform recorded more than 3,000 visits from over 1,300 users and showed organic visibility in Google Search. The Android app is in closed testing on Google Play and will be added here once it is publicly available.",
+        "paragraph": "The website is live in three languages, with an editorial archive of 389 published articles. Both native apps are now public: the iOS app on the App Store and the Android app on Google Play, released on 24 October 2026 and approaching 100 downloads in its first days. In the latest 30-day snapshot, the platform recorded more than 3,400 visits from over 1,400 users and showed organic visibility in Google Search.",
         "reach": {
           "title": "Platform Reach · Last 30 Days",
           "visits": "Visits",
@@ -441,7 +442,7 @@
           "impressions": "Impressions",
           "position": "Average Position"
         },
-        "sourceNote": "Snapshot from the platform's admin dashboard, covering approximately 20 September–19 October 2026. Usage figures are Google Analytics 4 sessions, active users and page views, counting only visitors who accepted analytics cookies. Search figures come from Google Search Console and cover the ten queries the dashboard reports, so site-wide totals may be higher; the position is the simple average of those queries.",
+        "sourceNote": "Snapshot from the platform's admin dashboard, covering approximately 3 October–2 November 2026. Usage figures are Google Analytics 4 sessions, active users and page views, counting only visitors who accepted analytics cookies. Search figures come from Google Search Console and cover the ten queries the dashboard reports, so site-wide totals may be higher; the position is the simple average of those queries.",
         "performanceTitle": "Web Performance",
         "metrics": {
           "mobile": "Mobile Performance",
@@ -453,7 +454,7 @@
       },
       "evolution": {
         "title": "What's Next",
-        "paragraph": "The product keeps evolving. The next milestones are the public Android release and tighter links between the website and the apps, so that a match or an article opens directly in the app when it is installed."
+        "paragraph": "The product keeps evolving. With both apps now public, the next milestone is tighter links between the website and the apps, so that a match or an article opens directly in the app when it is installed."
       },
       "philosophy": {
         "title": "Product Philosophy",

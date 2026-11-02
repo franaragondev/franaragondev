@@ -5,7 +5,7 @@ import { useFormatter, useTranslations } from "next-intl";
 type Metric = { key: string; value: number; fractionDigits?: number };
 
 /**
- * Snapshot from the CD Estepona Fans admin dashboard, approx. 20 Sep–19 Oct 2026
+ * Snapshot from the CD Estepona Fans admin dashboard, approx. 3 Oct–2 Nov 2026
  * (see results.sourceNote). Usage comes from GA4; search figures are the
  * dashboard's aggregate of the top 10 Search Console queries.
  */
@@ -13,16 +13,16 @@ const METRIC_GROUPS: { key: "reach" | "search"; metrics: Metric[] }[] = [
   {
     key: "reach",
     metrics: [
-      { key: "visits", value: 3172 },
-      { key: "activeUsers", value: 1361 },
-      { key: "pageViews", value: 5545 },
+      { key: "visits", value: 3439 },
+      { key: "activeUsers", value: 1465 },
+      { key: "pageViews", value: 6605 },
     ],
   },
   {
     key: "search",
     metrics: [
-      { key: "clicks", value: 607 },
-      { key: "impressions", value: 8271 },
+      { key: "clicks", value: 595 },
+      { key: "impressions", value: 9060 },
       { key: "position", value: 3.6, fractionDigits: 1 },
     ],
   },

@@ -302,20 +302,21 @@
       "eyebrow": "PARTNERSHIP SELECCIONADA",
       "title": "CD Estepona Fans",
       "label": "Plataforma independiente para aficionados",
-      "subtitle": "Un producto multiplataforma para la comunidad de aficionados del CD Estepona: una web pública, una app nativa para iOS y un sistema interno de partido que lleva los eventos en directo a la afición en el momento en que ocurren.",
+      "subtitle": "Un producto multiplataforma para la comunidad de aficionados del CD Estepona: una web pública, apps nativas para iOS y Android y un sistema interno de partido que lleva los eventos en directo a la afición en el momento en que ocurren.",
       "visitPlatform": "Visitar Plataforma",
       "appStore": "Ver en el App Store",
+      "googlePlay": "Disponible en Google Play",
       "backHome": "Volver al Inicio",
       "independence": "Proyecto independiente de aficionados. Sin vinculación con el CD Estepona y no es un servicio oficial del club.",
       "meta": {
         "title": "CD Estepona Fans | Caso de estudio de producto deportivo multiplataforma",
-        "description": "Caso de estudio de una plataforma independiente para aficionados al fútbol: web trilingüe, app nativa para iOS, Matchday Control Center en directo, notificaciones push y Live Activities."
+        "description": "Caso de estudio de una plataforma independiente para aficionados al fútbol: web trilingüe, apps nativas para iOS y Android, Matchday Control Center en directo, notificaciones push y Live Activities."
       },
       "overview": {
         "title": "Visión General",
-        "paragraph": "CD Estepona Fans es un producto independiente para los aficionados del CD Estepona, club de fútbol que compite en Segunda RFEF. Lo que empezó en 2025 como una web de noticias se ha convertido en un ecosistema digital: una plataforma web trilingüe, una app nativa para iOS publicada en el App Store, una app nativa para Android en pruebas cerradas y un Matchday Control Center interno donde los operadores registran cada evento del partido en directo.",
+        "paragraph": "CD Estepona Fans es un producto independiente para los aficionados del CD Estepona, club de fútbol que compite en Segunda RFEF. Lo que empezó en 2025 como una web de noticias se ha convertido en un ecosistema digital: una plataforma web trilingüe, apps nativas para iOS y Android publicadas en el App Store y Google Play y un Matchday Control Center interno donde los operadores registran cada evento del partido en directo.",
         "roleTitle": "Mi Rol",
-        "role": "Soy responsable del producto de principio a fin: dirección de producto, UX, arquitectura, backend, desarrollo web, iOS y Android, publicaciones y operación diaria. Es una iniciativa independiente de aficionados y no un encargo del club, lo que la convierte en un ejercicio real de ownership de producto: cada decisión, del modelo de datos a la publicación en el App Store, ha sido mía, igual que su mantenimiento."
+        "role": "Soy responsable del producto de principio a fin: dirección de producto, UX, arquitectura, backend, desarrollo web, iOS y Android, publicaciones y operación diaria. Es una iniciativa independiente de aficionados y no un encargo del club, lo que la convierte en un ejercicio real de ownership de producto: cada decisión, del modelo de datos a la publicación en el App Store y Google Play, ha sido mía, igual que su mantenimiento."
       },
       "challenge": {
         "title": "El desafío",
@@ -338,8 +339,8 @@
           },
           {
             "name": "App Android",
-            "status": "En pruebas cerradas",
-            "description": "App nativa en Kotlin y Jetpack Compose con paridad funcional respecto a iOS. Aún no está disponible públicamente."
+            "status": "Disponible en Google Play",
+            "description": "App nativa en Kotlin y Jetpack Compose con paridad funcional respecto a iOS, publicada en Google Play en octubre de 2026."
           },
           {
             "name": "Matchday Control Center",
@@ -428,7 +429,7 @@
       },
       "results": {
         "title": "Resultados",
-        "paragraph": "La web está en producción en tres idiomas, con un archivo editorial de 366 noticias publicadas, y la app de iOS se publicó en el App Store en octubre de 2026. En la última instantánea de 30 días, la plataforma registró más de 3000 visitas de más de 1300 usuarios y mostró visibilidad orgánica en la Búsqueda de Google. La app de Android está en pruebas cerradas en Google Play y se añadirá aquí cuando esté disponible públicamente.",
+        "paragraph": "La web está en producción en tres idiomas, con un archivo editorial de 389 noticias publicadas. Las dos apps nativas ya son públicas: la de iOS en el App Store y la de Android en Google Play, publicada el 24 de octubre de 2026 y cerca de las 100 descargas en sus primeros días. En la última instantánea de 30 días, la plataforma registró más de 3400 visitas de más de 1400 usuarios y mostró visibilidad orgánica en la Búsqueda de Google.",
         "reach": {
           "title": "Alcance de la plataforma · Últimos 30 días",
           "visits": "Visitas",
@@ -441,7 +442,7 @@
           "impressions": "Impresiones",
           "position": "Posición Media"
         },
-        "sourceNote": "Instantánea del panel de administración de la plataforma, correspondiente aproximadamente al periodo del 20 de septiembre al 19 de octubre de 2026. Los datos de uso son sesiones, usuarios activos y páginas vistas de Google Analytics 4, y solo cuentan a quienes aceptaron las cookies de analítica. Los datos de búsqueda proceden de Google Search Console y abarcan las diez consultas que muestra el panel, por lo que los totales del sitio pueden ser mayores; la posición es la media simple de esas consultas.",
+        "sourceNote": "Instantánea del panel de administración de la plataforma, correspondiente aproximadamente al periodo del 3 de octubre al 2 de noviembre de 2026. Los datos de uso son sesiones, usuarios activos y páginas vistas de Google Analytics 4, y solo cuentan a quienes aceptaron las cookies de analítica. Los datos de búsqueda proceden de Google Search Console y abarcan las diez consultas que muestra el panel, por lo que los totales del sitio pueden ser mayores; la posición es la media simple de esas consultas.",
         "performanceTitle": "Rendimiento web",
         "metrics": {
           "mobile": "Rendimiento Móvil",
@@ -453,7 +454,7 @@
       },
       "evolution": {
         "title": "Próximos Pasos",
-        "paragraph": "El producto sigue evolucionando. Los próximos hitos son la publicación de la app de Android y una conexión más estrecha entre la web y las apps, para que un partido o un artículo se abra directamente en la app cuando esté instalada."
+        "paragraph": "El producto sigue evolucionando. Con las dos apps ya publicadas, el próximo hito es una conexión más estrecha entre la web y las apps, para que un partido o un artículo se abra directamente en la app cuando esté instalada."
       },
       "philosophy": {
         "title": "Filosofía de Producto",
