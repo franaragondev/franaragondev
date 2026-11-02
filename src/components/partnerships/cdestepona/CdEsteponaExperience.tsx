@@ -30,7 +30,7 @@ export default function CdEsteponaExperience() {
               src="/partnerships/cdestepona/website-home.jpg"
               alt={t("partnerships.cdestepona.experience.captions.website")}
               width={1600}
-              height={1000}
+              height={839}
               sizes="(min-width: 1152px) 1104px, 100vw"
               className="w-full h-auto"
             />
