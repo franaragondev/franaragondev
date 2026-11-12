@@ -38,9 +38,9 @@ Vercel Cron  "0 6 * * 1"  → GET /api/cron/weekly-digest  (Bearer CRON_SECRET)
 
 | Kind | Values |
 | --- | --- |
-| Routes | Home, Baguira case study, CD Estepona Fans case study, Privacy, Cookies, Other (+ site language) |
+| Routes | Home, Baguira case study, CD Estepona Fans case study, Nagarez Visuals case study, Privacy, Cookies, Other (+ site language) |
 | Sections | `#expertise`, `#about`, `#projects`, `#partnerships`, `#experience`, `#contact`, and the five Baguira case-study sections (`data-analytics-section`) |
-| Events | contact form submitted (only after a successful API response), CV opened, WhatsApp / LinkedIn / GitHub / X / Instagram clicks, project links (HomeStocker, CD Estepona, Baguira Suites), mailto/tel, other outbound |
+| Events | contact form submitted (only after a successful API response), CV opened, WhatsApp / LinkedIn / GitHub / X / Instagram clicks, project links (HomeStocker, CD Estepona, Baguira Suites, Nagarez Visuals, HAVN), mailto/tel, other outbound |
 | Server-derived | country + region (Vercel `x-vercel-ip-country[-region]` headers), device / OS / browser category from the user agent, acquisition channel |
 
 A section counts as viewed after it has been sufficiently visible for 1 second: at least

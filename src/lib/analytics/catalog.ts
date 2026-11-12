@@ -14,6 +14,7 @@ export const ROUTES = {
   home: "Home",
   baguira: "Baguira case study",
   cdestepona: "CD Estepona Fans case study",
+  nagarez: "Nagarez Visuals case study",
   privacy: "Privacy policy",
   cookies: "Cookie policy",
   other: "Other page",
@@ -54,6 +55,8 @@ export const EVENTS = {
   project_homestocker: "Opened HomeStocker",
   project_cdestepona: "Opened CD Estepona Platform",
   project_baguira: "Opened Baguira Suites site",
+  project_nagarez: "Opened Nagarez Visuals site",
+  project_havn: "Opened HAVN site",
   outbound_other: "Other outbound link",
 } as const;
 export type EventKey = keyof typeof EVENTS;
@@ -98,6 +101,7 @@ const ROUTE_PATHS: Record<string, RouteKey> = {
   "": "home",
   "partnerships/baguira-suites": "baguira",
   "partnerships/cd-estepona-fans": "cdestepona",
+  "partnerships/nagarez-visuals": "nagarez",
   privacidad: "privacy",
   cookies: "cookies",
 };
@@ -130,6 +134,8 @@ const OUTBOUND_HOSTS: Array<[RegExp, EventKey]> = [
   [/(^|\.)homestocker\.app$/, "project_homestocker"],
   [/(^|\.)cdesteponafans\.com$/, "project_cdestepona"],
   [/(^|\.)baguirasuites\.fr$/, "project_baguira"],
+  [/(^|\.)nagarezvisuals\.com$/, "project_nagarez"],
+  [/(^|\.)havnplatform\.com$/, "project_havn"],
 ];
 
 /**
