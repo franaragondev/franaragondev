@@ -236,6 +236,7 @@
       "eyebrow": "SELECTED PARTNERSHIP",
       "title": "Baguira Suites Experiences",
       "label": "Luxury Hospitality Experience Platform",
+      "sector": "Luxury Hospitality",
       "subtitle": "Luxury hospitality experience platform engineered for performance, visibility and conversion.",
 
       "visitPlatform": "Visit Platform",
@@ -298,10 +299,122 @@
       }
     },
     "sectionEyebrow": "SELECTED PARTNERSHIPS",
+    "nagarez": {
+      "eyebrow": "SELECTED PARTNERSHIP",
+      "title": "Nagarez Visuals",
+      "label": "Editorial Photography Website",
+      "sector": "Photography",
+      "subtitle": "A photographer's website designed like a digital luxury magazine: editorial typography, asymmetric layouts and photographs given the room they deserve, built on HAVN with a design that belongs to her alone.",
+      "visitPlatform": "Visit Website",
+      "backHome": "Back Home",
+      "havnNote": "Nagarez Visuals runs on HAVN, the platform for independent businesses that I created and run. Unlike a standard HAVN site, its design is exclusive to this client.",
+      "meta": {
+        "title": "Nagarez Visuals | Editorial Photography Website Case Study",
+        "description": "Case study of a photographer's website designed like a digital luxury magazine: asymmetric editorial layouts, trilingual content and a 96 mobile performance score, built on HAVN with an exclusive design."
+      },
+      "overview": {
+        "title": "Overview",
+        "paragraph": "Nagarez Visuals is the portfolio of a couples, travel and hospitality photographer based between Prague and Calais. The website presents her work in English, French and Spanish, organises it into a portfolio and a series of collections told as chapters, and brings commissions and collaborations straight to her through a contact form.",
+        "roleTitle": "My Role",
+        "role": "I led the project end to end: art direction, UX, design, development and launch. The site is a HAVN product (HAVN is the platform for independent businesses that I created and run), adapted for this project so the client could have a design made only for her."
+      },
+      "challenge": {
+        "title": "The Challenge",
+        "paragraph1": "Her photographs already carried a strong, recognisable eye. The website had to live up to that same level of quality and professionalism; a generic template would have undersold the very work it was meant to sell.",
+        "paragraph2": "Most photographer websites follow the same formula: images in a uniform grid, or one after another down the page. Clean, but interchangeable. The goal was a site as considered as the photographs themselves, one nobody could mistake for anyone else's."
+      },
+      "direction": {
+        "title": "Creative Direction",
+        "paragraph": "Instead of a gallery, we designed the site like a digital luxury magazine, in the spirit of the great fashion and lifestyle titles: generous white space, a high-contrast serif and photographs placed with intent rather than all aligned to the same grid.",
+        "items": [
+          {
+            "title": "Asymmetric composition",
+            "text": "Images break the rhythm on purpose: columns start at different heights and frames change size and orientation, so the eye moves through the page the way it moves through a printed spread."
+          },
+          {
+            "title": "Type as the headline",
+            "text": "A Bodoni-style display serif sets the headlines at magazine scale, paired with a restrained sans-serif and wide-tracked labels for navigation and captions."
+          },
+          {
+            "title": "Chapters, not albums",
+            "text": "The work is organised into numbered collections (The North, Before the Guest, From Above, Unscripted, Still Water), so each series reads like a short story to explore slowly."
+          },
+          {
+            "title": "Room to breathe",
+            "text": "A warm off-white canvas, few elements per screen and full-bleed images on mobile let the photographs lead and keep the interface quiet."
+          }
+        ]
+      },
+      "havn": {
+        "title": "Built on HAVN, Designed Only for Her",
+        "paragraph1": "HAVN is the platform I created for independent businesses: each trade gets a Kit (the pages, modules and vocabulary it needs) and every business shares the same foundation, which is improved for all of them at once. Photographers use the Portfolio Kit, whose design is shared by every studio on it.",
+        "paragraph2": "This client wanted the opposite of a shared design: she was willing to pay more for a look nobody else could have. Exclusive designs are not part of HAVN's standard offer, so we adapted the contract to her needs: a bespoke design, reserved for her, running on the HAVN platform.",
+        "paragraph3": "The choice was made knowing its cost: the initial implementation took longer and cost more than a standard HAVN site, and she knew it and preferred it. For her, exclusivity was part of the product.",
+        "linkLabel": "Discover HAVN",
+        "compare": [
+          {
+            "name": "Standard HAVN · Portfolio Kit",
+            "text": "The shared Portfolio Kit design, personalised with each studio's colours, mark and photographs. A monthly plan with no implementation fee."
+          },
+          {
+            "name": "Nagarez Visuals",
+            "text": "An exclusive design, created for this client and reserved for her, running on HAVN. An adapted contract, with a longer and larger initial implementation."
+          }
+        ]
+      },
+      "highlights": {
+        "title": "Technical Highlights",
+        "items": [
+          "Next.js App Router",
+          "TypeScript",
+          "HAVN Platform",
+          "Asymmetric Editorial Layouts",
+          "Responsive Image Optimisation",
+          "Trilingual: EN · FR · ES",
+          "Technical SEO & Open Graph",
+          "Accessible Navigation"
+        ]
+      },
+      "experience": {
+        "title": "The Experience",
+        "paragraph": "The same editorial language carries from desktop to mobile: offset columns and spreads on large screens, full-bleed photographs with the headline set over the image on the phone.",
+        "captions": {
+          "websiteHome": "Website · Home",
+          "websitePortfolio": "Website · Portfolio",
+          "mobileHome": "Mobile · Home",
+          "mobilePortfolio": "Mobile · Portfolio"
+        },
+        "note": "Captures of the production website (English version), taken in November 2026."
+      },
+      "results": {
+        "title": "Results",
+        "paragraph": "The site launched in November 2026 in three languages. Behind the editorial look, it keeps the performance standard of everything I build: a page made almost entirely of large photographs still scores 96 for mobile performance, with no layout shift at all.",
+        "scoresTitle": "Google PageSpeed Insights · Mobile",
+        "scores": {
+          "performance": "Performance",
+          "accessibility": "Accessibility",
+          "bestPractices": "Best Practices",
+          "seo": "SEO"
+        },
+        "vitalsTitle": "Lab Metrics · Mobile",
+        "vitals": {
+          "fcp": "First Contentful Paint",
+          "lcp": "Largest Contentful Paint",
+          "tbt": "Total Blocking Time",
+          "cls": "Cumulative Layout Shift"
+        },
+        "note": "Google PageSpeed Insights report (Lighthouse 13.6, emulated Moto G Power on slow 4G), single run on 12 November 2026. These are lab figures: the site is too new to have Chrome UX Report field data."
+      },
+      "philosophy": {
+        "title": "Design Philosophy",
+        "quote": "A photographer's website should be edited like a magazine, not filled like an album: every photograph placed with intent, every page given room to breathe."
+      }
+    },
     "cdestepona": {
       "eyebrow": "SELECTED PARTNERSHIP",
       "title": "CD Estepona Fans",
       "label": "Independent Football Supporters' Platform",
+      "sector": "Sports",
       "subtitle": "A multi-platform product for the CD Estepona supporters' community: a public website, native iOS and Android apps and an internal matchday system that brings live match events to fans as they happen.",
       "visitPlatform": "Visit Platform",
       "appStore": "View on the App Store",

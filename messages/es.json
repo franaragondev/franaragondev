@@ -236,6 +236,7 @@
       "eyebrow": "PARTNERSHIP SELECCIONADA",
       "title": "Baguira Suites Experiences",
       "label": "Luxury Hospitality Experience Platform",
+      "sector": "Hospitalidad de Lujo",
       "subtitle": "Plataforma digital de hospitalidad de lujo diseñada para rendimiento, visibilidad y conversión.",
 
       "visitPlatform": "Visitar Plataforma",
@@ -298,10 +299,122 @@
       }
     },
     "sectionEyebrow": "PARTNERSHIPS SELECCIONADAS",
+    "nagarez": {
+      "eyebrow": "PARTNERSHIP SELECCIONADA",
+      "title": "Nagarez Visuals",
+      "label": "Web Editorial de Fotografía",
+      "sector": "Fotografía",
+      "subtitle": "La web de una fotógrafa diseñada como una revista de lujo digital: tipografía editorial, composiciones asimétricas y fotografías con el espacio que merecen, construida sobre HAVN con un diseño exclusivo para ella.",
+      "visitPlatform": "Visitar Web",
+      "backHome": "Volver al Inicio",
+      "havnNote": "Nagarez Visuals funciona sobre HAVN, la plataforma para negocios independientes que he creado y dirijo. A diferencia de una web HAVN estándar, su diseño es exclusivo de esta clienta.",
+      "meta": {
+        "title": "Nagarez Visuals | Caso de estudio de web editorial de fotografía",
+        "description": "Caso de estudio de la web de una fotógrafa diseñada como una revista de lujo digital: composiciones editoriales asimétricas, contenido trilingüe y 96 de rendimiento móvil, construida sobre HAVN con un diseño exclusivo."
+      },
+      "overview": {
+        "title": "Visión General",
+        "paragraph": "Nagarez Visuals es el portfolio de una fotógrafa de parejas, viajes y hospitality que trabaja entre Praga y Calais. La web presenta su trabajo en inglés, francés y español, lo organiza en un portfolio y en colecciones contadas como capítulos, y le hace llegar directamente encargos y colaboraciones a través de un formulario de contacto.",
+        "roleTitle": "Mi Rol",
+        "role": "Dirigí el proyecto de principio a fin: dirección de arte, UX, diseño, desarrollo y lanzamiento. La web es un producto HAVN (la plataforma para negocios independientes que he creado y dirijo), adaptado en este proyecto para que la clienta tuviera un diseño hecho solo para ella."
+      },
+      "challenge": {
+        "title": "El desafío",
+        "paragraph1": "Sus fotografías ya tenían una mirada propia y reconocible. La web tenía que estar a la altura de esa misma calidad y profesionalidad; una plantilla genérica habría infravalorado justo el trabajo que debía vender.",
+        "paragraph2": "La mayoría de webs de fotógrafos siguen la misma fórmula: imágenes en una cuadrícula uniforme, o una detrás de otra a lo largo de la página. Limpio, pero intercambiable. El objetivo era una web tan cuidada como las propias fotografías y que nadie pudiera confundir con la de otro."
+      },
+      "direction": {
+        "title": "Dirección Creativa",
+        "paragraph": "En lugar de una galería, diseñamos la web como una revista de lujo digital, en el espíritu de las grandes cabeceras de moda y estilo de vida: espacio en blanco generoso, una serif de alto contraste y fotografías colocadas con intención en lugar de alineadas todas sobre la misma cuadrícula.",
+        "items": [
+          {
+            "title": "Composición asimétrica",
+            "text": "Las imágenes rompen el ritmo a propósito: las columnas empiezan a distintas alturas y los encuadres cambian de tamaño y orientación, de modo que la mirada recorre la página como recorre una doble página impresa."
+          },
+          {
+            "title": "La tipografía como titular",
+            "text": "Una serif de estilo Bodoni lleva los titulares a escala de revista, acompañada de una sans-serif sobria y etiquetas con tracking amplio para la navegación y los pies de foto."
+          },
+          {
+            "title": "Capítulos, no álbumes",
+            "text": "El trabajo se organiza en colecciones numeradas (The North, Before the Guest, From Above, Unscripted, Still Water), para que cada serie se lea como un relato breve que se explora sin prisa."
+          },
+          {
+            "title": "Espacio para respirar",
+            "text": "Un lienzo blanco roto cálido, pocos elementos por pantalla e imágenes a sangre en el móvil dejan que las fotografías manden y mantienen la interfaz en silencio."
+          }
+        ]
+      },
+      "havn": {
+        "title": "Construida sobre HAVN, diseñada solo para ella",
+        "paragraph1": "HAVN es la plataforma que he creado para negocios independientes: cada oficio tiene un Kit (las páginas, los módulos y el vocabulario que necesita) y todos los negocios comparten la misma base, que se mejora para todos a la vez. Los fotógrafos usan el Portfolio Kit, cuyo diseño comparten todos los estudios que lo utilizan.",
+        "paragraph2": "Esta clienta quería justo lo contrario de un diseño compartido: estaba dispuesta a pagar más por una estética que nadie más pudiera tener. Los diseños exclusivos no forman parte de la oferta estándar de HAVN, así que adaptamos el contrato a sus necesidades: un diseño a medida, reservado para ella, funcionando sobre la plataforma HAVN.",
+        "paragraph3": "Fue una decisión tomada conociendo su coste: la implementación inicial llevó más tiempo y costó más que una web HAVN estándar, y ella lo sabía y lo prefería. Para ella, la exclusividad formaba parte del producto.",
+        "linkLabel": "Descubrir HAVN",
+        "compare": [
+          {
+            "name": "HAVN estándar · Portfolio Kit",
+            "text": "El diseño compartido del Portfolio Kit, personalizado con los colores, la marca y las fotografías de cada estudio. Un plan mensual sin coste de implementación."
+          },
+          {
+            "name": "Nagarez Visuals",
+            "text": "Un diseño exclusivo, creado para esta clienta y reservado para ella, funcionando sobre HAVN. Un contrato adaptado, con una implementación inicial más larga y de mayor coste."
+          }
+        ]
+      },
+      "highlights": {
+        "title": "Aspectos técnicos destacados",
+        "items": [
+          "Next.js App Router",
+          "TypeScript",
+          "Plataforma HAVN",
+          "Composiciones Editoriales Asimétricas",
+          "Optimización de Imágenes Responsive",
+          "Trilingüe: EN · FR · ES",
+          "SEO Técnico y Open Graph",
+          "Navegación Accesible"
+        ]
+      },
+      "experience": {
+        "title": "La Experiencia",
+        "paragraph": "El mismo lenguaje editorial se mantiene del escritorio al móvil: columnas desplazadas y composiciones a doble página en pantallas grandes, fotografías a sangre con el titular sobre la imagen en el teléfono.",
+        "captions": {
+          "websiteHome": "Web · Inicio",
+          "websitePortfolio": "Web · Portfolio",
+          "mobileHome": "Móvil · Inicio",
+          "mobilePortfolio": "Móvil · Portfolio"
+        },
+        "note": "Capturas de la web en producción (versión en inglés), tomadas en noviembre de 2026."
+      },
+      "results": {
+        "title": "Resultados",
+        "paragraph": "La web se lanzó en noviembre de 2026 en tres idiomas. Detrás de la estética editorial mantiene el estándar de rendimiento de todo lo que construyo: una página hecha casi por completo de fotografías grandes obtiene un 96 de rendimiento en móvil, sin ningún desplazamiento de diseño.",
+        "scoresTitle": "Google PageSpeed Insights · Móvil",
+        "scores": {
+          "performance": "Rendimiento",
+          "accessibility": "Accesibilidad",
+          "bestPractices": "Buenas Prácticas",
+          "seo": "SEO"
+        },
+        "vitalsTitle": "Métricas de laboratorio · Móvil",
+        "vitals": {
+          "fcp": "First Contentful Paint",
+          "lcp": "Largest Contentful Paint",
+          "tbt": "Total Blocking Time",
+          "cls": "Cumulative Layout Shift"
+        },
+        "note": "Informe de Google PageSpeed Insights (Lighthouse 13.6, Moto G Power emulado con 4G lenta), una ejecución el 12 de noviembre de 2026. Son datos de laboratorio: la web es demasiado reciente para tener datos de campo del Chrome UX Report."
+      },
+      "philosophy": {
+        "title": "Filosofía de Diseño",
+        "quote": "La web de un fotógrafo debería editarse como una revista, no llenarse como un álbum: cada fotografía colocada con intención, cada página con espacio para respirar."
+      }
+    },
     "cdestepona": {
       "eyebrow": "PARTNERSHIP SELECCIONADA",
       "title": "CD Estepona Fans",
       "label": "Plataforma independiente para aficionados",
+      "sector": "Deporte",
       "subtitle": "Un producto multiplataforma para la comunidad de aficionados del CD Estepona: una web pública, apps nativas para iOS y Android y un sistema interno de partido que lleva los eventos en directo a la afición en el momento en que ocurren.",
       "visitPlatform": "Visitar Plataforma",
       "appStore": "Ver en el App Store",

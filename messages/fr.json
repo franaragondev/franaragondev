@@ -236,6 +236,7 @@
       "eyebrow": "PARTENARIAT SÉLECTIONNÉ",
       "title": "Baguira Suites Experiences",
       "label": "Luxury Hospitality Experience Platform",
+      "sector": "Hôtellerie de Luxe",
       "subtitle": "Plateforme digitale d’hôtellerie de luxe conçue pour la performance, la visibilité et la conversion.",
 
       "visitPlatform": "Visiter la Plateforme",
@@ -298,10 +299,122 @@
       }
     },
     "sectionEyebrow": "PARTENARIATS SÉLECTIONNÉS",
+    "nagarez": {
+      "eyebrow": "PARTENARIAT SÉLECTIONNÉ",
+      "title": "Nagarez Visuals",
+      "label": "Site Éditorial de Photographie",
+      "sector": "Photographie",
+      "subtitle": "Le site d’une photographe conçu comme un magazine de luxe numérique : typographie éditoriale, compositions asymétriques et photographies qui ont l’espace qu’elles méritent, construit sur HAVN avec un design qui n’appartient qu’à elle.",
+      "visitPlatform": "Visiter le Site",
+      "backHome": "Retour à l’Accueil",
+      "havnNote": "Nagarez Visuals fonctionne sur HAVN, la plateforme pour entreprises indépendantes que j’ai créée et que je dirige. Contrairement à un site HAVN standard, son design est exclusif à cette cliente.",
+      "meta": {
+        "title": "Nagarez Visuals | Étude de cas d’un site éditorial de photographie",
+        "description": "Étude de cas du site d’une photographe conçu comme un magazine de luxe numérique : compositions éditoriales asymétriques, contenu trilingue et score de performance mobile de 96, construit sur HAVN avec un design exclusif."
+      },
+      "overview": {
+        "title": "Vue d’ensemble",
+        "paragraph": "Nagarez Visuals est le portfolio d’une photographe de couples, de voyage et d’hôtellerie installée entre Prague et Calais. Le site présente son travail en anglais, en français et en espagnol, l’organise en un portfolio et en collections racontées comme des chapitres, et lui transmet directement commandes et collaborations grâce à un formulaire de contact.",
+        "roleTitle": "Mon Rôle",
+        "role": "J’ai mené le projet de bout en bout : direction artistique, UX, design, développement et mise en ligne. Le site est un produit HAVN (la plateforme pour entreprises indépendantes que j’ai créée et que je dirige), adapté pour ce projet afin que la cliente dispose d’un design conçu uniquement pour elle."
+      },
+      "challenge": {
+        "title": "Le Défi",
+        "paragraph1": "Ses photographies avaient déjà un regard fort et reconnaissable. Le site devait être à la hauteur de cette même qualité et de ce même professionnalisme ; un template générique aurait dévalorisé précisément le travail qu’il devait vendre.",
+        "paragraph2": "La plupart des sites de photographes suivent la même formule : des images dans une grille uniforme, ou les unes après les autres sur toute la page. C’est propre, mais interchangeable. L’objectif était un site aussi soigné que les photographies elles-mêmes, que personne ne pourrait confondre avec celui d’un autre."
+      },
+      "direction": {
+        "title": "Direction Créative",
+        "paragraph": "Plutôt qu’une galerie, nous avons conçu le site comme un magazine de luxe numérique, dans l’esprit des grands titres de mode et d’art de vivre : des blancs généreux, une serif à fort contraste et des photographies placées avec intention plutôt qu’alignées sur la même grille.",
+        "items": [
+          {
+            "title": "Composition asymétrique",
+            "text": "Les images cassent le rythme volontairement : les colonnes commencent à des hauteurs différentes et les cadrages changent de taille et d’orientation, pour que le regard parcoure la page comme une double page imprimée."
+          },
+          {
+            "title": "La typographie en titre",
+            "text": "Une serif d’inspiration Bodoni porte les titres à l’échelle d’un magazine, associée à une sans-serif sobre et à des libellés très espacés pour la navigation et les légendes."
+          },
+          {
+            "title": "Des chapitres, pas des albums",
+            "text": "Le travail est organisé en collections numérotées (The North, Before the Guest, From Above, Unscripted, Still Water), pour que chaque série se lise comme une courte histoire à explorer lentement."
+          },
+          {
+            "title": "De l’espace pour respirer",
+            "text": "Un fond blanc cassé chaleureux, peu d’éléments par écran et des images pleine largeur sur mobile laissent les photographies mener et gardent l’interface silencieuse."
+          }
+        ]
+      },
+      "havn": {
+        "title": "Construit sur HAVN, conçu uniquement pour elle",
+        "paragraph1": "HAVN est la plateforme que j’ai créée pour les entreprises indépendantes : chaque métier dispose d’un Kit (les pages, les modules et le vocabulaire dont il a besoin) et toutes les entreprises partagent le même socle, amélioré pour toutes à la fois. Les photographes utilisent le Portfolio Kit, dont le design est partagé par tous les studios qui l’utilisent.",
+        "paragraph2": "Cette cliente voulait l’inverse d’un design partagé : elle était prête à payer davantage pour une esthétique que personne d’autre ne pourrait avoir. Les designs exclusifs ne font pas partie de l’offre standard de HAVN ; nous avons donc adapté le contrat à ses besoins : un design sur mesure, qui lui est réservé, fonctionnant sur la plateforme HAVN.",
+        "paragraph3": "Ce choix a été fait en connaissant son coût : la mise en place initiale a pris plus de temps et coûté plus cher qu’un site HAVN standard, et elle le savait et le préférait. Pour elle, l’exclusivité faisait partie du produit.",
+        "linkLabel": "Découvrir HAVN",
+        "compare": [
+          {
+            "name": "HAVN standard · Portfolio Kit",
+            "text": "Le design partagé du Portfolio Kit, personnalisé avec les couleurs, la marque et les photographies de chaque studio. Un abonnement mensuel sans frais de mise en place."
+          },
+          {
+            "name": "Nagarez Visuals",
+            "text": "Un design exclusif, créé pour cette cliente et qui lui est réservé, fonctionnant sur HAVN. Un contrat adapté, avec une mise en place initiale plus longue et plus coûteuse."
+          }
+        ]
+      },
+      "highlights": {
+        "title": "Points Techniques Clés",
+        "items": [
+          "Next.js App Router",
+          "TypeScript",
+          "Plateforme HAVN",
+          "Compositions Éditoriales Asymétriques",
+          "Optimisation d’Images Responsive",
+          "Trilingue : EN · FR · ES",
+          "SEO Technique et Open Graph",
+          "Navigation Accessible"
+        ]
+      },
+      "experience": {
+        "title": "L’Expérience",
+        "paragraph": "Le même langage éditorial se retrouve du bureau au mobile : colonnes décalées et doubles pages sur grand écran, photographies pleine largeur avec le titre posé sur l’image sur téléphone.",
+        "captions": {
+          "websiteHome": "Site · Accueil",
+          "websitePortfolio": "Site · Portfolio",
+          "mobileHome": "Mobile · Accueil",
+          "mobilePortfolio": "Mobile · Portfolio"
+        },
+        "note": "Captures du site en production (version anglaise), réalisées en novembre 2026."
+      },
+      "results": {
+        "title": "Résultats",
+        "paragraph": "Le site a été mis en ligne en novembre 2026 en trois langues. Derrière son esthétique éditoriale, il conserve l’exigence de performance de tout ce que je construis : une page composée presque entièrement de grandes photographies obtient 96 en performance mobile, sans aucun décalage de mise en page.",
+        "scoresTitle": "Google PageSpeed Insights · Mobile",
+        "scores": {
+          "performance": "Performance",
+          "accessibility": "Accessibilité",
+          "bestPractices": "Bonnes Pratiques",
+          "seo": "SEO"
+        },
+        "vitalsTitle": "Métriques de laboratoire · Mobile",
+        "vitals": {
+          "fcp": "First Contentful Paint",
+          "lcp": "Largest Contentful Paint",
+          "tbt": "Total Blocking Time",
+          "cls": "Cumulative Layout Shift"
+        },
+        "note": "Rapport Google PageSpeed Insights (Lighthouse 13.6, Moto G Power émulé en 4G lente), une seule exécution le 12 novembre 2026. Ce sont des données de laboratoire : le site est trop récent pour disposer de données terrain du Chrome UX Report."
+      },
+      "philosophy": {
+        "title": "Philosophie de Design",
+        "quote": "Le site d’un photographe devrait être édité comme un magazine, pas rempli comme un album : chaque photographie placée avec intention, chaque page avec de l’espace pour respirer."
+      }
+    },
     "cdestepona": {
       "eyebrow": "PARTENARIAT SÉLECTIONNÉ",
       "title": "CD Estepona Fans",
       "label": "Plateforme indépendante pour supporters",
+      "sector": "Sport",
       "subtitle": "Un produit multiplateforme pour la communauté des supporters du CD Estepona : un site public, des applications iOS et Android natives et un système interne de match qui transmet les événements en direct aux supporters au moment où ils se produisent.",
       "visitPlatform": "Visiter la Plateforme",
       "appStore": "Voir sur l’App Store",

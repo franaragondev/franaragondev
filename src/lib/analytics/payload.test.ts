@@ -42,6 +42,7 @@ describe("catalog helpers", () => {
     expect(resolveRoute("/fr/partnerships/baguira-suites")).toEqual({ route: "baguira", locale: "fr" });
     expect(resolveRoute("/partnerships/cd-estepona-fans")).toEqual({ route: "cdestepona", locale: "en" });
     expect(resolveRoute("/es/partnerships/cd-estepona-fans")).toEqual({ route: "cdestepona", locale: "es" });
+    expect(resolveRoute("/fr/partnerships/nagarez-visuals")).toEqual({ route: "nagarez", locale: "fr" });
     expect(resolveRoute("/constructor")).toEqual({ route: "other", locale: "en" });
     expect(resolveRoute("/es/privacidad")).toEqual({ route: "privacy", locale: "es" });
     expect(resolveRoute("/wp-admin")).toEqual({ route: "other", locale: "en" });
@@ -53,6 +54,8 @@ describe("catalog helpers", () => {
     expect(eventForLink("https://www.linkedin.com/in/fran-aragon-simon/", host)).toBe("linkedin_click");
     expect(eventForLink("/cv.pdf", host)).toBe("cv_open");
     expect(eventForLink("https://homestocker.app/", host)).toBe("project_homestocker");
+    expect(eventForLink("https://www.nagarezvisuals.com/es", host)).toBe("project_nagarez");
+    expect(eventForLink("https://havnplatform.com/en", host)).toBe("project_havn");
     expect(eventForLink("mailto:info@franaragondev.com", host)).toBe("email_click");
     expect(eventForLink("https://example.org/", host)).toBe("outbound_other");
     expect(eventForLink("#contact", host)).toBeNull();
